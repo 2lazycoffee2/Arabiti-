@@ -2,9 +2,9 @@
   {
     "id": "l1",
     "category": "Débutant",
-    "title": "Leçon 1 : L'alphabet arabe",
-    "description": "Découvrir les 29 lettres de l'alphabet (incluant Hamza), leur forme et leurs caractéristiques fondamentales.",
-    "content": "## Présentation générale\nL'arabe est une langue **sémitique** écrite de **droite à gauche**. Son alphabet est composé de **29 lettres** (28 consonnes + Hamza). Contrairement au français, l'arabe n'a pas de majuscules ni de minuscules — chaque lettre possède en revanche jusqu'à **4 formes** selon sa position dans le mot.\n\n## Les 4 formes d'une lettre\nChaque lettre change de forme selon qu'elle est **isolée**, en **début** (initiale), au **milieu** (médiane) ou en **fin** de mot (finale). Exemple avec **ب** (Bā') :\n\n| Isolée | Initiale | Médiane | Finale |\n|---|---|---|---|\n| ب | بـ | ـبـ | ـب |\n\n## Exemples de positions\n- **Début** : **بَـ**ـيْت (Bayt - maison)\n- **Milieu** : كَـ**ـبِـ**ـير (Kabīr - grand)\n- **Fin** : كِتَا**ب** (Kitāb - livre)\n\n## Les 6 lettres rebelles\nSix lettres ne s'attachent **jamais** à la lettre qui les suit : **أ، د، ذ، ر، ز، و**. Quand on rencontre l'une d'elles dans un mot, la lettre suivante reprend sa forme initiale.\n\n## Familles de formes\nL'alphabet se regroupé en familles visuelles :\n- **Famille de l'assiette (ب)** : ب (b), ت (t), ث (th)\n- **Famille du crochet (ج)** : ج (dj), ح (ḥ), خ (kh)\n- **Famille de la courbe (ر)** : ر (r), ز (z)\n- **Famille du ventre (س)** : س (s), ش (sh)\n- **Famille du croissant (ص)** : ص (ṣ), ض (ḍ)\n\n## Le sens d'écriture\nL'arabe s'écrit et se lit **de droite à gauche**. Les chiffres, eux, s'écrivent de gauche à droite. Au fil de l'apprentissage, ce sens deviendra tout à fait naturel.",
+    "title": "Leçon 1 : Introduction à l'Arabe",
+    "description": "Découvrir les bases de l'écriture de droite à gauche et les principes de connexion des lettres.",
+    "content": "## Présentation générale\nL'arabe est une langue **sémitique** écrite de **droite à gauche**. Son alphabet est composé de **28 consonnes** principales (auxquelles s'ajoute la Hamza). Contrairement au français, l'arabe n'a pas de majuscules ni de minuscules.\n\n## Le sens d'écriture\nL'arabe s'écrit et se lit **de droite à gauche**. Les chiffres, eux, s'écrivent de gauche à droite. Ce sens d'écriture demande un petit temps d'adaptation, mais devient vite naturel avec la pratique.\n\n## La cursive (écriture attachée)\nL'arabe s'écrit presque exclusivement en **cursive**, c'est-à-dire que les lettres sont reliées entre elles au sein d'un même mot, un peu comme notre écriture \"attachée\" à l'école. \n\n## Comment les lettres se connectent\nLa plupart des lettres se lient à la lettre qui les précède ET à celle qui les suit. Cependant, il existe un petit groupe de lettres dites **\"non-connectrices\"** qui refusent de s'attacher à la lettre suivante (sur leur gauche).\n\n## Pourquoi apprendre l'arabe ?\nC'est la langue officielle de plus de 20 pays et l'une des 6 langues officielles de l'ONU. Apprendre les bases de l'alphabet est votre première étape vers l'accès à une culture millénaire.",
     "exercises": [
       {
         "question": "Dans quel sens l'arabe s'écrit-il ?",
@@ -16,67 +16,7 @@
         "answer": "De droite à gauche"
       },
       {
-        "question": "Combien de lettres compte l'alphabet arabe (Hamza inclus) ?",
-        "options": [
-          "24",
-          "26",
-          "28",
-          "29"
-        ],
-        "answer": "29"
-      },
-      {
-        "question": "Combien de formes différentes peut avoir une lettre arabe ?",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
-        "answer": "4"
-      },
-      {
-        "question": "Laquelle de ces lettres est 'rebelle' (ne s'attache pas à gauche) ?",
-        "options": [
-          "ب",
-          "ت",
-          "ر",
-          "س"
-        ],
-        "answer": "ر"
-      },
-      {
-        "question": "Quelle est la forme MÉDIANE de la lettre ب ?",
-        "options": [
-          "ب",
-          "بـ",
-          "ـبـ",
-          "ـب"
-        ],
-        "answer": "ـبـ"
-      },
-      {
-        "question": "Combien de lettres rebelles y a-t-il en arabe ?",
-        "options": [
-          "4",
-          "5",
-          "6",
-          "7"
-        ],
-        "answer": "6"
-      },
-      {
-        "question": "La lettre ج appartient à quelle famille ?",
-        "options": [
-          "Famille du ventre",
-          "Famille du crochet",
-          "Famille de l'assiette",
-          "Famille du croissant"
-        ],
-        "answer": "Famille du crochet"
-      },
-      {
-        "question": "L'arabe distingue-t-il majuscules et minuscules ?",
+        "question": "L'arabe utilise-t-il des majuscules ?",
         "options": [
           "Oui",
           "Non"
@@ -84,26 +24,84 @@
         "answer": "Non"
       },
       {
-        "question": "Quelle est la famille des lettres ص et ض ?",
+        "question": "Comment s'écrivent les chiffres en arabe ?",
         "options": [
-          "Famille de la courbe",
-          "Famille du croissant",
-          "Famille de l'assiette"
+          "De droite à gauche",
+          "De gauche à droite"
         ],
-        "answer": "Famille du croissant"
-      },
-      {
-        "question": "La forme FINALE de ب est :",
-        "options": [
-          "ب",
-          "بـ",
-          "ـبـ",
-          "ـب"
-        ],
-        "answer": "ـب"
+        "answer": "De gauche à droite"
       }
     ]
   },
+  {
+    "id": "l1b",
+    "category": "Débutant",
+    "title": "Leçon 1b : Les 28 Lettres de l'Alphabet",
+    "description": "Apprendre à identifier les 28 lettres, leur nom, leur son et un mot exemple pour chacune.",
+    "content": "## L'Alphabet Arabe (Stage 2)\nVoici les 28 lettres fondamentales dans leur forme **isolée**. \n\n| Lettre | Nom | Trans. | Exemple (Mot) | Traduction |\n|:---:|:---:|:---:|:---:|:---:|\n| أ | Alif | ā / ' | **أَ**نَا | Je |\n| ب | Bā' | b | **بَـ**يْت | Maison |\n| ت | Tā' | t | **تُـ**ـفَّاح | Pomme |\n| ث | Thā' | th | **ثَـ**ـلْج | Neige |\n| ج | Jīm | j | **جَـ**ـمَل | Chameau |\n| ح | Ḥā' | ḥ | **حُـ**ـوت | Baleine |\n| خ | Khā' | kh | **خُـ**ـبْز | Pain |\n| د | Dāl | d | **دَ**رَج | Escalier |\n| ذ | Dhāl | dh | **ذَ**هَب | Or |\n| ر | Rā' | r | **رَ**جُل | Homme |\n| ز | Zāy | z | **زَ**يْت | Huile |\n| س | Sīn | s | **سَـ**ـمَك | Poisson |\n| ش | Shīn | sh | **شَـ**ـمْس | Soleil |\n| ص | Ṣād | ṣ | **صَـ**ـقْر | Faucon |\n| ض | Ḍād | ḍ | **ضَـ**ـوْء | Lumière |\n| ط | Ṭā' | ṭ | **طَـ**ـيْر | Oiseau |\n| ظ | Ẓā' | ẓ | **ظَـ**ـرْف | Enveloppe |\n| ع | 'Ayn | ' | **عَـ**ـيْن | Œil |\n| غ | Ghayn | gh | **غَـ**ـابَة | Forêt |\n| ف | Fā' | f | **فِـ**ـيل | Éléphant |\n| ق | Qāf | q | **قَـ**ـمَر | Lune |\n| ك | Kāf | k | **كِـ**ـتَاب | Livre |\n| ل | Lām | l | **لَـ**ـبَن | Lait |\n| م | Mīm | m | **مَـ**ـاء | Eau |\n| ن | Nūn | n | **نَـ**ـجْم | Étoile |\n| ه | Hā' | h | **هِـ**ـلال | Croissant |\n| و | Wāw | w | **وَ**رْد | Rose |\n| ي | Yā' | y | **يَـ**ـد | Main |\n\n## Conseils de mémorisation\nNe cherchez pas à tout retenir d'un coup ! Concentrez-vous sur les 5 premières lettres, puis avancez progressivement. Visualisez bien le point placé au-dessus ou au-dessous, c'est souvent ce qui différencie deux lettres.",
+    "exercises": [
+      {
+        "question": "Quelle lettre correspond au son 'B' ?",
+        "options": ["أ", "ب", "ت", "ج"],
+        "answer": "ب"
+      },
+      {
+        "question": "Quel est le nom de la lettre 'ج' ?",
+        "options": ["Hā'", "Jīm", "Khā'", "Sīn"],
+        "answer": "Jīm"
+      },
+      {
+        "question": "La lettre 'ق' se prononce comme :",
+        "options": ["un K léger", "un Q profond", "un S"],
+        "answer": "un Q profond"
+      },
+      {
+        "question": "Quel mot signifie 'Maison' ?",
+        "options": ["Bayt (بَيْت)", "Kitāb (كِتَاب)", "Mā' (مَاء)"],
+        "answer": "Bayt (بَيْت)"
+      },
+      {
+        "question": "Combien de lettres compte l'alphabet arabe de base ?",
+        "options": ["24", "26", "28", "30"],
+        "answer": "28"
+      }
+    ]
+  },
+  {
+    "id": "l1c",
+    "category": "Débutant",
+    "title": "Leçon 1c : Les 4 Formes et les Lettres Rebelles",
+    "description": "Apprendre comment les lettres changent de forme selon leur position et identifier les 6 lettres qui ne s'attachent pas à gauche.",
+    "content": "## Les 4 positions (Stage 3)\nComme nous l'avons vu, l'écriture arabe est cursive. Une lettre peut donc se trouver dans 4 états différents :\n1. **Isolée** : quand elle est seule.\n2. **Initiale** : au début du mot (attachée à gauche).\n3. **Médiane** : au milieu du mot (attachée à sa droite et à sa gauche).\n4. **Finale** : à la fin du mot (attachée à sa droite).\n\n### Exemple avec la lettre Bā' (ب)\n- **Isolée** : ب\n- **Initiale** : **بَـ**ـيْت\n- **Médiane** : كَـ**ـبِـ**ـير\n- **Finale** : كِتَا**ب**\n\n## Les 6 lettres \"Rebelles\"\nIl existe 6 lettres qui sont prêtes à s'attacher à la lettre qui les précède (à droite), mais refusent catégoriquement de s'attacher à la lettre suivante (à gauche). On les appelle souvent les **lettres non-connectrices** ou **rebelles** :\n**ا، د، ذ، ر، z، و** (Alif, Dāl, Dhāl, Rā', Zāy, Wāw).\n\n### Que se passe-t-il après une lettre rebelle ?\nLa lettre qui suit une lettre rebelle doit reprendre sa forme **initiale** (ou isolée si c'est la fin du mot), car elle ne peut pas s'y accrocher.\nExemple : **دَ رَ جَ** (Da-ra-ja - escalier) → Les trois lettres sont rebelles, elles restent donc séparées visuellement bien qu'elles forment un mot.\n\n## Astuce visuelle\nLes familles de lettres (comme ب، ت، ث) partagent les mêmes règles de transformation. Une fois que vous maîtrisez le changement de forme du 'ب', vous connaissez aussi celui du 'ت' et du 'ث' !",
+    "exercises": [
+      {
+        "question": "Laquelle de ces lettres est 'rebelle' (ne s'attache pas à gauche) ?",
+        "options": ["ب", "ت", "ر", "س"],
+        "answer": "ر"
+      },
+      {
+        "question": "Quelle est la forme MÉDIANE de la lettre ب ?",
+        "options": ["ب", "بـ", "ـبـ", "ـب"],
+        "answer": "ـبـ"
+      },
+      {
+        "question": "Combien de lettres 'rebelles' y a-t-il en arabe ?",
+        "options": ["4", "5", "6", "8"],
+        "answer": "6"
+      },
+      {
+        "question": "Si une lettre rebelle est au milieu d'un mot, la lettre suivante sera sous sa forme :",
+        "options": ["Initiale", "Médiane", "Finale"],
+        "answer": "Initiale"
+      },
+      {
+        "question": "Le mot 'Wāw' (و) est-il une lettre rebelle ?",
+        "options": ["Oui", "Non"],
+        "answer": "Oui"
+      }
+    ]
+  },
+
   {
     "id": "l2",
     "category": "Débutant",
@@ -208,6 +206,74 @@
           "ب"
         ],
         "answer": "ك"
+      }
+    ]
+  },
+  {
+    "id": "l2b",
+    "category": "Débutant",
+    "title": "Leçon 2b : Lecture de Syllabes",
+    "description": "S'entraîner à combiner une consonne et une voyelle courte pour former des sons de base.",
+    "content": "## Qu'est-ce qu'une syllabe ? (Stage 5)\nUne syllabe de base en arabe est la combinaison d'une **consonne** et d'une **voyelle courte** (Fatḥa, Kasra ou Ḍamma). C'est la brique élémentaire de la lecture.\n\n## Exemples de combinaisons\nPratiquez la lecture de ces petits blocs :\n\n| Avec Fatḥa (A) | Avec Kasra (I) | Avec Ḍamma (OU) |\n|:---:|:---:|:---:|\n| بَ (Ba) | بِ (Bi) | بُ (Bou) |\n| تَ (Ta) | تِ (Ti) | تُ (Tou) |\n| سَ (Sa) | سِ (Si) | سُ (Sou) |\n| لَ (La) | لِ (Li) | لُ (Lou) |\n\n## Syllabes avec Soukoun\nQuand une lettre porte un **Soukoun**, elle n'a pas de voyelle propre et se 'colle' à la syllabe précédente :\n- **بَبْ** (Bab) \n- **بِبْ** (Bib)\n- **بُبْ** (Boub)\n\n## Exercice de déchiffrage rapide\nEssayez de lire ces suites de sons sans hésiter :\n1. **دَ - رَ - سَ** (Da-ra-sa)\n2. **شَ - رِ - بَ** (Sha-ri-ba)\n3. **كُ - تُ - بُ** (Kou-tou-bou)\n\n## Pourquoi est-ce important ?\nLire par syllabes permet de stabiliser sa prononciation avant de s'attaquer à des mots entiers. C'est comme apprendre à déchiffrer les notes de musique avant de jouer une partition.",
+    "exercises": [
+      {
+        "question": "Comment se lit la syllabe : سِ ?",
+        "options": ["Sa", "Si", "Sou", "S"],
+        "answer": "Si"
+      },
+      {
+        "question": "Laquelle de ces syllabes se lit 'Lou' ?",
+        "options": ["لَ", "لِ", "لُ", "لْ"],
+        "answer": "لُ"
+      },
+      {
+        "question": "Comment déchiffrer : دَ-رَ-سَ ?",
+        "options": ["Da-ra-sa", "Di-ri-si", "Dou-rou-sou"],
+        "answer": "Da-ra-sa"
+      },
+      {
+        "question": "Quelle voyelle est utilisée dans 'Ba' (بَ) ?",
+        "options": ["Fatḥa", "Kasra", "Ḍamma"],
+        "answer": "Fatḥa"
+      },
+      {
+        "question": "Dans 'Bib' (بِبْ), la deuxième lettre porte :",
+        "options": ["Une Fatḥa", "Un Soukoun", "Une Chadda"],
+        "answer": "Un Soukoun"
+      }
+    ]
+  },
+  {
+    "id": "l2c",
+    "category": "Débutant",
+    "title": "Leçon 2c : Lecture de Mots Simples",
+    "description": "Apprendre à lier les syllabes pour lire des mots de 3 lettres entièrement vocalisés.",
+    "content": "## Du son au mot (Stage 6)\nMaintenant que vous savez lire les syllabes isolées, nous allons les attacher pour former des mots simples. En arabe, la plupart des racines de mots sont composées de **3 lettres**.\n\n## Mots de 3 lettres (3ah - 3ash - 3ah)\nSuivez les étapes : Voyez les lettres -> Identifiez les formes -> Appliquez les voyelles.\n\n| Mot Arabe | Décomposition | Lecture | Sens |\n|:---:|:---:|:---:|:---:|\n| **كَتَبَ** | كَ + تَ + بَ | Ka-ta-ba | Il a écrit |\n| **أَكَلَ** | أَ + كَ + لَ | A-ka-la | Il a mangé |\n| **وَلَدٌ** | وَ + لَ + دٌ | Wa-la-dun | Un garçon |\n| **بِنْتٌ** | بِ + نْ + تٌّ | Bin-tun | Une fille |\n| **رَجُلٌ** | رَ + جُ + لٌ | Ra-ju-lun | Un homme |\n\n## Attention aux lettres rebelles !\nN'oubliez pas que si vous voyez un espace au milieu d'un mot, c'est probablement dû à une **lettre rebelle** :\n- **دَرَسَ** (Da-ra-sa) : Le 'D' et le 'R' sont rebelles, donc le mot semble composé de trois blocs séparés.\n\n## Comment s'entraîner ?\n1. Lisez chaque lettre avec sa voyelle doucement.\n2. Répétez le mot plus vite pour faire le lien entre les sons.\n3. Écrivez le mot en même temps que vous le prononcez.",
+    "exercises": [
+      {
+        "question": "Comment se lit le mot : كَتَبَ ?",
+        "options": ["Kataba", "Kitaba", "Koutouba"],
+        "answer": "Kataba"
+      },
+      {
+        "question": "Que signifie le mot 'Walad' (وَلَدٌ) ?",
+        "options": ["Un livre", "Un garçon", "Une maison"],
+        "answer": "Un garçon"
+      },
+      {
+        "question": "Dans 'Darasa' (دَرَسَ), pourquoi les lettres ne sont pas attachées ?",
+        "options": ["C'est une erreur", "Car D et R sont des lettres rebelles", "Car il y a trop de voyelles"],
+        "answer": "Car D et R sont des lettres rebelles"
+      },
+      {
+        "question": "Comment dit-on 'Une fille' en arabe ?",
+        "options": ["Walad", "Bint", "Rajul"],
+        "answer": "Bint"
+      },
+      {
+        "question": "Le mot أَكَلَ (A-ka-la) signifie :",
+        "options": ["Il a écrit", "Il a mangé", "Il a bu"],
+        "answer": "Il a mangé"
       }
     ]
   },
@@ -1316,6 +1382,108 @@
           "وَ"
         ],
         "answer": "وَ"
+      }
+    ]
+  },
+  {
+    "id": "l13b",
+    "category": "Conversation",
+    "title": "Leçon 13b : Vocabulaire : Les Animaux",
+    "description": "Apprendre les noms des animaux courants en arabe et s'exercer à les identifier.",
+    "content": "## Les Animaux (Stage 7)\nLe vocabulaire des animaux est l'un des plus utilisés au niveau débutant. Voici une liste des plus courants en arabe littéraire (Fusha).\n\n| Arabe | Prononciation | Français |\n|:---:|:---:|:---:|\n| **كَلْب** | Kalb | Chien |\n| **قِطَّة** | Qiṭṭa | Chat |\n| **حِصَان** | Ḥiṣān | Cheval |\n| **جَمَل** | Jamal | Chameau |\n| **أَسَد** | Asad | Lion |\n| **فِيل** | Fīl | Éléphant |\n| **عُصْفُور** | 'Uṣfūr | Oiseau |\n| **سَمَكَة** | Samaka | Poisson |\n| **بَقَرَة** | Baqara | Vache |\n| **نَمْلَة** | Namla | Fourmi |\n\n## Le genre des animaux\nCertains animaux ont des noms différents pour le mâle et la femelle, comme en français (Lion/Lionne). \n- **أَسَد** (Lion) / **لَبُؤَة** (Lionne)\nPour d'autres, on ajoute simplement la **Ta Marbouta** (ة) pour désigner la femelle :\n- **كَلْب** (Chien) / **كَلْبَة** (Chienne)\n\n## Expressions utiles\n- عِنْدِي **قِطَّة** بَيْضَاء (J'ai un chat blanc)\n- هَلْ تُحِبُّ الـ**ـخَيْل**؟ (Aimes-tu les chevaux ?)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Lion' en arabe ?",
+        "options": ["Jamal", "Kalb", "Asad", "Fīl"],
+        "answer": "Asad"
+      },
+      {
+        "question": "Quel animal se prononce 'Kalb' ?",
+        "options": ["Chat", "Chien", "Cheval", "Poisson"],
+        "answer": "Chien"
+      },
+      {
+        "question": "Comment dit-on 'Chat' (féminin) ?",
+        "options": ["Kalb", "Qiṭṭa", "Samaka"],
+        "answer": "Qiṭṭa"
+      },
+      {
+        "question": "Le mot 'Samaka' (سَمَكَة) désigne :",
+        "options": ["Un oiseau", "Une fourmi", "Un poisson"],
+        "answer": "Un poisson"
+      },
+      {
+        "question": "Comment dit-on 'Oiseau' ?",
+        "options": ["'Uṣfūr", "Ḥiṣān", "Asad"],
+        "answer": "'Uṣfūr"
+      }
+    ]
+  },
+  {
+    "id": "l13c",
+    "category": "Conversation",
+    "title": "Leçon 13c : Vocabulaire : Les Objets du Quotidien",
+    "description": "Identifier les objets de la maison et de la classe en arabe.",
+    "content": "## Les Objets du Quotidien (Stage 7)\nVoici le vocabulaire essentiel pour décrire ce qui vous entoure, à la maison ou à l'école.\n\n### Dans la classe / Bureau\n| Arabe | Prononciation | Français |\n|:---:|:---:|:---:|\n| **كِتَاب** | Kitāb | Livre |\n| **قَلَم** | Qalam | Stylo / Crayon |\n| **وَرَقَة** | Waraqa | Feuille de papier |\n| **مَكْتَب** | Maktab | Bureau / Table |\n| **كُرْسِيّ** | Kursī | Chaise |\n\n### Dans la maison\n| Arabe | Prononciation | Français |\n|:---:|:---:|:---:|\n| **مِفْتَاح** | Miftāḥ | Clé |\n| **بَاب** | Bāb | Porte |\n| **نَافِذَة** | Nāfidha | Fenêtre |\n| **سَرِير** | Sarīr | Lit |\n| **هَاتِف** | Hātif | Téléphone |\n\n## Syntaxe de base avec les objets\nVous pouvez combiner ces mots avec les démonstratifs (Leçon 6) :\n- **هَٰذَا كِتَابِي** (Ceci est mon livre)\n- **أَيْنَ الْمِفْتَاح؟** (Où est la clé ?)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Stylo' ?",
+        "options": ["Kitāb", "Qalam", "Waraqa"],
+        "answer": "Qalam"
+      },
+      {
+        "question": "Que signifie 'Bāb' (بَاب) ?",
+        "options": ["Une clé", "Une porte", "Une fenêtre"],
+        "answer": "Une porte"
+      },
+      {
+        "question": "Quel mot désigne un 'Téléphone' ?",
+        "options": ["Sarīr", "Hātif", "Kursī"],
+        "answer": "Hātif"
+      },
+      {
+        "question": "Comment dit-on 'Chaise' ?",
+        "options": ["Maktab", "Kursī", "Waraqa"],
+        "answer": "Kursī"
+      },
+      {
+        "question": "Le mot 'Miftāḥ' (مِفْتَاح) signifie :",
+        "options": ["Bureau", "Livre", "Clé"],
+        "answer": "Clé"
+      }
+    ]
+  },
+  {
+    "id": "l13d",
+    "category": "Conversation",
+    "title": "Leçon 13d : Vocabulaire : Les Lieux",
+    "description": "Apprendre les noms des lieux publics et géographiques fréquents.",
+    "content": "## Les Lieux d'intérêt (Stage 7)\nPour se repérer et voyager, il est indispensable de connaître ces quelques lieux clés.\n\n| Arabe | Prononciation | Français |\n|:---:|:---:|:---:|\n| **مَدِينَة** | Madīna | Ville |\n| **قَرْيَة** | Qarya | Village |\n| **بَلَد** | Balad | Pays |\n| **مَدْرَسَة** | Madrasa | École |\n| **جَامِعَة** | Jāmi'a | Université |\n| **سُوق** | Sūq | Marché |\n| **مَسْجِد** | Masjid | Mosquée |\n| **مُسْتَشْفَى** | Mustashfā | Hôpital |\n| **مَطْعَم** | Maṭ'am | Restaurant |\n| **حَدِيقَة** | Ḥadīqa | Jardin / Parc |\n\n## Parler de sa provenance\nUtilisez le mot **بَلَد** ou **مَدِينَة** :\n- **مَا هُوَ بَلَدُكَ؟** (Quel est ton pays ?)\n- **أَنَا فِي الْمَدِينَة** (Je suis dans la ville)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Ville' ?",
+        "options": ["Qarya", "Madīna", "Balad"],
+        "answer": "Madīna"
+      },
+      {
+        "question": "Que signifie 'Madrasa' (مَدْرَسَة) ?",
+        "options": ["Université", "École", "Hôpital"],
+        "answer": "École"
+      },
+      {
+        "question": "Quel lieu désigne un 'Marché' ?",
+        "options": ["Sūq", "Maṭ'am", "Masjid"],
+        "answer": "Sūq"
+      },
+      {
+        "question": "Comment dit-on 'Pays' ?",
+        "options": ["Balad", "Madīna", "Ḥadīqa"],
+        "answer": "Balad"
+      },
+      {
+        "question": "Le mot 'Mustashfā' (مُسْتَشْفَى) correspond à :",
+        "options": ["Restaurant", "Hôpital", "Université"],
+        "answer": "Hôpital"
       }
     ]
   },
@@ -3038,7 +3206,7 @@
   },
   {
     "id": "l31",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 31 : Les couleurs",
     "description": "Apprendre le vocabulaire des couleurs et leurs formes masculines/féminines.",
     "content": "## Les couleurs en arabe\nLes adjectifs de couleur en arabe ont une structure particulière. Ils suivent le schème **أَفْعَل** (Af'al) au masculin et **فَعْلَاء** (Fa'lā') au féminin.\n\n## Tableau des couleurs principales\n\n| Couleur | Masc. | Fém. | Translitération |\n|---|---|---|---|\n| Rouge | أَحْمَر | حَمْرَاء | Aḥmar / Ḥamrā' |\n| Blanc | أَبْيَض | بَيْضَاء | Abyaḍ / Bayḍā' |\n| Noir | أَسْوَد | سَوْدَاء | Aswad / Sawdā' |\n| Vert | أَخْضَر | خَضْرَاء | Akhḍar / Khaḍrā' |\n| Bleu | أَزْرَق | زَرْقَاء | Azraq / Zarqā' |\n| Jaune | أَصْفَر | صَفْرَاء | Aṣfar / Ṣafrā' |\n| Brun | أَسْمَر | سَمْرَاء | Asmar / Samrā' |\n| Orange | بُرْتُقَالِيّ | بُرْتُقَالِيَّة | Burtuqālī (emprunt) |\n\n## Accord des couleurs\nComme tous les adjectifs, la couleur s'accorde en genre avec le nom :\n- سَيَّارَةٌ حَمْرَاءُ (une voiture rouge — fém.)\n- قَلَمٌ أَحْمَرُ (un stylo rouge — masc.)\n\n## Les couleurs au pluriel\nLes couleurs au schème أَفْعَل ont un pluriel brisé en **فُعْل** (Fu'l) :\n- أَحْمَر (rouge) → **حُمْر** (rouges)\n- أَبْيَض (blanc) → **بِيض** (blancs)",
@@ -3138,7 +3306,7 @@
   },
   {
     "id": "l32",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 32 : Les parties du corps",
     "description": "Apprendre le vocabulaire des parties du corps humain en arabe.",
     "content": "## Le corps humain en arabe (جِسْم الإِنْسَان)\n\n## Tableau des parties du corps\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| رَأْس | Ra's | Tête |\n| شَعْر | Sha'r | Cheveux |\n| وَجْه | Wajh | Visage |\n| عَيْن (ج: عُيُون) | 'Ayn | Œil |\n| أُذُن (ج: آذَان) | Udhun | Oreille |\n| أَنْف | Anf | Nez |\n| فَم | Fam | Bouche |\n| سِنّ (ج: أَسْنَان) | Sinn | Dent |\n| عُنُق / رَقَبَة | 'Unuq / Raqaba | Cou |\n| كَتِف (ج: أَكْتَاف) | Katif | Épaule |\n| يَد (ج: أَيْدِي) | Yad | Main/Bras |\n| إِصْبَع (ج: أَصَابِع) | Isba' | Doigt |\n| بَطْن | Baṭn | Ventre |\n| رِجْل (ج: أَرْجُل) | Rijl | Jambe/Pied |\n| قَدَم (ج: أَقْدَام) | Qadam | Pied |\n| قَلْب (ج: قُلُوب) | Qalb | Cœur |\n\n## Les membres du corps en paires\nLes noms de membres du corps qui existent en paires (yeux, oreilles, mains, pieds) sont **féminins** en arabe, même sans la Tā' Marbūṭa.",
@@ -3243,7 +3411,7 @@
   },
   {
     "id": "l33",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 33 : La famille",
     "description": "Apprendre le vocabulaire de la famille et exprimer les liens de parenté.",
     "content": "## La famille en arabe (الأُسْرَة / العَائِلَة)\n\n## Tableau des membres de la famille\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| أَب (ج: آبَاء) | Ab | Père |\n| أُمّ (ج: أُمَّهَات) | Umm | Mère |\n| اِبْن (ج: أَبْنَاء) | Ibn | Fils |\n| بِنْت (ج: بَنَات) | Bint | Fille |\n| أَخ (ج: إِخْوَة) | Akh | Frère |\n| أُخْت (ج: أَخَوَات) | Ukht | Sœur |\n| جَدّ (ج: أَجْدَاد) | Jadd | Grand-père |\n| جَدَّة | Jadda | Grand-mère |\n| عَمّ | 'Amm | Oncle (paternel) |\n| عَمَّة | 'Amma | Tante (paternelle) |\n| خَال | Khāl | Oncle (maternel) |\n| خَالَة | Khāla | Tante (maternelle) |\n| اِبْن عَمّ | Ibn 'amm | Cousin (paternel) |\n| زَوْج | Zawj | Mari |\n| زَوْجَة | Zawja | Femme/Épouse |\n\n## Nuance culturelle : oncles et tantes\nL'arabe distingue précisément les liens familiaux selon le **côté paternel** (عَمّ/عَمَّة) ou **maternel** (خَال/خَالَة). Cette distinction reflète l'importance de la généalogie dans la culture arabe.\n\n## Expressions courantes\n- عِنْدِي أَخٌ وَأُخْتَانِ (J'ai un frère et deux sœurs)\n- كَيْفَ حَالُ عَائِلَتِكَ؟ (Comment va ta famille ?)",
@@ -3345,7 +3513,7 @@
   },
   {
     "id": "l34",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 34 : L'heure et le temps",
     "description": "Lire l'heure et parler du temps en arabe.",
     "content": "## Demander l'heure\n- كَمِ السَّاعَةُ؟ (Kami as-sā'a?) = Quelle heure est-il ?\n- السَّاعَةُ... (As-sā'a...) = Il est...\n\n## Dire l'heure\n- السَّاعَةُ الوَاحِدَة = Il est une heure\n- السَّاعَةُ الثَّانِيَة = Il est deux heures\n- السَّاعَةُ الثَّالِثَة = Il est trois heures\n\n## Les fractions\n- وَالرُّبُع = et quart (+15 min)\n- وَالنِّصْف = et demi (+30 min)\n- إِلَّا الرُّبُع = moins le quart (-15 min)\n\nExemples :\n- السَّاعَةُ الثَّالِثَةُ وَالرُّبُع = 3h15\n- السَّاعَةُ السَّابِعَةُ وَالنِّصْف = 7h30\n- السَّاعَةُ التَّاسِعَةُ إِلَّا الرُّبُع = 8h45\n\n## Vocabulaire temporel\n\n| Arabe | Sens |\n|---|---|\n| صَبَاح | Matin |\n| ظُهْر | Midi |\n| عَصْر | Après-midi |\n| مَسَاء | Soir |\n| لَيْل | Nuit |\n| مُنْتَصَف اللَّيْل | Minuit |\n| الآن | Maintenant |\n| مُبَكِّرًا | Tôt |\n| مُتَأَخِّرًا | Tard |",
@@ -3445,7 +3613,7 @@
   },
   {
     "id": "l35",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 35 : Les jours et les mois",
     "description": "Apprendre les jours de la semaine et les mois de l'année en arabe.",
     "content": "## Les jours de la semaine (أَيَّام الأُسْبُوع)\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| الأَحَد | Al-Aḥad | Dimanche |\n| الاِثْنَيْن | Al-Ithnayn | Lundi |\n| الثَّلَاثَاء | Ath-Thalāthā' | Mardi |\n| الأَرْبِعَاء | Al-Arbi'ā' | Mercredi |\n| الخَمِيس | Al-Khamīs | Jeudi |\n| الجُمُعَة | Al-Jum'a | Vendredi |\n| السَّبْت | As-Sabt | Samedi |\n\n## La semaine islamique\nLe **vendredi** (الجُمُعَة) est le jour de prière collective. La semaine dans les pays arabes commence souvent le **samedi** ou le **dimanche**.\n\n## Les mois de l'année (أَشْهُر السَّنَة)\n### Mois grégoriens\n- يَنَايِر (Yanāyir) — Janvier\n- فِبْرَايَر (Fibrāyir) — Février\n- مَارِس (Māris) — Mars\n- أَبْرِيل (Abrīl) — Avril\n- مَايُو (Māyū) — Mai\n- يُونِيُو (Yūniyu) — Juin\n\n### Questions sur les dates\n- مَا التَّارِيخُ اليَوْمَ؟ (Quelle est la date aujourd'hui ?)\n- اليَوْمُ هُوَ... (Aujourd'hui c'est...) \n- فِي أَيّ يَوْمٍ؟ (Quel jour ?)",
@@ -3544,7 +3712,7 @@
   },
   {
     "id": "l36",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 36 : La météo et les saisons",
     "description": "Parler de la météo et des saisons en arabe.",
     "content": "## Les saisons (الفُصُول الأَرْبَعَة)\n\n| Arabe | Translitération | Saison |\n|---|---|---|\n| الرَّبِيع | Ar-Rabī' | Le Printemps |\n| الصَّيْف | Aṣ-Ṣayf | L'Été |\n| الخَرِيف | Al-Kharīf | L'Automne |\n| الشِّتَاء | Ash-Shitā' | L'Hiver |\n\n## Vocabulaire météorologique\n\n| Arabe | Sens |\n|---|---|\n| الطَّقْس | Le temps (météo) |\n| شَمْس / مُشْمِس | Soleil / Ensoleillé |\n| غَيْم / غَائِم | Nuage / Nuageux |\n| مَطَر / مُمْطِر | Pluie / Pluvieux |\n| ثَلْج / مُثْلِج | Neige / Neigeux |\n| رِيح / عَاصِفَة | Vent / Tempête |\n| حَرّ | Chaleur |\n| بَرْد | Froid |\n| دَافِئ | Tiède/Doux |\n| رُطُوبَة | Humidité |\n\n## Expressions météo\n- الجَوُّ جَمِيلٌ اليَوْمَ. (Le temps est beau aujourd'hui.)\n- الطَّقْسُ بَارِدٌ جِدًّا. (Il fait très froid.)\n- هَلْ سَتُمْطِرُ غَدًا؟ (Est-ce qu'il va pleuvoir demain ?)\n- دَرَجَةُ الحَرَارَةِ أَرْبَعُون دَرَجَة. (La température est de 40 degrés.)",
@@ -3646,7 +3814,7 @@
   },
   {
     "id": "l37",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 37 : Voyage et Aéroport",
     "description": "Vocabulaire essentiel pour voyager et se déplacer dans un pays arabophone.",
     "content": "## À l'aéroport (فِي المَطَار)\n\n| Arabe | Sens |\n|---|---|\n| مَطَار | Aéroport |\n| طَائِرَة | Avion |\n| رِحْلَة | Vol / Voyage |\n| جَوَاز السَّفَر | Passeport |\n| تَذْكِرَة | Billet |\n| حَقِيبَة | Valise |\n| جُمْرُك | Douane |\n| بَوَّابَة | Porte (d'embarquement) |\n| وُصُول | Arrivées |\n| مَغَادَرَة | Départs |\n\n## Expressions utiles\n- أَيْنَ بَوَّابَةُ رَقْمِ خَمْسَة؟ (Où est la porte numéro 5 ?)\n- مَتَى سَتَقْلَعُ الطَّائِرَة؟ (Quand l'avion va-t-il décoller ?)\n- هَلْ الرِّحْلَة فِي مَوْعِدِهَا؟ (Le vol est-il à l'heure ?)\n- أُرِيدُ تَذْكِرَةً ذَهَابًا وَإِيَابًا. (Je veux un billet aller-retour.)\n\n## Transports\n- حَافِلَة (Ḥāfila) = Bus\n- قِطَار (Qiṭār) = Train\n- سَيَّارَة أُجْرَة (Sayyārat ujra) = Taxi\n- مِيتْرُو (Mītrū) = Métro",
@@ -3749,7 +3917,7 @@
   },
   {
     "id": "l38",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 38 : Restaurant et Nourriture",
     "description": "Commander au restaurant et parler de nourriture en arabe.",
     "content": "## Au restaurant (فِي المَطْعَم)\n\n| Arabe | Sens |\n|---|---|\n| مَطْعَم | Restaurant |\n| قَائِمَة / مِنْيُو | Menu |\n| طَبَق | Plat |\n| طَعَام | Nourriture |\n| شَرَاب | Boisson |\n| حِسَاب | Addition |\n\n## Nourriture de base\n- خُبْز (Khubz) = Pain\n- أَرُزّ (Aruzz) = Riz\n- لَحْم (Laḥm) = Viande\n- دَجَاج (Dajāj) = Poulet\n- سَمَك (Samak) = Poisson\n- خُضَار (Khuḍār) = Légumes\n- فَاكِهَة (Fākiha) = Fruit\n\n## Dialogues au restaurant\n- مَاذَا تُرِيدُ؟ (Que voulez-vous ?)\n- أُرِيدُ... مِنْ فَضْلِكَ. (Je veux... s'il vous plaît.)\n- هَلْ عِنْدَكُمْ...؟ (Avez-vous...?)\n- الحِسَابَ مِنْ فَضْلِكَ! (L'addition s'il vous plaît !)\n- كَانَ لَذِيذًا جِدًّا! (C'était très délicieux !)",
@@ -3849,7 +4017,7 @@
   },
   {
     "id": "l39",
-    "category": "Avancé",
+    "category": "Conversation",
     "title": "Leçon 39 : Santé et Médecin",
     "description": "Vocabulaire médical pour décrire des symptômes et consulter un médecin.",
     "content": "## Chez le médecin (عِنْدَ الطَّبِيب)\n\n| Arabe | Sens |\n|---|---|\n| طَبِيب | Médecin |\n| مُسْتَشْفَى | Hôpital |\n| عِيَادَة | Cabinet médical |\n| صَيْدَلِيَّة | Pharmacie |\n| دَوَاء | Médicament |\n| وَصْفَة | Ordonnance |\n\n## Symptômes courants\n- مَرِيض / مَرِيضَة = Malade (m./f.)\n- أَلَم (ج: آلَام) = Douleur\n- صُدَاع = Mal de tête\n- حُمَّى / سُخُونِيَّة = Fièvre\n- كَحَّة = Toux\n- زُكَام = Rhume\n- تَعَب = Fatigue\n\n## Expressions utiles\n- أَشْعُرُ بِأَلَمٍ فِي... (J'ai mal à...)\n- عِنْدِي حُمَّى. (J'ai de la fièvre.)\n- مُنْذُ مَتَى وَأَنْتَ مَرِيض؟ (Depuis quand êtes-vous malade ?)\n- مُنْذُ يَوْمَيْن. (Depuis deux jours.)\n- خُذْ هَٰذَا الدَّوَاءَ ثَلَاثَ مَرَّاتٍ فِي اليَوْم. (Prenez ce médicament 3 fois par jour.)",
@@ -4044,6 +4212,65 @@
           "Attendre des cours supplémentaires sans pratiquer"
         ],
         "answer": "Pratiquer avec des textes authentiques, des histoires et la section vocabulaire"
+      }
+    ]
+  },
+  {
+    "id": "l41",
+    "category": "Avancé",
+    "title": "Leçon 41 : Pratique de Lecture (Stage 11)",
+    "description": "Tester votre compréhension globale avec un texte court regroupant les acquis du niveau A1.",
+    "content": "## Texte de Lecture : Ma Famille et Moi\nLisez attentivement ce texte entièrement vocalisé pour tester vos compétences.\n\n**أَنَا اِسْمِي سَمِير. أَنَا طَالِبٌ فِي الْجَامِعَةِ. أَسْكُنُ فِي مَدِينَةِ تونس مَعَ عَائِلَتِي. لِي أَبٌ وَأُمٌّ وَأُخْتٌ وَاحِدَة. أَبِي طَبِيبٌ فِي الْمُسْتَشْفَى وَأُمِّي مُدَرِّسَة. أَنَا أُحِبُّ الْبُرْتُقَالَ وَأَشْرَبُ الْمَاءَ كَثِيرًا. الْيَوْمَ الطَّقْسُ جَمِيلٌ وَمُشْمِسٌ.**\n\n## Traduction (pour vérification)\n*Moi, je m'appelle Samir. Je suis étudiant à l'université. J'habite dans la ville de Tunis avec ma famille. J'ai un père, une mère et une sœur. Mon père est médecin à l'hôpital et ma mère est enseignante. J'aime l'orange et je bois beaucoup d'eau. Aujourd'hui, le temps est beau et ensoleillé.*\n\n## Vocabulaire Clé du Texte\n- **أَسْكُنُ** (As-kunu) : J'habite\n- **عَائِلَتِي** ('A'ilat-i) : Ma famille\n- **أُحِبُّ** (Uḥibbu) : J'aime\n- **أَشْرَبُ** (Ashrabu) : Je bois",
+    "exercises": [
+      {
+        "question": "Que fait Samir dans la vie ?",
+        "options": ["Il est médecin", "Il est étudiant", "Il est enseignant"],
+        "answer": "Il est étudiant"
+      },
+      {
+        "question": "Où travaille le père de Samir ?",
+        "options": ["À l'école", "Au marché", "À l'hôpital"],
+        "answer": "À l'hôpital"
+      },
+      {
+        "question": "Combien de sœurs Samir a-t-il ?",
+        "options": ["Une seule", "Deux", "Aucune"],
+        "answer": "Une seule"
+      },
+      {
+        "question": "Quel fruit Samir aime-t-il ?",
+        "options": ["La pomme", "L'orange", "La banane"],
+        "answer": "L'orange"
+      },
+      {
+        "question": "Comment est la météo dans le texte ?",
+        "options": ["Pluvieuse", "Nuageuse", "Belle et ensoleillée"],
+        "answer": "Belle et ensoleillée"
+      },
+      {
+        "question": "Comment se dit 'J'habite' dans le texte ?",
+        "options": ["أَكَلُ", "أَسْكُنُ", "أَذْهَبُ"],
+        "answer": "أَسْكُنُ"
+      },
+      {
+        "question": "La mère de Samir est :",
+        "options": ["Enseignante (مُدَرِّسَة)", "Médecin (طَبِيبَة)", "Pharmacienne"],
+        "answer": "Enseignante (مُدَرِّسَة)"
+      },
+      {
+        "question": "Dans quelle ville habite Samir ?",
+        "options": ["Rabat", "Alger", "Tunis"],
+        "answer": "Tunis"
+      },
+      {
+        "question": "Que boit Samir ?",
+        "options": ["Du lait", "De l'eau", "Du jus"],
+        "answer": "De l'eau"
+      },
+      {
+        "question": "Le mot 'الْجَامِعَة' signifie :",
+        "options": ["L'école primaire", "Le lycée", "L'université"],
+        "answer": "L'université"
       }
     ]
   }
