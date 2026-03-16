@@ -31,7 +31,7 @@ const Alphabet = () => {
       <div>
         <h1 className="text-gradient">L'Alphabet et la Phonétique</h1>
         <p style={{ color: 'var(--pk-text-secondary)', fontSize: '1.1rem' }}>
-          Maîtrisez les 28 lettres, les signes de vocalisation (Tashkeel) et les voyelles longues.
+          Maîtrisez les 29 lettres (incluant la Hamza), les signes de vocalisation (Tashkeel) et les voyelles longues.
         </p>
       </div>
 
