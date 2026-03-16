@@ -42,7 +42,7 @@ const FlipCard = ({
 const TabBtn = ({ active, label, icon, onClick }: { active: boolean; label: string; icon: React.ReactNode; onClick: () => void }) => (
   <button
     onClick={onClick}
-    className={`glass-panel ${active ? 'bg-gradient-primary' : ''}`}
+    className={`glass-panel ${active ? 'bg-gradient-primary text-white' : ''}`}
     style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.7rem 1.4rem', borderRadius: '10px', fontWeight: 'bold', color: active ? 'white' : 'var(--pk-text-secondary)', transition: 'all 0.2s' }}
   >
     {icon} {label}
@@ -87,8 +87,8 @@ const CategoriesTab = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
       <div style={{ display: 'flex', gap: '1rem' }}>
-        <button onClick={() => setViewMode('flashcards')} className={`glass-panel ${viewMode === 'flashcards' ? 'bg-gradient-primary' : ''}`} style={{ padding: '0.7rem 1.8rem', borderRadius: '8px', fontWeight: 'bold', color: 'white' }}>Révision</button>
-        <button onClick={() => setViewMode('dashboard')} className={`glass-panel ${viewMode === 'dashboard' ? 'bg-gradient-primary' : ''}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.7rem 1.8rem', borderRadius: '8px', fontWeight: 'bold', color: 'white' }}><BarChart size={18} /> Maîtrise</button>
+        <button onClick={() => setViewMode('flashcards')} className={`glass-panel ${viewMode === 'flashcards' ? 'bg-gradient-primary text-white' : ''}`} style={{ padding: '0.7rem 1.8rem', borderRadius: '8px', fontWeight: 'bold', color: viewMode === 'flashcards' ? 'white' : 'var(--pk-text-secondary)' }}>Révision</button>
+        <button onClick={() => setViewMode('dashboard')} className={`glass-panel ${viewMode === 'dashboard' ? 'bg-gradient-primary text-white' : ''}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.7rem 1.8rem', borderRadius: '8px', fontWeight: 'bold', color: viewMode === 'dashboard' ? 'white' : 'var(--pk-text-secondary)' }}><BarChart size={18} /> Maîtrise</button>
       </div>
 
       {viewMode === 'flashcards' && (
@@ -97,7 +97,7 @@ const CategoriesTab = () => {
             <span style={{ color: 'var(--pk-text-secondary)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginRight: '0.5rem' }}><Filter size={16} /> Filtre :</span>
             {allCategories.map(cat => (
               <button key={cat} onClick={() => { setActiveCategory(cat); setCurrentIndex(0); setIsFlipped(false); }}
-                style={{ padding: '0.35rem 0.9rem', borderRadius: '50px', fontSize: '0.85rem', cursor: 'pointer', border: activeCategory === cat ? '1px solid var(--pk-primary)' : '1px solid var(--pk-border)', background: activeCategory === cat ? 'rgba(99,102,241,0.2)' : 'transparent', color: activeCategory === cat ? 'white' : 'var(--pk-text-secondary)' }}>
+                style={{ padding: '0.35rem 0.9rem', borderRadius: '50px', fontSize: '0.85rem', cursor: 'pointer', border: activeCategory === cat ? '1px solid var(--pk-primary)' : '1px solid var(--pk-border)', background: activeCategory === cat ? 'var(--pk-primary)' : 'transparent', color: activeCategory === cat ? 'white' : 'var(--pk-text-secondary)' }}>
                 {cat}
               </button>
             ))}
@@ -159,7 +159,7 @@ const CategoriesTab = () => {
                       {masteredWords.filter(w => w.category === cat).map(word => (
                         <div key={word.id} className="glass-panel" style={{ padding: '0.7rem', border: '1px solid rgba(16,185,129,0.2)', background: 'rgba(16,185,129,0.05)' }}>
                           <div className="arabic-text" style={{ fontSize: '1.1rem', color: '#10b981' }}>{rt(word.arabic)}</div>
-                          <div style={{ fontSize: '0.8rem', color: 'white' }}>{word.translation}</div>
+                          <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-primary)' }}>{word.translation}</div>
                         </div>
                       ))}
                     </div>
@@ -178,22 +178,7 @@ const CategoriesTab = () => {
                         <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>{word.translation}</div>
                       </div>
                     ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div style={{ marginTop: '3rem', textAlign: 'center', borderTop: '1px solid var(--pk-border)', paddingTop: '1.5rem' }}>
-            <button onClick={() => { if (window.confirm('Réinitialiser toute votre progression ?')) setAcquiredWords(new Set()); }} style={{ color: '#ef4444', fontSize: '0.9rem', cursor: 'pointer', background: 'none', border: 'none', textDecoration: 'underline' }}>Réinitialiser ma progression</button>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════
-   TAB 2 — GuessHoufouf
+                  </div>   TAB 2 — GuessKalimat
 ══════════════════════════════════════════════════════════════════════════ */
 const GuessTab = () => {
   const { showTashkeel, showRomanization } = useAppContext();
@@ -246,7 +231,7 @@ const GuessTab = () => {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
       {/* Header & score */}
       <div style={{ textAlign: 'center' }}>
-        <h2 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '0.3rem' }}>GuessHoufouf 🎯</h2>
+        <h2 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '0.3rem' }}>GuessKalimat 🎯</h2>
         <p style={{ color: 'var(--pk-text-secondary)', fontSize: '1rem' }}>Devinez la traduction du mot arabe affiché.</p>
       </div>
       <div style={{ display: 'flex', gap: '2rem', fontSize: '1rem' }}>
@@ -260,7 +245,7 @@ const GuessTab = () => {
         <span style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)', alignSelf: 'flex-end' }}>{current.category}</span>
         <span className="arabic-text" style={{ fontSize: '4.5rem', color: 'var(--pk-primary)', lineHeight: 1.2 }}>{rt(current.arabic)}</span>
         {showRomanization && <span style={{ fontSize: '1.1rem', color: 'var(--pk-text-secondary)', fontStyle: 'italic' }}>{current.transliteration}</span>}
-        {showAnswer && <div style={{ textAlign: 'center', marginTop: '0.5rem', padding: '0.5rem 1.5rem', borderRadius: '8px', background: 'rgba(99,102,241,0.15)', color: 'white', fontSize: '1.2rem' }}>➜ {current.translation}</div>}
+        {showAnswer && <div style={{ textAlign: 'center', marginTop: '0.5rem', padding: '0.5rem 1.5rem', borderRadius: '8px', background: 'var(--pk-surface-solid)', color: 'var(--pk-text-primary)', fontSize: '1.2rem', border: '1px solid var(--pk-border)' }}>➜ {current.translation}</div>}
       </div>
 
       {/* Input & actions */}
@@ -273,7 +258,7 @@ const GuessTab = () => {
             onKeyDown={handleKey}
             placeholder="Tapez la traduction en français..."
             autoFocus
-            style={{ flex: 1, padding: '0.85rem 1.2rem', borderRadius: '10px', background: 'var(--pk-surface-solid)', border: '1px solid var(--pk-border)', color: 'white', fontSize: '1rem', outline: 'none' }}
+            style={{ flex: 1, padding: '0.85rem 1.2rem', borderRadius: '10px', background: 'var(--pk-surface-solid)', border: '1px solid var(--pk-border)', color: 'var(--pk-text-primary)', fontSize: '1rem', outline: 'none' }}
           />
           <button onClick={check} className="glass-panel bg-gradient-primary" style={{ padding: '0.85rem 1.4rem', borderRadius: '10px', color: 'white', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
             <Send size={18} />
@@ -357,9 +342,9 @@ const ExpandTab = () => {
             <p style={{ color: 'var(--pk-primary)', fontWeight: 'bold', marginBottom: '1rem', textAlign: 'center', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.85rem' }}>{card.theme}</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {card.words.map((w, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.5rem 0.8rem', borderRadius: '8px', background: 'rgba(99,102,241,0.08)' }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.5rem 0.8rem', borderRadius: '8px', background: 'var(--pk-surface)' }}>
                   <span className="arabic-text" style={{ fontSize: '1.4rem', color: 'var(--pk-primary)', minWidth: '3rem', textAlign: 'right' }}>{rt(w)}</span>
-                  <span style={{ fontSize: '0.95rem', color: 'white' }}>— {card.translations[i]}</span>
+                  <span style={{ fontSize: '0.95rem', color: 'var(--pk-text-primary)' }}>— {card.translations[i]}</span>
                 </div>
               ))}
             </div>
@@ -411,8 +396,8 @@ const ExpressionsTab = () => {
         }
         back={
           <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', textAlign: 'center', color: 'white' }}>{card.translation}</h3>
-            <div style={{ padding: '0.8rem 1rem', borderRadius: '8px', background: 'rgba(99,102,241,0.1)', borderLeft: '3px solid var(--pk-primary)' }}>
+            <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', textAlign: 'center', color: 'var(--pk-text-primary)' }}>{card.translation}</h3>
+            <div style={{ padding: '0.8rem 1rem', borderRadius: '8px', background: 'var(--pk-surface)', borderLeft: '3px solid var(--pk-primary)' }}>
               <p style={{ fontSize: '0.9rem', color: 'var(--pk-text-secondary)', lineHeight: 1.6 }}>{card.context}</p>
             </div>
             {card.example && (
@@ -426,6 +411,42 @@ const ExpressionsTab = () => {
         <button onClick={() => go(-1)} className="glass-panel" style={{ padding: '0.7rem', borderRadius: '50%', display: 'flex' }}><ChevronLeft size={22} /></button>
         <span style={{ color: 'var(--pk-text-secondary)', fontSize: '0.9rem' }}>{idx + 1} / {expressionsData.length}</span>
         <button onClick={() => go(1)} className="glass-panel" style={{ padding: '0.7rem', borderRadius: '50%', display: 'flex' }}><ChevronRight size={22} /></button>
+      </div>
+    </div>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════════
+   MAIN VOCABULARY PAGE
+══════════════════════════════════════════════════════════════════════════ */
+const Vocabulary = () => {
+  const [tab, setTab] = useState<Tab>('categories');
+
+  return (
+    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      <div>
+        <h1 className="text-gradient">Vocabulaire</h1>
+        <p style={{ color: 'var(--pk-text-secondary)', fontSize: '1.1rem' }}>Quatre manières d'enrichir votre vocabulaire arabe.</p>
+      </div>
+
+      {/* Tab bar */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
+        <TabBtn active={tab === 'categories'} onClick={() => setTab('categories')} icon={<BookOpen size={16} />} label="Par Catégorie" />
+        <TabBtn active={tab === 'guess'} onClick={() => setTab('guess')} icon={<MessageSquare size={16} />} label="GuessKalimat 🎯" />
+        <TabBtn active={tab === 'expand'} onClick={() => setTab('expand'} icon={<Layers size={16} />} label="Expand" />
+        <TabBtn active={tab === 'expressions'} onClick={() => setTab('expressions')} icon={<MessageSquare size={16} />} label="Expressions" />
+      </div>
+
+      {/* Tab content */}
+      <div style={{ minHeight: '500px' }}>
+        {tab === 'categories' && <CategoriesTab />}
+        {tab === 'guess' && <GuessTab />}
+        {tab === 'expand' && <ExpandTab />}
+        {tab === 'expressions' && <ExpressionsTab />}
+      </div>
+    </div>
+  );
+};22} /></button>
       </div>
     </div>
   );

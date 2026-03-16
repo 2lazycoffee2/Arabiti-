@@ -13,7 +13,7 @@ import {
 import './Navbar.css';
 
 const Navbar = () => {
-  const { theme, setTheme } = useAppContext();
+  const { theme, setTheme, userName } = useAppContext();
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path ? 'active' : '';
@@ -56,7 +56,7 @@ const Navbar = () => {
             ))}
             <Link to="/profile" className={`nav-link ${isActive('/profile')}`}>
               <User size={22} />
-              <span>Profil</span>
+              <span>{userName || 'Profil'}</span>
             </Link>
           </div>
 

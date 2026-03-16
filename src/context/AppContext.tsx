@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 
-type Theme = 'light' | 'dark';
+type Theme = 'light' | 'dark' | 'pink' | 'pink-light';
 
 interface AppContextType {
   showTashkeel: boolean;
@@ -14,6 +14,9 @@ interface AppContextType {
   completeLesson: (id: string) => void;
   completedStories: string[];
   completeStory: (id: string) => void;
+  userName: string;
+  setUserName: (name: string) => void;
+  resetData: () => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -48,6 +51,10 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     return saved ? JSON.parse(saved) : [];
   });
 
+  const [userName, setUserName] = useState<string>(() => {
+    return localStorage.getItem('pa-user-name') || '';
+  });
+
   useEffect(() => {
     localStorage.setItem('pa-settings-tashkeel', JSON.stringify(showTashkeel));
   }, [showTashkeel]);
@@ -69,6 +76,10 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem('pa-progress-stories', JSON.stringify(completedStories));
   }, [completedStories]);
 
+  useEffect(() => {
+    localStorage.setItem('pa-user-name', userName);
+  }, [userName]);
+
   const completeLesson = (id: string) => {
     setCompletedLessons(prev => prev.includes(id) ? prev : [...prev, id]);
   };
@@ -77,13 +88,27 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     setCompletedStories(prev => prev.includes(id) ? prev : [...prev, id]);
   };
 
+  const resetData = () => {
+    // 1. Reset states to default to stop effects from writing back
+    setUserName('');
+    setCompletedLessons([]);
+    setCompletedStories([]);
+    
+    // 2. Clear all storage
+    localStorage.clear();
+    
+    // 3. Force reload to home page to ensure clean state
+    window.location.href = '/'; 
+  };
+
   return (
     <AppContext.Provider value={{ 
       showTashkeel, setShowTashkeel, 
       showRomanization, setShowRomanization,
       theme, setTheme,
       completedLessons, completeLesson,
-      completedStories, completeStory
+      completedStories, completeStory,
+      userName, setUserName, resetData
     }}>
       {children}
     </AppContext.Provider>

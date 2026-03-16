@@ -80,7 +80,7 @@ const Stories = () => {
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, color: isCompleted ? '#10b981' : 'white' }}>
+                  <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', margin: 0, color: isCompleted ? '#10b981' : 'var(--pk-text-primary)' }}>
                     <BookOpen color={isCompleted ? '#10b981' : 'var(--pk-primary)'} /> {story.title}
                   </h2>
                   {isCompleted && <CheckCircle size={20} color="#10b981" />}

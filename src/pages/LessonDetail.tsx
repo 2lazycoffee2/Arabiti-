@@ -11,6 +11,8 @@ const LessonDetail = () => {
   const { lessonId } = useParams();
   const [activeTab, setActiveTab] = useState<'content' | 'exercises'>('content');
   const [score, setScore] = useState<number | null>(null);
+  const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
+  const [showReview, setShowReview] = useState(false);
   const { showTashkeel, completeLesson, completedLessons } = useAppContext();
 
   const lesson = lessonsData.find(l => l.id === lessonId);
@@ -23,6 +25,8 @@ const LessonDetail = () => {
   useEffect(() => {
     setActiveTab('content');
     setScore(null);
+    setUserAnswers({});
+    setShowReview(false);
     window.scrollTo(0, 0);
   }, [lessonId]);
 
@@ -39,13 +43,17 @@ const LessonDetail = () => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     let correctCount = 0;
+    const answers: Record<number, string> = {};
 
     lesson.exercises?.forEach((ex: any, idx: number) => {
-      if (formData.get(`question-${idx}`) === ex.answer) {
+      const selected = formData.get(`question-${idx}`) as string;
+      answers[idx] = selected;
+      if (selected === ex.answer) {
         correctCount++;
       }
     });
 
+    setUserAnswers(answers);
     setScore(correctCount);
     
     if (correctCount === lesson.exercises?.length && lessonId) {
@@ -105,7 +113,7 @@ const LessonDetail = () => {
           style={{ 
             padding: '1rem 2rem', 
             borderBottom: activeTab === 'content' ? '3px solid var(--pk-primary)' : '3px solid transparent',
-            color: activeTab === 'content' ? 'white' : 'var(--pk-text-secondary)',
+            color: activeTab === 'content' ? 'var(--pk-text-primary)' : 'var(--pk-text-secondary)',
             fontWeight: activeTab === 'content' ? 'bold' : 'normal'
           }}
         >
@@ -117,7 +125,7 @@ const LessonDetail = () => {
             style={{ 
               padding: '1rem 2rem', 
               borderBottom: activeTab === 'exercises' ? '3px solid var(--pk-primary)' : '3px solid transparent',
-              color: activeTab === 'exercises' ? 'white' : 'var(--pk-text-secondary)',
+              color: activeTab === 'exercises' ? 'var(--pk-text-primary)' : 'var(--pk-text-secondary)',
               fontWeight: activeTab === 'exercises' ? 'bold' : 'normal'
             }}
           >
@@ -150,10 +158,10 @@ const LessonDetail = () => {
                   if (isArabic) {
                     return <strong className="arabic-text" style={{ fontSize: '1.4rem', fontWeight: 'bold', lineHeight: '2' }}>{removeTashkeel(content)}</strong>;
                   }
-                  return <strong style={{ color: 'white' }} {...props} />;
+                  return <strong style={{ color: 'var(--pk-text-primary)' }} {...props} />;
                 },
                 code: ({node, ...props}) => (
-                  <code style={{ background: 'rgba(255,255,255,0.1)', padding: '0.2rem 0.4rem', borderRadius: '4px', fontSize: '0.9rem' }} {...props} />
+                  <code style={{ background: 'var(--pk-surface-solid)', padding: '0.2rem 0.4rem', borderRadius: '4px', fontSize: '0.9rem', color: 'var(--pk-text-primary)' }} {...props} />
                 ),
                 table: ({node, ...props}) => (
                   <div style={{ overflowX: 'auto', margin: '1.5rem 0' }}>
@@ -180,47 +188,206 @@ const LessonDetail = () => {
         ) : (
           <div>
             {score !== null ? (
-              <div style={{ textAlign: 'center', padding: '3rem 1rem' }}>
-                <CheckCircle size={64} color={score === lesson.exercises?.length ? "var(--pk-accent)" : "#f59e0b"} style={{ margin: '0 auto 1rem auto' }} />
-                <h2>{score === lesson.exercises?.length ? 'Parfait !' : 'Bien essayé !'}</h2>
-                <h3>Résultat : {score} / {lesson.exercises?.length}</h3>
-                {score === lesson.exercises?.length ? (
-                  <p style={{ color: 'var(--pk-text-secondary)', marginTop: '1rem' }}>Cette leçon est désormais marquée comme terminée.</p>
+              <>
+                {!showReview ? (
+                  <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
+                    <div style={{ 
+                      position: 'relative', 
+                      display: 'inline-flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center',
+                      marginBottom: '2rem',
+                      width: '120px',
+                      height: '120px',
+                      borderRadius: '50%',
+                      background: score / (lesson.exercises?.length || 1) <= 0.6 ? '#ef4444' : 
+                                 score === lesson.exercises?.length ? '#10b981' : '#f59e0b',
+                      boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)',
+                      border: '4px solid rgba(255, 255, 255, 0.2)'
+                    }}>
+                      <div style={{ 
+                        display: 'flex', 
+                        flexDirection: 'column', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        color: 'white'
+                      }}>
+                        <span style={{ 
+                          fontSize: '2.2rem', 
+                          fontWeight: '900', 
+                          lineHeight: '1',
+                          textShadow: '0 2px 4px rgba(0,0,0,0.2)'
+                        }}>
+                          {Math.round((score / (lesson.exercises?.length || 1)) * 100)}%
+                        </span>
+                        <div style={{ 
+                          fontSize: '0.8rem', 
+                          textTransform: 'uppercase', 
+                          fontWeight: '800',
+                          marginTop: '4px',
+                          letterSpacing: '0.05em',
+                          opacity: 0.9
+                        }}>
+                          Score
+                        </div>
+                      </div>
+                      
+                      <div style={{ 
+                        position: 'absolute', 
+                        bottom: '0', 
+                        right: '0', 
+                        background: 'white',
+                        borderRadius: '50%',
+                        width: '32px',
+                        height: '32px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                        color: score / (lesson.exercises?.length || 1) <= 0.6 ? '#ef4444' : 
+                               score === lesson.exercises?.length ? '#10b981' : '#f59e0b'
+                      }}>
+                        {score / (lesson.exercises?.length || 1) <= 0.6 ? (
+                          <span style={{ fontWeight: '900', fontSize: '1.2rem' }}>✕</span>
+                        ) : (
+                          <CheckCircle size={20} />
+                        )}
+                      </div>
+                    </div>
+                    
+                    <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem', color: 'var(--pk-text-primary)' }}>
+                      {score === lesson.exercises?.length ? 'Parfait ! 🎉' : 
+                       score / (lesson.exercises?.length || 1) <= 0.6 ? 'Réessaie encore !' : 'Bien tenté !'}
+                    </h2>
+                    <h3 style={{ color: 'var(--pk-text-secondary)', marginBottom: '2rem' }}>
+                      Tu as obtenu {score} / {lesson.exercises?.length} bonnes réponses.
+                    </h3>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1rem', maxWidth: '300px', margin: '0 auto' }}>
+                      {score < (lesson.exercises?.length || 0) && (
+                        <button 
+                          onClick={() => setShowReview(true)}
+                          className="action-btn"
+                          style={{ padding: '1rem', borderRadius: '12px', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
+                        >
+                          Voir mes erreurs
+                        </button>
+                      )}
+                      
+                      {score === lesson.exercises?.length && nextLesson && (
+                        <Link 
+                          to={`/lessons/${nextLesson.id}`}
+                          className="bg-gradient-primary"
+                          style={{ padding: '1rem', borderRadius: '12px', color: 'white', fontWeight: 'bold', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
+                        >
+                          Leçon suivante <ChevronRight size={20} />
+                        </Link>
+                      )}
+
+                      <button 
+                        onClick={() => {
+                          setScore(null);
+                          setUserAnswers({});
+                          setShowReview(false);
+                        }}
+                        className={score === lesson.exercises?.length ? "action-btn" : "bg-gradient-primary"}
+                        style={{ padding: '1rem', borderRadius: '12px', color: score === lesson.exercises?.length ? 'var(--pk-text-primary)' : 'white', fontWeight: 'bold' }}
+                      >
+                        Recommencer le quiz
+                      </button>
+
+                      <Link 
+                        to="/lessons"
+                        style={{ padding: '1rem', borderRadius: '12px', border: '1px solid var(--pk-border)', color: 'var(--pk-text-secondary)', textDecoration: 'none' }}
+                      >
+                        Retour aux leçons
+                      </Link>
+                    </div>
+                  </div>
                 ) : (
-                  <p style={{ color: 'var(--pk-text-secondary)', marginTop: '1rem' }}>Obtenez un score parfait pour terminer la leçon.</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                      <button onClick={() => setShowReview(false)} className="action-btn" style={{ borderRadius: '50%', width: '40px', height: '40px' }}>
+                        <ArrowLeft size={20} />
+                      </button>
+                      <h2 style={{ margin: 0 }}>Révision des erreurs</h2>
+                    </div>
+
+                    {lesson.exercises?.map((ex: any, idx: number) => {
+                      const isCorrect = userAnswers[idx] === ex.answer;
+                      return (
+                        <div key={idx} style={{ 
+                          background: isCorrect ? 'rgba(16, 185, 129, 0.05)' : 'rgba(239, 68, 68, 0.05)', 
+                          padding: '1.5rem', 
+                          borderRadius: '12px', 
+                          border: `1px solid ${isCorrect ? 'rgba(16, 185, 129, 0.2)' : 'rgba(239, 68, 68, 0.2)'}` 
+                        }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
+                            <h3 style={{ margin: 0, fontSize: '1.1rem', flex: 1 }}>{idx + 1}. {ex.question}</h3>
+                            {isCorrect ? <CheckCircle size={20} color="#10b981" /> : <div style={{ color: '#ef4444', fontWeight: 'bold' }}>✕</div>}
+                          </div>
+                          
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                            <div style={{ fontSize: '0.9rem', color: 'var(--pk-text-secondary)' }}>Ta réponse :</div>
+                            <div style={{ 
+                              padding: '0.75rem', 
+                              background: isCorrect ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)', 
+                              borderRadius: '8px',
+                              color: isCorrect ? '#10b981' : '#ef4444',
+                              fontWeight: '500'
+                            }}>
+                              {renderTextWithArabic(userAnswers[idx] || "(Pas de réponse)")}
+                            </div>
+                            
+                            {!isCorrect && (
+                              <>
+                                <div style={{ fontSize: '0.9rem', color: 'var(--pk-text-secondary)', marginTop: '0.5rem' }}>Réponse correcte :</div>
+                                <div style={{ 
+                                  padding: '0.75rem', 
+                                  background: 'rgba(16, 185, 129, 0.1)', 
+                                  borderRadius: '8px',
+                                  color: '#10b981',
+                                  fontWeight: 'bold'
+                                }}>
+                                  {renderTextWithArabic(ex.answer)}
+                                </div>
+                              </>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+
+                    <button 
+                      onClick={() => {
+                        setScore(null);
+                        setUserAnswers({});
+                        setShowReview(false);
+                      }}
+                      className="bg-gradient-primary"
+                      style={{ padding: '1rem', borderRadius: '12px', color: 'white', fontWeight: 'bold', marginTop: '1rem' }}
+                    >
+                      Réessayer le quiz
+                    </button>
+                  </div>
                 )}
-                <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
-                  <button 
-                    onClick={() => setScore(null)}
-                    className="bg-gradient-primary"
-                    style={{ padding: '0.5rem 1.5rem', borderRadius: '50px', color: 'white', fontWeight: 'bold' }}
-                  >
-                    Recommencer
-                  </button>
-                  <Link 
-                    to="/lessons"
-                    style={{ padding: '0.5rem 1.5rem', borderRadius: '50px', border: '1px solid var(--pk-border)', color: 'white', textDecoration: 'none' }}
-                  >
-                    Retour aux leçons
-                  </Link>
-                </div>
-              </div>
+              </>
             ) : (
               <form onSubmit={handleQuizSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                 {lesson.exercises?.map((ex: any, idx: number) => (
-                  <div key={idx} style={{ background: 'rgba(255,255,255,0.02)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--pk-border)' }}>
-                    <h3 style={{ marginBottom: '1rem' }}>{idx + 1}. {ex.question}</h3>
+                  <div key={idx} style={{ background: 'var(--pk-surface)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--pk-border)' }}>
+                    <h3 style={{ marginBottom: '1rem', color: 'var(--pk-text-primary)' }}>{idx + 1}. {ex.question}</h3>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                       {ex.options.map((opt: string, optIdx: number) => (
-                        <label key={optIdx} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem', background: 'rgba(0,0,0,0.2)', borderRadius: '8px', cursor: 'pointer' }}>
-                          <input type="radio" name={`question-${idx}`} value={opt} required />
-                          <span>{renderTextWithArabic(opt)}</span>
+                        <label key={optIdx} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem', background: 'var(--pk-surface-solid)', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.2s' }} className="hover-lift">
+                          <input type="radio" name={`question-${idx}`} value={opt} required style={{ transform: 'scale(1.2)' }} />
+                          <span style={{ fontSize: '1.05rem' }}>{renderTextWithArabic(opt)}</span>
                         </label>
                       ))}
                     </div>
                   </div>
                 ))}
-                <button type="submit" className="bg-gradient-primary" style={{ padding: '1rem', borderRadius: '8px', color: 'white', fontWeight: 'bold', fontSize: '1.1rem' }}>
+                <button type="submit" className="bg-gradient-primary" style={{ padding: '1rem', borderRadius: '12px', color: 'white', fontWeight: 'bold', fontSize: '1.1rem', boxShadow: '0 4px 15px rgba(99, 102, 241, 0.3)' }}>
                   Valider mes réponses
                 </button>
               </form>

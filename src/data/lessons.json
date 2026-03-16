@@ -3,8 +3,8 @@
     "id": "l1",
     "category": "Débutant",
     "title": "Leçon 1 : L'alphabet arabe",
-    "description": "Découvrir les 28 lettres de l'alphabet, leur forme et leurs caractéristiques fondamentales.",
-    "content": "## Présentation générale\nL'arabe est une langue **sémitique** écrite de **droite à gauche**. Son alphabet est composé de **28 consonnes**. Contrairement au français, l'arabe n'a pas de majuscules ni de minuscules — chaque lettre possède en revanche jusqu'à **4 formes** selon sa position dans le mot.\n\n## Les 4 formes d'une lettre\nChaque lettre change de forme selon qu'elle est **isolée**, en **début** (initiale), au **milieu** (médiane) ou en **fin** de mot (finale). Exemple avec **ب** (Bā') :\n\n| Isolée | Initiale | Médiane | Finale |\n|---|---|---|---|\n| ب | بـ | ـبـ | ـب |\n\n## Les 6 lettres rebelles\nSix lettres ne s'attachent **jamais** à la lettre qui les suit : **أ، د، ذ، ر، ز، و**. Quand on rencontre l'une d'elles dans un mot, la lettre suivante reprend sa forme initiale.\n\n## Familles de formes\nL'alphabet se regroupé en familles visuelles :\n- **Famille de l'assiette (ب)** : ب (b), ت (t), ث (th)\n- **Famille du crochet (ج)** : ج (dj), ح (ḥ), خ (kh)\n- **Famille de la courbe (ر)** : ر (r), ز (z)\n- **Famille du ventre (س)** : س (s), ش (sh)\n- **Famille du croissant (ص)** : ص (ṣ), ض (ḍ)\n\n## Le sens d'écriture\nL'arabe s'écrit et se lit **de droite à gauche**. Les chiffres, eux, s'écrivent de gauche à droite. Au fil de l'apprentissage, ce sens deviendra tout à fait naturel.",
+    "description": "Découvrir les 29 lettres de l'alphabet (incluant Hamza), leur forme et leurs caractéristiques fondamentales.",
+    "content": "## Présentation générale\nL'arabe est une langue **sémitique** écrite de **droite à gauche**. Son alphabet est composé de **29 lettres** (28 consonnes + Hamza). Contrairement au français, l'arabe n'a pas de majuscules ni de minuscules — chaque lettre possède en revanche jusqu'à **4 formes** selon sa position dans le mot.\n\n## Les 4 formes d'une lettre\nChaque lettre change de forme selon qu'elle est **isolée**, en **début** (initiale), au **milieu** (médiane) ou en **fin** de mot (finale). Exemple avec **ب** (Bā') :\n\n| Isolée | Initiale | Médiane | Finale |\n|---|---|---|---|\n| ب | بـ | ـبـ | ـب |\n\n## Les 6 lettres rebelles\nSix lettres ne s'attachent **jamais** à la lettre qui les suit : **أ، د، ذ، ر، ز، و**. Quand on rencontre l'une d'elles dans un mot, la lettre suivante reprend sa forme initiale.\n\n## Familles de formes\nL'alphabet se regroupé en familles visuelles :\n- **Famille de l'assiette (ب)** : ب (b), ت (t), ث (th)\n- **Famille du crochet (ج)** : ج (dj), ح (ḥ), خ (kh)\n- **Famille de la courbe (ر)** : ر (r), ز (z)\n- **Famille du ventre (س)** : س (s), ش (sh)\n- **Famille du croissant (ص)** : ص (ṣ), ض (ḍ)\n\n## Le sens d'écriture\nL'arabe s'écrit et se lit **de droite à gauche**. Les chiffres, eux, s'écrivent de gauche à droite. Au fil de l'apprentissage, ce sens deviendra tout à fait naturel.",
     "exercises": [
       {
         "question": "Dans quel sens l'arabe s'écrit-il ?",
@@ -16,14 +16,14 @@
         "answer": "De droite à gauche"
       },
       {
-        "question": "Combien de lettres compte l'alphabet arabe ?",
+        "question": "Combien de lettres compte l'alphabet arabe (Hamza inclus) ?",
         "options": [
           "24",
           "26",
           "28",
-          "30"
+          "29"
         ],
-        "answer": "28"
+        "answer": "29"
       },
       {
         "question": "Combien de formes différentes peut avoir une lettre arabe ?",
@@ -1442,10 +1442,10 @@
         "options": [
           "يَأْكُلُ",
           "تَأْكُلُ",
-          "أَكُلُ / أَكْتُبُ → أَكُلُ",
+          "آكُلُ (Ākulu)",
           "نَأْكُلُ"
         ],
-        "answer": "أَكُلُ / أَكْتُبُ → أَكُلُ"
+        "answer": "آكُلُ (Ākulu)"
       },
       {
         "question": "Pour exprimer 'Il va écrire (futur proche)', on ajoute :",
@@ -3987,7 +3987,7 @@
         "options": [
           "L'ajout d'un auxiliaire",
           "Un changement des voyelles internes",
-          "L'ajout d'un préfixe мÁ-"
+          "L'ajout d'un préfixe"
         ],
         "answer": "Un changement des voyelles internes"
       },

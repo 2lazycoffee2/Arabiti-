@@ -23,16 +23,50 @@
 }
 
 :root[data-theme='light'] {
-  --pk-background: #f1f5f9;
+  --pk-background: #f8fafc;
   --pk-surface: rgba(255, 255, 255, 0.9);
   --pk-surface-solid: #ffffff;
-  --pk-border: rgba(0, 0, 0, 0.08);
-  --pk-text-primary: #1e293b;
-  --pk-text-secondary: #64748b;
+  --pk-border: rgba(15, 23, 42, 0.12);
+  --pk-text-primary: #0f172a;
+  --pk-text-secondary: #475569;
   
   --glass-bg: rgba(255, 255, 255, 0.85);
   --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+  --glass-shadow: 0 10px 40px -10px rgba(15, 23, 42, 0.05);
+}
+
+:root[data-theme='pink'] {
+  --pk-primary: #ec4899;
+  --pk-primary-hover: #db2777;
+  --pk-secondary: #a855f7;
+  --pk-background: #1e0a14;
+  --pk-surface: rgba(45, 10, 25, 0.7);
+  --pk-surface-solid: #2d0a19;
+  --pk-border: rgba(236, 72, 153, 0.2);
+  --pk-text-primary: #fdf2f8;
+  --pk-text-secondary: #f472b6;
+  --pk-accent: #fbbf24;
+  
+  --glass-bg: rgba(74, 15, 40, 0.4);
+  --glass-border: rgba(236, 72, 153, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+:root[data-theme='pink-light'] {
+  --pk-primary: #ec4899;
+  --pk-primary-hover: #db2777;
+  --pk-secondary: #a855f7;
+  --pk-background: #fff1f2;
+  --pk-surface: rgba(255, 255, 255, 0.8);
+  --pk-surface-solid: #ffffff;
+  --pk-border: rgba(236, 72, 153, 0.15);
+  --pk-text-primary: #831843;
+  --pk-text-secondary: #db2777;
+  --pk-accent: #f59e0b;
+  
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(236, 72, 153, 0.1);
+  --glass-shadow: 0 10px 40px -10px rgba(236, 72, 153, 0.1);
 }
 
 * {
@@ -57,9 +91,23 @@ body {
 
 :root[data-theme='light'] body {
   background-image: 
-    radial-gradient(at 0% 0%, hsla(210, 40%, 96%, 1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(215, 60%, 90%, 0.5) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(220, 30%, 94%, 1) 0, transparent 50%);
+    radial-gradient(at 0% 0%, hsla(210, 40%, 98%, 1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(215, 60%, 94%, 0.5) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(220, 30%, 96%, 1) 0, transparent 50%);
+}
+
+:root[data-theme='pink'] body {
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(330, 60%, 15%, 1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(330, 80%, 25%, 0.2) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(280, 70%, 20%, 0.2) 0, transparent 50%);
+}
+
+:root[data-theme='pink-light'] body {
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(350, 100%, 98%, 1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(350, 100%, 94%, 0.5) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(350, 100%, 92%, 1) 0, transparent 50%);
 }
 
 h1, h2, h3, h4, h5, h6 {

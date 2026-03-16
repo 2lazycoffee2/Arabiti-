@@ -1,19 +1,46 @@
-import { Link } from 'react-router-dom';
-import { Sparkles, ArrowRight, Brain, Gamepad } from 'lucide-react';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Sparkles, ArrowRight, Brain, Gamepad, User, Check } from 'lucide-react';
+import { useAppContext } from '../context/AppContext';
 
 const Home = () => {
+  const { userName, setUserName } = useAppContext();
+  const [showModal, setShowModal] = useState(false);
+  const [nameInput, setNameInput] = useState('');
+  const navigate = useNavigate();
+
+  const handleStart = (e: React.MouseEvent) => {
+    if (!userName) {
+      e.preventDefault();
+      setShowModal(true);
+    }
+  };
+
+  const saveName = () => {
+    if (nameInput.trim()) {
+      setUserName(nameInput.trim());
+      setShowModal(false);
+      navigate('/alphabet');
+    }
+  };
+
   return (
     <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '3rem', marginTop: '4rem' }}>
 
       <div style={{ maxWidth: '800px' }}>
-        <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>
+        <h1 style={{ fontSize: '4rem', marginBottom: '1rem', color: 'var(--pk-text-primary)' }}>
           Apprenez l'Arabe de manière <span className="text-gradient">Interactive</span>
         </h1>
         <p style={{ fontSize: '1.25rem', color: 'var(--pk-text-secondary)', marginBottom: '2rem' }}>
           Maîtrisez l'alphabet, le vocabulaire et lisez des histoires bilingues.
         </p>
 
-        <Link to="/alphabet" className="bg-gradient-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2rem', borderRadius: '50px', fontSize: '1.1rem', fontWeight: 'bold', color: 'white', transition: 'transform 0.2s', boxShadow: '0 10px 25px rgba(99, 102, 241, 0.4)' }}>
+        <Link 
+          to="/alphabet" 
+          onClick={handleStart}
+          className="bg-gradient-primary" 
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2rem', borderRadius: '50px', fontSize: '1.1rem', fontWeight: 'bold', color: 'white', transition: 'transform 0.2s', boxShadow: '0 10px 25px rgba(99, 102, 241, 0.4)' }}
+        >
           <Sparkles size={20} /> Commencer l'Aventure <ArrowRight size={18} />
         </Link>
       </div>
@@ -23,7 +50,7 @@ const Home = () => {
           <div style={{ background: 'rgba(99, 102, 241, 0.2)', padding: '1rem', borderRadius: '50%', color: 'var(--pk-primary)' }}>
             <Brain size={32} />
           </div>
-          <h3>Répétition Espacée</h3>
+          <h3 style={{ color: 'var(--pk-text-primary)' }}>Répétition Espacée</h3>
           <p style={{ color: 'var(--pk-text-secondary)' }}>Mémorisez le vocabulaire efficacement et ne l'oubliez jamais.</p>
         </div>
 
@@ -31,10 +58,112 @@ const Home = () => {
           <div style={{ background: 'rgba(236, 72, 153, 0.2)', padding: '1rem', borderRadius: '50%', color: 'var(--pk-secondary)' }}>
             <Gamepad size={32} />
           </div>
-          <h3>Apprentissage Ludique</h3>
+          <h3 style={{ color: 'var(--pk-text-primary)' }}>Apprentissage Ludique</h3>
           <p style={{ color: 'var(--pk-text-secondary)' }}>Des jeux interactifs pour tester vos connaissances.</p>
         </div>
       </div>
+
+      {/* Welcome Modal */}
+      {showModal && (
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          background: 'rgba(0,0,0,0.8)',
+          backdropFilter: 'blur(8px)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+          padding: '1rem'
+        }}>
+          <div className="glass-panel" style={{ 
+            maxWidth: '450px', 
+            width: '100%', 
+            padding: '2.5rem', 
+            textAlign: 'center',
+            border: '1px solid var(--pk-primary)',
+            boxShadow: '0 0 40px rgba(99, 102, 241, 0.2)'
+          }}>
+            <div style={{ 
+              width: '64px', 
+              height: '64px', 
+              borderRadius: '50%', 
+              background: 'var(--pk-primary)', 
+              color: 'white', 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              margin: '0 auto 1.5rem'
+            }}>
+              <User size={32} />
+            </div>
+            
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'var(--pk-text-primary)' }}>Bienvenue !</h2>
+            <p style={{ color: 'var(--pk-text-secondary)', marginBottom: '2rem' }}>
+              Pour personnaliser ton expérience, quel nom souhaites-tu utiliser pour ton profil ?
+            </p>
+            
+            <div style={{ position: 'relative', marginBottom: '2rem' }}>
+              <input 
+                type="text" 
+                value={nameInput}
+                onChange={(e) => setNameInput(e.target.value)}
+                placeholder="Ex: Amira, Karim..."
+                autoFocus
+                onKeyDown={(e) => e.key === 'Enter' && saveName()}
+                style={{
+                  width: '100%',
+                  padding: '1rem 1.2rem',
+                  borderRadius: '12px',
+                  background: 'var(--pk-surface-solid)',
+                  border: '1px solid var(--pk-border)',
+                  color: 'var(--pk-text-primary)',
+                  fontSize: '1.1rem',
+                  outline: 'none',
+                  transition: 'border-color 0.2s'
+                }}
+              />
+            </div>
+            
+            <button 
+              onClick={saveName}
+              disabled={!nameInput.trim()}
+              className="bg-gradient-primary"
+              style={{
+                width: '100%',
+                padding: '1rem',
+                borderRadius: '12px',
+                color: 'white',
+                fontWeight: 'bold',
+                fontSize: '1.1rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                opacity: nameInput.trim() ? 1 : 0.5,
+                cursor: nameInput.trim() ? 'pointer' : 'not-allowed'
+              }}
+            >
+              C'est parti <Check size={20} />
+            </button>
+            
+            <button 
+              onClick={() => setShowModal(false)}
+              style={{
+                marginTop: '1rem',
+                color: 'var(--pk-text-secondary)',
+                fontSize: '0.9rem',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                textDecoration: 'underline'
+              }}
+            >
+              Plus tard
+            </button>
+          </div>
+        </div>
+      )}
 
     </div>
   );

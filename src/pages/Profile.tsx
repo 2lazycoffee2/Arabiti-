@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import { useAppContext } from '../context/AppContext';
 import lessonsData from '../data/lessons.json';
 import _storiesData from '../data/stories.json';
 import vocabData from '../data/vocabulary.json';
-import { Award, CheckCircle, TrendingUp, Settings, Sun, Moon, Type, Globe } from 'lucide-react';
+import { Award, CheckCircle, TrendingUp, Settings, Sun, Type, Globe, AlertTriangle, Trash2, X } from 'lucide-react';
 
 const Profile = () => {
   const { 
@@ -10,8 +11,11 @@ const Profile = () => {
     completedStories, 
     showTashkeel, setShowTashkeel,
     showRomanization, setShowRomanization,
-    theme, setTheme
+    theme, setTheme,
+    userName, resetData
   } = useAppContext();
+
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
   
   const acquiredWordsCount = JSON.parse(localStorage.getItem('parallel-arabic-acquired') || '[]').length;
 
@@ -28,7 +32,9 @@ const Profile = () => {
       
       {/* Header */}
       <div>
-        <h1 className="text-gradient" style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Mon Profil</h1>
+        <h1 className="text-gradient" style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>
+          Profil de {userName || 'Mon Profil'}
+        </h1>
         <p style={{ color: 'var(--pk-text-secondary)', fontSize: '1.2rem' }}>
           Gérez vos préférences et suivez votre ascension vers la maîtrise de l'arabe.
         </p>
@@ -65,15 +71,59 @@ const Profile = () => {
               </label>
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-                {theme === 'dark' ? <Moon size={18} color="var(--pk-text-secondary)" /> : <Sun size={18} color="var(--pk-text-secondary)" />}
-                <span>Mode Sombre</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', borderTop: '1px solid var(--pk-border)', paddingTop: '1.2rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '0.3rem' }}>
+                <Sun size={18} color="var(--pk-text-secondary)" />
+                <span style={{ fontWeight: '600' }}>Apparence du Site</span>
               </div>
-              <label className="switch">
-                <input type="checkbox" checked={theme === 'dark'} onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
-                <span className="slider"></span>
-              </label>
+              <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
+                <button 
+                  onClick={() => setTheme('light')}
+                  className="glass-panel"
+                  style={{ 
+                    flex: '1 1 45%', padding: '0.6rem', fontSize: '0.8rem', borderRadius: '10px',
+                    background: theme === 'light' ? 'var(--pk-primary)' : 'var(--pk-surface-solid)',
+                    color: theme === 'light' ? 'white' : 'var(--pk-text-primary)'
+                  }}
+                >
+                  Clair
+                </button>
+                <button 
+                  onClick={() => setTheme('dark')}
+                  className="glass-panel"
+                  style={{ 
+                    flex: '1 1 45%', padding: '0.6rem', fontSize: '0.8rem', borderRadius: '10px',
+                    background: theme === 'dark' ? 'var(--pk-primary)' : 'var(--pk-surface-solid)',
+                    color: theme === 'dark' ? 'white' : 'var(--pk-text-primary)'
+                  }}
+                >
+                  Sombre
+                </button>
+                <button 
+                  onClick={() => setTheme('pink-light')}
+                  className="glass-panel"
+                  style={{ 
+                    flex: '1 1 45%', padding: '0.6rem', fontSize: '0.8rem', borderRadius: '10px',
+                    background: theme === 'pink-light' ? '#ec4899' : 'var(--pk-surface-solid)',
+                    color: theme === 'pink-light' ? 'white' : 'var(--pk-text-primary)',
+                    border: theme === 'pink-light' ? 'none' : '1px solid rgba(236, 72, 153, 0.2)'
+                  }}
+                >
+                  🌸 Pink Clair
+                </button>
+                <button 
+                  onClick={() => setTheme('pink')}
+                  className="glass-panel"
+                  style={{ 
+                    flex: '1 1 45%', padding: '0.6rem', fontSize: '0.8rem', borderRadius: '10px',
+                    background: theme === 'pink' ? '#ec4899' : 'var(--pk-surface-solid)',
+                    color: theme === 'pink' ? 'white' : 'var(--pk-text-primary)',
+                    border: theme === 'pink' ? 'none' : '1px solid rgba(236, 72, 153, 0.2)'
+                  }}
+                >
+                  🌸 Pink Sombre
+                </button>
+              </div>
             </div>
           </div>
           
@@ -176,6 +226,121 @@ const Profile = () => {
           </div>
         </div>
       </div>
+
+      {/* Delete Data Section */}
+      <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid var(--pk-border)', textAlign: 'center' }}>
+        <button 
+          onClick={() => setShowDeleteModal(true)}
+          className="glass-panel"
+          style={{ 
+            color: '#ef4444', 
+            border: '1px solid rgba(239, 68, 68, 0.2)',
+            padding: '0.8rem 1.5rem',
+            borderRadius: '12px',
+            fontSize: '0.9rem',
+            fontWeight: '600',
+            transition: 'all 0.2s',
+            cursor: 'pointer'
+          }}
+        >
+          Supprimer mes données et ma progression
+        </button>
+      </div>
+
+      {/* Custom Delete Confirmation Modal */}
+      {showDeleteModal && (
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          background: 'rgba(0,0,0,0.85)',
+          backdropFilter: 'blur(8px)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 2000,
+          padding: '1rem'
+        }}>
+          <div className="glass-panel" style={{ 
+            maxWidth: '450px', 
+            width: '100%', 
+            padding: '2.5rem', 
+            textAlign: 'center',
+            border: '1px solid rgba(239, 68, 68, 0.3)',
+            boxShadow: '0 0 50px rgba(239, 68, 68, 0.15)',
+            position: 'relative'
+          }}>
+            <button 
+              onClick={() => setShowDeleteModal(false)}
+              style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'none', border: 'none', color: 'var(--pk-text-secondary)', cursor: 'pointer' }}
+            >
+              <X size={20} />
+            </button>
+
+            <div style={{ 
+              width: '64px', 
+              height: '64px', 
+              borderRadius: '50%', 
+              background: 'rgba(239, 68, 68, 0.15)', 
+              color: '#ef4444', 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              margin: '0 auto 1.5rem',
+              border: '1px solid rgba(239, 68, 68, 0.3)'
+            }}>
+              <AlertTriangle size={32} />
+            </div>
+            
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'var(--pk-text-primary)' }}>Es-tu sûr ?</h2>
+            <p style={{ color: 'var(--pk-text-secondary)', marginBottom: '2rem', lineHeight: '1.5' }}>
+              Cette action supprimera définitivement ton nom, ta progression dans les leçons et tes statistiques. Tu ne pourras pas revenir en arrière.
+            </p>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+              <button 
+                onClick={() => {
+                  setShowDeleteModal(false);
+                  resetData();
+                }}
+                style={{
+                  width: '100%',
+                  padding: '1rem',
+                  borderRadius: '12px',
+                  background: '#ef4444',
+                  color: 'white',
+                  fontWeight: 'bold',
+                  fontSize: '1.1rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.5rem',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+              >
+                <Trash2 size={20} /> Supprimer tout
+              </button>
+              
+              <button 
+                onClick={() => setShowDeleteModal(false)}
+                style={{
+                  width: '100%',
+                  padding: '1rem',
+                  borderRadius: '12px',
+                  background: 'var(--pk-surface-solid)',
+                  color: 'var(--pk-text-primary)',
+                  fontWeight: '600',
+                  fontSize: '1.1rem',
+                  border: '1px solid var(--pk-border)',
+                  cursor: 'pointer'
+                }}
+              >
+                Annuler
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
