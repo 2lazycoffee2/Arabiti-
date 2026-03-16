@@ -1,0 +1,4050 @@
+[
+  {
+    "id": "l1",
+    "category": "Débutant",
+    "title": "Leçon 1 : L'alphabet arabe",
+    "description": "Découvrir les 28 lettres de l'alphabet, leur forme et leurs caractéristiques fondamentales.",
+    "content": "## Présentation générale\nL'arabe est une langue **sémitique** écrite de **droite à gauche**. Son alphabet est composé de **28 consonnes**. Contrairement au français, l'arabe n'a pas de majuscules ni de minuscules — chaque lettre possède en revanche jusqu'à **4 formes** selon sa position dans le mot.\n\n## Les 4 formes d'une lettre\nChaque lettre change de forme selon qu'elle est **isolée**, en **début** (initiale), au **milieu** (médiane) ou en **fin** de mot (finale). Exemple avec **ب** (Bā') :\n\n| Isolée | Initiale | Médiane | Finale |\n|---|---|---|---|\n| ب | بـ | ـبـ | ـب |\n\n## Les 6 lettres rebelles\nSix lettres ne s'attachent **jamais** à la lettre qui les suit : **أ، د، ذ، ر، ز، و**. Quand on rencontre l'une d'elles dans un mot, la lettre suivante reprend sa forme initiale.\n\n## Familles de formes\nL'alphabet se regroupé en familles visuelles :\n- **Famille de l'assiette (ب)** : ب (b), ت (t), ث (th)\n- **Famille du crochet (ج)** : ج (dj), ح (ḥ), خ (kh)\n- **Famille de la courbe (ر)** : ر (r), ز (z)\n- **Famille du ventre (س)** : س (s), ش (sh)\n- **Famille du croissant (ص)** : ص (ṣ), ض (ḍ)\n\n## Le sens d'écriture\nL'arabe s'écrit et se lit **de droite à gauche**. Les chiffres, eux, s'écrivent de gauche à droite. Au fil de l'apprentissage, ce sens deviendra tout à fait naturel.",
+    "exercises": [
+      {
+        "question": "Dans quel sens l'arabe s'écrit-il ?",
+        "options": [
+          "De gauche à droite",
+          "De droite à gauche",
+          "De haut en bas"
+        ],
+        "answer": "De droite à gauche"
+      },
+      {
+        "question": "Combien de lettres compte l'alphabet arabe ?",
+        "options": [
+          "24",
+          "26",
+          "28",
+          "30"
+        ],
+        "answer": "28"
+      },
+      {
+        "question": "Combien de formes différentes peut avoir une lettre arabe ?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": "4"
+      },
+      {
+        "question": "Laquelle de ces lettres est 'rebelle' (ne s'attache pas à gauche) ?",
+        "options": [
+          "ب",
+          "ت",
+          "ر",
+          "س"
+        ],
+        "answer": "ر"
+      },
+      {
+        "question": "Quelle est la forme MÉDIANE de la lettre ب ?",
+        "options": [
+          "ب",
+          "بـ",
+          "ـبـ",
+          "ـب"
+        ],
+        "answer": "ـبـ"
+      },
+      {
+        "question": "Combien de lettres rebelles y a-t-il en arabe ?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "answer": "6"
+      },
+      {
+        "question": "La lettre ج appartient à quelle famille ?",
+        "options": [
+          "Famille du ventre",
+          "Famille du crochet",
+          "Famille de l'assiette",
+          "Famille du croissant"
+        ],
+        "answer": "Famille du crochet"
+      },
+      {
+        "question": "L'arabe distingue-t-il majuscules et minuscules ?",
+        "options": [
+          "Oui",
+          "Non"
+        ],
+        "answer": "Non"
+      },
+      {
+        "question": "Quelle est la famille des lettres ص et ض ?",
+        "options": [
+          "Famille de la courbe",
+          "Famille du croissant",
+          "Famille de l'assiette"
+        ],
+        "answer": "Famille du croissant"
+      },
+      {
+        "question": "La forme FINALE de ب est :",
+        "options": [
+          "ب",
+          "بـ",
+          "ـبـ",
+          "ـب"
+        ],
+        "answer": "ـب"
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "category": "Débutant",
+    "title": "Leçon 2 : Les voyelles courtes (Harakat)",
+    "description": "Comprendre les signes diacritiques qui donnent leur sonorité aux consonnes arabes.",
+    "content": "## Qu'est-ce que les Harakat ?\nLes lettres arabes sont des consonnes. Pour les faire 'sonner', on ajoute des petits signes au-dessus ou en-dessous : ce sont les **حَرَكَات** (Ḥarakāt), littéralement 'mouvements'. Dans les textes courants, ils sont souvent absents — le lecteur expérimenté les devine grâce au contexte. Mais pour apprendre, ils sont indispensables.\n\n## Les 3 voyelles fondamentales\n\n| Signe | Nom | Prononciation | Exemple |\n|---|---|---|---|\n| ◌َ | **Fatḥa** | Son **A** court | بَ = Ba |\n| ◌ِ | **Kasra** | Son **I** court | بِ = Bi |\n| ◌ُ | **Ḍamma** | Son **OU** court | بُ = Bou |\n\n## Le Soukoun — l'absence de voyelle\nLe **Soukoun** (◌ْ) est un petit cercle placé au-dessus d'une consonne. Il signifie que cette lettre n'est **pas suivie de voyelle**. Ex: **مَكْتَب** (Maktab = bureau).\n\n## La Chadda — la consonne doublée\nLa **Chadda** (◌ّ) ressemble à un W miniature. Elle indique que la consonne est **doublée** (prononcée deux fois). Ex: **مُدَرِّس** (Mudarris = professeur).\n\n## Le Tanwīn — la voyelle double\nLe Tanwīn ajoute un **N** final pour les noms indéfinis. Il existe en 3 versions : **ً** (an), **ٍ** (in), **ٌ** (un). Ex: **كِتَابٌ** (Kitābun = un livre).",
+    "exercises": [
+      {
+        "question": "Quel signe ajoute le son 'A' court à une consonne ?",
+        "options": [
+          "Kasra",
+          "Fatḥa",
+          "Ḍamma",
+          "Soukoun"
+        ],
+        "answer": "Fatḥa"
+      },
+      {
+        "question": "Où se place la Kasra ?",
+        "options": [
+          "Au-dessus de la lettre",
+          "En-dessous de la lettre",
+          "Avant la lettre"
+        ],
+        "answer": "En-dessous de la lettre"
+      },
+      {
+        "question": "Que signifie le Soukoun ?",
+        "options": [
+          "La consonne est doublée",
+          "Absence de voyelle",
+          "Son OU",
+          "Son A"
+        ],
+        "answer": "Absence de voyelle"
+      },
+      {
+        "question": "Quel son produit la Ḍamma ?",
+        "options": [
+          "A",
+          "I",
+          "OU",
+          "E"
+        ],
+        "answer": "OU"
+      },
+      {
+        "question": "La Chadda sert à :",
+        "options": [
+          "Allonger la voyelle",
+          "Doubler la consonne",
+          "Indiquer la fin du mot",
+          "Ajouter un N"
+        ],
+        "answer": "Doubler la consonne"
+      },
+      {
+        "question": "Comment se nomme ◌ً ?",
+        "options": [
+          "Tanwīn Fatḥa",
+          "Kasra",
+          "Soukoun",
+          "Chadda"
+        ],
+        "answer": "Tanwīn Fatḥa"
+      },
+      {
+        "question": "Le mot بِ se prononce :",
+        "options": [
+          "Ba",
+          "Bi",
+          "Bou",
+          "B"
+        ],
+        "answer": "Bi"
+      },
+      {
+        "question": "Le Tanwīn est utilisé pour les noms :",
+        "options": [
+          "Définis",
+          "Indéfinis",
+          "Pluriels"
+        ],
+        "answer": "Indéfinis"
+      },
+      {
+        "question": "Quel signe ressemble à un petit 'W' ?",
+        "options": [
+          "Soukoun",
+          "Fatḥa",
+          "Chadda",
+          "Kasra"
+        ],
+        "answer": "Chadda"
+      },
+      {
+        "question": "Le mot مَكْتَب contient un Soukoun sur la lettre :",
+        "options": [
+          "م",
+          "ك",
+          "ت",
+          "ب"
+        ],
+        "answer": "ك"
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "category": "Débutant",
+    "title": "Leçon 3 : L'article défini (Al)",
+    "description": "Maîtriser l'article 'le/la/les' et comprendre les lettres solaires et lunaires.",
+    "content": "## L'article défini ال (Al-)\nEn arabe, il n'existe qu'**un seul article défini** : **ال** (Al-). Il est invariable : il ne change pas selon le genre (masculin/féminin) ni selon le nombre (singulier/pluriel). Il s'attache directement au début du mot.\n- كِتَاب (un livre) → **الكِتَاب** (le livre)\n- بَيْت (une maison) → **البَيْت** (la maison)\n\n## Lettres Lunaires vs. Lettres Solaires\nL'article Al- ne se prononce pas toujours 'Al'. Tout dépend de la **première lettre** du mot suivant.\n\n### Lettres Lunaires (قَمَرِيَّة)\nLa lettre **L** de l'article **s'entend** clairement. Ex: **القَمَر** (Al-Qamar = la lune). Les lettres lunaires sont : ء، ب، ج، ح، خ، ع، غ، ف، ق، ك، م، ه، و، ي\n\n### Lettres Solaires (شَمْسِيَّة)\nLa lettre L disparaît et la lettre du mot **se double**. Ex: **الشَّمْس** (Ash-Shams = le soleil). Les lettres solaires sont : ت، ث، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ل، ن\n\n## Règle pratique\nUne astuce simple : si vous entendez 'Al-', la lettre est lunaire. Si vous entendez la consonne doublée sans le 'L', elle est solaire.\n\n## Incompatibilité avec le Tanwīn\nOn ne peut pas avoir **Al-** et le **Tanwīn** sur le même mot. L'article rend le mot défini, le Tanwīn l'indéfini — ils s'excluent mutuellement.",
+    "exercises": [
+      {
+        "question": "L'article défini arabe 'Al' est :",
+        "options": [
+          "Variable selon le genre",
+          "Variable selon le nombre",
+          "Unique et invariable",
+          "Absent en arabe"
+        ],
+        "answer": "Unique et invariable"
+      },
+      {
+        "question": "Comment dit-on 'le livre' en arabe (kitāb) ?",
+        "options": [
+          "Kitāb-Al",
+          "Al-Kitāb",
+          "Kitāb-un",
+          "Al-Kitābun"
+        ],
+        "answer": "Al-Kitāb"
+      },
+      {
+        "question": "Dans 'Ash-Shams', pourquoi le L disparaît-il ?",
+        "options": [
+          "Car ش est une lettre solaire",
+          "Car ش est une lettre lunaire",
+          "Par erreur de prononciation",
+          "En fin de phrase"
+        ],
+        "answer": "Car ش est une lettre solaire"
+      },
+      {
+        "question": "La lettre ق est :",
+        "options": [
+          "Solaire",
+          "Lunaire"
+        ],
+        "answer": "Lunaire"
+      },
+      {
+        "question": "La lettre ن est :",
+        "options": [
+          "Solaire",
+          "Lunaire"
+        ],
+        "answer": "Solaire"
+      },
+      {
+        "question": "Comment appelle-t-on les lettres où le L de l'article s'entend ?",
+        "options": [
+          "Lettres solaires",
+          "Lettres lunaires",
+          "Lettres rebelles"
+        ],
+        "answer": "Lettres lunaires"
+      },
+      {
+        "question": "Peut-on dire 'الكِتَابٌ' (Al-Kitābun) ?",
+        "options": [
+          "Oui, toujours",
+          "Non, Al et Tanwīn s'excluent"
+        ],
+        "answer": "Non, Al et Tanwīn s'excluent"
+      },
+      {
+        "question": "Al-Qamar signifie :",
+        "options": [
+          "Le soleil",
+          "La lune",
+          "L'étoile"
+        ],
+        "answer": "La lune"
+      },
+      {
+        "question": "Combien de lettres solaires y a-t-il ?",
+        "options": [
+          "12",
+          "14",
+          "16",
+          "10"
+        ],
+        "answer": "14"
+      },
+      {
+        "question": "Lors d'une lettre solaire, que se passe-t-il ?",
+        "options": [
+          "Le L s'entend normalement",
+          "Le L disparaît et la lettre se double",
+          "L'article disparaît complètement"
+        ],
+        "answer": "Le L disparaît et la lettre se double"
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "category": "Débutant",
+    "title": "Leçon 4 : Le genre (masculin / féminin)",
+    "description": "Reconnaître et former les noms masculins et féminins en arabe.",
+    "content": "## Principe du genre en arabe\nComme en français, chaque nom arabe a un genre : **masculin** ou **féminin**. Ce genre influence l'accord des adjectifs, des verbes et des démonstratifs. Il est donc fondamental de le maîtriser dès le début.\n\n## Le Masculin — forme de base\nEn arabe, le genre **masculin est la forme par défaut**. Il n'y a généralement aucun marqueur particulier :\n- بَيْت (Bayt) = maison\n- كِتَاب (Kitāb) = livre\n- كَلْب (Kalb) = chien\n\n## Le Féminin — La Tā' Marbūṭa (ة)\nLe marqueur principal du féminin est la lettre **ة** (Tā' Marbūṭa = 'Tā' attaché'). Elle se place **à la fin** du mot. À l'état isolé (pause), elle se prononce **-a** (léger) ; en liaison, elle se prononce **-at**.\n- مُعَلِّم (Mou'allim) = professeur (m.) → مُعَلِّمَة (Mou'allima) = professeure (f.)\n- طَالِب (Ṭālib) = étudiant → طَالِبَة (Ṭāliba) = étudiante\n\n## Les exceptions féminines sans ة\nCertains noms sont féminins malgré l'absence de ة :\n1. **Noms de pays et de villes** : مِصْر (Miṣr = Égypte), فَرَنْسَا (France)\n2. **Membres du corps pairs** : يَد (Yad = main), عَيْن ('Ayn = œil)\n3. **Mots féminins par convention** : شَمْس (Shams = soleil), نَفْس (Nafs = âme)\n\n## Conseil pratique\nQuand vous apprenez un nouveau nom, mémorisez toujours son genre avec lui. C'est une habitude indispensable.",
+    "exercises": [
+      {
+        "question": "Quel est le marqueur principal du féminin en arabe ?",
+        "options": [
+          "Alif (ا)",
+          "Tā' Marbūṭa (ة)",
+          "Waaw (و)",
+          "Yā' (ي)"
+        ],
+        "answer": "Tā' Marbūṭa (ة)"
+      },
+      {
+        "question": "Le genre masculin en arabe est :",
+        "options": [
+          "Toujours marqué par un suffixe",
+          "La forme de base, sans marqueur particulier",
+          "Rare et exceptionnel"
+        ],
+        "answer": "La forme de base, sans marqueur particulier"
+      },
+      {
+        "question": "Comment forme-t-on le féminin de 'Ṭālib' (étudiant) ?",
+        "options": [
+          "Al-Ṭālib",
+          "Ṭāliba (ة)",
+          "Ṭāliboon"
+        ],
+        "answer": "Ṭāliba (ة)"
+      },
+      {
+        "question": "Le mot 'Madrasa' (école) se termine par ة — il est donc :",
+        "options": [
+          "Masculin",
+          "Féminin"
+        ],
+        "answer": "Féminin"
+      },
+      {
+        "question": "Les noms de pays sont généralement :",
+        "options": [
+          "Masculins",
+          "Féminins"
+        ],
+        "answer": "Féminins"
+      },
+      {
+        "question": "La Tā' Marbūṭa se place :",
+        "options": [
+          "Au début du mot",
+          "Au milieu du mot",
+          "À la fin du mot"
+        ],
+        "answer": "À la fin du mot"
+      },
+      {
+        "question": "Le mot 'Shams' (soleil) est féminin, mais :",
+        "options": [
+          "Il porte la Tā' Marbūṭa",
+          "Il n'a pas de ة, c'est une exception"
+        ],
+        "answer": "Il n'a pas de ة, c'est une exception"
+      },
+      {
+        "question": "Comment se prononce la Tā' Marbūṭa en fin de phrase (à la pause) ?",
+        "options": [
+          "-at",
+          "-a (léger)",
+          "-un",
+          "-in"
+        ],
+        "answer": "-a (léger)"
+      },
+      {
+        "question": "Laquelle de ces paires est correctement formée ?",
+        "options": [
+          "Mudarris / Mudarrisa",
+          "Mudarris / Mudarrisat",
+          "Mudarris / Al-Mudarris"
+        ],
+        "answer": "Mudarris / Mudarrisa"
+      },
+      {
+        "question": "Les membres du corps pairs (mains, yeux) sont généralement :",
+        "options": [
+          "Masculins",
+          "Féminins sans ة"
+        ],
+        "answer": "Féminins sans ة"
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "category": "Débutant",
+    "title": "Leçon 5 : Les pronoms personnels",
+    "description": "Apprendre les pronoms sujets isolés du singulier et du pluriel.",
+    "content": "## Rôle des pronoms personnels\nLes pronoms personnels isolés (الضَّمَائِر المُنْفَصِلَة) servent de **sujet** dans la phrase. En arabe, ils sont souvent **omis** dans la phrase verbale car la conjugaison du verbe indique déjà la personne. Cependant, ils sont utilisés pour l'emphase ou dans les phrases nominales (sans verbe).\n\n## Tableau des pronoms au singulier\n\n| Français | Arabe | Translitération |\n|---|---|---|\n| Je | أَنَا | Anā |\n| Tu (masc.) | أَنْتَ | Anta |\n| Tu (fém.) | أَنْتِ | Anti |\n| Il | هُوَ | Huwa |\n| Elle | هِيَ | Hiya |\n\n## Tableau des pronoms au pluriel\n\n| Français | Arabe | Translitération |\n|---|---|---|\n| Nous | نَحْنُ | Naḥnu |\n| Vous (masc.) | أَنْتُمْ | Antum |\n| Vous (fém.) | أَنْتُنَّ | Antunna |\n| Ils | هُمْ | Hum |\n| Elles | هُنَّ | Hunna |\n\n## La phrase nominale (sans verbe 'être')\nUne spécificité de l'arabe : le verbe **'être' au présent n'existe pas**. On juxtapose simplement le sujet et l'attribut :\n- **أَنَا طَالِب** → Je (suis) étudiant.\n- **هِيَ مُدَرِّسَة** → Elle (est) professeure.\n\n## Distinction genre: 'Tu'\nL'arabe distingue 'Tu masculin' (**أَنْتَ**) de 'Tu féminin' (**أَنْتِ**). La différence à l'oral est la voyelle finale : **-a** pour le masc., **-i** pour le fém.",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Je' en arabe ?",
+        "options": [
+          "أَنْتَ (Anta)",
+          "هُوَ (Huwa)",
+          "أَنَا (Anā)",
+          "نَحْنُ (Naḥnu)"
+        ],
+        "answer": "أَنَا (Anā)"
+      },
+      {
+        "question": "Quelle est la différence entre أَنْتَ et أَنْتِ ?",
+        "options": [
+          "L'un est singulier, l'autre pluriel",
+          "L'un est masculin, l'autre féminin",
+          "Il n'y a aucune différence"
+        ],
+        "answer": "L'un est masculin, l'autre féminin"
+      },
+      {
+        "question": "Comment dit-on 'Nous' en arabe ?",
+        "options": [
+          "أَنْتُمْ (Antum)",
+          "نَحْنُ (Naḥnu)",
+          "هُمْ (Hum)"
+        ],
+        "answer": "نَحْنُ (Naḥnu)"
+      },
+      {
+        "question": "Le pronom personnel huwwa (هُوَ) se traduit par :",
+        "options": [
+          "Je",
+          "Il",
+          "Elle",
+          "Tu"
+        ],
+        "answer": "Il"
+      },
+      {
+        "question": "Comment traduit-on 'Elle est médecin' en arabe (sans verbe 'être') ?",
+        "options": [
+          "Hiya ṭabība هِيَ طَبِيبَة",
+          "Huwa ṭabīb هُوَ طَبِيب",
+          "Anti ṭabība أَنْتِ طَبِيبَة"
+        ],
+        "answer": "Hiya ṭabība هِيَ طَبِيبَة"
+      },
+      {
+        "question": "Pourquoi n'y a-t-il pas de verbe 'être' au présent en arabe ?",
+        "options": [
+          "C'est une erreur de grammaire",
+          "La langue arabe l'omet par convention au présent",
+          "Le verbe existe mais est invisible"
+        ],
+        "answer": "La langue arabe l'omet par convention au présent"
+      },
+      {
+        "question": "Hum (هُمْ) signifie :",
+        "options": [
+          "Nous",
+          "Ils (masc.)",
+          "Vous",
+          "Elles"
+        ],
+        "answer": "Ils (masc.)"
+      },
+      {
+        "question": "Le pronom de la 2ème personne du pluriel masculin est :",
+        "options": [
+          "أَنْتُنَّ (Antunna)",
+          "أَنْتُمْ (Antum)",
+          "هُمْ (Hum)"
+        ],
+        "answer": "أَنْتُمْ (Antum)"
+      },
+      {
+        "question": "Dans la phrase 'أَنَا طَالِب', quel élément est sujet ?",
+        "options": [
+          "طَالِب",
+          "أَنَا",
+          "Les deux"
+        ],
+        "answer": "أَنَا"
+      },
+      {
+        "question": "Quel pronom utilise-t-on pour parler d'une femme à la 3ème personne du singulier ?",
+        "options": [
+          "هُوَ (Huwa)",
+          "هِيَ (Hiya)",
+          "أَنْتِ (Anti)"
+        ],
+        "answer": "هِيَ (Hiya)"
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "category": "Débutant",
+    "title": "Leçon 6 : Les démonstratifs",
+    "description": "Apprendre à désigner des choses proches et lointaines avec les démonstratifs.",
+    "content": "## Qu'est-ce qu'un démonstratif ?\nLes démonstratifs permettent de **pointer** un objet ou une personne. En français : 'ce', 'cette', 'ces'. En arabe, ils varient selon le **genre** (masc./fém.) et la **distance** (proche/lointain).\n\n## Démonstratifs du Proche\n\n| Genre | Arabe | Translitération | Sens |\n|---|---|---|---|\n| Masc. | هَٰذَا | Hādhā | Ce / Cet |\n| Fém. | هَٰذِهِ | Hādhihi | Cette |\n\nExemples :\n- **هَٰذَا كِتَابٌ** → C'est un livre. (masc.)\n- **هَٰذِهِ مَدْرَسَةٌ** → C'est une école. (fém.)\n\n## Démonstratifs du Lointain\n\n| Genre | Arabe | Translitération | Sens |\n|---|---|---|---|\n| Masc. | ذَٰلِكَ | Dhālika | Ce... là (masc.) |\n| Fém. | تِلْكَ | Tilka | Cette... là (fém.) |\n\n## Le pluriel des démonstratifs\n- Pour les **humains** au pluriel : **هَٰؤُلَاءِ** (Hā'ulā'i = ces... -ci) / **أُولَٰئِكَ** (Ulā'ika = ces... -là).\n- Pour les **non-humains** au pluriel : règle importante ! On utilise obligatoirement le **féminin singulier** :\n  - Ces livres → **هَٰذِهِ الكُتُب** (non هَٰؤُلَاءِ).\n\n## Construction de la phrase\nLe démonstratif + nom = phrase nominale complète :\n**هَٰذَا + الكِتَابُ + كَبِيرٌ** = Ce livre est grand.",
+    "exercises": [
+      {
+        "question": "Quel démonstratif utilise-t-on pour 'Cette' (proche, féminin) ?",
+        "options": [
+          "هَٰذَا (Hādhā)",
+          "هَٰذِهِ (Hādhihi)",
+          "تِلْكَ (Tilka)",
+          "ذَٰلِكَ (Dhālika)"
+        ],
+        "answer": "هَٰذِهِ (Hādhihi)"
+      },
+      {
+        "question": "Quel est le démonstratif pour 'Ce' (proche, masculin) ?",
+        "options": [
+          "هَٰذَا",
+          "هَٰذِهِ",
+          "ذَٰلِكَ",
+          "تِلْكَ"
+        ],
+        "answer": "هَٰذَا"
+      },
+      {
+        "question": "Dhālika (ذَٰلِكَ) désigne :",
+        "options": [
+          "Un objet proche masculin",
+          "Un objet lointain masculin",
+          "Un objet proche féminin",
+          "Un objet lointain féminin"
+        ],
+        "answer": "Un objet lointain masculin"
+      },
+      {
+        "question": "Pour dire 'Ces livres' (objets inanimés), on utilise :",
+        "options": [
+          "هَٰؤُلَاءِ",
+          "هَٰذِهِ (fém. sing.)",
+          "هَٰذَا (masc. sing.)"
+        ],
+        "answer": "هَٰذِهِ (fém. sing.)"
+      },
+      {
+        "question": "Tilka (تِلْكَ) s'utilise pour :",
+        "options": [
+          "Féminin proche",
+          "Masculin lointain",
+          "Féminin lointain",
+          "Humains au pluriel"
+        ],
+        "answer": "Féminin lointain"
+      },
+      {
+        "question": "Comment dit-on 'Ces étudiants (humains)' en arabe ?",
+        "options": [
+          "هَٰذَا",
+          "هَٰذِهِ",
+          "هَٰؤُلَاءِ"
+        ],
+        "answer": "هَٰؤُلَاءِ"
+      },
+      {
+        "question": "La phrase هَٰذَا بَيْتٌ signifie :",
+        "options": [
+          "Cette maison est belle",
+          "C'est une maison",
+          "Ce n'est pas une maison"
+        ],
+        "answer": "C'est une maison"
+      },
+      {
+        "question": "Le démonstratif lointain pour un groupe d'humains est :",
+        "options": [
+          "أُولَٰئِكَ",
+          "هَٰؤُلَاءِ",
+          "تِلْكَ"
+        ],
+        "answer": "أُولَٰئِكَ"
+      },
+      {
+        "question": "Hādhihi est-il masculin ou féminin ?",
+        "options": [
+          "Masculin",
+          "Féminin",
+          "Les deux"
+        ],
+        "answer": "Féminin"
+      },
+      {
+        "question": "Dans la phrase هَٰذَا الوَلَدُ طَوِيلٌ, que signifie هَٰذَا ?",
+        "options": [
+          "Ce",
+          "Celui-là",
+          "Ici"
+        ],
+        "answer": "Ce"
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "category": "Débutant",
+    "title": "Leçon 7 : Les pronoms possessifs (suffixes)",
+    "description": "Exprimer la possession en arabe grâce aux suffixes pronominaux.",
+    "content": "## La possession en arabe\nEn arabe, la possession s'exprime en ajoutant un **suffixe pronominal** directement à la fin du nom. Ces suffixes correspondent à 'mon, ton, son, ma, ta, sa, notre, votre, leur'.\n\n## Tableau des suffixes possessifs (singulier)\n\n| Personne | Suffixe | Exemple avec كِتَاب |\n|---|---|---|\n| Mon (à moi) | ـِي (-ī) | كِتَابِي (mon livre) |\n| Ton (à toi, masc.) | ـكَ (-ka) | كِتَابُكَ (ton livre, m.) |\n| Ton (à toi, fém.) | ـكِ (-ki) | كِتَابُكِ (ton livre, f.) |\n| Son (à lui) | ـهُ (-hu) | كِتَابُهُ (son livre, à lui) |\n| Sa (à elle) | ـهَا (-hā) | كِتَابُهَا (son livre, à elle) |\n\n## Tableau des suffixes possessifs (pluriel)\n\n| Personne | Suffixe | Exemple avec بَيْت |\n|---|---|---|\n| Notre | ـنَا (-nā) | بَيْتُنَا (notre maison) |\n| Votre (masc.) | ـكُمْ (-kum) | بَيْتُكُمْ (votre maison, m.) |\n| Leur (masc.) | ـهُمْ (-hum) | بَيْتُهُمْ (leur maison) |\n\n## La Tā' Marbūṭa s'ouvre !\nQuand un nom se termine par **ة**, cette lettre se transforme en **ت** avant d'accueillir le suffixe :\n- مَدْرَسَة → **مَدْرَسَتِي** (ma school ← madrasatī)\n\n## Règle de liaison : le 'Iḍāfa'\nLe suffixe *-ī* (la 1ère personne) provoque certains changements : le nom perd sa Tanwīn ou sa voyelle finale et prend la Kasra avant le ـِي.",
+    "exercises": [
+      {
+        "question": "Quel suffixe exprime 'Mon' ?",
+        "options": [
+          "-ka (-كَ)",
+          "-hā (-هَا)",
+          "-ī (-ِي)",
+          "-nā (-نَا)"
+        ],
+        "answer": "-ī (-ِي)"
+      },
+      {
+        "question": "Comment dit-on 'Ton livre' (en s'adressant à un homme) ?",
+        "options": [
+          "كِتَابِي",
+          "كِتَابُكَ",
+          "كِتَابُكِ",
+          "كِتَابُهُ"
+        ],
+        "answer": "كِتَابُكَ"
+      },
+      {
+        "question": "Comment dit-on 'Sa maison' (lui appartient) ?",
+        "options": [
+          "بَيْتُهَا",
+          "بَيْتُهُ",
+          "بَيْتُنَا",
+          "بَيْتُكُمْ"
+        ],
+        "answer": "بَيْتُهُ"
+      },
+      {
+        "question": "Que devient la ة avant un suffixe possessif ?",
+        "options": [
+          "Elle reste ة",
+          "Elle devient ت",
+          "Elle disparaît"
+        ],
+        "answer": "Elle devient ت"
+      },
+      {
+        "question": "مَدْرَسَتِي signifie :",
+        "options": [
+          "Ta école",
+          "Mon école",
+          "Notre école",
+          "Son école"
+        ],
+        "answer": "Mon école"
+      },
+      {
+        "question": "Le suffixe -nā exprime :",
+        "options": [
+          "Leur (masc.)",
+          "Votre (masc.)",
+          "Notre"
+        ],
+        "answer": "Notre"
+      },
+      {
+        "question": "Comment dit-on 'Votre livre' (à un groupe de femmes) ?",
+        "options": [
+          "كِتَابُكُمْ",
+          "كِتَابُكُنَّ",
+          "كِتَابُهُنَّ"
+        ],
+        "answer": "كِتَابُكُنَّ"
+      },
+      {
+        "question": "كِتَابُهَا signifie :",
+        "options": [
+          "Son livre (à lui)",
+          "Son livre (à elle)",
+          "Leurs livres"
+        ],
+        "answer": "Son livre (à elle)"
+      },
+      {
+        "question": "Comment se forme 'مكتبي' (mon bureau) à partir de 'مَكْتَب' ?",
+        "options": [
+          "مَكْتَبُكَ",
+          "مَكْتَبي (مَكْتَب + ِي)",
+          "مَكْتَبَة"
+        ],
+        "answer": "مَكْتَبي (مَكْتَب + ِي)"
+      },
+      {
+        "question": "بَيْتُكُمْ s'adresse à :",
+        "options": [
+          "Un homme",
+          "Un groupe masculin",
+          "Un groupe féminin",
+          "Une femme"
+        ],
+        "answer": "Un groupe masculin"
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "category": "Débutant",
+    "title": "Leçon 8 : Les prépositions de base",
+    "description": "Comprendre et utiliser les prépositions arabes fondamentales.",
+    "content": "## Qu'est-ce qu'une préposition ?\nLes prépositions relient des mots entre eux et précisent des relations de **lieu, de temps ou de possession**. En arabe, le mot qui suit une préposition est toujours au **cas Majrūr** (génitif), ce qui se manifeste par une **Kasra** finale (son -i).\n\n## Les prépositions essentielles\n\n| Préposition | Arabe | Translitération | Exemple |\n|---|---|---|---|\n| Dans | فِي | Fī | فِي البَيْتِ (dans la maison) |\n| Sur | عَلَى | 'Alā | عَلَى الطَّاوِلَةِ (sur la table) |\n| Vers / À | إِلَى | Ilā | إِلَى المَدْرَسَةِ (vers l'école) |\n| De / Depuis | مِنْ | Min | مِنَ البَيْتِ (de la maison) |\n| Avec | مَعَ | Ma'a | مَعَ الأَصْدِقَاءِ (avec les amis) |\n| Chez / À | عِنْدَ | 'Inda | عِنْدَ الدُّكْتُورِ (chez le médecin) |\n| Pour | لِـ | Li- | لِلطَّالِبِ (pour l'étudiant) |\n| Comme | كَـ | Ka- | كَالأَسَدِ (comme un lion) |\n\n## Le cas Majrūr en pratique\nAprès toute préposition, la voyelle finale du nom change en **-i (Kasra)** :\n- البَيْتُ → فِي البَيْتِ (la maison → dans la maison)\n\n## Prépositions courtes attachées\nLes prépositions **لِـ** (li-), **بِـ** (bi-), **كَـ** (ka-) sont **attachées** directement au mot qui suit, sans espace.",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Dans' en arabe ?",
+        "options": [
+          "مِنْ (Min)",
+          "عَلَى ('Alā)",
+          "فِي (Fī)",
+          "إِلَى (Ilā)"
+        ],
+        "answer": "فِي (Fī)"
+      },
+      {
+        "question": "La préposition مِنْ signifie :",
+        "options": [
+          "Vers",
+          "Sur",
+          "De / Depuis",
+          "Avec"
+        ],
+        "answer": "De / Depuis"
+      },
+      {
+        "question": "Quelle voyelle prend le nom après une préposition ?",
+        "options": [
+          "Fatḥa (a)",
+          "Ḍamma (u)",
+          "Kasra (i)",
+          "Soukoun"
+        ],
+        "answer": "Kasra (i)"
+      },
+      {
+        "question": "Comment dit-on 'Sur la table' ?",
+        "options": [
+          "فِي الطَّاوِلَةِ",
+          "عَلَى الطَّاوِلَةِ",
+          "مِن الطَّاوِلَةِ"
+        ],
+        "answer": "عَلَى الطَّاوِلَةِ"
+      },
+      {
+        "question": "'Chez le médecin' se traduit par :",
+        "options": [
+          "إِلَى الدُّكْتُورِ",
+          "عِنْدَ الدُّكْتُورِ",
+          "مَعَ الدُّكْتُورِ"
+        ],
+        "answer": "عِنْدَ الدُّكْتُورِ"
+      },
+      {
+        "question": "La préposition بِـ (bi-) signifie :",
+        "options": [
+          "Sans",
+          "Avec / By",
+          "Depuis",
+          "Pour"
+        ],
+        "answer": "Avec / By"
+      },
+      {
+        "question": "إِلَى الْمَدْرَسَةِ se traduit par :",
+        "options": [
+          "De l'école",
+          "Dans l'école",
+          "Vers l'école"
+        ],
+        "answer": "Vers l'école"
+      },
+      {
+        "question": "La préposition لِـ (li-) est attachée :",
+        "options": [
+          "Séparément, avec un espace",
+          "Directement au mot suivant, sans espace"
+        ],
+        "answer": "Directement au mot suivant, sans espace"
+      },
+      {
+        "question": "مَعَ الأَصْدِقَاءِ signifie :",
+        "options": [
+          "Vers les amis",
+          "Avec les amis",
+          "Pour les amis"
+        ],
+        "answer": "Avec les amis"
+      },
+      {
+        "question": "Quelle préposition est utilisée pour exprimer 'Comme' ?",
+        "options": [
+          "فِي",
+          "لِـ",
+          "كَـ",
+          "مِنْ"
+        ],
+        "answer": "كَـ"
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "category": "Débutant",
+    "title": "Leçon 9 : La phrase nominale (Jumlat Ismiyya)",
+    "description": "Construire des phrases complètes sans verbe grâce à la phrase nominale.",
+    "content": "## Qu'est-ce que la phrase nominale ?\nLa **phrase nominale** (جُمْلَة اِسْمِيَّة) est une phrase qui ne contient **pas de verbe**. C'est une caractéristique fondamentale de l'arabe. Elle est composée de deux éléments :\n- Le **Mubtada'** (مُبْتَدَأ) : le sujet — toujours défini.\n- Le **Khabar** (خَبَر) : le prédicat/attribut — souvent indéfini.\n\n## Structure de base\n\n**الكَلْبُ كَبِيرٌ** = Le chien est grand.\n- الكَلْبُ = Mubtada' (sujet, avec Al-)\n- كَبِيرٌ = Khabar (attribut, avec Tanwīn)\n\n## Types de Khabar\n1. **Adjectif** : البَيْتُ جَمِيلٌ (La maison est belle)\n2. **Nom** : هُوَ مُدَرِّسٌ (Il est professeur)\n3. **Préposition + nom** : الكِتَابُ عَلَى الطَّاوِلَةِ (Le livre est sur la table)\n4. **Phrase verbale** : الطَّالِبُ يَدْرُسُ (L'étudiant étudie)\n\n## L'accord du Khabar\nLe Khabar doit s'accorder en **genre** et en **nombre** avec le Mubtada' :\n- البِنْتُ جَمِيلَةٌ (La fille est belle — fém.)\n- الوَلَدُ جَمِيلٌ (Le garçon est beau — masc.)\n\n## Cas des pronoms de séparation\nQuand le Mubtada' ET le Khabar sont tous les deux définis, on insère un **pronom de séparation** :\n- مُحَمَّدٌ هُوَ المُدِيرُ (Mohammed est le directeur)",
+    "exercises": [
+      {
+        "question": "Que signifie 'Mubtada'' في النحو العربي ?",
+        "options": [
+          "Le verbe principal",
+          "Le sujet de la phrase nominale",
+          "L'attribut",
+          "La préposition"
+        ],
+        "answer": "Le sujet de la phrase nominale"
+      },
+      {
+        "question": "Dans الكَلْبُ كَبِيرٌ, quel est le Khabar (prédicat) ?",
+        "options": [
+          "الكَلْبُ",
+          "كَبِيرٌ",
+          "Il n'y en a pas"
+        ],
+        "answer": "كَبِيرٌ"
+      },
+      {
+        "question": "Le Mubtada' doit généralement être :",
+        "options": [
+          "Indéfini (avec Tanwīn)",
+          "Défini (avec Al- ou un suffixe possessif)",
+          "Toujours un pronom"
+        ],
+        "answer": "Défini (avec Al- ou un suffixe possessif)"
+      },
+      {
+        "question": "Traduisez : 'La maison est grande' (بَيْت = maison, كَبِير = grand)",
+        "options": [
+          "البَيْتُ كَبِيرٌ",
+          "بَيْتٌ كَبِيرٌ",
+          "الكَبِيرُ بَيْتٌ"
+        ],
+        "answer": "البَيْتُ كَبِيرٌ"
+      },
+      {
+        "question": "Pourquoi البِنْتُ جَمِيلَةٌ a un -a à جَمِيلَة ?",
+        "options": [
+          "Parce qu'il est défini",
+          "Pour accorder l'adjectif au féminin du sujet"
+        ],
+        "answer": "Pour accorder l'adjectif au féminin du sujet"
+      },
+      {
+        "question": "Le khabar peut être :",
+        "options": [
+          "Seulement un adjectif",
+          "Seulement un nom",
+          "Un adjectif, un nom ou une préposition + nom"
+        ],
+        "answer": "Un adjectif, un nom ou une préposition + nom"
+      },
+      {
+        "question": "Le Khabar الطَّاوِلَةِ عَلَى dans الكِتَابُ عَلَى الطَّاوِلَةِ est de type :",
+        "options": [
+          "Adjectif",
+          "Nom indéfini",
+          "Préposition + nom"
+        ],
+        "answer": "Préposition + nom"
+      },
+      {
+        "question": "Quand utilise-t-on un pronom de séparation ?",
+        "options": [
+          "Toujours",
+          "Quand sujet et attribut sont tous les deux définis",
+          "Jamais"
+        ],
+        "answer": "Quand sujet et attribut sont tous les deux définis"
+      },
+      {
+        "question": "Quelle phrase est correcte ?",
+        "options": [
+          "المُدَرِّسُ جَيِّدٌ",
+          "المُدَرِّسُ جَيِّدَة",
+          "مُدَرِّسٌ جَيِّدٌ"
+        ],
+        "answer": "المُدَرِّسُ جَيِّدٌ"
+      },
+      {
+        "question": "La phrase nominale arabe se distingue par :",
+        "options": [
+          "La présence obligatoire d'un verbe",
+          "L'absence du verbe 'être' au présent",
+          "L'usage exclusif des pronoms"
+        ],
+        "answer": "L'absence du verbe 'être' au présent"
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "category": "Débutant",
+    "title": "Leçon 10 : Les adjectifs",
+    "description": "Utiliser et accorder les adjectifs arabes en genre et en nombre.",
+    "content": "## L'adjectif en arabe (النَّعْت)\nL'adjectif arabe, appelé **Naʿt** (نَعْت), suit le nom qu'il qualifie. Il doit s'accorder avec lui en **genre**, en **nombre** et en **définitude** (défini/indéfini).\n\n## Accord en genre\nLa plupart des adjectifs forment leur féminin en ajoutant **ة** :\n- كَبِير (grand) → كَبِيرَة (grande)\n- جَمِيل (beau) → جَمِيلَة (belle)\n- صَغِير (petit) → صَغِيرَة (petite)\n\n## Accord en définitude\nL'adjectif **suit** la définitude du nom :\n- بَيْتٌ كَبِيرٌ = une grande maison (indéfini + indéfini)\n- البَيْتُ الكَبِيرُ = la grande maison (défini + défini)\n\n## Adjectifs de couleur — forme spéciale\nLes adjectifs de couleur ont une forme particulière : **أَفْعَل** (masc.) / **فَعْلَاء** (fém.) :\n- أَحْمَر / حَمْرَاء = rouge\n- أَبْيَض / بَيْضَاء = blanc\n- أَخْضَر / خَضْرَاء = vert\n\n## Position de l'adjectif\nL'adjectif se place **après** le nom en arabe, contrairement au français où il peut être avant.\n- كِتَابٌ جَدِيدٌ = un livre nouveau\n\n## Adjectifs épithètes vs. attributs\n- **Épithète** (dans le groupe nominal) : البَيْتُ **الكَبِيرُ** (la grande maison)\n- **Attribut** (dans la phrase nominale) : البَيْتُ **كَبِيرٌ** (la maison est grande)",
+    "exercises": [
+      {
+        "question": "L'adjectif arabe se place :",
+        "options": [
+          "Avant le nom",
+          "Après le nom",
+          "N'importe où dans la phrase"
+        ],
+        "answer": "Après le nom"
+      },
+      {
+        "question": "Comment dit-on 'une belle fille' en arabe ?",
+        "options": [
+          "بِنْتٌ جَمِيلٌ",
+          "بِنْتٌ جَمِيلَة",
+          "جَمِيلَةٌ بِنْتٌ"
+        ],
+        "answer": "بِنْتٌ جَمِيلَة"
+      },
+      {
+        "question": "Dans البَيْتُ الكَبِيرُ, pourquoi l'adjectif a-t-il ال ?",
+        "options": [
+          "Pour faire joli",
+          "Pour s'accorder en définitude avec البَيْتُ",
+          "Par erreur"
+        ],
+        "answer": "Pour s'accorder en définitude avec البَيْتُ"
+      },
+      {
+        "question": "Le féminin de 'صَغِير' (petit) est :",
+        "options": [
+          "صَغِيرون",
+          "صَغِيرَة",
+          "صَغِيرات"
+        ],
+        "answer": "صَغِيرَة"
+      },
+      {
+        "question": "Quelle est la forme féminine de l'adjectif de couleur 'أَحْمَر' (rouge) ?",
+        "options": [
+          "أَحْمَرة",
+          "حَمْرَاء",
+          "أَحْمَرات"
+        ],
+        "answer": "حَمْرَاء"
+      },
+      {
+        "question": "Dans بَيْتٌ كَبِيرٌ, l'adjectif est :",
+        "options": [
+          "Défini",
+          "Indéfini (Tanwīn)",
+          "Sans voyelle finale"
+        ],
+        "answer": "Indéfini (Tanwīn)"
+      },
+      {
+        "question": "La forme masculine الأَبْيَض désigne la couleur :",
+        "options": [
+          "Rouge",
+          "Vert",
+          "Blanc"
+        ],
+        "answer": "Blanc"
+      },
+      {
+        "question": "Dans البَيْتُ كَبِيرٌ, l'adjectif كَبِيرٌ est :",
+        "options": [
+          "Épithète",
+          "Attribut dans la phrase nominale",
+          "Sujet"
+        ],
+        "answer": "Attribut dans la phrase nominale"
+      },
+      {
+        "question": "Pour dire 'de nouveaux livres' (كُتُب = livres), on dirait :",
+        "options": [
+          "كُتُبٌ جَدِيدٌ",
+          "كُتُبٌ جَدِيدَة (accord au féminin pour non-humains)",
+          "الكُتُبُ الجَدِيدُ"
+        ],
+        "answer": "كُتُبٌ جَدِيدَة (accord au féminin pour non-humains)"
+      },
+      {
+        "question": "L'accord de l'adjectif en arabe se fait en :",
+        "options": [
+          "Genre seulement",
+          "Nombre seulement",
+          "Genre, nombre et définitude"
+        ],
+        "answer": "Genre, nombre et définitude"
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "category": "Intermédiaire",
+    "title": "Leçon 11 : L'annexion (Iḍāfa)",
+    "description": "Exprimer la possession et les relations entre noms grâce à la construction Iḍāfa.",
+    "content": "## Qu'est-ce que l'Iḍāfa ?\nL'**Iḍāfa** (إِضَافَة = 'annexion') est la construction qui exprime la **possession** ou une **relation entre deux noms**. C'est l'équivalent de 'de' en français ou du cas génitif. Elle remplace les constructions avec les suffixes possessifs quand on utilise des noms complets.\n\n## Structure\nOn juxtapose deux noms sans aucun article :\n**بَابُ البَيْتِ** = la porte de la maison\n- بَابُ = premier nom (Muḍāf) — perd son Tanwīn !\n- البَيْتِ = deuxième nom (Muḍāf ilayhi) — toujours au génitif (Kasra)\n\n## Règle d'or : le Muḍāf perd son Tanwīn ET son Al-\nLe premier nom d'une Iḍāfa **ne peut jamais** porter :\n- Le Tanwīn (ً ٍ ٌ)\n- L'article défini ال\n\nC'est le deuxième nom qui détermine si l'expression est définie ou indéfinie :\n- كِتَابُ وَلَدٍ = un livre d'un garçon (indéfini)\n- كِتَابُ الوَلَدِ = le livre du garçon (défini)\n\n## Iḍāfa à plusieurs niveaux\nOn peut enchaîner plusieurs noms :\n- بَابُ غُرْفَةِ البَيْتِ = la porte de la chambre de la maison\n\n## Adjectif dans l'Iḍāfa\nL'adjectif qui qualifie le premier nom **se place après toute la construction** :\n- كِتَابُ الطَّالِبِ الجَدِيدُ = le nouveau livre de l'étudiant",
+    "exercises": [
+      {
+        "question": "Dans بَابُ البَيْتِ, quel est le nom 'Muḍāf' (premier nom) ?",
+        "options": [
+          "البَيْتِ",
+          "بَابُ",
+          "Les deux"
+        ],
+        "answer": "بَابُ"
+      },
+      {
+        "question": "Pourquoi كِتَابُ perd-il son Tanwīn dans كِتَابُ الطَّالِبِ ?",
+        "options": [
+          "Par erreur de syntaxe",
+          "Car il est premier d'une Iḍāfa",
+          "Pour simplifier la prononciation"
+        ],
+        "answer": "Car il est premier d'une Iḍāfa"
+      },
+      {
+        "question": "Quelle est la voyelle finale du deuxième nom dans l'Iḍāfa (Muḍāf ilayhi) ?",
+        "options": [
+          "Fatḥa (-a)",
+          "Ḍamma (-u)",
+          "Kasra (-i)",
+          "Soukoun"
+        ],
+        "answer": "Kasra (-i)"
+      },
+      {
+        "question": "Peut-on mettre ال sur le premier nom (Muḍāf) d'une Iḍāfa ?",
+        "options": [
+          "Oui, toujours",
+          "Non, jamais"
+        ],
+        "answer": "Non, jamais"
+      },
+      {
+        "question": "Comment dit-on 'le livre de la fille' ? (كِتَاب + البِنْت)",
+        "options": [
+          "الكِتَابُ البِنْتِ",
+          "كِتَابُ البِنْتِ",
+          "كِتَابٌ البِنْتِ"
+        ],
+        "answer": "كِتَابُ البِنْتِ"
+      },
+      {
+        "question": "كِتَابُ وَلَدٍ est :",
+        "options": [
+          "Défini",
+          "Indéfini",
+          "On ne peut pas savoir"
+        ],
+        "answer": "Indéfini"
+      },
+      {
+        "question": "Comment dit-on 'la porte d'une maison' ?",
+        "options": [
+          "بَابُ البَيْتِ",
+          "بَابُ بَيْتٍ",
+          "البَابُ البَيْتِ"
+        ],
+        "answer": "بَابُ بَيْتٍ"
+      },
+      {
+        "question": "Dans بَابُ غُرْفَةِ البَيْتِ, combien de noms sont reliés ?",
+        "options": [
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": "3"
+      },
+      {
+        "question": "L'adjectif qualifiant le Muḍāf se place :",
+        "options": [
+          "Avant le Muḍāf",
+          "Après le Muḍāf, avant le Muḍāf ilayhi",
+          "Après toute la construction Iḍāfa"
+        ],
+        "answer": "Après toute la construction Iḍāfa"
+      },
+      {
+        "question": "L'Iḍāfa est l'équivalent arabe de :",
+        "options": [
+          "L'adjectif français",
+          "La préposition 'de' / le génitif",
+          "L'article défini"
+        ],
+        "answer": "La préposition 'de' / le génitif"
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "category": "Intermédiaire",
+    "title": "Leçon 12 : Les nombres de 1 à 10",
+    "description": "Apprendre les nombres cardinaux de 1 à 10 et leur accord avec le nom.",
+    "content": "## Les nombres de 1 à 10\n\n| Chiffre | Masc. | Fém. | Translitération |\n|---|---|---|---|\n| 1 | وَاحِد | وَاحِدَة | Wāḥid / Wāḥida |\n| 2 | اِثْنَان | اِثْنَتَان | Ithnān / Ithnатān |\n| 3 | ثَلَاثَة | ثَلَاث | Thalātha / Thalāth |\n| 4 | أَرْبَعَة | أَرْبَع | Arba'a / Arba' |\n| 5 | خَمْسَة | خَمْس | Khamsa / Khams |\n| 6 | سِتَّة | سِتّ | Sitta / Sitt |\n| 7 | سَبْعَة | سَبْع | Sab'a / Sab' |\n| 8 | ثَمَانِيَة | ثَمَانٍ | Thamāniya / Thamānin |\n| 9 | تِسْعَة | تِسْع | Tis'a / Tis' |\n| 10 | عَشَرَة | عَشْر | 'Ashara / 'Ashr |\n\n## La règle du 'Polarity' (inversion du genre) !\nC'est la règle la plus surprenante de l'arabe : **les nombres de 3 à 10 s'accordent en genre inverse du nom compté**. Si le nom est masculin, on utilise la forme féminine du nombre, et vice versa !\n- ثَلَاثَةُ كُتُبٍ (3 livres — كِتَاب est masc. → forme féminine ثَلَاثَة)\n- ثَلَاثُ بَنَاتٍ (3 filles — بِنْت est fém. → forme masculine ثَلَاث)\n\n## Les nombres 1 et 2\n- **1** s'accorde normalement et se place APRÈS le nom.\n- **2** utilise le duel du nom plutôt qu'un nombre séparé (leçon suivante).\n\n##  Le nom après un nombre (3-10)\nLe nom après un nombre de 3 à 10 est au **pluriel génitif** (Majrūr pluriel).",
+    "exercises": [
+      {
+        "question": "Comment dit-on '5' en arabe ?",
+        "options": [
+          "أَرْبَعَة",
+          "خَمْسَة",
+          "سِتَّة",
+          "سَبْعَة"
+        ],
+        "answer": "خَمْسَة"
+      },
+      {
+        "question": "Quel nombre se prononce Sab'a ?",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "answer": "7"
+      },
+      {
+        "question": "La règle de 'polarité' des nombres arabes signifie :",
+        "options": [
+          "Le nombre s'accorde normalement avec le nom",
+          "Le nombre prend le genre INVERSE du nom compté pour 3-10",
+          "Les nombres n'ont qu'une seule forme"
+        ],
+        "answer": "Le nombre prend le genre INVERSE du nom compté pour 3-10"
+      },
+      {
+        "question": "Pour compter 3 livres (كِتَاب, masc.), on utilise :",
+        "options": [
+          "ثَلَاث كُتُبٍ (forme masc.)",
+          "ثَلَاثَة كُتُبٍ (forme fém.)",
+          "ثَلَاثَة كِتَابٍ"
+        ],
+        "answer": "ثَلَاثَة كُتُبٍ (forme fém.)"
+      },
+      {
+        "question": "Après un nombre de 3 à 10, le nom est au :",
+        "options": [
+          "Singulier nominatif",
+          "Pluriel génitif",
+          "Duel"
+        ],
+        "answer": "Pluriel génitif"
+      },
+      {
+        "question": "Comment dit-on '8' en arabe ?",
+        "options": [
+          "سَبْعَة",
+          "تِسْعَة",
+          "ثَمَانِيَة",
+          "عَشَرَة"
+        ],
+        "answer": "ثَمَانِيَة"
+      },
+      {
+        "question": "Le nombre 1 en arabe se place :",
+        "options": [
+          "Avant le nom",
+          "Après le nom",
+          "N'importe où"
+        ],
+        "answer": "Après le nom"
+      },
+      {
+        "question": "Wāḥid (وَاحِد) est la forme :",
+        "options": [
+          "Féminine",
+          "Masculine"
+        ],
+        "answer": "Masculine"
+      },
+      {
+        "question": "ثَلَاثُ بَنَاتٍ signifie :",
+        "options": [
+          "3 garçons",
+          "3 filles",
+          "30 filles"
+        ],
+        "answer": "3 filles"
+      },
+      {
+        "question": "La forme 'خَمْس' (sans ة) est utilisée pour compter des noms :",
+        "options": [
+          "Masculins",
+          "Féminins"
+        ],
+        "answer": "Féminins"
+      }
+    ]
+  },
+  {
+    "id": "l13",
+    "category": "Intermédiaire",
+    "title": "Leçon 13 : Les nombres de 11 à 100",
+    "description": "Compter au-delà de 10 et comprendre la structure des dizaines en arabe.",
+    "content": "## Les nombres de 11 et 12\n- **11** : أَحَدَ عَشَرَ (Aḥada 'ashara, masc.) / إِحْدَى عَشْرَة (Iḥdā 'ashrata, fém.)\n- **12** : اِثْنَا عَشَرَ (Ithnā 'ashara, masc.) / اِثْنَتَا عَشْرَة (fém.)\n\n## Les nombres de 13 à 19\nFormule : **unités + عَشَرَ/'عَشَرة**. La polarité s'inverse à nouveau !\n- 13 (masc.) : ثَلَاثَةَ عَشَرَ\n- 14 (masc.) : أَرْبَعَةَ عَشَرَ\n- 15 : خَمْسَةَ عَشَرَ\n- 16 : سِتَّةَ عَشَرَ...\n\n## Les dizaines exactes\n\n| Chiffre | Arabe | Translitération |\n|---|---|---|\n| 20 | عِشْرُون | 'Ishrūn |\n| 30 | ثَلَاثُون | Thalāthūn |\n| 40 | أَرْبَعُون | Arba'ūn |\n| 50 | خَمْسُون | Khamsūn |\n| 60 | سِتُّون | Sittūn |\n| 70 | سَبْعُون | Sab'ūn |\n| 80 | ثَمَانُون | Thamānūn |\n| 90 | تِسْعُون | Tis'ūn |\n| 100 | مِئَة | Mi'a |\n\n## Les nombres composés (21-99)\nFormule : **unités + وَ (wa = et) + dizaines** :\n- 21 : وَاحِدٌ وَعِشْرُون (Wāḥidun wa-'ishrūn)\n- 45 : خَمْسَةٌ وَأَرْبَعُون\n\n## Accord après 11-99\nLe nom compté après 11-99 est au **singulier accusatif** (Fatḥa finale).",
+    "exercises": [
+      {
+        "question": "Comment dit-on '20' en arabe ?",
+        "options": [
+          "عَشَرَة",
+          "عِشْرُون",
+          "مِئَة",
+          "ثَلَاثُون"
+        ],
+        "answer": "عِشْرُون"
+      },
+      {
+        "question": "Comment dit-on '100' en arabe ?",
+        "options": [
+          "عِشْرُون",
+          "أَلْف",
+          "مِئَة",
+          "تِسْعُون"
+        ],
+        "answer": "مِئَة"
+      },
+      {
+        "question": "La formule pour un nombre composé (ex: 35) en arabe est :",
+        "options": [
+          "Dizaine + unité",
+          "Unité + و (et) + dizaine",
+          "Dizaine + et + unité"
+        ],
+        "answer": "Unité + و (et) + dizaine"
+      },
+      {
+        "question": "Comment се traduit Khamsatun wa-thalāthūn ?",
+        "options": [
+          "35",
+          "53",
+          "305",
+          "503"
+        ],
+        "answer": "35"
+      },
+      {
+        "question": "Après les nombres 11-99, le nom est au :",
+        "options": [
+          "Pluriel génitif",
+          "Duel",
+          "Singulier accusatif (Fatḥa)"
+        ],
+        "answer": "Singulier accusatif (Fatḥa)"
+      },
+      {
+        "question": "Comment dit-on '50' en arabe ?",
+        "options": [
+          "سِتُّون",
+          "خَمْسُون",
+          "أَرْبَعُون",
+          "تِسْعُون"
+        ],
+        "answer": "خَمْسُون"
+      },
+      {
+        "question": "La dizaine '70' se dit :",
+        "options": [
+          "سِتُّون",
+          "سَبْعُون",
+          "ثَمَانُون"
+        ],
+        "answer": "سَبْعُون"
+      },
+      {
+        "question": "Le nombre 11 s'accorde-t-il en genre ?",
+        "options": [
+          "Non, il est invariable",
+          "Oui, il a une forme masculine et féminine"
+        ],
+        "answer": "Oui, il a une forme masculine et féminine"
+      },
+      {
+        "question": "Comment dit-on '13' au masculin ?",
+        "options": [
+          "ثَلَاثَ عَشَرَ",
+          "ثَلَاثَةَ عَشَرَ",
+          "ثَلَاثَةُ عَشْرَة"
+        ],
+        "answer": "ثَلَاثَةَ عَشَرَ"
+      },
+      {
+        "question": "Quelle est la particule utilisée pour lier les unités aux dizaines ?",
+        "options": [
+          "مِنْ",
+          "فِي",
+          "وَ"
+        ],
+        "answer": "وَ"
+      }
+    ]
+  },
+  {
+    "id": "l14",
+    "category": "Intermédiaire",
+    "title": "Leçon 14 : Introduction aux verbes arabes",
+    "description": "Comprendre la structure racine-schème des verbes arabes et leur conjugaison de base.",
+    "content": "## Le système verbal arabe : racines et schèmes\nLe génie de l'arabe réside dans son système de **racines consonantiques** (جُذُور). La grande majorité des mots arabes dérive d'une racine de **3 consonnes** (rarement 4). En changeant les voyelles et les schèmes, on crée différents types de mots.\n\nExemple avec la racine **ك-ت-ب** (K-T-B) liée à l'idée d'**écrire** :\n- كَتَبَ (Kataba) = il a écrit (verbe)\n- كِتَاب (Kitāb) = livre (nom)\n- كَاتِب (Kātib) = écrivain (participe actif)\n- مَكْتَب (Maktab) = bureau (lieu d'action)\n- مَكْتُوب (Maktūb) = écrit, lettre (participe passif)\n\n## Le verbe à la forme de base (Forme I) — اَلْفِعْلُ المُجَرَّد\nLa forme la plus simple d'un verbe arabe au passé (3ème personne masc. sing.) est le schème **فَعَلَ** (Fa'ala). C'est la forme que vous trouvez dans les dictionnaires.\n\n## Structure de la conjugaison\nLa conjugaison arabe fonctionne par **ajout de préfixes et/ou suffixes** à la racine :\n- كَتَبَ (il a écrit) — passé, 3ème personne masc. sing.\n- كَتَبَتْ (elle a écrit) — suffixe -at pour le féminin\n- كَتَبُوا (ils ont écrit) — suffixe -ū pour le masc. pluriel\n\n## Le passé vs le présent\n- **Passé (Māḍī)** : forme de base, suffixes uniquement.\n- **Présent (Muḍāri')** : préfixes + suffixes. Ex: يَكْتُبُ (il écrit).",
+    "exercises": [
+      {
+        "question": "De combien de consonnes est généralement composée une racine arabe ?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "3"
+      },
+      {
+        "question": "La racine ك-ت-ب est liée au concept de :",
+        "options": [
+          "Manger",
+          "Écrire",
+          "Étudier",
+          "Voyager"
+        ],
+        "answer": "Écrire"
+      },
+      {
+        "question": "La forme du verbe qu'on trouve dans le dictionnaire est :",
+        "options": [
+          "La 1ère personne du singulier",
+          "La 3ème personne du masculin singulier au passé",
+          "L'infinitif"
+        ],
+        "answer": "La 3ème personne du masculin singulier au passé"
+      },
+      {
+        "question": "كَتَبَتْ signifie :",
+        "options": [
+          "Il a écrit",
+          "Elle a écrit",
+          "Tu as écrit"
+        ],
+        "answer": "Elle a écrit"
+      },
+      {
+        "question": "Quel mot dérive de la racine ك-ت-ب et signifie 'bureau' ?",
+        "options": [
+          "كِتَاب",
+          "كَاتِب",
+          "مَكْتَب"
+        ],
+        "answer": "مَكْتَب"
+      },
+      {
+        "question": "Le temps passé (Māḍī) utilise :",
+        "options": [
+          "Des préfixes uniquement",
+          "Des suffixes uniquement",
+          "Des préfixes et des suffixes"
+        ],
+        "answer": "Des suffixes uniquement"
+      },
+      {
+        "question": "Le temps présent (Muḍāri') utilise :",
+        "options": [
+          "Des préfixes uniquement",
+          "Des suffixes uniquement",
+          "Des préfixes (et parfois des suffixes)"
+        ],
+        "answer": "Des préfixes (et parfois des suffixes)"
+      },
+      {
+        "question": "يَكْتُبُ signifie :",
+        "options": [
+          "Il a écrit",
+          "Il écrit (présent)",
+          "Il écrira"
+        ],
+        "answer": "Il écrit (présent)"
+      },
+      {
+        "question": "كَتَبُوا signifie :",
+        "options": [
+          "Il a écrit",
+          "Ils ont écrit",
+          "Elles ont écrit"
+        ],
+        "answer": "Ils ont écrit"
+      },
+      {
+        "question": "Un 'schème' en arabe, c'est :",
+        "options": [
+          "Une racine consonantique",
+          "Un patron de voyelles appliqué à une racine",
+          "Un suffixe de conjugaison"
+        ],
+        "answer": "Un patron de voyelles appliqué à une racine"
+      }
+    ]
+  },
+  {
+    "id": "l15",
+    "category": "Intermédiaire",
+    "title": "Leçon 15 : Le présent-futur des verbes (Al-Muḍāri')",
+    "description": "Conjuguer les verbes au présent et comprendre son usage futur.",
+    "content": "## Le Temps Muḍāri' — présent/futur\nLe temps **Muḍāri'** (المُضَارِع) exprime une action en cours ou habituelle (présent) ou une action future. Il se forme en ajoutant des **préfixes** (et parfois des suffixes) à la forme verbale.\n\n## Préfixes du Muḍāri'\n\n| Personne | Préfixe | Exemple (écrire: ك-ت-ب) |\n|---|---|---|\n| Je (أَنَا) | أَ- | أَكْتُبُ (j'écris) |\n| Tu (m.) (أَنْتَ) | تَ- | تَكْتُبُ (tu écris) |\n| Tu (f.) (أَنْتِ) | تَ-...-ـِينَ | تَكْتُبِينَ (tu écris, f.) |\n| Il (هُوَ) | يَ- | يَكْتُبُ (il écrit) |\n| Elle (هِيَ) | تَ- | تَكْتُبُ (elle écrit) |\n| Nous (نَحْنُ) | نَ- | نَكْتُبُ (nous écrivons) |\n| Ils (هُمْ) | يَ-...-ـُونَ | يَكْتُبُونَ (ils écrivent) |\n\n## Nuance : présent ou futur ?\nLe Muḍāri' peut exprimer :\n- **Le présent** : يَدْرُسُ الآنَ (Il étudie maintenant)\n- **L'habitude** : يَدْرُسُ كُلَّ يَوْمٍ (Il étudie chaque jour)\n- **Le futur proche** (avec سَـ) : سَيَدْرُسُ (Il va étudier)\n- **Le futur** (avec سَوْفَ) : سَوْفَ يَدْرُسُ (Il étudiera)\n\n## Schèmes des voyelles — attention !\nLa voyelle de la radiale médiane au Muḍāri' peut être -u-, -i- ou -a- selon le verbe. Il faut apprendre cette voyelle avec chaque verbe. Les dictionnaires l'indiquent : كَتَبَ / يَكْتُبُ (u).",
+    "exercises": [
+      {
+        "question": "Quel préfixe indique la 3ème personne du masculin singulier au Muḍāri' ?",
+        "options": [
+          "أَ-",
+          "تَ-",
+          "يَ-",
+          "نَ-"
+        ],
+        "answer": "يَ-"
+      },
+      {
+        "question": "Comment dit-on 'je mange' (racine أ-ك-ل, يَأْكُلُ) ?",
+        "options": [
+          "يَأْكُلُ",
+          "تَأْكُلُ",
+          "أَكُلُ / أَكْتُبُ → أَكُلُ",
+          "نَأْكُلُ"
+        ],
+        "answer": "أَكُلُ / أَكْتُبُ → أَكُلُ"
+      },
+      {
+        "question": "Pour exprimer 'Il va écrire (futur proche)', on ajoute :",
+        "options": [
+          "لَنْ",
+          "سَـ devant le verbe",
+          "لَمْ",
+          "قَدْ"
+        ],
+        "answer": "سَـ devant le verbe"
+      },
+      {
+        "question": "يَدْرُسُونَ signifie :",
+        "options": [
+          "Il étudie",
+          "Ils étudient",
+          "Nous étudions",
+          "Tu études"
+        ],
+        "answer": "Ils étudient"
+      },
+      {
+        "question": "Le préfixe نَ- correspond à quelle personne ?",
+        "options": [
+          "Je (أَنَا)",
+          "Tu (أَنْتَ)",
+          "Nous (نَحْنُ)",
+          "Ils (هُمْ)"
+        ],
+        "answer": "Nous (نَحْنُ)"
+      },
+      {
+        "question": "La forme féminine 'Tu (f.) écris' est :",
+        "options": [
+          "تَكْتُبُ",
+          "تَكْتُبِينَ",
+          "يَكْتُبُ",
+          "أَكْتُبُ"
+        ],
+        "answer": "تَكْتُبِينَ"
+      },
+      {
+        "question": "سَوْفَ يَدْرُسُ signifie :",
+        "options": [
+          "Il étudiait",
+          "Il étudie maintenant",
+          "Il étudiera"
+        ],
+        "answer": "Il étudiera"
+      },
+      {
+        "question": "La voyelle de la racine médiane au Muḍāri' est :",
+        "options": [
+          "Toujours -u-",
+          "Toujours -a-",
+          "Variable selon le verbe, à apprendre"
+        ],
+        "answer": "Variable selon le verbe, à apprendre"
+      },
+      {
+        "question": "يَكْتُبُ الآنَ indique :",
+        "options": [
+          "Une action passée",
+          "Une action présente en cours",
+          "Une action future"
+        ],
+        "answer": "Une action présente en cours"
+      },
+      {
+        "question": "Le Muḍāri' peut exprimer :",
+        "options": [
+          "Uniquement le présent",
+          "Uniquement le futur",
+          "Le présent, l'habitude et le futur"
+        ],
+        "answer": "Le présent, l'habitude et le futur"
+      }
+    ]
+  },
+  {
+    "id": "l16",
+    "category": "Intermédiaire",
+    "title": "Leçon 16 : La négation",
+    "description": "Apprendre les différentes particules de négation selon le temps et le contexte.",
+    "content": "## La négation en arabe — plusieurs particules !\nL'arabe n'a pas un seul 'ne pas' universel. La particule de négation dépend du **temps** et du **mode** du verbe.\n\n## Tableau des négations principales\n\n| Particule | Usage | Exemple |\n|---|---|---|\n| لَا | Présent (simple/habituel) | لَا يَكْتُبُ (il n'écrit pas) |\n| لَمْ | Passé (avec Muḍāri' jussif) | لَمْ يَكْتُبْ (il n'a pas écrit) |\n| لَنْ | Futur (avec Muḍāri' subjonctif) | لَنْ يَكْتُبَ (il n'écrira pas) |\n| لَيْسَ | Négation du verbe 'être' | لَيْسَ مُدَرِّسًا (il n'est pas professeur) |\n| مَا | Passé (style classique/littéraire) | مَا كَتَبَ (il n'a pas écrit) |\n\n## La négation avec لَمْ — le Jussif\nAprès **لَمْ**, le verbe au Muḍāri' perd sa voyelle finale et prend le mode **Jussif** (Soukoun à la fin) :\n- يَكْتُبُ → لَمْ **يَكْتُبْ** (le ب prend Soukoun)\n\n## La négation avec لَنْ — le Subjonctif\nAprès **لَنْ**, le verbe prend le mode **Subjonctif** (Fatḥa à la fin) :\n- يَكْتُبُ → لَنْ **يَكْتُبَ**\n\n## لَيْسَ — négation du 'être'\n**لَيْسَ** (Laysa) est un verbe défectif qui nie l'état ou l'identité. Il se conjugue comme un verbe passé mais au sens présent.",
+    "exercises": [
+      {
+        "question": "Quelle particule nie une action au présent ?",
+        "options": [
+          "لَمْ",
+          "لَنْ",
+          "لَا",
+          "لَيْسَ"
+        ],
+        "answer": "لَا"
+      },
+      {
+        "question": "Pour dire 'il n'a pas écrit' (passé négatif), on utilise :",
+        "options": [
+          "لَا يَكْتُبُ",
+          "لَمْ يَكْتُبْ",
+          "لَنْ يَكْتُبَ"
+        ],
+        "answer": "لَمْ يَكْتُبْ"
+      },
+      {
+        "question": "Après لَمْ, quelle mode prend le verbe ?",
+        "options": [
+          "Indicatif (Ḍamma)",
+          "Jussif (Soukoun)",
+          "Subjonctif (Fatḥa)"
+        ],
+        "answer": "Jussif (Soukoun)"
+      },
+      {
+        "question": "لَنْ يَكْتُبَ signifie :",
+        "options": [
+          "Il n'a pas écrit",
+          "Il n'écrit pas",
+          "Il n'écrira pas"
+        ],
+        "answer": "Il n'écrira pas"
+      },
+      {
+        "question": "لَيْسَ est utilisé pour nier :",
+        "options": [
+          "Une action verbale au passé",
+          "Le verbe 'être' (l'état ou l'identité)",
+          "Le futur seulement"
+        ],
+        "answer": "Le verbe 'être' (l'état ou l'identité)"
+      },
+      {
+        "question": "Quelle est la négation classique/littéraire du passé ?",
+        "options": [
+          "لَا",
+          "لَمْ",
+          "مَا",
+          "لَيْسَ"
+        ],
+        "answer": "مَا"
+      },
+      {
+        "question": "Avec لَنْ, la voyelle finale du verbe devient :",
+        "options": [
+          "Ḍamma (-u)",
+          "Kasra (-i)",
+          "Fatḥa (-a)",
+          "Soukoun"
+        ],
+        "answer": "Fatḥa (-a)"
+      },
+      {
+        "question": "Comment dit-on 'Je ne suis pas étudiant.' ?",
+        "options": [
+          "لَا أَنَا طَالِب",
+          "لَسْتُ طَالِبًا",
+          "لَمْ أَكُنْ طَالِبًا"
+        ],
+        "answer": "لَسْتُ طَالِبًا"
+      },
+      {
+        "question": "Laquelle de ces phrases est correcte pour 'Elle n'écrira pas' ?",
+        "options": [
+          "لَا تَكْتُبُ",
+          "لَمْ تَكْتُبْ",
+          "لَنْ تَكْتُبَ"
+        ],
+        "answer": "لَنْ تَكْتُبَ"
+      },
+      {
+        "question": "مَا كَتَبَ est un style de négation :",
+        "options": [
+          "Familier et oral",
+          "Classique et littéraire",
+          "Réservé aux femmes"
+        ],
+        "answer": "Classique et littéraire"
+      }
+    ]
+  },
+  {
+    "id": "l17",
+    "category": "Intermédiaire",
+    "title": "Leçon 17 : Les questions",
+    "description": "Apprendre à former des questions en arabe avec les différentes particules interrogatives.",
+    "content": "## Former des questions en arabe\nEn arabe, les questions se forment de deux façons : par l'ajout de **particules interrogatives** en début de phrase, ou par **l'intonation** (oral uniquement).\n\n## Les particules interrogatives de base\n\n| Particule | Arabe | Usage |\n|---|---|---|\n| Oui/Non | هَلْ / أَ | Question fermée (réponse oui/non) |\n| Qui ? | مَنْ | Pour les personnes |\n| Quoi/Que ? | مَاذَا / مَا | Pour les choses |\n| Où ? | أَيْنَ | Lieu |\n| Quand ? | مَتَى | Temps |\n| Comment ? | كَيْفَ | Manière |\n| Pourquoi ? | لِمَاذَا | Cause |\n| Combien ? | كَمْ | Quantité |\n| Quel/Quelle ? | أَيّ | Choix parmi des options |\n\n## Questions fermées : هَلْ et أَ\n**هَلْ** est la plus courante et formelle. **أَ** est plus classique :\n- هَلْ أَنْتَ طَالِبٌ؟ (Es-tu étudiant ?)\n- أَتَكْتُبُ؟ (Écris-tu ?)\n\n## Questions ouvertes : exemples\n- مَنْ هَٰذَا؟ (Qui est-ce ?)\n- أَيْنَ البَيْتُ؟ (Où est la maison ?)\n- كَيْفَ حَالُكَ؟ (Comment vas-tu ? — expression courante)\n- لِمَاذَا تَدْرُسُ؟ (Pourquoi étudies-tu ?)\n\n## Répondre à une question\n- Oui : نَعَمْ (Na'am) / Réponse affirmative\n- Non : لَا (Lā) + négation appropriée",
+    "exercises": [
+      {
+        "question": "Quelle particule utilise-t-on pour poser une question fermée (oui/non) ?",
+        "options": [
+          "أَيْنَ",
+          "مَنْ",
+          "هَلْ",
+          "مَتَى"
+        ],
+        "answer": "هَلْ"
+      },
+      {
+        "question": "Comment demande-t-on 'Où ?' en arabe ?",
+        "options": [
+          "كَيْفَ",
+          "أَيْنَ",
+          "مَتَى",
+          "لِمَاذَا"
+        ],
+        "answer": "أَيْنَ"
+      },
+      {
+        "question": "'Qui est-ce ?' se traduit par :",
+        "options": [
+          "مَاذَا هَٰذَا؟",
+          "مَنْ هَٰذَا؟",
+          "أَيْنَ هَٰذَا؟"
+        ],
+        "answer": "مَنْ هَٰذَا؟"
+      },
+      {
+        "question": "Comment dit-on 'Pourquoi ?' en arabe ?",
+        "options": [
+          "كَمْ",
+          "كَيْفَ",
+          "لِمَاذَا",
+          "مَتَى"
+        ],
+        "answer": "لِمَاذَا"
+      },
+      {
+        "question": "كَيْفَ حَالُكَ؟ signifie :",
+        "options": [
+          "Où es-tu ?",
+          "Qui es-tu ?",
+          "Comment vas-tu ?"
+        ],
+        "answer": "Comment vas-tu ?"
+      },
+      {
+        "question": "Pour demander un prix ou une quantité, on utilise :",
+        "options": [
+          "أَيّ",
+          "كَمْ",
+          "مَنْ",
+          "هَلْ"
+        ],
+        "answer": "كَمْ"
+      },
+      {
+        "question": "Comment dit-on 'Oui' en arabe ?",
+        "options": [
+          "لَا",
+          "نَعَمْ",
+          "بَلَى",
+          "كَلَّا"
+        ],
+        "answer": "نَعَمْ"
+      },
+      {
+        "question": "La particule أَ (A-) se place :",
+        "options": [
+          "À la fin de la phrase",
+          "Au début de la phrase (devant le verbe)",
+          "Au milieu"
+        ],
+        "answer": "Au début de la phrase (devant le verbe)"
+      },
+      {
+        "question": "مَاذَا تُرِيدُ؟ signifie :",
+        "options": [
+          "Qui veux-tu ?",
+          "Pourquoi veux-tu ?",
+          "Que veux-tu ?"
+        ],
+        "answer": "Que veux-tu ?"
+      },
+      {
+        "question": "أَيّ (Ayyu) sert à demander :",
+        "options": [
+          "Un lieu",
+          "Quel/Quelle (choix parmi des options)",
+          "Comment"
+        ],
+        "answer": "Quel/Quelle (choix parmi des options)"
+      }
+    ]
+  },
+  {
+    "id": "l18",
+    "category": "Intermédiaire",
+    "title": "Leçon 18 : Le passé (Al-Māḍī)",
+    "description": "Conjuguer les verbes arabes au passé et exprimer des actions révolues.",
+    "content": "## Le temps passé en arabe (الماضي)\nLe passé (**Māḍī**) est le temps de base du verbe arabe. C'est la 3ème personne masculine singulier qui sert de forme de référence (et de forme du dictionnaire). Le passé se forme en ajoutant des **suffixes** à la forme de base.\n\n## Conjugaison du verbe كَتَبَ (écrire) au passé\n\n| Personne | Arabe | Translitération |\n|---|---|---|\n| Il | كَتَبَ | Kataba |\n| Elle | كَتَبَتْ | Katabat |\n| Tu (m.) | كَتَبْتَ | Katabta |\n| Tu (f.) | كَتَبْتِ | Katabti |\n| Je | كَتَبْتُ | Katabtu |\n| Ils | كَتَبُوا | Katabū |\n| Elles | كَتَبْنَ | Katabna |\n| Vous (m.) | كَتَبْتُمْ | Katabtum |\n| Nous | كَتَبْنَا | Katabnā |\n\n## Les suffixes à retenir\n- Féminin singulier (3e) : **ـَتْ** (-at)\n- Je : **ـْتُ** (-tu)\n- Tu (m.) : **ـْتَ** (-ta)\n- Tu (f.) : **ـْتِ** (-ti)\n- Ils : **ـُوا** (-ū)\n- Nous : **ـْنَا** (-nā)\n\n## Points clés\n1. La **3e personne masc.** est la seule sans suffixe (forme nue).\n2. Pour les verbes à lettres faibles (و, ي), il y a des modifications — à apprendre progressivement.\n3. Le passé est toujours sans préfixe (contrairement au Muḍāri').",
+    "exercises": [
+      {
+        "question": "Quel est le suffixe de la 1ère personne du singulier au passé ?",
+        "options": [
+          "-na (-نَا)",
+          "-tu (-ْتُ)",
+          "-ta (-ْتَ)",
+          "-at (-َتْ)"
+        ],
+        "answer": "-tu (-ْتُ)"
+      },
+      {
+        "question": "كَتَبَتْ signifie :",
+        "options": [
+          "Il a écrit",
+          "Tu as écrit (m.)",
+          "Elle a écrit"
+        ],
+        "answer": "Elle a écrit"
+      },
+      {
+        "question": "Quelle personne est représentée par كَتَبُوا ?",
+        "options": [
+          "Elles",
+          "Ils",
+          "Vous (m.)"
+        ],
+        "answer": "Ils"
+      },
+      {
+        "question": "Le passé arabe utilise des :",
+        "options": [
+          "Préfixes uniquement",
+          "Suffixes uniquement",
+          "Préfixes et suffixes"
+        ],
+        "answer": "Suffixes uniquement"
+      },
+      {
+        "question": "La forme du dictionnaire d'un verbe arabe est :",
+        "options": [
+          "La 1ère personne (je)",
+          "La 3e personne masc. sing. au passé",
+          "L'infinitif"
+        ],
+        "answer": "La 3e personne masc. sing. au passé"
+      },
+      {
+        "question": "Comment dit-on 'Nous avons écrit' ?",
+        "options": [
+          "كَتَبْتُمْ",
+          "كَتَبْنَا",
+          "كَتَبُوا"
+        ],
+        "answer": "كَتَبْنَا"
+      },
+      {
+        "question": "Le suffixe ـَتْ (-at) indique :",
+        "options": [
+          "Le masculin pluriel",
+          "Le féminin singulier (3e personne)",
+          "La première personne"
+        ],
+        "answer": "Le féminin singulier (3e personne)"
+      },
+      {
+        "question": "كَتَبْتَ signifie :",
+        "options": [
+          "Tu as écrit (m.)",
+          "Tu as écrit (f.)",
+          "Vous avez écrit"
+        ],
+        "answer": "Tu as écrit (m.)"
+      },
+      {
+        "question": "Comment fait-on la différence entre كَتَبْتَ (m.) et كَتَبْتِ (f.) à l'écrit ?",
+        "options": [
+          "La longueur du mot",
+          "La voyelle finale (-a vs -i)",
+          "Le nombre de lettres"
+        ],
+        "answer": "La voyelle finale (-a vs -i)"
+      },
+      {
+        "question": "كَتَبْنَ (Katabna) correspond à :",
+        "options": [
+          "Nous avons écrit",
+          "Ils ont écrit",
+          "Elles ont écrit"
+        ],
+        "answer": "Elles ont écrit"
+      }
+    ]
+  },
+  {
+    "id": "l19",
+    "category": "Intermédiaire",
+    "title": "Leçon 19 : Le pluriel régulier",
+    "description": "Former les pluriels réguliers masculins et féminins en ajoutant des suffixes.",
+    "content": "## Les deux types de pluriel en arabe\nL'arabe possède deux systèmes de pluriel :\n1. **Le pluriel régulier (Salim)** — formé par l'ajout de suffixes réguliers\n2. **Le pluriel brisé (Mukassar)** — la structure interne du mot change (leçon suivante)\n\n## Pluriel Masculin Sain (جَمْعُ المُذَكَّر السَّالِم)\nOn ajoute **ـُونَ** (-ūna) au nominatif / **ـِينَ** (-īna) à l'accusatif-génitif :\n- مُدَرِّس (professeur) → **مُدَرِّسُونَ** (professeurs)\n- مُسْلِم (musulman) → **مُسْلِمُونَ** (musulmans)\n\nConditions : s'applique généralement aux noms d'humains de sexe masculin, et aux participes actifs.\n\n## Pluriel Féminin Sain (جَمْعُ المُؤَنَّث السَّالِم)\nOn supprime la **ة** et on ajoute **ـَات** (-āt) :\n- مُدَرِّسَة (professeure) → **مُدَرِّسَات** (professeures)\n- سَيَّارَة (voiture) → **سَيَّارَات** (voitures)\n\nAttention : le pluriel en ـَات peut aussi s'appliquer à des mots masculins dérivés de l'arabe classique (ex: اِجْتِمَاعَات = réunions).\n\n## Déclinaison du Pluriel Masculin Sain\nCe pluriel se décline (il change selon sa fonction dans la phrase) :\n- Nominatif : مُدَرِّسُونَ\n- Accusatif/Génitif : مُدَرِّسِينَ",
+    "exercises": [
+      {
+        "question": "Quel suffixe forme le pluriel masculin sain au nominatif ?",
+        "options": [
+          "-āt (-ات)",
+          "-ūna (-ُونَ)",
+          "-īna (-ِينَ)",
+          "-ān (-ان)"
+        ],
+        "answer": "-ūna (-ُونَ)"
+      },
+      {
+        "question": "Comment forme-t-on le pluriel féminin sain ?",
+        "options": [
+          "On ajoute -ūna",
+          "On supprime la ة et on ajoute -āt",
+          "On change les voyelles internes"
+        ],
+        "answer": "On supprime la ة et on ajoute -āt"
+      },
+      {
+        "question": "Le pluriel de مُدَرِّسَة (professeure) est :",
+        "options": [
+          "مُدَرِّسُونَ",
+          "مُدَرِّسَات",
+          "مُدَرِّسِينَ"
+        ],
+        "answer": "مُدَرِّسَات"
+      },
+      {
+        "question": "Le pluriel masculin sain s'applique surtout aux :",
+        "options": [
+          "Objets inanimés",
+          "Humains masculins et participes actifs",
+          "Pays et villes"
+        ],
+        "answer": "Humains masculins et participes actifs"
+      },
+      {
+        "question": "مُسْلِمُونَ est :",
+        "options": [
+          "Un duel",
+          "Un pluriel féminin sain",
+          "Un pluriel masculin sain au nominatif"
+        ],
+        "answer": "Un pluriel masculin sain au nominatif"
+      },
+      {
+        "question": "La forme de مُسْلِمُونَ à l'accusatif-génitif est :",
+        "options": [
+          "مُسْلِمُونَ",
+          "مُسْلِمِينَ",
+          "مُسْلِمَات"
+        ],
+        "answer": "مُسْلِمِينَ"
+      },
+      {
+        "question": "Le pluriel de سَيَّارَة (voiture) est :",
+        "options": [
+          "سَيَّارٌ",
+          "سَيَّارُونَ",
+          "سَيَّارَات"
+        ],
+        "answer": "سَيَّارَات"
+      },
+      {
+        "question": "Un 'pluriel sain' se reconnaît par :",
+        "options": [
+          "Un changement interne du mot",
+          "L'ajout d'un suffixe sans changer la racine",
+          "L'ajout d'un préfixe"
+        ],
+        "answer": "L'ajout d'un suffixe sans changer la racine"
+      },
+      {
+        "question": "Peut-on utiliser le pluriel en -āt pour des mots masculins ?",
+        "options": [
+          "Non, jamais",
+          "Oui, dans certains cas (noms abstraits, emprunts)"
+        ],
+        "answer": "Oui, dans certains cas (noms abstraits, emprunts)"
+      },
+      {
+        "question": "Le pluriel d'un adjectif qualifiant un pluriel non-humain se met au :",
+        "options": [
+          "Pluriel masculin sain",
+          "Pluriel féminin singulier (fém. sing.)",
+          "Pluriel brisé seulement"
+        ],
+        "answer": "Pluriel féminin singulier (fém. sing.)"
+      }
+    ]
+  },
+  {
+    "id": "l20",
+    "category": "Intermédiaire",
+    "title": "Leçon 20 : Le pluriel brisé (Al-Jamʿ Al-Mukassar)",
+    "description": "Comprendre et mémoriser les pluriels irréguliers qui changent la structure interne du mot.",
+    "content": "## Qu'est-ce que le pluriel brisé ?\nLe **pluriel brisé** (جَمْعُ التَّكْسِير) est un pluriel où la structure **interne** du mot se modifie, comme si le mot était 'cassé' et reconstruit différemment. C'est le type de pluriel le plus fréquent en arabe pour les noms communs.\n\n## Exemples de pluriels brisés courants\n\n| Singulier | Pluriel | Traduction |\n|---|---|---|\n| كِتَاب | كُتُب | livre / livres |\n| بَيْت | بُيُوت | maison / maisons |\n| رَجُل | رِجَال | homme / hommes |\n| اِمْرَأَة | نِسَاء | femme / femmes |\n| وَلَد | أَوْلَاد | garçon / garçons |\n| طِفْل | أَطْفَال | enfant / enfants |\n| مَدِينَة | مُدُن | ville / villes |\n| يَوْم | أَيَّام | jour / jours |\n\n## Schèmes de pluriels brisés courants\nIl existe une vingtaine de schèmes. Voici les plus fréquents :\n- **فُعُل** (Fu'ul) : كُتُب, قُلُوب (cœurs)\n- **أَفْعَال** (Af'āl) : أَوْلَاد, أَطْفَال, أَيَّام\n- **فِعَال** (Fi'āl) : رِجَال, جِبَال (montagnes), كِبَار (grands)\n\n## Comment les apprendre ?\nLa clé est la **mémorisation** par paires singulier-pluriel. Il n'existe pas de règle universelle — apprenez le pluriel avec chaque nouveau mot.",
+    "exercises": [
+      {
+        "question": "Le pluriel de كِتَاب (livre) est :",
+        "options": [
+          "كِتَابَات",
+          "كِتَابُونَ",
+          "كُتُب"
+        ],
+        "answer": "كُتُب"
+      },
+      {
+        "question": "Qu'est-ce qui caractérise le pluriel brisé ?",
+        "options": [
+          "L'ajout d'un suffixe régulier",
+          "Un changement de la structure interne du mot",
+          "L'ajout d'un préfixe"
+        ],
+        "answer": "Un changement de la structure interne du mot"
+      },
+      {
+        "question": "Le pluriel de رَجُل (homme) est :",
+        "options": [
+          "رَجُلُونَ",
+          "رَجُلَات",
+          "رِجَال"
+        ],
+        "answer": "رِجَال"
+      },
+      {
+        "question": "أَوْلَاد est le pluriel de :",
+        "options": [
+          "بِنْت (fille)",
+          "وَلَد (garçon)",
+          "رَجُل (homme)"
+        ],
+        "answer": "وَلَد (garçon)"
+      },
+      {
+        "question": "Le pluriel brisé est :",
+        "options": [
+          "Rare et exceptionnel en arabe",
+          "Le type de pluriel le plus fréquent pour les noms communs",
+          "Uniquement pour les adjectifs"
+        ],
+        "answer": "Le type de pluriel le plus fréquent pour les noms communs"
+      },
+      {
+        "question": "أَيَّام est le pluriel de :",
+        "options": [
+          "أَسْبُوع (semaine)",
+          "شَهْر (mois)",
+          "يَوْم (jour)"
+        ],
+        "answer": "يَوْم (jour)"
+      },
+      {
+        "question": "Quel schème de pluriel brisé correspond à 'أَطْفَال' (enfants) ?",
+        "options": [
+          "فُعُل (Fu'ul)",
+          "أَفْعَال (Af'āl)",
+          "فِعَال (Fi'āl)"
+        ],
+        "answer": "أَفْعَال (Af'āl)"
+      },
+      {
+        "question": "Pour les pluriels brisés non-humains, l'adjectif qui les qualifie se met au :",
+        "options": [
+          "Pluriel masculin",
+          "Féminin singulier",
+          "Duel"
+        ],
+        "answer": "Féminin singulier"
+      },
+      {
+        "question": "بُيُوت est le pluriel de :",
+        "options": [
+          "مَدِينَة (ville)",
+          "بَيْت (maison)",
+          "دَار (demeure)"
+        ],
+        "answer": "بَيْت (maison)"
+      },
+      {
+        "question": "La meilleure stratégie pour apprendre les pluriels brisés est :",
+        "options": [
+          "Déduire le pluriel de la règle générale",
+          "Mémoriser chaque paire singulier-pluriel",
+          "Ajouter systématiquement -ūna"
+        ],
+        "answer": "Mémoriser chaque paire singulier-pluriel"
+      }
+    ]
+  },
+  {
+    "id": "l21",
+    "category": "Intermédiaire",
+    "title": "Leçon 21 : Les adverbes",
+    "description": "Exprimer la manière, le temps et le lieu avec les adverbes arabes.",
+    "content": "## Les adverbes en arabe\nEn arabe classique, beaucoup d'adverbes sont en réalité des **noms à l'accusatif** (avec Fatḥa finale). On les appelle des **adverbes de manière** (مَفْعُول مُطْلَق ou حَال).\n\n## Adverbes de temps courants\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| الآنَ | Al-āna | Maintenant |\n| اليَوْمَ | Al-yawma | Aujourd'hui |\n| غَدًا | Ghadan | Demain |\n| أَمْسِ | Amsi | Hier |\n| دَائِمًا | Dā'iman | Toujours |\n| أَحْيَانًا | Aḥyānan | Parfois |\n| أَبَدًا | Abadan | Jamais (avec négation) |\n| سَرِيعًا | Sarī'an | Vite, rapidement |\n\n## Adverbes de lieu courants\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| هُنَا | Hunā | Ici |\n| هُنَاكَ | Hunāka | Là-bas |\n| أَمَامَ | Amāma | Devant |\n| خَلْفَ | Khalfa | Derrière |\n| فَوْقَ | Fawqa | Au-dessus |\n| تَحْتَ | Taḥta | En-dessous |\n\n## Formation des adverbes de manière\nDe nombreux adverbes se forment à partir d'un adjectif au cas accusatif indéfini :\n- كَثِير (beaucoup, adj.) → كَثِيرًا (beaucoup, adv.)\n- قَلِيل (peu, adj.) → قَلِيلًا (peu, adv.)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Maintenant' en arabe ?",
+        "options": [
+          "غَدًا",
+          "الآنَ",
+          "أَمْسِ",
+          "دَائِمًا"
+        ],
+        "answer": "الآنَ"
+      },
+      {
+        "question": "غَدًا signifie :",
+        "options": [
+          "Hier",
+          "Maintenant",
+          "Demain",
+          "Toujours"
+        ],
+        "answer": "Demain"
+      },
+      {
+        "question": "Comment dit-on 'Ici' en arabe ?",
+        "options": [
+          "هُنَاكَ",
+          "هُنَا",
+          "أَمَامَ",
+          "خَلْفَ"
+        ],
+        "answer": "هُنَا"
+      },
+      {
+        "question": "L'adverbe أَبَدًا (Abadan) signifie :",
+        "options": [
+          "Parfois",
+          "Toujours",
+          "Jamais (avec négation)"
+        ],
+        "answer": "Jamais (avec négation)"
+      },
+      {
+        "question": "فَوْقَ signifie :",
+        "options": [
+          "En-dessous",
+          "Derrière",
+          "Devant",
+          "Au-dessus"
+        ],
+        "answer": "Au-dessus"
+      },
+      {
+        "question": "L'adverbe دَائِمًا signifie :",
+        "options": [
+          "Parfois",
+          "Rarement",
+          "Toujours"
+        ],
+        "answer": "Toujours"
+      },
+      {
+        "question": "Comment forme-t-on souvent un adverbe de manière en arabe ?",
+        "options": [
+          "En ajoutant -ly à l'adjectif",
+          "En mettant l'adjectif à l'accusatif indéfini (Fatḥa + Tanwīn)",
+          "En ajoutant une préposition"
+        ],
+        "answer": "En mettant l'adjectif à l'accusatif indéfini (Fatḥa + Tanwīn)"
+      },
+      {
+        "question": "أَمَامَ signifie :",
+        "options": [
+          "Pas encore",
+          "Devant",
+          "Derrière",
+          "À côté"
+        ],
+        "answer": "Devant"
+      },
+      {
+        "question": "أَمْسِ signifie :",
+        "options": [
+          "Aujourd'hui",
+          "Demain",
+          "Hier"
+        ],
+        "answer": "Hier"
+      },
+      {
+        "question": "كَثِيرًا (Kathīran) est un adverbe signifiant :",
+        "options": [
+          "Peu",
+          "Beaucoup",
+          "Souvent",
+          "Rarement"
+        ],
+        "answer": "Beaucoup"
+      }
+    ]
+  },
+  {
+    "id": "l22",
+    "category": "Intermédiaire",
+    "title": "Leçon 22 : Les comparatifs et superlatifs",
+    "description": "Comparer des éléments et exprimer le superlatif en arabe.",
+    "content": "## Former le comparatif en arabe\nLe comparatif et le superlatif partagent la même forme en arabe : le schème **أَفْعَل** (Af'al). C'est une seule forme qui exprime 'plus... que' ou 'le plus...'.\n\n## Schème أَفْعَل\nOn applique le patron أَ-ـَ-ع à la racine de l'adjectif :\n- كَبِير (grand) : racine ك-ب-ر → **أَكْبَر** (plus grand / le plus grand)\n- صَغِير (petit) : racine ص-غ-ر → **أَصْغَر**\n- جَمِيل (beau) : racine ج-م-ل → **أَجْمَل**\n- سَرِيع (rapide) : racine س-ر-ع → **أَسْرَع**\n- كَثِير (nombreux) : racine ك-ث-ر → **أَكْثَر**\n\n## Le Comparatif ('plus... que')\nFormule : **Nom + أَفْعَل + مِنْ + Nom de référence**\n- مُحَمَّدٌ أَكْبَرُ مِنْ عَلِيٍّ (Mohammed est plus grand qu'Ali)\n\n## Le Superlatif ('le plus...')\nDeux constructions :\n1. **Défini** : Al + أَفْعَل : **الأَكْبَر** (le plus grand)\n2. **Iḍāfa** : أَكْبَر + pluriel : **أَكْبَرُ الطُّلَّابِ** (le plus grand des étudiants)\n\n## Forme du féminin\nLe féminin du superlatif est **فُعْلَى** (Fu'lā) :\n- أَكْبَر (masc.) → **كُبْرَى** (fém.)",
+    "exercises": [
+      {
+        "question": "Quel schème arabe exprime le comparatif et le superlatif ?",
+        "options": [
+          "فَعِيل",
+          "مَفْعُول",
+          "أَفْعَل",
+          "فَعَّال"
+        ],
+        "answer": "أَفْعَل"
+      },
+      {
+        "question": "Le comparatif de كَبِير (grand) est :",
+        "options": [
+          "كُبْرَى",
+          "أَكْبَر",
+          "كَبِيرًا",
+          "الأَكْبَر"
+        ],
+        "answer": "أَكْبَر"
+      },
+      {
+        "question": "Pour dire 'Mohammed est plus grand qu'Ali', on utilise la préposition :",
+        "options": [
+          "عَلَى",
+          "مِنْ",
+          "فِي"
+        ],
+        "answer": "مِنْ"
+      },
+      {
+        "question": "Quel est le superlatif défini de جَمِيل (beau) ?",
+        "options": [
+          "جَمِيلٌ جِدًّا",
+          "الأَجْمَل",
+          "أَجْمَل مِنْ"
+        ],
+        "answer": "الأَجْمَل"
+      },
+      {
+        "question": "Le féminin du superlatif أَكْبَر est :",
+        "options": [
+          "أَكْبَرَة",
+          "كُبْرَى",
+          "كَبِيرَة"
+        ],
+        "answer": "كُبْرَى"
+      },
+      {
+        "question": "أَكْثَرُ الطُّلَّابِ signifie :",
+        "options": [
+          "Les étudiants sont nombreux",
+          "Le plus grand des étudiants",
+          "Le plus nombreux des étudiants / la majorité des étudiants"
+        ],
+        "answer": "Le plus nombreux des étudiants / la majorité des étudiants"
+      },
+      {
+        "question": "Le comparatif de صَغِير (petit) est :",
+        "options": [
+          "أَكْبَر",
+          "أَصْغَر",
+          "صُغْرَى"
+        ],
+        "answer": "أَصْغَر"
+      },
+      {
+        "question": "أَسْرَع est le comparatif de :",
+        "options": [
+          "كَبِير (grand)",
+          "سَرِيع (rapide)",
+          "قَصِير (court)"
+        ],
+        "answer": "سَرِيع (rapide)"
+      },
+      {
+        "question": "La construction أَفْعَل + مِنْ exprime :",
+        "options": [
+          "Le superlatif absolu",
+          "Le comparatif de supériorité ('plus... que')",
+          "Une qualité négative"
+        ],
+        "answer": "Le comparatif de supériorité ('plus... que')"
+      },
+      {
+        "question": "Comment dit-on 'le meilleur' en arabe (bien = جَيِّد, racine ج-و-د) ?",
+        "options": [
+          "أَجْيَد",
+          "أَجْوَد",
+          "الجَيِّد"
+        ],
+        "answer": "أَجْوَد"
+      }
+    ]
+  },
+  {
+    "id": "l23",
+    "category": "Intermédiaire",
+    "title": "Leçon 23 : Le futur",
+    "description": "Exprimer des actions à venir avec les particules de futur arabes.",
+    "content": "## Le futur en arabe — deux façons\nL'arabe n'a pas de temps futur dédié comme en français. Le futur est exprimé en **ajoutant une particule au Muḍāri'** (présent-futur) :\n\n1. **سَـ** (Sa-) : préfixe attaché directement au verbe\n2. **سَوْفَ** (Sawfa) : particule séparée avant le verbe\n\n## Comparaison des deux\n\n| Forme | Exemple | Sens |\n|---|---|---|\n| سَـ + Muḍāri' | سَيَكْتُبُ | Il écrira (futur proche/certain) |\n| سَوْفَ + Muḍāri' | سَوْفَ يَكْتُبُ | Il écrira (futur, plus solennel) |\n\n## En pratique\nLes deux formes sont souvent interchangeables. **سَـ** est plus courant dans la conversation, **سَوْفَ** est plus formel ou littéraire.\n\n## Le futur négatif avec لَنْ\nPour le futur négatif, on utilise **لَنْ** avec le Muḍāri' au subjonctif :\n- لَنْ يَكْتُبَ (Il n'écrira pas)\n\n## Exemples\n- سَأَذْهَبُ غَدًا. (J'irai demain.)\n- سَوْفَ يَصِلُون قَرِيبًا. (Ils arriveront bientôt.)\n- هَلْ سَتَدْرُسُ ؟ (Est-ce que tu étudieras ?)",
+    "exercises": [
+      {
+        "question": "Comment exprime-t-on le futur en arabe ?",
+        "options": [
+          "Par un temps dédié comme en français",
+          "Par سَـ ou سَوْفَ + Muḍāri'",
+          "Uniquement par le contexte"
+        ],
+        "answer": "Par سَـ ou سَوْفَ + Muḍāri'"
+      },
+      {
+        "question": "سَيَكْتُبُ signifie :",
+        "options": [
+          "Il a écrit",
+          "Il écrit maintenant",
+          "Il écrira"
+        ],
+        "answer": "Il écrira"
+      },
+      {
+        "question": "Quelle particule est plus formelle pour le futur ?",
+        "options": [
+          "سَـ (attaché)",
+          "سَوْفَ (séparé)",
+          "Les deux sont identiques"
+        ],
+        "answer": "سَوْفَ (séparé)"
+      },
+      {
+        "question": "Pour le futur négatif, on utilise :",
+        "options": [
+          "لَا + Muḍāri'",
+          "لَمْ + Muḍāri'",
+          "لَنْ + Muḍāri' (subjonctif)"
+        ],
+        "answer": "لَنْ + Muḍāri' (subjonctif)"
+      },
+      {
+        "question": "سَأَذْهَبُ signifie :",
+        "options": [
+          "Je suis allé",
+          "Je vais (habituel)",
+          "J'irai"
+        ],
+        "answer": "J'irai"
+      },
+      {
+        "question": "Comment dit-on 'Nous n'étudierons pas' ?",
+        "options": [
+          "لَا نَدْرُسُ",
+          "لَنْ نَدْرُسَ",
+          "لَمْ نَدْرُسْ"
+        ],
+        "answer": "لَنْ نَدْرُسَ"
+      },
+      {
+        "question": "سَوْفَ يَصِلُون signifie :",
+        "options": [
+          "Ils sont arrivés",
+          "Ils arrivent",
+          "Ils arriveront"
+        ],
+        "answer": "Ils arriveront"
+      },
+      {
+        "question": "سَـ s'attache :",
+        "options": [
+          "Après le verbe",
+          "Directement avant le verbe, sans espace",
+          "Comme un mot séparé"
+        ],
+        "answer": "Directement avant le verbe, sans espace"
+      },
+      {
+        "question": "هَلْ سَتَدْرُسُ؟ signifie :",
+        "options": [
+          "As-tu étudié ?",
+          "Étudies-tu ?",
+          "Étudieras-tu ?"
+        ],
+        "answer": "Étudieras-tu ?"
+      },
+      {
+        "question": "Après لَنْ, le verbe prend la voyelle finale :",
+        "options": [
+          "-u (Ḍamma)",
+          "-i (Kasra)",
+          "-a (Fatḥa)"
+        ],
+        "answer": "-a (Fatḥa)"
+      }
+    ]
+  },
+  {
+    "id": "l24",
+    "category": "Intermédiaire",
+    "title": "Leçon 24 : L'impératif",
+    "description": "Donner des ordres et des instructions en arabe.",
+    "content": "## L'impératif en arabe (الأَمْر)\nL'impératif se dérive du **Muḍāri' jussif** en supprimant le préfixe de la 2ème personne (تَـ) et en ajoutant si nécessaire un Alif prothétique au début.\n\n## Construction de l'impératif\nÀ partir de يَكْتُبُ (il écrit) → Jussif : يَكْتُبْ → Impératif (tu) :\n1. Supprimer le préfixe يَ : كْتُبْ\n2. La première lettre a un Soukoun → on ajoute un Alif : **اُكْتُبْ** (Ecris!)\n\n## Règle de l'Alif prothétique\nSi en supprimant le préfixe, la première consonne se retrouve avec un Soukoun, on ajoute un Alif de jonction :\n- La voyelle de cet Alif est **ـِ** si la voyelle médiane du verbe est -ā ou -ī\n- La voyelle est **ـُ** si la voyelle médiane est -ū\n\n## Conjugaison de l'impératif de كَتَبَ\n\n| Personne | Forme |\n|---|---|\n| Tu (m.) | اُكْتُبْ (Uktub) |\n| Tu (f.) | اُكْتُبِي (Uktubī) |\n| Vous (m.) | اُكْتُبُوا (Uktubū) |\n\n## Impératif négatif\nOn utilise **لَا + Muḍāri' Jussif** :\n- لَا تَكْتُبْ ! (N'écris pas !)",
+    "exercises": [
+      {
+        "question": "À partir de quoi se forme l'impératif ?",
+        "options": [
+          "Du passé directement",
+          "Du Muḍāri' jussif en supprimant le préfixe",
+          "D'une forme indépendante"
+        ],
+        "answer": "Du Muḍāri' jussif en supprimant le préfixe"
+      },
+      {
+        "question": "اُكْتُبْ signifie :",
+        "options": [
+          "Il a écrit",
+          "J'écris",
+          "Écris ! (ordre à un homme)"
+        ],
+        "answer": "Écris ! (ordre à un homme)"
+      },
+      {
+        "question": "Comment dit-on 'N'écris pas !' en arabe ?",
+        "options": [
+          "مَا تَكْتُبُ",
+          "لَا تَكْتُبْ",
+          "لَمْ تَكْتُبْ"
+        ],
+        "answer": "لَا تَكْتُبْ"
+      },
+      {
+        "question": "La forme féminine de اُكْتُبْ est :",
+        "options": [
+          "اُكْتُبُوا",
+          "اُكْتُبِي",
+          "اُكْتُبَا"
+        ],
+        "answer": "اُكْتُبِي"
+      },
+      {
+        "question": "L'impératif pour 'vous (pluriel masculin)' de كَتَبَ est :",
+        "options": [
+          "اُكْتُبُوا",
+          "اُكْتُبِي",
+          "تَكْتُبُونَ"
+        ],
+        "answer": "اُكْتُبُوا"
+      },
+      {
+        "question": "Pour l'impératif négatif, on utilise :",
+        "options": [
+          "لَمْ + passé",
+          "لَا + Muḍāri' jussif",
+          "لَنْ + Muḍāri' subjonctif"
+        ],
+        "answer": "لَا + Muḍāri' jussif"
+      },
+      {
+        "question": "Pourquoi ajoute-t-on parfois un Alif au début de l'impératif ?",
+        "options": [
+          "Pour rendre la forme plus longue",
+          "Car une consonne ne peut pas commencer un mot arabe avec un Soukoun",
+          "Par convention uniquement"
+        ],
+        "answer": "Car une consonne ne peut pas commencer un mot arabe avec un Soukoun"
+      },
+      {
+        "question": "اِذْهَبْ ! (Idhhab) signifie :",
+        "options": [
+          "Reste !",
+          "Viens !",
+          "Va-t'en ! / Pars !"
+        ],
+        "answer": "Va-t'en ! / Pars !"
+      },
+      {
+        "question": "تَعَالَ ! (Ta'āla) est un impératif signifiant :",
+        "options": [
+          "Assieds-toi !",
+          "Viens !",
+          "Pars !"
+        ],
+        "answer": "Viens !"
+      },
+      {
+        "question": "L'impératif en arabe exprime :",
+        "options": [
+          "Une question",
+          "Un ordre ou une instruction directe",
+          "Un souhait incertain"
+        ],
+        "answer": "Un ordre ou une instruction directe"
+      }
+    ]
+  },
+  {
+    "id": "l25",
+    "category": "Intermédiaire",
+    "title": "Leçon 25 : Le duel (Al-Muthannā)",
+    "description": "Exprimer exactement deux éléments grâce à la forme duelle.",
+    "content": "## Qu'est-ce que le duel ?\nL'arabe possède une forme grammaticale spéciale pour exprimer **exactement deux** éléments : le **duel** (المُثَنَّى - Al-Muthannā). C'est un nombre distinct, entre le singulier et le pluriel.\n\n## Former le duel\nOn ajoute le suffixe **ـَانِ** (-āni) au nominatif ou **ـَيْنِ** (-ayni) à l'accusatif-génitif, directement au singulier :\n- كِتَاب → **كِتَابَانِ** (deux livres, nominatif)\n- كِتَاب → **كِتَابَيْنِ** (de/à deux livres, génitif/accusatif)\n\n## Cas des noms à Ta' Marbūṭa\nOn supprime la ة et on ajoute le suffixe :\n- مَدْرَسَة → **مَدْرَسَتَانِ** (deux écoles)\n\n## Duel des pronoms personnels\n- Vous deux (m.) : **أَنْتُمَا** (Antumā)\n- Ils deux : **هُمَا** (Humā)\n- Elles deux : **هُمَا** (Humā) — même forme\n\n## Duel des verbes\nLes verbes s'accordent aussi au duel. Au passé :\n- Il deux-là ont écrit : **كَتَبَا** (sujet duel masc.)\n- Elles deux ont écrit : **كَتَبَتَا** (sujet duel fém.)\n\n## Usage\nEn arabe moderne (darija), le duel est moins utilisé qu'en arabe littéraire. Dans les textes classiques et formels, il est indispensable.",
+    "exercises": [
+      {
+        "question": "Le duel arabe s'utilise pour exprimer :",
+        "options": [
+          "Un seul élément",
+          "Exactement deux éléments",
+          "Trois éléments ou plus"
+        ],
+        "answer": "Exactement deux éléments"
+      },
+      {
+        "question": "Quel suffixe forme le duel au nominatif ?",
+        "options": [
+          "-ūna (-ُونَ)",
+          "-āni (-َانِ)",
+          "-āt (-َات)"
+        ],
+        "answer": "-āni (-َانِ)"
+      },
+      {
+        "question": "Le duel de كِتَاب (au nominatif) est :",
+        "options": [
+          "كِتَابَانِ",
+          "كِتَابَيْنِ",
+          "كِتَابَات"
+        ],
+        "answer": "كِتَابَانِ"
+      },
+      {
+        "question": "À l'accusatif-génitif, le duel prend le suffixe :",
+        "options": [
+          "-āni",
+          "-ayni (-َيْنِ)",
+          "-ūna"
+        ],
+        "answer": "-ayni (-َيْنِ)"
+      },
+      {
+        "question": "Comment forme-t-on le duel de مَدْرَسَة (école) ?",
+        "options": [
+          "مَدْرَسَتَانِ",
+          "مَدْرَسَتَانِ (on supprime ة + ajoute -tāni)",
+          "مَدْرَسَة مَدْرَسَة"
+        ],
+        "answer": "مَدْرَسَتَانِ (on supprime ة + ajoute -tāni)"
+      },
+      {
+        "question": "Le pronom duel هُمَا signifie :",
+        "options": [
+          "Eux tous",
+          "Ils deux / Elles deux",
+          "Vous deux"
+        ],
+        "answer": "Ils deux / Elles deux"
+      },
+      {
+        "question": "كَتَبَا est la forme duelle de 'ils ont écrit' pour :",
+        "options": [
+          "Deux femmes",
+          "Deux hommes (masc. duel)",
+          "Un homme et une femme"
+        ],
+        "answer": "Deux hommes (masc. duel)"
+      },
+      {
+        "question": "Pour dire 'deux professeurs (masc.)', on dit :",
+        "options": [
+          "مُدَرِّسُونَ",
+          "مُدَرِّسَانِ",
+          "مُدَرِّسَيْنِ"
+        ],
+        "answer": "مُدَرِّسَانِ"
+      },
+      {
+        "question": "En arabe moderne parlé, le duel est :",
+        "options": [
+          "Très fréquent",
+          "Moins utilisé qu'en arabe littéraire classique",
+          "Totalement absent"
+        ],
+        "answer": "Moins utilisé qu'en arabe littéraire classique"
+      },
+      {
+        "question": "أَنْتُمَا s'adresse à :",
+        "options": [
+          "Un groupe de plus de deux personnes",
+          "Deux personnes",
+          "Une seule personne"
+        ],
+        "answer": "Deux personnes"
+      }
+    ]
+  },
+  {
+    "id": "l26",
+    "category": "Avancé",
+    "title": "Leçon 26 : Les pronoms relatifs",
+    "description": "Utiliser الَّذِي et ses variantes pour relier des propositions subordonnées.",
+    "content": "## Qu'est-ce qu'un pronom relatif ?\nLes pronoms relatifs ('qui, que, dont, lequel...') relient une **proposition subordonnée** à un antécédent. En arabe, le pronom relatif principal est **الَّذِي** (Alladhī).\n\n## Tableau des pronoms relatifs\n\n| Genre/Nombre | Arabe | Translitération | Sens |\n|---|---|---|---|\n| Masc. sing. | الَّذِي | Alladhī | qui/que (masc.) |\n| Fém. sing. | الَّتِي | Allatī | qui/que (fém.) |\n| Masc. duel (nom.) | اللَّذَانِ | Alladhāni | qui (deux masc.) |\n| Fém. duel (nom.) | اللَّتَانِ | Allatāni | qui (deux fém.) |\n| Masc. pluriel | الَّذِينَ | Alladhīna | qui/que (pluriel masc.) |\n| Fém. pluriel | اللَّاتِي | Allātī | qui/que (pluriel fém.) |\n\n## Construction de la proposition relative\nDans la proposition qui suit le pronom relatif, un **pronom de reprise** peut être nécessaire pour indiquer la fonction grammaticale de l'antécédent :\n- الطَّالِبُ **الَّذِي** يَدْرُسُ كَثِيرًا نَاجِحٌ. (L'étudiant **qui** étudie beaucoup réussit.)\n- الكِتَابُ **الَّذِي** قَرَأْتُهُ. (Le livre **que** j'ai lu — pronom de reprise 'hu')\n\n## Antécédent indéfini\nQuand l'antécédent est indéfini, on **n'utilise pas** le pronom relatif :\n- قَرَأْتُ كِتَابًا يُفِيدُنِي. (J'ai lu un livre qui m'est utile — pas de الَّذِي)",
+    "exercises": [
+      {
+        "question": "Quel est le pronom relatif arabe pour le masculin singulier ?",
+        "options": [
+          "الَّتِي",
+          "الَّذِينَ",
+          "الَّذِي",
+          "اللَّاتِي"
+        ],
+        "answer": "الَّذِي"
+      },
+      {
+        "question": "Comment dit-on 'qui' au féminin singulier ?",
+        "options": [
+          "الَّذِي",
+          "الَّتِي",
+          "الَّذِينَ",
+          "اللَّاتِي"
+        ],
+        "answer": "الَّتِي"
+      },
+      {
+        "question": "الَّذِينَ est le pronom relatif pour :",
+        "options": [
+          "Masculin singulier",
+          "Féminin singulier",
+          "Masculin pluriel",
+          "Féminin pluriel"
+        ],
+        "answer": "Masculin pluriel"
+      },
+      {
+        "question": "Dans الكِتَابُ الَّذِي قَرَأْتُهُ, à quoi sert le pronom هُ à la fin ?",
+        "options": [
+          "C'est une erreur",
+          "C'est un pronom de reprise indiquant que كتاب est objet du verbe",
+          "C'est un suffixe possessif"
+        ],
+        "answer": "C'est un pronom de reprise indiquant que كتاب est objet du verbe"
+      },
+      {
+        "question": "Quand l'antécédent est indéfini, le pronom relatif est :",
+        "options": [
+          "Obligatoire",
+          "Omis (la subordonnée suit directement)",
+          "Remplacé par مَنْ"
+        ],
+        "answer": "Omis (la subordonnée suit directement)"
+      },
+      {
+        "question": "الطَّالِبَةُ الَّتِي نَجَحَتْ signifie :",
+        "options": [
+          "L'étudiante qui a réussi",
+          "L'étudiant qui a réussi",
+          "Les étudiantes qui ont réussi"
+        ],
+        "answer": "L'étudiante qui a réussi"
+      },
+      {
+        "question": "اللَّاتِي est utilisé pour :",
+        "options": [
+          "Masculin pluriel",
+          "Féminin pluriel",
+          "Duel masculin"
+        ],
+        "answer": "Féminin pluriel"
+      },
+      {
+        "question": "Le pronom relatif arabe s'accorde en :",
+        "options": [
+          "Genre seulement",
+          "Nombre seulement",
+          "Genre et nombre avec l'antécédent"
+        ],
+        "answer": "Genre et nombre avec l'antécédent"
+      },
+      {
+        "question": "الرَّجُلُ الَّذِي رَأَيْتُهُ signifie :",
+        "options": [
+          "L'homme que j'ai vu",
+          "L'homme à qui j'ai parlé",
+          "L'homme dont je parle"
+        ],
+        "answer": "L'homme que j'ai vu"
+      },
+      {
+        "question": "قَرَأْتُ كِتَابًا يُفِيدُنِي — Ici il n'y a pas de pronom relatif parce que :",
+        "options": [
+          "La phrase est incorrecte",
+          "L'antécédent كِتَابًا est indéfini",
+          "Le verbe يُفِيد remplace le pronom"
+        ],
+        "answer": "L'antécédent كِتَابًا est indéfini"
+      }
+    ]
+  },
+  {
+    "id": "l27",
+    "category": "Avancé",
+    "title": "Leçon 27 : La voix passive",
+    "description": "Former et utiliser la voix passive des verbes arabes.",
+    "content": "## La voix passive en arabe\nLa voix passive (المَجْهُول = l'inconnu) est utilisée quand le sujet qui fait l'action est **inconnu ou non mentionné**. En arabe, elle se forme en changeant les **voyelles internes** du verbe (sans préfixe particulier).\n\n## Formation au passé (Māḍī passif)\nSchème : la voyelle de la première consonne devient **-u-**, celle de la médiane devient **-i-** :\n- Actif : كَتَبَ (Kataba) → Passif : **كُتِبَ** (Kutiba) = Il a été écrit\n- Actif : دَرَسَ (Darasa) → Passif : **دُرِسَ** (Durisa) = Il a été étudié\n\n## Formation au présent (Muḍāri' passif)\nSchème : la voyelle du préfixe devient **-u-**, celle de la médiane devient **-a-** :\n- Actif : يَكْتُبُ (Yaktubu) → Passif : **يُكْتَبُ** (Yukтаbu) = Il est/sera écrit\n\n## Le sujet grammatical au passif\nAu passif, le complément d'objet direct de la phrase active devient le **sujet grammatical** (Nā'ib al-fā'il) et prend le cas nominatif :\n- Actif : كَتَبَ الطَّالِبُ **الرِّسَالَةَ** (L'étudiant a écrit la lettre)\n- Passif : **كُتِبَتِ الرِّسَالَةُ** (La lettre a été écrite)\n\n## Usage\nLe passif est fréquent dans les textes officiels, journalistiques et religieux.",
+    "exercises": [
+      {
+        "question": "La voix passive en arabe se forme par :",
+        "options": [
+          "L'ajout d'un préfixe",
+          "Un changement des voyelles internes du verbe",
+          "L'ajout d'un auxiliaire"
+        ],
+        "answer": "Un changement des voyelles internes du verbe"
+      },
+      {
+        "question": "کُتِبَ est la forme passive de :",
+        "options": [
+          "يَكْتُبُ",
+          "كَتَبَ (passé actif)",
+          "اُكْتُبْ"
+        ],
+        "answer": "كَتَبَ (passé actif)"
+      },
+      {
+        "question": "كُتِبَ signifie :",
+        "options": [
+          "Il a écrit",
+          "Il a été écrit",
+          "Il écrira"
+        ],
+        "answer": "Il a été écrit"
+      },
+      {
+        "question": "Au passé passif, la voyelle de la première consonne devient :",
+        "options": [
+          "-a-",
+          "-i-",
+          "-u-"
+        ],
+        "answer": "-u-"
+      },
+      {
+        "question": "يُكْتَبُ est la forme passif présent. La voyelle du préfixe يُ est :",
+        "options": [
+          "Fatḥa (-a)",
+          "Kasra (-i)",
+          "Ḍamma (-u)"
+        ],
+        "answer": "Ḍamma (-u)"
+      },
+      {
+        "question": "Au passif, le complément d'objet direct de la phrase active devient :",
+        "options": [
+          "Complément indirect",
+          "Le sujet grammatical (Nā'ib al-fā'il) au nominatif",
+          "Complément circonstanciel"
+        ],
+        "answer": "Le sujet grammatical (Nā'ib al-fā'il) au nominatif"
+      },
+      {
+        "question": "كُتِبَتِ الرِّسَالَةُ signifie :",
+        "options": [
+          "J'ai écrit la lettre",
+          "La lettre a été écrite",
+          "La lettre sera écrite"
+        ],
+        "answer": "La lettre a été écrite"
+      },
+      {
+        "question": "Le passif arabe est fréquent dans :",
+        "options": [
+          "La conversation informelle",
+          "Les textes officiels, journalistiques et religieux",
+          "Les comptines pour enfants"
+        ],
+        "answer": "Les textes officiels, journalistiques et religieux"
+      },
+      {
+        "question": "Comment se dit 'Il est étudié' (présent passif) ?",
+        "options": [
+          "يَدْرُسُ",
+          "دُرِسَ",
+          "يُدْرَسُ"
+        ],
+        "answer": "يُدْرَسُ"
+      },
+      {
+        "question": "La voix passive sert à exprimer quand :",
+        "options": [
+          "Le sujet est connu et important",
+          "Le sujet est inconnu ou non mentionné",
+          "L'action n'a pas eu lieu"
+        ],
+        "answer": "Le sujet est inconnu ou non mentionné"
+      }
+    ]
+  },
+  {
+    "id": "l28",
+    "category": "Avancé",
+    "title": "Leçon 28 : Les verbes de mouvement",
+    "description": "Exprimer les déplacements et mouvements en arabe avec un vocabulaire ciblé.",
+    "content": "## Verbes de mouvement courants\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| ذَهَبَ / يَذْهَبُ | Dhahaba | Aller, partir |\n| جَاءَ / يَجِيءُ | Jā'a | Venir, arriver |\n| عَادَ / يَعُودُ | 'Āda | Revenir, retourner |\n| خَرَجَ / يَخْرُجُ | Kharaja | Sortir |\n| دَخَلَ / يَدْخُلُ | Dakhala | Entrer |\n| صَعِدَ / يَصْعَدُ | Ṣa'ida | Monter |\n| نَزَلَ / يَنْزِلُ | Nazala | Descendre |\n| رَجَعَ / يَرْجِعُ | Raja'a | Retourner, rentrer |\n| سَافَرَ / يُسَافِرُ | Sāfara | Voyager |\n| وَصَلَ / يَصِلُ | Waṣala | Arriver (à destination) |\n\n## Construction avec les prépositions\nLes verbes de mouvement s'associent naturellement à des prépositions :\n- ذَهَبَ **إِلَى** المَدِينَةِ (Il est allé **vers** la ville)\n- خَرَجَ **مِنَ** البَيْتِ (Il est sorti **de** la maison)\n- دَخَلَ **فِي** الغُرْفَةِ (Il est entré **dans** la chambre)\n\n## Verbes de mouvement à lettres faibles\nBeaucoup de ces verbes contiennent des **lettres faibles** (و, ي, أ) qui provoquent des modifications orthographiques. Exemple : ذَهَبَ est régulier, mais جَاءَ (Jā'a) a un Hamza médian qui se prononce 'â' long.",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Aller' en arabe (form passé) ?",
+        "options": [
+          "دَخَلَ",
+          "ذَهَبَ",
+          "خَرَجَ",
+          "رَجَعَ"
+        ],
+        "answer": "ذَهَبَ"
+      },
+      {
+        "question": "دَخَلَ signifie :",
+        "options": [
+          "Sortir",
+          "Entrer",
+          "Monter",
+          "Descendre"
+        ],
+        "answer": "Entrer"
+      },
+      {
+        "question": "Quelle préposition accompagne généralement ذَهَبَ (aller vers) ?",
+        "options": [
+          "مِنْ",
+          "فِي",
+          "إِلَى"
+        ],
+        "answer": "إِلَى"
+      },
+      {
+        "question": "خَرَجَ مِنَ البَيْتِ signifie :",
+        "options": [
+          "Il est entré dans la maison",
+          "Il est sorti de la maison",
+          "Il est monté dans la maison"
+        ],
+        "answer": "Il est sorti de la maison"
+      },
+      {
+        "question": "Comment dit-on 'Il voyage' au présent ?",
+        "options": [
+          "وَصَلَ",
+          "يُسَافِرُ",
+          "نَزَلَ"
+        ],
+        "answer": "يُسَافِرُ"
+      },
+      {
+        "question": "وَصَلَ signifie :",
+        "options": [
+          "Partir",
+          "Voyager",
+          "Arriver (à destination)"
+        ],
+        "answer": "Arriver (à destination)"
+      },
+      {
+        "question": "نَزَلَ signifie :",
+        "options": [
+          "Monter",
+          "Descendre",
+          "Entrer",
+          "Sortir"
+        ],
+        "answer": "Descendre"
+      },
+      {
+        "question": "عَادَ إِلَى البَيْتِ signifie :",
+        "options": [
+          "Il est sorti de la maison",
+          "Il est revenu à la maison",
+          "Il est entré dans la maison"
+        ],
+        "answer": "Il est revenu à la maison"
+      },
+      {
+        "question": "جَاءَ est un verbe à :",
+        "options": [
+          "Racine régulière uniquement",
+          "Lettre faible / Hamza médian",
+          "Double consonne finale"
+        ],
+        "answer": "Lettre faible / Hamza médian"
+      },
+      {
+        "question": "صَعِدَ إِلَى الطَّابِقِ الثَّانِي signifie :",
+        "options": [
+          "Il est descendu au 2ème étage",
+          "Il est monté au 2ème étage",
+          "Il est arrivé au 2ème étage"
+        ],
+        "answer": "Il est monté au 2ème étage"
+      }
+    ]
+  },
+  {
+    "id": "l29",
+    "category": "Avancé",
+    "title": "Leçon 29 : Le conditionnel (Law / In)",
+    "description": "Exprimer des conditions réelles et hypothétiques en arabe.",
+    "content": "## Les phrases conditionnelles en arabe\nUne phrase conditionnelle comporte deux parties :\n- **La protase** (la condition) : introduite par la particule conditionnelle\n- **L'apodose** (le résultat) : la conséquence\n\n## Deux types de conditionnelles\n\n### 1. Condition réelle/possible — إِنْ (In)\nUtilisée pour des conditions réalisables dans la réalité :\n- إِنْ تَدْرُسْ **تَنْجَحْ**. (Si tu étudies, tu réussiras.)\n- Note : les deux verbes sont au **Jussif** (mode apocopé)\n\n### 2. Condition hypothétique/irréelle — لَوْ (Law)\nUtilisée pour des conditions contraires à la réalité ou peu probables :\n- لَوْ دَرَسْتَ **لَنَجَحْتَ**. (Si tu avais étudié, tu aurais réussi.)\n- Note : les deux verbes sont généralement au **passé** (Māḍī)\n\n## Particules conditionnelles autres\n- **إِذَا** (Idhā) : Si (pour des conditions plus certaines, avec jussif ou passé)\n- **مَنْ** (Man) : Quiconque (conditionnel généralisant)\n- **مَهْمَا** (Mahmā) : Quoi que\n\n## La réponse avec لَـ (Lam)\nDans une conditionnelle avec لَوْ, la réponse (apodose) commence souvent par **لَـ** :\n- لَوْ جَاءَ... **لَفَرِحْتُ** (S'il était venu... j'aurais été content)",
+    "exercises": [
+      {
+        "question": "Quelle particule introduit une condition réelle/possible ?",
+        "options": [
+          "لَوْ",
+          "إِنْ",
+          "لَعَلَّ",
+          "لَيْتَ"
+        ],
+        "answer": "إِنْ"
+      },
+      {
+        "question": "لَوْ est utilisé pour des conditions :",
+        "options": [
+          "Certaines à se réaliser",
+          "Hypothétiques ou contraires à la réalité",
+          "Toujours au futur"
+        ],
+        "answer": "Hypothétiques ou contraires à la réalité"
+      },
+      {
+        "question": "Dans إِنْ تَدْرُسْ تَنْجَحْ, quel mode prennent les verbes ?",
+        "options": [
+          "Indicatif (Ḍamma)",
+          "Jussif (Soukoun)",
+          "Subjonctif (Fatḥa)"
+        ],
+        "answer": "Jussif (Soukoun)"
+      },
+      {
+        "question": "لَوْ دَرَسْتَ لَنَجَحْتَ signifie :",
+        "options": [
+          "Si tu étudies, tu réussiras",
+          "Si tu avais étudié, tu aurais réussi",
+          "Étudie pour réussir"
+        ],
+        "answer": "Si tu avais étudié, tu aurais réussi"
+      },
+      {
+        "question": "Dans une conditionnelle avec لَوْ, les verbes sont généralement au :",
+        "options": [
+          "Présent (Muḍāri')",
+          "Futur (avec سَ)",
+          "Passé (Māḍī)"
+        ],
+        "answer": "Passé (Māḍī)"
+      },
+      {
+        "question": "إِذَا est une particule conditionnelle signifiant :",
+        "options": [
+          "Jamais",
+          "Si (conditions assez certaines)",
+          "Pourquoi"
+        ],
+        "answer": "Si (conditions assez certaines)"
+      },
+      {
+        "question": "Dans لَوْ جَاءَ لَفَرِحْتُ, que signifie لَـ au début de لَفَرِحْتُ ?",
+        "options": [
+          "Négation",
+          "Marqueur de la réponse à لَوْ",
+          "Question"
+        ],
+        "answer": "Marqueur de la réponse à لَوْ"
+      },
+      {
+        "question": "مَهْمَا est une particule conditionnelle signifiant :",
+        "options": [
+          "Si seulement",
+          "Quoi que / Quelles que soient les circonstances",
+          "Même si"
+        ],
+        "answer": "Quoi que / Quelles que soient les circonstances"
+      },
+      {
+        "question": "La partie 'Si tu étudies' dans une conditionnelle s'appelle :",
+        "options": [
+          "L'apodose",
+          "La protase",
+          "Le prédicat"
+        ],
+        "answer": "La protase"
+      },
+      {
+        "question": "مَنْ يَعْمَلْ خَيْرًا يَجِدْهُ signifie :",
+        "options": [
+          "Quelqu'un a fait du bien",
+          "Quiconque fait du bien le trouvera",
+          "Le bien a été fait"
+        ],
+        "answer": "Quiconque fait du bien le trouvera"
+      }
+    ]
+  },
+  {
+    "id": "l30",
+    "category": "Avancé",
+    "title": "Leçon 30 : Prépositions composées et adverbes de lieu",
+    "description": "Maîtriser les prépositions composées et les adverbes locatifs plus précis.",
+    "content": "## Prépositions composées\nEn plus des prépositions simples (fī, 'alā, min...), l'arabe utilise des **noms à l'accusatif** qui fonctionnent comme des prépositions de lieu. Ces mots se terminent souvent par une Fatḥa et sont suivis d'un complément au génitif.\n\n## Tableau des prépositions composées courantes\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| أَمَامَ | Amāma | Devant |\n| وَرَاءَ / خَلْفَ | Warā'a / Khalfa | Derrière |\n| فَوْقَ | Fawqa | Au-dessus de |\n| تَحْتَ | Taḥta | En-dessous de |\n| بَيْنَ | Bayna | Entre |\n| بِجَانِبِ / بِقُرْبِ | Bijānibi / Biqurbi | À côté de / Près de |\n| حَوْلَ | Ḥawla | Autour de |\n| عَبْرَ | 'Abra | À travers / Par-delà |\n| قُرْبَ | Qurba | Près de |\n\n## Construction\nCes prépositions composées s'utilisent directement devant le complément (génitif) :\n- الكِتَابُ **فَوْقَ** الطَّاوِلَةِ (Le livre est au-dessus de la table)\n- الجَامِعُ **أَمَامَ** المَدْرَسَةِ (La mosquée est devant l'école)\n\n## بَيْنَ — cas spécial\nبَيْنَ (entre) peut s'utiliser avec un complément double ou pluriel :\n- بَيْنَ زَيْدٍ وَعَمْرٍو (entre Zayd et 'Amr)\n- بَيْنَ الطُّلَّابِ (parmi/entre les étudiants)",
+    "exercises": [
+      {
+        "question": "أَمَامَ signifie :",
+        "options": [
+          "Derrière",
+          "À côté",
+          "Devant",
+          "Au-dessus"
+        ],
+        "answer": "Devant"
+      },
+      {
+        "question": "Comment dit-on 'En-dessous de' ?",
+        "options": [
+          "فَوْقَ",
+          "تَحْتَ",
+          "بَيْنَ",
+          "حَوْلَ"
+        ],
+        "answer": "تَحْتَ"
+      },
+      {
+        "question": "الكِتَابُ فَوْقَ الطَّاوِلَةِ signifie :",
+        "options": [
+          "Le livre est sous la table",
+          "Le livre est sur la table / au-dessus de la table",
+          "Le livre est devant la table"
+        ],
+        "answer": "Le livre est sur la table / au-dessus de la table"
+      },
+      {
+        "question": "بَيْنَ s'utilise pour :",
+        "options": [
+          "Au-dessus d'un seul élément",
+          "Entre deux ou plusieurs éléments",
+          "Autour d'un élément"
+        ],
+        "answer": "Entre deux ou plusieurs éléments"
+      },
+      {
+        "question": "حَوْلَ البَيْتِ signifie :",
+        "options": [
+          "À côté de la maison",
+          "Autour de la maison",
+          "En face de la maison"
+        ],
+        "answer": "Autour de la maison"
+      },
+      {
+        "question": "La préposition composée وَرَاءَ signifie :",
+        "options": [
+          "Devant",
+          "Derrière",
+          "À travers"
+        ],
+        "answer": "Derrière"
+      },
+      {
+        "question": "عَبْرَ النَّهْرِ signifie :",
+        "options": [
+          "Près du fleuve",
+          "Le long du fleuve",
+          "À travers/Par-delà le fleuve"
+        ],
+        "answer": "À travers/Par-delà le fleuve"
+      },
+      {
+        "question": "Ces prépositions composées sont suivies d'un nom au cas :",
+        "options": [
+          "Nominatif (Ḍamma)",
+          "Accusatif (Fatḥa)",
+          "Génitif (Kasra)"
+        ],
+        "answer": "Génitif (Kasra)"
+      },
+      {
+        "question": "بَيْنَ زَيْدٍ وَعَمْرٍو signifie :",
+        "options": [
+          "Zayd et Amr sont là-bas",
+          "Entre Zayd et Amr",
+          "Zayd est supérieur à Amr"
+        ],
+        "answer": "Entre Zayd et Amr"
+      },
+      {
+        "question": "بِجَانِبِ البَيْتِ signifie :",
+        "options": [
+          "Devant la maison",
+          "À côté de la maison",
+          "Derrière la maison"
+        ],
+        "answer": "À côté de la maison"
+      }
+    ]
+  },
+  {
+    "id": "l31",
+    "category": "Avancé",
+    "title": "Leçon 31 : Les couleurs",
+    "description": "Apprendre le vocabulaire des couleurs et leurs formes masculines/féminines.",
+    "content": "## Les couleurs en arabe\nLes adjectifs de couleur en arabe ont une structure particulière. Ils suivent le schème **أَفْعَل** (Af'al) au masculin et **فَعْلَاء** (Fa'lā') au féminin.\n\n## Tableau des couleurs principales\n\n| Couleur | Masc. | Fém. | Translitération |\n|---|---|---|---|\n| Rouge | أَحْمَر | حَمْرَاء | Aḥmar / Ḥamrā' |\n| Blanc | أَبْيَض | بَيْضَاء | Abyaḍ / Bayḍā' |\n| Noir | أَسْوَد | سَوْدَاء | Aswad / Sawdā' |\n| Vert | أَخْضَر | خَضْرَاء | Akhḍar / Khaḍrā' |\n| Bleu | أَزْرَق | زَرْقَاء | Azraq / Zarqā' |\n| Jaune | أَصْفَر | صَفْرَاء | Aṣfar / Ṣafrā' |\n| Brun | أَسْمَر | سَمْرَاء | Asmar / Samrā' |\n| Orange | بُرْتُقَالِيّ | بُرْتُقَالِيَّة | Burtuqālī (emprunt) |\n\n## Accord des couleurs\nComme tous les adjectifs, la couleur s'accorde en genre avec le nom :\n- سَيَّارَةٌ حَمْرَاءُ (une voiture rouge — fém.)\n- قَلَمٌ أَحْمَرُ (un stylo rouge — masc.)\n\n## Les couleurs au pluriel\nLes couleurs au schème أَفْعَل ont un pluriel brisé en **فُعْل** (Fu'l) :\n- أَحْمَر (rouge) → **حُمْر** (rouges)\n- أَبْيَض (blanc) → **بِيض** (blancs)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Rouge' au masculin ?",
+        "options": [
+          "حَمْرَاء",
+          "أَحْمَر",
+          "الأَحْمَر",
+          "حُمْر"
+        ],
+        "answer": "أَحْمَر"
+      },
+      {
+        "question": "La forme féminine de أَبْيَض (blanc) est :",
+        "options": [
+          "أَبْيَضَة",
+          "بَيْضَاء",
+          "بِيض"
+        ],
+        "answer": "بَيْضَاء"
+      },
+      {
+        "question": "سَيَّارَةٌ حَمْرَاءُ signifie :",
+        "options": [
+          "Un stylo rouge",
+          "Des voitures rouges",
+          "Une voiture rouge"
+        ],
+        "answer": "Une voiture rouge"
+      },
+      {
+        "question": "Comment dit-on 'Vert' au masculin ?",
+        "options": [
+          "أَزْرَق",
+          "أَخْضَر",
+          "أَصْفَر"
+        ],
+        "answer": "أَخْضَر"
+      },
+      {
+        "question": "أَسْوَد est la couleur :",
+        "options": [
+          "Blanche",
+          "Noire",
+          "Grise"
+        ],
+        "answer": "Noire"
+      },
+      {
+        "question": "Le pluriel de أَحْمَر (rouge) est :",
+        "options": [
+          "أَحْمَرُون",
+          "حَمْرَاوَات",
+          "حُمْر"
+        ],
+        "answer": "حُمْر"
+      },
+      {
+        "question": "La couleur bleue au féminin est :",
+        "options": [
+          "أَزْرَقَة",
+          "زَرْقَاء",
+          "أَزُر"
+        ],
+        "answer": "زَرْقَاء"
+      },
+      {
+        "question": "Le schème des couleurs masculines est :",
+        "options": [
+          "فَعِيل",
+          "أَفْعَل",
+          "مَفْعُول"
+        ],
+        "answer": "أَفْعَل"
+      },
+      {
+        "question": "صَفْرَاء est le féminin de :",
+        "options": [
+          "أَسْمَر (brun)",
+          "أَصْفَر (jaune)",
+          "أَخْضَر (vert)"
+        ],
+        "answer": "أَصْفَر (jaune)"
+      },
+      {
+        "question": "قَلَمٌ أَحْمَرُ signifie :",
+        "options": [
+          "Un crayon blanc",
+          "Un stylo rouge",
+          "Un livre rouge"
+        ],
+        "answer": "Un stylo rouge"
+      }
+    ]
+  },
+  {
+    "id": "l32",
+    "category": "Avancé",
+    "title": "Leçon 32 : Les parties du corps",
+    "description": "Apprendre le vocabulaire des parties du corps humain en arabe.",
+    "content": "## Le corps humain en arabe (جِسْم الإِنْسَان)\n\n## Tableau des parties du corps\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| رَأْس | Ra's | Tête |\n| شَعْر | Sha'r | Cheveux |\n| وَجْه | Wajh | Visage |\n| عَيْن (ج: عُيُون) | 'Ayn | Œil |\n| أُذُن (ج: آذَان) | Udhun | Oreille |\n| أَنْف | Anf | Nez |\n| فَم | Fam | Bouche |\n| سِنّ (ج: أَسْنَان) | Sinn | Dent |\n| عُنُق / رَقَبَة | 'Unuq / Raqaba | Cou |\n| كَتِف (ج: أَكْتَاف) | Katif | Épaule |\n| يَد (ج: أَيْدِي) | Yad | Main/Bras |\n| إِصْبَع (ج: أَصَابِع) | Isba' | Doigt |\n| بَطْن | Baṭn | Ventre |\n| رِجْل (ج: أَرْجُل) | Rijl | Jambe/Pied |\n| قَدَم (ج: أَقْدَام) | Qadam | Pied |\n| قَلْب (ج: قُلُوب) | Qalb | Cœur |\n\n## Les membres du corps en paires\nLes noms de membres du corps qui existent en paires (yeux, oreilles, mains, pieds) sont **féminins** en arabe, même sans la Tā' Marbūṭa.",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Tête' en arabe ?",
+        "options": [
+          "وَجْه",
+          "رَأْس",
+          "شَعْر",
+          "عُنُق"
+        ],
+        "answer": "رَأْس"
+      },
+      {
+        "question": "عَيْن signifie :",
+        "options": [
+          "Oreille",
+          "Nez",
+          "Œil",
+          "Bouche"
+        ],
+        "answer": "Œil"
+      },
+      {
+        "question": "Le pluriel de عَيْن (œil) est :",
+        "options": [
+          "عُيُون",
+          "أَعْيُن",
+          "عَيْنَات"
+        ],
+        "answer": "عُيُون"
+      },
+      {
+        "question": "Comment dit-on 'Dent' en arabe ?",
+        "options": [
+          "فَم",
+          "سِنّ",
+          "شَفَة",
+          "لِسَان"
+        ],
+        "answer": "سِنّ"
+      },
+      {
+        "question": "يَد signifie :",
+        "options": [
+          "Jambe",
+          "Pied",
+          "Main/Bras",
+          "Doigt"
+        ],
+        "answer": "Main/Bras"
+      },
+      {
+        "question": "Les membres du corps en paires (mains, yeux) sont grammaticalement :",
+        "options": [
+          "Masculins",
+          "Féminins sans Tā' Marbūṭa",
+          "Neutres"
+        ],
+        "answer": "Féminins sans Tā' Marbūṭa"
+      },
+      {
+        "question": "Comment dit-on 'Cœur' en arabe ?",
+        "options": [
+          "رِجْل",
+          "بَطْن",
+          "قَلْب",
+          "كَتِف"
+        ],
+        "answer": "قَلْب"
+      },
+      {
+        "question": "Le pluriel de قَلْب (cœur) est :",
+        "options": [
+          "قُلُوب",
+          "قَلْبَات",
+          "أَقْلُب"
+        ],
+        "answer": "قُلُوب"
+      },
+      {
+        "question": "أُذُن signifie :",
+        "options": [
+          "Nez",
+          "Bouche",
+          "Oreille",
+          "Dent"
+        ],
+        "answer": "Oreille"
+      },
+      {
+        "question": "أَصَابِع est le pluriel de :",
+        "options": [
+          "يَد (main)",
+          "إِصْبَع (doigt)",
+          "قَدَم (pied)"
+        ],
+        "answer": "إِصْبَع (doigt)"
+      }
+    ]
+  },
+  {
+    "id": "l33",
+    "category": "Avancé",
+    "title": "Leçon 33 : La famille",
+    "description": "Apprendre le vocabulaire de la famille et exprimer les liens de parenté.",
+    "content": "## La famille en arabe (الأُسْرَة / العَائِلَة)\n\n## Tableau des membres de la famille\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| أَب (ج: آبَاء) | Ab | Père |\n| أُمّ (ج: أُمَّهَات) | Umm | Mère |\n| اِبْن (ج: أَبْنَاء) | Ibn | Fils |\n| بِنْت (ج: بَنَات) | Bint | Fille |\n| أَخ (ج: إِخْوَة) | Akh | Frère |\n| أُخْت (ج: أَخَوَات) | Ukht | Sœur |\n| جَدّ (ج: أَجْدَاد) | Jadd | Grand-père |\n| جَدَّة | Jadda | Grand-mère |\n| عَمّ | 'Amm | Oncle (paternel) |\n| عَمَّة | 'Amma | Tante (paternelle) |\n| خَال | Khāl | Oncle (maternel) |\n| خَالَة | Khāla | Tante (maternelle) |\n| اِبْن عَمّ | Ibn 'amm | Cousin (paternel) |\n| زَوْج | Zawj | Mari |\n| زَوْجَة | Zawja | Femme/Épouse |\n\n## Nuance culturelle : oncles et tantes\nL'arabe distingue précisément les liens familiaux selon le **côté paternel** (عَمّ/عَمَّة) ou **maternel** (خَال/خَالَة). Cette distinction reflète l'importance de la généalogie dans la culture arabe.\n\n## Expressions courantes\n- عِنْدِي أَخٌ وَأُخْتَانِ (J'ai un frère et deux sœurs)\n- كَيْفَ حَالُ عَائِلَتِكَ؟ (Comment va ta famille ?)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Mère' en arabe ?",
+        "options": [
+          "أَب",
+          "أُمّ",
+          "جَدَّة",
+          "عَمَّة"
+        ],
+        "answer": "أُمّ"
+      },
+      {
+        "question": "Le pluriel de أَخ (frère) est :",
+        "options": [
+          "أُخُوَّة",
+          "إِخْوَة",
+          "أَخَوَات"
+        ],
+        "answer": "إِخْوَة"
+      },
+      {
+        "question": "Quelle est la différence entre عَمّ et خَال ?",
+        "options": [
+          "عَمّ = oncle maternel, خَال = oncle paternel",
+          "عَمّ = oncle paternel, خَال = oncle maternel",
+          "Les deux signifient oncle sans distinction"
+        ],
+        "answer": "عَمّ = oncle paternel, خَال = oncle maternel"
+      },
+      {
+        "question": "Comment dit-on 'Grand-père' en arabe ?",
+        "options": [
+          "أَب",
+          "عَمّ",
+          "جَدّ",
+          "عَمّ أَكْبَر"
+        ],
+        "answer": "جَدّ"
+      },
+      {
+        "question": "زَوْجَة signifie :",
+        "options": [
+          "Fille",
+          "Épouse/Femme",
+          "Sœur",
+          "Tante"
+        ],
+        "answer": "Épouse/Femme"
+      },
+      {
+        "question": "اِبْن عَمّ signifie :",
+        "options": [
+          "Oncle paternel",
+          "Cousin paternel (fils de l'oncle paternel)",
+          "Frère"
+        ],
+        "answer": "Cousin paternel (fils de l'oncle paternel)"
+      },
+      {
+        "question": "Le pluriel de بِنْت (fille) est :",
+        "options": [
+          "بِنْتَات",
+          "بَنَات",
+          "بَنُون"
+        ],
+        "answer": "بَنَات"
+      },
+      {
+        "question": "Comment dit-on 'Mari/Époux' ?",
+        "options": [
+          "زَوْجَة",
+          "زَوْج",
+          "أَب"
+        ],
+        "answer": "زَوْج"
+      },
+      {
+        "question": "أُخْت signifie :",
+        "options": [
+          "Mère",
+          "Sœur",
+          "Tante"
+        ],
+        "answer": "Sœur"
+      },
+      {
+        "question": "كَيْفَ حَالُ عَائِلَتِكَ؟ signifie :",
+        "options": [
+          "Où est ta famille ?",
+          "Comment va ta famille ?",
+          "Combien de membres a ta famille ?"
+        ],
+        "answer": "Comment va ta famille ?"
+      }
+    ]
+  },
+  {
+    "id": "l34",
+    "category": "Avancé",
+    "title": "Leçon 34 : L'heure et le temps",
+    "description": "Lire l'heure et parler du temps en arabe.",
+    "content": "## Demander l'heure\n- كَمِ السَّاعَةُ؟ (Kami as-sā'a?) = Quelle heure est-il ?\n- السَّاعَةُ... (As-sā'a...) = Il est...\n\n## Dire l'heure\n- السَّاعَةُ الوَاحِدَة = Il est une heure\n- السَّاعَةُ الثَّانِيَة = Il est deux heures\n- السَّاعَةُ الثَّالِثَة = Il est trois heures\n\n## Les fractions\n- وَالرُّبُع = et quart (+15 min)\n- وَالنِّصْف = et demi (+30 min)\n- إِلَّا الرُّبُع = moins le quart (-15 min)\n\nExemples :\n- السَّاعَةُ الثَّالِثَةُ وَالرُّبُع = 3h15\n- السَّاعَةُ السَّابِعَةُ وَالنِّصْف = 7h30\n- السَّاعَةُ التَّاسِعَةُ إِلَّا الرُّبُع = 8h45\n\n## Vocabulaire temporel\n\n| Arabe | Sens |\n|---|---|\n| صَبَاح | Matin |\n| ظُهْر | Midi |\n| عَصْر | Après-midi |\n| مَسَاء | Soir |\n| لَيْل | Nuit |\n| مُنْتَصَف اللَّيْل | Minuit |\n| الآن | Maintenant |\n| مُبَكِّرًا | Tôt |\n| مُتَأَخِّرًا | Tard |",
+    "exercises": [
+      {
+        "question": "Comment demande-t-on l'heure en arabe ?",
+        "options": [
+          "مَتَى؟",
+          "كَمِ السَّاعَةُ؟",
+          "أَيْنَ السَّاعَةُ؟"
+        ],
+        "answer": "كَمِ السَّاعَةُ؟"
+      },
+      {
+        "question": "السَّاعَةُ الثَّالِثَةُ signifie :",
+        "options": [
+          "Il est deux heures",
+          "Il est trois heures",
+          "Il est treize heures"
+        ],
+        "answer": "Il est trois heures"
+      },
+      {
+        "question": "وَالنِّصْف signifie :",
+        "options": [
+          "Moins le quart",
+          "Et quart",
+          "Et demi"
+        ],
+        "answer": "Et demi"
+      },
+      {
+        "question": "السَّاعَةُ السَّابِعَةُ وَالرُّبُع signifie :",
+        "options": [
+          "7h00",
+          "7h15",
+          "7h30"
+        ],
+        "answer": "7h15"
+      },
+      {
+        "question": "Comment dit-on 'Soir' en arabe ?",
+        "options": [
+          "صَبَاح",
+          "ظُهْر",
+          "مَسَاء",
+          "لَيْل"
+        ],
+        "answer": "مَسَاء"
+      },
+      {
+        "question": "إِلَّا الرُّبُع signifie :",
+        "options": [
+          "Et quart",
+          "Et demi",
+          "Moins le quart"
+        ],
+        "answer": "Moins le quart"
+      },
+      {
+        "question": "مُتَأَخِّرًا signifie :",
+        "options": [
+          "Tôt",
+          "Tard",
+          "Maintenant"
+        ],
+        "answer": "Tard"
+      },
+      {
+        "question": "مُنْتَصَف اللَّيْل signifie :",
+        "options": [
+          "Midi",
+          "Minuit",
+          "Après-midi"
+        ],
+        "answer": "Minuit"
+      },
+      {
+        "question": "السَّاعَةُ الوَاحِدَة وَالنِّصْف signifie :",
+        "options": [
+          "1h00",
+          "1h30",
+          "1h15"
+        ],
+        "answer": "1h30"
+      },
+      {
+        "question": "ظُهْر signifie :",
+        "options": [
+          "Matin",
+          "Soir",
+          "Midi"
+        ],
+        "answer": "Midi"
+      }
+    ]
+  },
+  {
+    "id": "l35",
+    "category": "Avancé",
+    "title": "Leçon 35 : Les jours et les mois",
+    "description": "Apprendre les jours de la semaine et les mois de l'année en arabe.",
+    "content": "## Les jours de la semaine (أَيَّام الأُسْبُوع)\n\n| Arabe | Translitération | Sens |\n|---|---|---|\n| الأَحَد | Al-Aḥad | Dimanche |\n| الاِثْنَيْن | Al-Ithnayn | Lundi |\n| الثَّلَاثَاء | Ath-Thalāthā' | Mardi |\n| الأَرْبِعَاء | Al-Arbi'ā' | Mercredi |\n| الخَمِيس | Al-Khamīs | Jeudi |\n| الجُمُعَة | Al-Jum'a | Vendredi |\n| السَّبْت | As-Sabt | Samedi |\n\n## La semaine islamique\nLe **vendredi** (الجُمُعَة) est le jour de prière collective. La semaine dans les pays arabes commence souvent le **samedi** ou le **dimanche**.\n\n## Les mois de l'année (أَشْهُر السَّنَة)\n### Mois grégoriens\n- يَنَايِر (Yanāyir) — Janvier\n- فِبْرَايَر (Fibrāyir) — Février\n- مَارِس (Māris) — Mars\n- أَبْرِيل (Abrīl) — Avril\n- مَايُو (Māyū) — Mai\n- يُونِيُو (Yūniyu) — Juin\n\n### Questions sur les dates\n- مَا التَّارِيخُ اليَوْمَ؟ (Quelle est la date aujourd'hui ?)\n- اليَوْمُ هُوَ... (Aujourd'hui c'est...) \n- فِي أَيّ يَوْمٍ؟ (Quel jour ?)",
+    "exercises": [
+      {
+        "question": "Quel est le nom arabe du Vendredi ?",
+        "options": [
+          "الخَمِيس",
+          "الجُمُعَة",
+          "السَّبْت"
+        ],
+        "answer": "الجُمُعَة"
+      },
+      {
+        "question": "الاِثْنَيْن signifie :",
+        "options": [
+          "Dimanche",
+          "Lundi",
+          "Mardi"
+        ],
+        "answer": "Lundi"
+      },
+      {
+        "question": "Quel jour est Al-Aḥad ?",
+        "options": [
+          "Samedi",
+          "Dimanche",
+          "Lundi"
+        ],
+        "answer": "Dimanche"
+      },
+      {
+        "question": "الثَّلَاثَاء est :",
+        "options": [
+          "Mercredi",
+          "Mardi",
+          "Jeudi"
+        ],
+        "answer": "Mardi"
+      },
+      {
+        "question": "Comment dit-on 'Jeudi' en arabe ?",
+        "options": [
+          "الأَرْبِعَاء",
+          "الخَمِيس",
+          "الجُمُعَة"
+        ],
+        "answer": "الخَمِيس"
+      },
+      {
+        "question": "Quel mois est يَنَايِر ?",
+        "options": [
+          "Février",
+          "Décembre",
+          "Janvier"
+        ],
+        "answer": "Janvier"
+      },
+      {
+        "question": "الأَرْبِعَاء correspond à quel jour ?",
+        "options": [
+          "Mardi",
+          "Mercredi",
+          "Jeudi"
+        ],
+        "answer": "Mercredi"
+      },
+      {
+        "question": "Le jour de prière collective dans la tradition islamique est :",
+        "options": [
+          "السَّبْت (Samedi)",
+          "الجُمُعَة (Vendredi)",
+          "الأَحَد (Dimanche)"
+        ],
+        "answer": "الجُمُعَة (Vendredi)"
+      },
+      {
+        "question": "مَا التَّارِيخُ اليَوْمَ؟ signifie :",
+        "options": [
+          "Quel jour sommes-nous ?",
+          "Quelle est la date aujourd'hui ?",
+          "Quelle heure est-il ?"
+        ],
+        "answer": "Quelle est la date aujourd'hui ?"
+      },
+      {
+        "question": "السَّبْت signifie :",
+        "options": [
+          "Vendredi",
+          "Dimanche",
+          "Samedi"
+        ],
+        "answer": "Samedi"
+      }
+    ]
+  },
+  {
+    "id": "l36",
+    "category": "Avancé",
+    "title": "Leçon 36 : La météo et les saisons",
+    "description": "Parler de la météo et des saisons en arabe.",
+    "content": "## Les saisons (الفُصُول الأَرْبَعَة)\n\n| Arabe | Translitération | Saison |\n|---|---|---|\n| الرَّبِيع | Ar-Rabī' | Le Printemps |\n| الصَّيْف | Aṣ-Ṣayf | L'Été |\n| الخَرِيف | Al-Kharīf | L'Automne |\n| الشِّتَاء | Ash-Shitā' | L'Hiver |\n\n## Vocabulaire météorologique\n\n| Arabe | Sens |\n|---|---|\n| الطَّقْس | Le temps (météo) |\n| شَمْس / مُشْمِس | Soleil / Ensoleillé |\n| غَيْم / غَائِم | Nuage / Nuageux |\n| مَطَر / مُمْطِر | Pluie / Pluvieux |\n| ثَلْج / مُثْلِج | Neige / Neigeux |\n| رِيح / عَاصِفَة | Vent / Tempête |\n| حَرّ | Chaleur |\n| بَرْد | Froid |\n| دَافِئ | Tiède/Doux |\n| رُطُوبَة | Humidité |\n\n## Expressions météo\n- الجَوُّ جَمِيلٌ اليَوْمَ. (Le temps est beau aujourd'hui.)\n- الطَّقْسُ بَارِدٌ جِدًّا. (Il fait très froid.)\n- هَلْ سَتُمْطِرُ غَدًا؟ (Est-ce qu'il va pleuvoir demain ?)\n- دَرَجَةُ الحَرَارَةِ أَرْبَعُون دَرَجَة. (La température est de 40 degrés.)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Printemps' en arabe ?",
+        "options": [
+          "الصَّيْف",
+          "الرَّبِيع",
+          "الخَرِيف",
+          "الشِّتَاء"
+        ],
+        "answer": "الرَّبِيع"
+      },
+      {
+        "question": "الصَّيْف signifie :",
+        "options": [
+          "Hiver",
+          "Automne",
+          "Été",
+          "Printemps"
+        ],
+        "answer": "Été"
+      },
+      {
+        "question": "Comment dit-on 'Il fait froid' en arabe ?",
+        "options": [
+          "الجَوُّ حَارٌّ",
+          "الجَوُّ بَارِدٌ",
+          "الجَوُّ دَافِئٌ"
+        ],
+        "answer": "الجَوُّ بَارِدٌ"
+      },
+      {
+        "question": "مَطَر signifie :",
+        "options": [
+          "Neige",
+          "Vent",
+          "Pluie",
+          "Soleil"
+        ],
+        "answer": "Pluie"
+      },
+      {
+        "question": "Comment dit-on 'Nuageux' en arabe ?",
+        "options": [
+          "مُشْمِس",
+          "مُثْلِج",
+          "غَائِم"
+        ],
+        "answer": "غَائِم"
+      },
+      {
+        "question": "الخَرِيف signifie :",
+        "options": [
+          "Printemps",
+          "Hiver",
+          "Automne"
+        ],
+        "answer": "Automne"
+      },
+      {
+        "question": "دَرَجَةُ الحَرَارَةِ signifie :",
+        "options": [
+          "La vitesse du vent",
+          "La température",
+          "L'humidité"
+        ],
+        "answer": "La température"
+      },
+      {
+        "question": "هَلْ سَتُمْطِرُ غَدًا؟ signifie :",
+        "options": [
+          "A-t-il plu hier ?",
+          "Est-ce qu'il va pleuvoir demain ?",
+          "Est-ce qu'il pleut maintenant ?"
+        ],
+        "answer": "Est-ce qu'il va pleuvoir demain ?"
+      },
+      {
+        "question": "الشِّتَاء signifie :",
+        "options": [
+          "Été",
+          "Hiver",
+          "Printemps"
+        ],
+        "answer": "Hiver"
+      },
+      {
+        "question": "رُطُوبَة signifie :",
+        "options": [
+          "Chaleur sèche",
+          "Humidité",
+          "Vent froid"
+        ],
+        "answer": "Humidité"
+      }
+    ]
+  },
+  {
+    "id": "l37",
+    "category": "Avancé",
+    "title": "Leçon 37 : Voyage et Aéroport",
+    "description": "Vocabulaire essentiel pour voyager et se déplacer dans un pays arabophone.",
+    "content": "## À l'aéroport (فِي المَطَار)\n\n| Arabe | Sens |\n|---|---|\n| مَطَار | Aéroport |\n| طَائِرَة | Avion |\n| رِحْلَة | Vol / Voyage |\n| جَوَاز السَّفَر | Passeport |\n| تَذْكِرَة | Billet |\n| حَقِيبَة | Valise |\n| جُمْرُك | Douane |\n| بَوَّابَة | Porte (d'embarquement) |\n| وُصُول | Arrivées |\n| مَغَادَرَة | Départs |\n\n## Expressions utiles\n- أَيْنَ بَوَّابَةُ رَقْمِ خَمْسَة؟ (Où est la porte numéro 5 ?)\n- مَتَى سَتَقْلَعُ الطَّائِرَة؟ (Quand l'avion va-t-il décoller ?)\n- هَلْ الرِّحْلَة فِي مَوْعِدِهَا؟ (Le vol est-il à l'heure ?)\n- أُرِيدُ تَذْكِرَةً ذَهَابًا وَإِيَابًا. (Je veux un billet aller-retour.)\n\n## Transports\n- حَافِلَة (Ḥāfila) = Bus\n- قِطَار (Qiṭār) = Train\n- سَيَّارَة أُجْرَة (Sayyārat ujra) = Taxi\n- مِيتْرُو (Mītrū) = Métro",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Aéroport' en arabe ?",
+        "options": [
+          "مَحَطَّة",
+          "مَطَار",
+          "مِيناء",
+          "فُنْدُق"
+        ],
+        "answer": "مَطَار"
+      },
+      {
+        "question": "تَذْكِرَة signifie :",
+        "options": [
+          "Valise",
+          "Passeport",
+          "Billet",
+          "Douane"
+        ],
+        "answer": "Billet"
+      },
+      {
+        "question": "جَوَاز السَّفَر signifie :",
+        "options": [
+          "Visa",
+          "Passeport",
+          "Billet d'avion",
+          "Carte d'identité"
+        ],
+        "answer": "Passeport"
+      },
+      {
+        "question": "مَغَادَرَة signifie :",
+        "options": [
+          "Arrivées",
+          "Départs",
+          "Transit"
+        ],
+        "answer": "Départs"
+      },
+      {
+        "question": "Comment dit-on 'Train' en arabe ?",
+        "options": [
+          "حَافِلَة",
+          "قِطَار",
+          "سَيَّارَة"
+        ],
+        "answer": "قِطَار"
+      },
+      {
+        "question": "هَلْ الرِّحْلَة فِي مَوْعِدِهَا؟ signifie :",
+        "options": [
+          "Où est le vol ?",
+          "Le vol est-il à l'heure ?",
+          "Quel est le numéro du vol ?"
+        ],
+        "answer": "Le vol est-il à l'heure ?"
+      },
+      {
+        "question": "ذَهَابًا وَإِيَابًا signifie :",
+        "options": [
+          "Aller simple",
+          "Aller-retour",
+          "Transit"
+        ],
+        "answer": "Aller-retour"
+      },
+      {
+        "question": "حَقِيبَة signifie :",
+        "options": [
+          "Billet",
+          "Douane",
+          "Valise",
+          "Passeport"
+        ],
+        "answer": "Valise"
+      },
+      {
+        "question": "Comment dit-on 'Taxi' en arabe ?",
+        "options": [
+          "حَافِلَة",
+          "قِطَار",
+          "سَيَّارَة أُجْرَة"
+        ],
+        "answer": "سَيَّارَة أُجْرَة"
+      },
+      {
+        "question": "بَوَّابَة signifie dans le contexte de l'aéroport :",
+        "options": [
+          "Piste d'atterrissage",
+          "Porte d'embarquement",
+          "Salle d'attente"
+        ],
+        "answer": "Porte d'embarquement"
+      }
+    ]
+  },
+  {
+    "id": "l38",
+    "category": "Avancé",
+    "title": "Leçon 38 : Restaurant et Nourriture",
+    "description": "Commander au restaurant et parler de nourriture en arabe.",
+    "content": "## Au restaurant (فِي المَطْعَم)\n\n| Arabe | Sens |\n|---|---|\n| مَطْعَم | Restaurant |\n| قَائِمَة / مِنْيُو | Menu |\n| طَبَق | Plat |\n| طَعَام | Nourriture |\n| شَرَاب | Boisson |\n| حِسَاب | Addition |\n\n## Nourriture de base\n- خُبْز (Khubz) = Pain\n- أَرُزّ (Aruzz) = Riz\n- لَحْم (Laḥm) = Viande\n- دَجَاج (Dajāj) = Poulet\n- سَمَك (Samak) = Poisson\n- خُضَار (Khuḍār) = Légumes\n- فَاكِهَة (Fākiha) = Fruit\n\n## Dialogues au restaurant\n- مَاذَا تُرِيدُ؟ (Que voulez-vous ?)\n- أُرِيدُ... مِنْ فَضْلِكَ. (Je veux... s'il vous plaît.)\n- هَلْ عِنْدَكُمْ...؟ (Avez-vous...?)\n- الحِسَابَ مِنْ فَضْلِكَ! (L'addition s'il vous plaît !)\n- كَانَ لَذِيذًا جِدًّا! (C'était très délicieux !)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Restaurant' en arabe ?",
+        "options": [
+          "فُنْدُق",
+          "مَطْعَم",
+          "سُوق",
+          "مَخْبَز"
+        ],
+        "answer": "مَطْعَم"
+      },
+      {
+        "question": "الحِسَابَ مِنْ فَضْلِكَ signifie :",
+        "options": [
+          "Que veux-tu ?",
+          "C'était délicieux",
+          "L'addition s'il vous plaît"
+        ],
+        "answer": "L'addition s'il vous plaît"
+      },
+      {
+        "question": "Comment dit-on 'Poulet' en arabe ?",
+        "options": [
+          "لَحْم",
+          "سَمَك",
+          "دَجَاج"
+        ],
+        "answer": "دَجَاج"
+      },
+      {
+        "question": "مَاذَا تُرِيدُ؟ signifie :",
+        "options": [
+          "Avez-vous aimé le repas ?",
+          "Que voulez-vous ?",
+          "Quelle est la spécialité ?"
+        ],
+        "answer": "Que voulez-vous ?"
+      },
+      {
+        "question": "خُضَار signifie :",
+        "options": [
+          "Fruits",
+          "Légumes",
+          "Épices"
+        ],
+        "answer": "Légumes"
+      },
+      {
+        "question": "Comment dit-on 'Pain' en arabe ?",
+        "options": [
+          "أَرُزّ",
+          "خُبْز",
+          "حَسَاء"
+        ],
+        "answer": "خُبْز"
+      },
+      {
+        "question": "لَذِيذ signifie :",
+        "options": [
+          "Amer",
+          "Épicé",
+          "Délicieux"
+        ],
+        "answer": "Délicieux"
+      },
+      {
+        "question": "شَرَاب signifie :",
+        "options": [
+          "Nourriture",
+          "Boisson",
+          "Dessert"
+        ],
+        "answer": "Boisson"
+      },
+      {
+        "question": "هَلْ عِنْدَكُمْ...؟ est utilisé pour :",
+        "options": [
+          "Demander si quelque chose est disponible",
+          "Commander sans hésitation",
+          "Demander l'addition"
+        ],
+        "answer": "Demander si quelque chose est disponible"
+      },
+      {
+        "question": "Comment dit-on 'Poisson' en arabe ?",
+        "options": [
+          "لَحْم",
+          "دَجَاج",
+          "سَمَك"
+        ],
+        "answer": "سَمَك"
+      }
+    ]
+  },
+  {
+    "id": "l39",
+    "category": "Avancé",
+    "title": "Leçon 39 : Santé et Médecin",
+    "description": "Vocabulaire médical pour décrire des symptômes et consulter un médecin.",
+    "content": "## Chez le médecin (عِنْدَ الطَّبِيب)\n\n| Arabe | Sens |\n|---|---|\n| طَبِيب | Médecin |\n| مُسْتَشْفَى | Hôpital |\n| عِيَادَة | Cabinet médical |\n| صَيْدَلِيَّة | Pharmacie |\n| دَوَاء | Médicament |\n| وَصْفَة | Ordonnance |\n\n## Symptômes courants\n- مَرِيض / مَرِيضَة = Malade (m./f.)\n- أَلَم (ج: آلَام) = Douleur\n- صُدَاع = Mal de tête\n- حُمَّى / سُخُونِيَّة = Fièvre\n- كَحَّة = Toux\n- زُكَام = Rhume\n- تَعَب = Fatigue\n\n## Expressions utiles\n- أَشْعُرُ بِأَلَمٍ فِي... (J'ai mal à...)\n- عِنْدِي حُمَّى. (J'ai de la fièvre.)\n- مُنْذُ مَتَى وَأَنْتَ مَرِيض؟ (Depuis quand êtes-vous malade ?)\n- مُنْذُ يَوْمَيْن. (Depuis deux jours.)\n- خُذْ هَٰذَا الدَّوَاءَ ثَلَاثَ مَرَّاتٍ فِي اليَوْم. (Prenez ce médicament 3 fois par jour.)",
+    "exercises": [
+      {
+        "question": "Comment dit-on 'Médecin' en arabe ?",
+        "options": [
+          "صَيْدَلِيّ",
+          "مُمَرِّض",
+          "طَبِيب"
+        ],
+        "answer": "طَبِيب"
+      },
+      {
+        "question": "مُسْتَشْفَى signifie :",
+        "options": [
+          "Clinique",
+          "Pharmacie",
+          "Hôpital"
+        ],
+        "answer": "Hôpital"
+      },
+      {
+        "question": "أَشْعُرُ بِأَلَمٍ فِي رَأْسِي signifie :",
+        "options": [
+          "J'ai de la fièvre",
+          "J'ai mal à la tête",
+          "Je suis fatigué"
+        ],
+        "answer": "J'ai mal à la tête"
+      },
+      {
+        "question": "حُمَّى signifie :",
+        "options": [
+          "Toux",
+          "Rhume",
+          "Fièvre"
+        ],
+        "answer": "Fièvre"
+      },
+      {
+        "question": "Comment dit-on 'Médicament' en arabe ?",
+        "options": [
+          "وَصْفَة",
+          "دَوَاء",
+          "عِيَادَة"
+        ],
+        "answer": "دَوَاء"
+      },
+      {
+        "question": "زُكَام signifie :",
+        "options": [
+          "Grippe",
+          "Rhume",
+          "Toux"
+        ],
+        "answer": "Rhume"
+      },
+      {
+        "question": "صَيْدَلِيَّة signifie :",
+        "options": [
+          "Cabinet médical",
+          "Pharmacie",
+          "Hôpital"
+        ],
+        "answer": "Pharmacie"
+      },
+      {
+        "question": "مُنْذُ مَتَى؟ signifie :",
+        "options": [
+          "Pourquoi ?",
+          "Où ?",
+          "Depuis quand ?"
+        ],
+        "answer": "Depuis quand ?"
+      },
+      {
+        "question": "کَحَّة signifie :",
+        "options": [
+          "Migraine",
+          "Douleur au ventre",
+          "Toux"
+        ],
+        "answer": "Toux"
+      },
+      {
+        "question": "ثَلَاثَ مَرَّاتٍ فِي اليَوْم signifie :",
+        "options": [
+          "Deux fois par jour",
+          "Trois fois par jour",
+          "Une fois par jour"
+        ],
+        "answer": "Trois fois par jour"
+      }
+    ]
+  },
+  {
+    "id": "l40",
+    "category": "Avancé",
+    "title": "Leçon 40 : Conclusion et Bilan",
+    "description": "Révision générale et consolidation de l'ensemble des notions apprises.",
+    "content": "## Félicitations — Bilan de votre parcours !\nVous avez parcouru les **40 leçons** de cette plateforme d'apprentissage de l'arabe. Voici un récapitulatif des grandes notions maîtrisées.\n\n## Les piliers fondamentaux (Leçons 1-10)\n- ✅ L'alphabet et les 4 formes de chaque lettre\n- ✅ Les voyelles courtes (Ḥarakāt)\n- ✅ L'article défini Al- et la distinction solaire/lunaire\n- ✅ Le genre (masculin/féminin avec Tā' Marbūṭa)\n- ✅ Les pronoms personnels et la phrase nominale\n- ✅ Les démonstratifs, possessifs et prépositions de base\n\n## La grammaire de la phrase (Leçons 11-20)\n- ✅ L'Iḍāfa (annexion)\n- ✅ Les nombres de 1 à 100\n- ✅ La conjugaison : passé, présent, futur\n- ✅ La négation (لَا، لَمْ، لَنْ، لَيْسَ)\n- ✅ Les questions et le pluriel\n\n## Structures avancées (Leçons 21-30)\n- ✅ Adverbes, comparatifs, superlatifs\n- ✅ L'impératif et le conditionnel\n- ✅ La voix passive et les pronoms relatifs\n- ✅ Le duel (Muthannā)\n\n## Vocabulaire thématique (Leçons 31-39)\n- ✅ Couleurs, corps humain, famille\n- ✅ Heure, jours, mois, météo\n- ✅ Voyage, restaurant, médecin\n\n## Prochaines étapes\n1. **Pratiquez** avec les histoires bilingues de la section Histoires.\n2. **Consolidez** votre vocabulaire avec la section Vocabulaire.\n3. **Lisez** des textes arabes authentiques (journaux en ligne, Coran, littérature).",
+    "exercises": [
+      {
+        "question": "Combien de formes peut avoir une lettre arabe selon sa position ?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "4"
+      },
+      {
+        "question": "Quelle particule introduit une question fermée (oui/non) ?",
+        "options": [
+          "أَيْنَ",
+          "هَلْ",
+          "مَنْ",
+          "مَتَى"
+        ],
+        "answer": "هَلْ"
+      },
+      {
+        "question": "Le premier nom dans une Iḍāfa (annexion) ne peut pas porter :",
+        "options": [
+          "Une Kasra",
+          "L'article Al- ni le Tanwīn",
+          "Une Fatḥa"
+        ],
+        "answer": "L'article Al- ni le Tanwīn"
+      },
+      {
+        "question": "La voix passive se forme en arabe par :",
+        "options": [
+          "L'ajout d'un auxiliaire",
+          "Un changement des voyelles internes",
+          "L'ajout d'un préfixe мÁ-"
+        ],
+        "answer": "Un changement des voyelles internes"
+      },
+      {
+        "question": "Le duel exprime :",
+        "options": [
+          "Un, deux ou plusieurs",
+          "Exactement deux éléments",
+          "Trois éléments minimum"
+        ],
+        "answer": "Exactement deux éléments"
+      },
+      {
+        "question": "لَوْ est utilisé pour :",
+        "options": [
+          "Conditions réelles et possibles",
+          "Conditions hypothétiques/irréelles",
+          "Les questions"
+        ],
+        "answer": "Conditions hypothétiques/irréelles"
+      },
+      {
+        "question": "La règle de polarité des nombres arabes (3-10) signifie :",
+        "options": [
+          "Le nombre s'accorde normalement",
+          "Le nombre prend le genre INVERSE du nom compté",
+          "Les nombres sont invariables"
+        ],
+        "answer": "Le nombre prend le genre INVERSE du nom compté"
+      },
+      {
+        "question": "الَّذِي est le pronom relatif arabe pour :",
+        "options": [
+          "Féminin singulier",
+          "Masculin pluriel",
+          "Masculin singulier"
+        ],
+        "answer": "Masculin singulier"
+      },
+      {
+        "question": "La Tā' Marbūṭa (ة) est le marqueur du :",
+        "options": [
+          "Masculin",
+          "Féminin",
+          "Pluriel"
+        ],
+        "answer": "Féminin"
+      },
+      {
+        "question": "Quelle est la meilleure stratégie pour progresser après ce cours ?",
+        "options": [
+          "Mémoriser uniquement les listes de vocabulaire",
+          "Pratiquer avec des textes authentiques, des histoires et la section vocabulaire",
+          "Attendre des cours supplémentaires sans pratiquer"
+        ],
+        "answer": "Pratiquer avec des textes authentiques, des histoires et la section vocabulaire"
+      }
+    ]
+  }
+]

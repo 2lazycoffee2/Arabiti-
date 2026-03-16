@@ -1,0 +1,146 @@
+[
+  {
+    "id": "exp1",
+    "arabic": "إِنْ شَاءَ اللَّه",
+    "transliteration": "In shā' Allāh",
+    "translation": "Si Dieu le veut",
+    "context": "Utilisée pour tout projet ou espoir futur. Exprime qu'on espère que quelque chose se réalisera.",
+    "example": "— Vous serez là demain ? — إِنْ شَاءَ اللَّه !"
+  },
+  {
+    "id": "exp2",
+    "arabic": "الحَمْدُ لِلَّه",
+    "transliteration": "Al-ḥamdu lillāh",
+    "translation": "Dieu soit loué / Dieu merci",
+    "context": "Réponse à 'Comment ça va ?' ou pour exprimer la gratitude. Très courante dans les conversations.",
+    "example": "— Kīfa ḥāluka ? — الحَمْدُ لِلَّه, je vais bien."
+  },
+  {
+    "id": "exp3",
+    "arabic": "مَاشِي الحَال",
+    "transliteration": "Māshī al-ḥāl",
+    "translation": "Ça va, ça roule",
+    "context": "Expression informelle pour dire que tout va bien, sans plus. Très utilisée au Maghreb et au Proche-Orient.",
+    "example": "— Kīfa al-'amal ? — مَاشِي الحَال, rien de spécial."
+  },
+  {
+    "id": "exp4",
+    "arabic": "يَلَّا",
+    "transliteration": "Yallā",
+    "translation": "Allez ! / Vite ! / Allez-y !",
+    "context": "Expression polyvalente : encouragement, impatience, pour partir. Extrêmement courante dans tout le monde arabe.",
+    "example": "يَلَّا ! On va être en retard."
+  },
+  {
+    "id": "exp5",
+    "arabic": "بِالتَّوْفِيق",
+    "transliteration": "Bil-tawfīq",
+    "translation": "Bonne chance ! / Je te souhaite le succès !",
+    "context": "Utilisée pour souhaiter bonne chance avant un examen, entretien, compétition, etc.",
+    "example": "Avant un examen : بِالتَّوْفِيق لك !"
+  },
+  {
+    "id": "exp6",
+    "arabic": "مِنَ الآخِر",
+    "transliteration": "Min al-ākhir",
+    "translation": "Pour aller droit au but / En résumé",
+    "context": "Signifie littéralement 'depuis la fin'. Utilisé pour dire qu'on va être direct ou résumer quelque chose.",
+    "example": "مِنَ الآخِر, est-ce que tu viens ou non ?"
+  },
+  {
+    "id": "exp7",
+    "arabic": "عَلَى طُول",
+    "transliteration": "'Alā ṭūl",
+    "translation": "Tout de suite / Toujours / Constamment",
+    "context": "Selon le contexte : 'tout de suite' (Proche-Orient) ou 'toujours, constamment' (Maghreb).",
+    "example": "هُوَ عَلَى طُول يَشْتَكِي = Il se plaint tout le temps."
+  },
+  {
+    "id": "exp8",
+    "arabic": "خَلِي بَالَك",
+    "transliteration": "Khallī bālak",
+    "translation": "Fais attention ! / Prends garde !",
+    "context": "Avertissement bienveillant. Peut aussi signifier 'prends soin de toi' selon le ton.",
+    "example": "خَلِي بَالَك مِنَ السَّيَّارَات = Attention aux voitures !"
+  },
+  {
+    "id": "exp9",
+    "arabic": "حَبِيبِي / حَبِيبَتِي",
+    "transliteration": "Ḥabībī / Ḥabībatī",
+    "translation": "Mon chéri / Ma chérie (terme d'affection général)",
+    "context": "Peut s'utiliser entre amis, membres de la famille, partenaires. Très courant, pas nécessairement romantique.",
+    "example": "يَلَّا حَبِيبِي ! = Allez mon ami !"
+  },
+  {
+    "id": "exp10",
+    "arabic": "اِبْنُ الحَلَال",
+    "transliteration": "Ibn al-ḥalāl",
+    "translation": "Homme honnête / Quelqu'un de bien",
+    "context": "Compliment sincère pour qualifier quelqu'un de droit, généreux et de confiance.",
+    "example": "الجَار اِبْنُ الحَلَال = Mon voisin est quelqu'un de bien."
+  },
+  {
+    "id": "exp11",
+    "arabic": "مَا فِي شَيء",
+    "transliteration": "Mā fī shay'",
+    "translation": "Il n'y a rien / Ce n'est rien / Pas de problème",
+    "context": "Réponse courante pour dire que ce n'est pas grave ou qu'il n'y a pas de problème. Dialecte levantin et du Golfe.",
+    "example": "— Désolé ! — مَا فِي شَيء, ça ne fait rien."
+  },
+  {
+    "id": "exp12",
+    "arabic": "رَبِّي يُسَهِّل",
+    "transliteration": "Rabbī yusahhil",
+    "translation": "Que Dieu facilite (les choses)",
+    "context": "Encouragement pour quelqu'un qui traverse une période difficile. Comparable à 'Coraje!' ou 'Ça va aller !'.",
+    "example": "Face à quelqu'un qui galère : رَبِّي يُسَهِّل عَلَيْك."
+  },
+  {
+    "id": "exp13",
+    "arabic": "بَيْنَ نَارَيْن",
+    "transliteration": "Bayna nārayn",
+    "translation": "Être entre deux feux / Entre le marteau et l'enclume",
+    "context": "Être coincé entre deux situations difficiles ou deux choix tout aussi pénibles.",
+    "example": "أَنَا بَيْنَ نَارَيْنِ : أَتْرُكُ عَمَلِي أَمْ أَبْقَى مَعَ الرَّئيسِ الصَّعْبِ ؟"
+  },
+  {
+    "id": "exp14",
+    "arabic": "اِضْرِبْ حَدِيدًا وَهُوَ حَامٍ",
+    "transliteration": "Iḍrib ḥadīdan wa-huwa ḥāmin",
+    "translation": "Il faut battre le fer tant qu'il est chaud",
+    "context": "Il faut agir immédiatement pendant que l'opportunité est là ou que l'intérêt est vif.",
+    "example": "اِضْرِبْ حَدِيدًا وَهُوَ حَامٍ ، اِتَّصِلْ بِهِ الآنَ !"
+  },
+  {
+    "id": "exp15",
+    "arabic": "عُصْفُورٌ فِي اليَدِ خَيْرٌ مِنْ عَشَرَةٍ عَلَى الشَّجَرَة",
+    "transliteration": "‘Uṣfūrun fī al-yad khayrun min ‘asharatin ‘alā ash-shajara",
+    "translation": "Un oiseau dans la main vaut mieux que dix sur l'arbre",
+    "context": "Mieux vaut une petite certitude qu'une grande incertitude. Équivalent français : 'Un tiens vaut mieux que deux tu l'auras'.",
+    "example": "خُذْ هَذَا العَرْضَ ، فَعُصْفُورٌ فِي اليَدِ خَيْرٌ مِنْ عَشَرَةٍ عَلَى الشَّجَرَة."
+  },
+  {
+    "id": "exp16",
+    "arabic": "رُبَّ ضَارَّةٍ نَافِعَة",
+    "transliteration": "Rubba ḍārratin nāfi‘a",
+    "translation": "Souvent un malheur apporte un bienfait",
+    "context": "Une situation difficile peut déboucher sur quelque chose de positif. Équivalent français : 'À quelque chose malheur est bon'.",
+    "example": "فَقَدْتُ مِحْفَظَتِي لَكِنِّي وَجَدْتُ عَمَلًا جَدِيدًا ، رُبَّ ضَارَّةٍ نَافِعَة."
+  },
+  {
+    "id": "exp17",
+    "arabic": "يَدٌ وَاحِدَةٌ لَا تُصَفِّق",
+    "transliteration": "Yadun wāḥidatun lā tuṣaffiq",
+    "translation": "L'union fait la force / Seul on ne peut rien faire",
+    "context": "Souligne l'importance de la coopération et du travail d'équipe. Litt : 'Une seule main ne peut applaudir'.",
+    "example": "نَحْنُ بِحَاجَةٍ إِلَى مُسَاعَدَتِكَ ، فَيَدٌ وَاحِدَةٌ لَا تُصَفِّق."
+  },
+  {
+    "id": "exp18",
+    "arabic": "الوَقْتُ كَالسَّيْف",
+    "transliteration": "Al-waqtu ka-as-sayf",
+    "translation": "Le temps est une épée",
+    "context": "Proverbe célèbre : 'Le temps est une épée, si tu ne le coupes pas, il te coupe'. Pour souligner l'urgence et la valeur du temps.",
+    "example": "ادْرُسْ جَيِّدًا ، فَالوَقْتُ كَالسَّيْف."
+  }
+]

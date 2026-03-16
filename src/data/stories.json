@@ -1,0 +1,482 @@
+[
+    {
+        "id": "s1",
+        "title": "طَارِق الطَّالِب - La journée de Tariq (L'étudiant)",
+        "difficulty": "Débutant",
+        "segments": [
+            {
+                "arabic": "هَذَا طَارِق.",
+                "romanization": "Hādha Ṭāriq.",
+                "translation": "C'est Tariq."
+            },
+            {
+                "arabic": "طَارِقٌ طَالِبٌ فِي الْجَامِعَةِ يَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ.",
+                "romanization": "Ṭāriq ṭālib fī al-jāmi‘ati yadrus al-lughat al-‘arabiyya.",
+                "translation": "Tariq est étudiant à l'université, il étudie la langue arabe."
+            },
+            {
+                "arabic": "يَسْتَيْقِظُ طَارِق مُبَكِّرًا كُلَّ يَوْمٍ فِي السَّاعَةِ السَّابِعَةِ.",
+                "romanization": "Yastayqiẓ Ṭāriq mubakkiran kulla yawm fī as-sā‘at as-sābi‘a.",
+                "translation": "Tariq se réveille tôt tous les jours à sept heures."
+            },
+            {
+                "arabic": "يُحِبُّ طَارِق شُرْبَ الْقَهْوَةِ مَعَ الْحَلِيبِ فِي الصَّبَاحِ، وَيَقْرَأُ الْأَخْبَارَ.",
+                "romanization": "Yuḥibb Ṭāriq shurb al-qahwati ma‘a al-ḥalīb fī aṣ-ṣabāḥ, wa-yaqra’ al-’akhbār.",
+                "translation": "Tariq aime boire du café au lait le matin, et il lit les actualités."
+            },
+            {
+                "arabic": "ثُمَّ يَذْهَبُ إِلَى مَكْتَبَةِ الْجَامِعَةِ بِحَافِلَتِهِ الْمُفَضَّلَةِ.",
+                "romanization": "Thumma yadhhab 'ilā maktabat al-jāmi‘ati bi-ḥāfilatih al-mufaḍḍala.",
+                "translation": "Ensuite, il va à la bibliothèque de l'université avec son bus préféré."
+            },
+            {
+                "arabic": "هُنَاكَ، يَلْتَقِي بِأَصْدِقَائِهِ وَيَتَحَدَّثُونَ كَثِيرًا.",
+                "romanization": "Hunāka, yaltaqī bi-’aṣdiqā’ih wa-yataḥaddathūna kathīran.",
+                "translation": "Là-bas, il rencontre ses amis et ils discutent beaucoup."
+            }
+        ]
+    },
+    {
+        "id": "s2",
+        "title": "سَارَة وَسُوق مُرَّاكُش - Sarah et le marché de Marrakech",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "فِي الصَّيْفِ الْمَاضِي، سَافَرَتْ سَارَةُ وَصَدِيقَتُهَا إِلَى الْمَغْرِبِ لِقَضَاءِ الْعُطْلَةِ.",
+                "romanization": "Fī aṣ-ṣayf al-māḍī, sāfarat Sāra wa-ṣadīqatuhā 'ilā al-Maghrib li-qaḍā’ al-‘uṭla.",
+                "translation": "L'été dernier, Sarah et son amie ont voyagé au Maroc pour passer les vacances."
+            },
+            {
+                "arabic": "زَارَتْ مَدِينَةَ مُرَّاكُشَ الْجَمِيلَةَ وَالْقَدِيمَةَ وَتَجَوَّلَتْ فِي شَوَارِعِهَا الضَّيِّقَةِ.",
+                "romanization": "Zārat madīnat Murrākush al-jamīla wa-al-qadīma wa-tajawwalat fī shawāri‘ihā aḍ-ḍayyiqa.",
+                "translation": "Elle a visité la belle et ancienne ville de Marrakech et s'est promenée dans ses rues étroites."
+            },
+            {
+                "arabic": "كَانَتْ دَرَجَةُ الْحَرَارَةِ مُرْتَفِعَةً جِدًّا، لَكِنَّ الْأَجْوَاءَ كَانَتْ مُدْهِشَةً.",
+                "romanization": "Kānat darajat al-ḥarāra murtafi‘atan jiddan, lākinna al-’ajwā’ kānat mudhisha.",
+                "translation": "La température était très élevée, mais l'atmosphère était étonnante."
+            },
+            {
+                "arabic": "ذَهَبَتْ إِلَى السُّوقِ الْكَبِيرِ، الْمَعْرُوفِ بِاسْمِ 'الْمَدِينَةَ'.",
+                "romanization": "Dhahabat 'ilā as-sūq al-kabīr, al-ma‘rūf bi-ism 'al-madīna'.",
+                "translation": "Elle est allée au grand marché, connu sous le nom de 'La Médina'."
+            },
+            {
+                "arabic": "تَحَدَّثَتْ مَعَ بَائِعِ التَّوَابِلِ وَاشْتَرَتِ الزَّعْفَرَانَ وَالْكَمُّونَ.",
+                "romanization": "Taḥaddathat ma‘a bā’i‘ at-tawābil wa-ishtarati az-za‘farān wa-al-kammūn.",
+                "translation": "Elle a discuté avec le vendeur d'épices et a acheté du safran et du cumin."
+            },
+            {
+                "arabic": "كَانَتْ تَجْرِبَةً رَائِعَةً لَنْ تَنْسَاهَا أَبَدًا، وَالنَّاسُ هُنَاكَ كُرَمَاءُ جِدًّا.",
+                "romanization": "Kānat tajribatan rā’i‘atan lan tansāhā ’abadan, wa-an-nās hunāka kuramā’ jiddan.",
+                "translation": "C'était une expérience merveilleuse qu'elle n'oubliera jamais, et les gens y sont très généreux."
+            }
+        ]
+    },
+    {
+        "id": "s3",
+        "title": "مكتب البريد - À la poste",
+        "difficulty": "Débutant",
+        "segments": [
+            {
+                "arabic": "أُرِيدُ إِرْسَالَ رِسَالَةٍ إِلَى فَرَنْسَا.",
+                "romanization": "’Urīd ’irsāl risāla 'ilā Faransā.",
+                "translation": "Je veux envoyer une lettre en France."
+            },
+            {
+                "arabic": "أَيْنَ هُوَ مَكْتَبُ الْبَرِيدِ مِنْ فَضْلِكَ؟",
+                "romanization": "’Ayna huwa maktab al-barīd min faḍlik?",
+                "translation": "Où est le bureau de poste s'il vous plaît ?"
+            },
+            {
+                "arabic": "إِنَّهُ فِي نِهَايَةِ هَذَا الشَّارِعِ، عَلَى الْيَمِينِ.",
+                "romanization": "’Innahu fī nihāyat hādha ash-shāri‘, ‘alā al-yamīn.",
+                "translation": "Il se trouve à la fin de cette rue, sur la droite."
+            },
+            {
+                "arabic": "أُرِيدُ شِرَاءَ طَوَابِعَ بَرِيدِيَّةٍ أَيْضًا.",
+                "romanization": "’Urīd shirā’ ṭawābi‘ barīdiyya ’ayḍan.",
+                "translation": "Je veux acheter des timbres postaux aussi."
+            },
+            {
+                "arabic": "كَمْ يُكَلِّفُ إِرْسَالُ هَذَا الطَّرْدِ؟",
+                "romanization": "Kam yukallif ’irsāl hādha aṭ-ṭard?",
+                "translation": "Combien coûte l'envoi de ce colis ?"
+            },
+            {
+                "arabic": "شُكْرًا جَزِيلًا لِمُسَاعَدَتِكَ، يَوْمًا سَعِيدًا.",
+                "romanization": "Shukran jazīlan li-musā‘adatik, yawman sa‘īdan.",
+                "translation": "Merci beaucoup pour votre aide, passez une bonne journée."
+            }
+        ]
+    },
+    {
+        "id": "s4",
+        "title": "الصحراء الكبرى - Le Grand Sahara",
+        "difficulty": "Avancé",
+        "segments": [
+            {
+                "arabic": "الصَّحْرَاءُ لَيْسَتْ فَقَطْ رِمَالًا فَارِغَةً وَلَا حَيَاةَ فِيهَا.",
+                "romanization": "Aṣ-ṣaḥrā’ laysat faqaṭ rimālan fārighatan wa-lā ḥayāta fīhā.",
+                "translation": "Le désert n'est pas seulement du sable vide sans vie."
+            },
+            {
+                "arabic": "إِنَّهَا أَدَاةٌ تُعَلِّمُنَا الصَّبْرَ وَالْهُدُوءَ فِي عَالَمٍ سَرِيعٍ وَمَلِيءٍ بِالضَّوْضَاءِ.",
+                "romanization": "’Innahā ’adāt tu‘allimunā aṣ-ṣabr wa-al-hudū’ fī ‘ālamin sarī‘in wa-malī’in bi-aḍ-ḍawḍā’.",
+                "translation": "C'est un outil qui nous enseigne la patience et le calme dans un monde rapide et bruyant."
+            },
+            {
+                "arabic": "فِي اللَّيْلِ، النُّجُومُ تُضِيءُ السَّمَاءَ كَالْمَصَابِيحِ الْقَوِيَّةِ فِي الظَّلَامِ الْحَالِكِ.",
+                "romanization": "Fī al-layl, an-nujūm tuḍī’ as-samā’ ka-al-maṣābīḥ al-qawiyya fī aẓ-ẓalām al-ḥālik.",
+                "translation": "La nuit, les étoiles illuminent le ciel comme de puissantes lampes dans l'obscurité totale."
+            },
+            {
+                "arabic": "يَجْلِسُ الْبَدْوُ حَوْلَ النَّارِ يَتَبَادَلُونَ الْقِصَصَ وَالْأَشْعَارَ الْقَدِيمَةَ وَيَشْرَبُونَ الشَّايَ بِالنَّعْنَاعِ.",
+                "romanization": "Yajlis al-badw ḥawla an-nār yatabādalūn al-qiṣaṣ wa-al-’ash‘ār al-qadīma wa-yashrabūn ash-shāy bi-an-na‘nā‘.",
+                "translation": "Les bédouins s'assoient autour du feu, échangeant contes et poésies anciennes, et boivent du thé à la menthe."
+            },
+            {
+                "arabic": "إِدْرَاكُ عَظَمَةِ الْخَالِقِ يَتَجَلَّى بِوُضُوحٍ فِي هَذَا الصَّمْتِ الْعَظِيمِ.",
+                "romanization": "’Idrāk ‘aẓamat al-khāliq yatajallā bi-wuḍūḥin fī hādha aṣ-ṣamt al-‘aẓīm.",
+                "translation": "La réalisation de la grandeur du Créateur se manifeste clairement dans ce silence grandiose."
+            }
+        ]
+    },
+    {
+        "id": "s5",
+        "title": "فصل الشتاء والثلج - L'Hiver et la Neige",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "جَاءَ فَصْلُ الشِّتَاءِ أَخِيرًا وَتَغَيَّرَ لَوْنُ الْجِبَالِ.",
+                "romanization": "Jā’a faṣl ash-shitā’ ’akhīran wa-taghayyara lawn al-jibāl.",
+                "translation": "La saison d'hiver est enfin arrivée et la couleur des montagnes a changé."
+            },
+            {
+                "arabic": "سَقَطَ الثَّلْجُ طَوَالَ اللَّيْلِ وَغَطَّى الْأَشْجَارَ وَالْبُيُوتَ.",
+                "romanization": "Saqaṭa ath-thalj ṭawāla al-layl wa-ghaṭṭā al-’ashjār wa-al-buyūt.",
+                "translation": "La neige est tombée toute la nuit et a couvert les arbres et les maisons."
+            },
+            {
+                "arabic": "فِي الصَّبَاحِ، خَرَجَ الْأَطْفَالُ لِلَّعِبِ وَبِنَاءِ رَجُلِ الثَّلْجِ.",
+                "romanization": "Fī aṣ-ṣabāḥ, kharaja al-’aṭfāl li-al-la‘ib wa-binā’ rajul ath-thalj.",
+                "translation": "Le matin, les enfants sont sortis pour jouer et construire un bonhomme de neige."
+            },
+            {
+                "arabic": "الْجَوُّ بَارِدٌ جِدًّا وَنَحْتَاجُ لِمَلَابِسَ صُوفِيَّةٍ سَمِيكَةٍ.",
+                "romanization": "Al-jaww bārid jiddan wa-naḥtāj li-malābis ṣūfiyya samīka.",
+                "translation": "Le temps est très froid et nous avons besoin de vêtements en laine épais."
+            },
+            {
+                "arabic": "الْأُمُّ أَعَدَّتْ حِسَاءً سَاخِنًا لِجَمِيعِ أَفْرَادِ الْأُسْرَةِ لِتَدْفِئَتِهِمْ.",
+                "romanization": "Al-’umm ’a‘addat ḥisā’an sākhinan li-jamī‘ ’afrād al-’usra li-tadfi’atihim.",
+                "translation": "La mère a préparé une soupe chaude pour tous les membres de la famille afin de les réchauffer."
+            }
+        ]
+    },
+    {
+        "id": "s6",
+        "title": "عائلة أحمد - La famille d'Ahmed",
+        "difficulty": "Débutant",
+        "segments": [
+            {
+                "arabic": "عَائِلَةُ أَحْمَدَ صَغِيرَةٌ وَسَعِيدَةٌ.",
+                "romanization": "‘Ā’ilat ’Aḥmad ṣaghīra wa-sa‘īda.",
+                "translation": "La famille d'Ahmed est petite et heureuse."
+            },
+            {
+                "arabic": "وَالِدُهُ يَعْمَلُ طَبِيبًا فِي الْمُسْتَشْفَى الْكَبِيرِ.",
+                "romanization": "Wāliduhu ya‘mal ṭabīban fī al-mustashfā al-kabīr.",
+                "translation": "Son père travaille comme médecin dans le grand hôpital."
+            },
+            {
+                "arabic": "وَوَالِدَتُهُ مُعَلِّمَةٌ فِي مَدْرَسَةٍ ابْتِدَائِيَّةٍ.",
+                "romanization": "Wa-wālidatuhu mu‘allima fī madrasa ibtidā’iyya.",
+                "translation": "Et sa mère est enseignante dans une école primaire."
+            },
+            {
+                "arabic": "لَدَيْهِ أُخْتٌ وَاحِدَةٌ اسْمُهَا مَرْيَمُ.",
+                "romanization": "Ladayhi ’ukht wāḥida ismuhā Maryamu.",
+                "translation": "Il a une seule sœur qui s'appelle Maryam."
+            },
+            {
+                "arabic": "فِي يَوْمِ الْأَحَدِ، تَذْهَبُ الْعَائِلَةُ إِلَى الْحَدِيقَةِ.",
+                "romanization": "Fī yawm al-’aḥad, tadhhab al-‘ā’ila 'ilā al-ḥadīqa.",
+                "translation": "Le dimanche, la famille va au parc."
+            }
+        ]
+    },
+    {
+        "id": "s7",
+        "title": "القطة السوداء الفضولية - Le chat noir curieux",
+        "difficulty": "Débutant",
+        "segments": [
+            {
+                "arabic": "لَدَيْنَا قِطَّةٌ سَوْدَاءُ صَغِيرَةٌ، عُيُونُهَا خَضْرَاءُ.",
+                "romanization": "Ladaynā qiṭṭa sawdā’ ṣaghīra, ‘uyūnuhā khaḍrā’.",
+                "translation": "Nous avons un petit chat noir, ses yeux sont verts."
+            },
+            {
+                "arabic": "الْقِطَّةُ تُحِبُّ اللَّعِبَ بِكُرَةِ الصُّوفِ طَوَالَ الْيَوْمِ.",
+                "romanization": "Al-qiṭṭa tuḥibb al-la‘ib bi-kurat aṣ-ṣūf ṭawāla al-yawm.",
+                "translation": "Le chat aime jouer avec une pelote de laine toute la journée."
+            },
+            {
+                "arabic": "فِي اللَّيْلِ، تَجْلِسُ قُرْبَ النَّافِذَةِ وَتَنْظُرُ إِلَى الْقَمَرِ.",
+                "romanization": "Fī al-layl, tajlis qurba an-nāfidha wa-tanẓur 'ilā al-qamar.",
+                "translation": "La nuit, il s'assoit près de la fenêtre et regarde la lune."
+            },
+            {
+                "arabic": "تَنَامُ الْقِطَّةُ كَثِيرًا وَتُحِبُّ النَّوْمَ عَلَى سَرِيرِي.",
+                "romanization": "Tanām al-qiṭṭa kathīran wa-tuḥibb an-nawm ‘alā sarīrī.",
+                "translation": "Le chat dort beaucoup et aime dormir sur mon lit."
+            }
+        ]
+    },
+    {
+        "id": "s8",
+        "title": "زيارة المطعم التقليدي - Visite du restaurant traditionnel",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "مَسَاءَ أَمْسِ، ذَهَبْتُ أَنَا وَزُمَلائِي فِي الْعَمَلِ إِلَى مَطْعَمٍ لُبْنَانِيٍّ تَقْلِيدِيٍّ.",
+                "romanization": "Masā’a ’amsi, dhahabtu ’ana wa-zumalā’ī fī al-‘amali ’ilā maṭ‘amin lubnāniyyin taqlīdiyyin.",
+                "translation": "Hier soir, mes collègues de travail et moi sommes allés dans un restaurant libanais traditionnel."
+            },
+            {
+                "arabic": "كَانَ الْمَكَانُ مُزَيَّنًا بِأَضْوَاءٍ خَافِتَةٍ وَمُوسِيقَى كِلاسِيكِيَّةٍ هَادِئَةٍ.",
+                "romanization": "Kāna al-makānu muzayyanan bi-’aḍwā’in khāfitatin wa-mūsīqā kilāsīkiyyatin hādi’atin.",
+                "translation": "L'endroit était décoré avec des lumières tamisées et une musique classique calme."
+            },
+            {
+                "arabic": "طَلَبْنَا الْحُمُّصَ، التَّبُّولَةَ، وَالْكَثِيرَ مِنَ الْمَشْوِيَّاتِ اللَّذِيذَةِ.",
+                "romanization": "Ṭalabnā al-ḥummuṣa, at-tabbūlata, wa-al-kathīra min al-mashwiyyāti al-ladhīdhati.",
+                "translation": "Nous avons commandé du houmous, du taboulé et beaucoup de délicieuses grillades."
+            },
+            {
+                "arabic": "الْمَطْعَمُ كَانَ مُزْدَحِمًا، لَكِنَّ الْخِدْمَةَ كَانَتْ سَرِيعَةً وَمُمْتَازَةً.",
+                "romanization": "Al-maṭ‘amu kāna muzdaḥiman, lākinna al-khidmata kānat sarī‘atan wa-mumtāzatan.",
+                "translation": "Le restaurant était bondé, mais le service était rapide et excellent."
+            },
+            {
+                "arabic": "فِي النِّهَايَةِ، شَرِبْنَا الْقَهْوَةَ الْعَرَبِيَّةَ مَعَ الْحَلَوِيَّاتِ.",
+                "romanization": "Fī an-nihāyati, sharibnā al-qahwata al-‘arabiyyata ma‘a al-ḥalawiyyāti.",
+                "translation": "À la fin, nous avons bu du café arabe avec des pâtisseries."
+            }
+        ]
+    },
+    {
+        "id": "s9",
+        "title": "رحلة بالقطار السريع - Un voyage en train à grande vitesse",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "رَكِبْتُ الْقِطَارَ السَّرِيعَ مِنَ الْعَاصِمَةِ مُتَوَجِّهًا إِلَى مَدِينَةٍ سَاحِلِيَّةٍ.",
+                "romanization": "Rakibtu al-qiṭār as-sarī‘ min al-‘āṣima mutawajjihan 'ilā madīna sāḥiliyya.",
+                "translation": "J'ai pris le train à grande vitesse de la capitale en direction d'une ville côtière."
+            },
+            {
+                "arabic": "كَانَتِ الْمَنَاظِرُ تَتَغَيَّرُ بِسُرْعَةٍ مِنَ الْجِبَالِ الْمُرْتَفِعَةِ إِلَى الْحُقُولِ الْخَضْرَاءِ.",
+                "romanization": "Kānati al-manāẓir tataghayyar bi-sur‘atin min al-jibāl al-murtafi‘a 'ilā al-ḥuqūl al-khaḍrā’.",
+                "translation": "Les paysages changeaient rapidement, passant des hautes montagnes aux champs verts."
+            },
+            {
+                "arabic": "جَلَسْتُ بِقُرْبِ النَّافِذَةِ أَقْرَأُ كِتَابًا مُمْتِعًا عَنِ التَّارِيخِ الْقَدِيمِ.",
+                "romanization": "Jalastu bi-qurbi an-nāfidha ’aqra’ kitāban mumti‘an ‘an at-tārīkh al-qadīm.",
+                "translation": "Je me suis assis près de la fenêtre en lisant un livre intéressant sur l'histoire ancienne."
+            },
+            {
+                "arabic": "الْقِطَارُ يُوَفِّرُ خِدْمَةَ الْإِنْتِرْنِتِ الْمَجَّانِيَّةَ، مِمَّا سَمَحَ لِي بِإِنْجَازِ بَعْضِ الْعَمَلِ.",
+                "romanization": "Al-qiṭār yuwaffir khidmat al-’intirnit al-majjāniyya, mimmā samaḥa lī bi-’injāz ba‘ḍ al-‘amal.",
+                "translation": "Le train propose une connexion Internet gratuite, ce qui m'a permis d'avancer dans mon travail."
+            },
+            {
+                "arabic": "وَصَلْنَا فِي الْمَوْعِدِ الْمُحَدَّدِ تَمَامًا دُونَ أَيِّ تَأْخِيرٍ.",
+                "romanization": "Waṣalnā fī al-maw‘id al-muḥaddad tamāman dūna ’ayyi ta’khīr.",
+                "translation": "Nous sommes arrivés exactement à l'heure prévue, sans aucun retard."
+            }
+        ]
+    },
+    {
+        "id": "s10",
+        "title": "اكتشاف الفضاء - L'exploration spatiale",
+        "difficulty": "Avancé",
+        "segments": [
+            {
+                "arabic": "لَطَالَمَا نَظَرَ الْإِنْسَانُ إِلَى النُّجُومِ مُتَسَائِلًا عَمَّا يُوجَدُ خَلْفَ غِلَافِنَا الْجَوِّيِّ.",
+                "romanization": "Laṭālamā naẓara al-’insān 'ilā an-nujūm mutasā’ilan ‘ammā yūjad khalfa ghilāfinā al-jawwiyy.",
+                "translation": "L'Homme a longtemps regardé les étoiles en se demandant ce qu'il y a au-delà de notre atmosphère."
+            },
+            {
+                "arabic": "بِفَضْلِ التِّكْنُولُوجْيَا الْحَدِيثَةِ وَأَجْهِزَةِ التِّلِسْكُوبِ الْمُتَطَوِّرَةِ، بَدَأْنَا نَكْتَشِفُ الْكَوَاكِبَ الْبَعِيدَةَ.",
+                "romanization": "Bi-faḍli at-tiknūlūjyā al-ḥadītha wa-’ajhizat at-tiliskūb al-mutaṭawwira, bada’nā naktashif al-kawākib al-ba‘īda.",
+                "translation": "Grâce aux technologies modernes et aux télescopes avancés, nous avons commencé à découvrir des planètes lointaines."
+            },
+            {
+                "arabic": "إِرْسَالُ رُوبُوتَاتٍ إِلَى الْمِرِّيخِ شَكَّلَ قَفْزَةً نَوْعِيَّةً فِي فَهْمِنَا لِلنِّظَامِ الشَّمْسِيِّ.",
+                "romanization": "’Irsāl rūbūtāt 'ilā al-Mirrīkh shakkala qafzatan naw‘iyyatan fī fahminā li-an-niẓām ash-shamsiyy.",
+                "translation": "L'envoi de robots sur Mars a constitué un bond qualitatif dans notre compréhension du système solaire."
+            },
+            {
+                "arabic": "وَمَعَ ذَلِكَ، لَا يَزَالُ الْكَوْنُ الْوَاسِعُ يُخَبِّئُ أَسْرَارًا لَا تُعَدُّ وَلَا تُحْصَى.",
+                "romanization": "Wa-ma‘a dhālika, lā yazāl al-kawn al-wāsi‘ yukhabbi’ ’asrāran lā tu‘addu wa-lā tuḥṣā.",
+                "translation": "Cependant, le vaste univers recèle encore d'innombrables secrets."
+            },
+            {
+                "arabic": "رُبَّمَا فِي الْمُسْتَقْبَلِ الْقَرِيبِ، سَنَتَمَكَّنُ مِنَ السَّفَرِ عَبْرَ الْمَجَرَّاتِ وَالْعَيْشِ فِي مُسْتَعْمَرَاتٍ فَضَائِيَّةٍ.",
+                "romanization": "Rubbamā fī al-mustaqbal al-qarīb, sanatamakkanu min as-safar ‘abra al-majarrāt wa-al-‘aysh fī musta‘marāt faḍā’iyya.",
+                "translation": "Peut-être que dans un avenir proche, nous pourrons voyager à travers les galaxies et vivre dans des colonies spatiales."
+            }
+        ]
+    },
+    {
+        "id": "s11",
+        "title": "أهمية القراءة - L'importance de la lecture",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "الْقِرَاءَةُ غِذَاءُ الْعَقْلِ وَالرُّوحِ، وَهِيَ نَافِذَةٌ تُطِلُّ بِنَا عَلَى عَوَالِمَ مَجْهُولَةٍ.",
+                "romanization": "Al-qirā’a ghadhā’ al-‘aql wa-ar-rūḥ, wa-hiya nāfidhatun tuṭillu binā ‘alā ‘awālima majhūla.",
+                "translation": "La lecture est la nourriture de l'esprit et de l'âme, et c'est une fenêtre qui donne sur des mondes inconnus."
+            },
+            {
+                "arabic": "كُلُّ كِتَابٍ تَقْرَؤُهُ يُضِيفُ إِلَى عُمْرِكَ تَجْرِبَةً جَدِيدَةً وَحَيَاةً أُخْرَى.",
+                "romanization": "Kullu kitābin taqra’uhu yuḍīfu 'ilā ‘umrik tajribatan jadīdatan wa-ḥayātan ’ukhrā.",
+                "translation": "Chaque livre que vous lisez ajoute à votre vie une nouvelle expérience et une autre vie."
+            },
+            {
+                "arabic": "الْكُتُبُ تَزِيدُ مِنْ مُفْرَدَاتِنَا وَتُسَاعِدُنَا عَلَى التَّعْبِيرِ عَنْ أَفْكَارِنَا بِوُضُوحٍ أَفْضَلَ.",
+                "romanization": "Al-kutub tazīdu min mufradātinā wa-tusā‘idunā ‘alā at-ta‘bīr ‘an ’afkārinā bi-wuḍūḥin ’afḍal.",
+                "translation": "Les livres augmentent notre vocabulaire et nous aident à exprimer nos idées plus clairement."
+            },
+            {
+                "arabic": "مِنَ الْأَفْضَلِ تَخْصِيصُ نِصْفِ سَاعَةٍ عَلَى الْأَقَلِّ يَوْمِيًّا لِلْقِرَاءَةِ الْحُرَّةِ.",
+                "romanization": "Min al-’afḍal takhṣīṣ niṣfi sā‘atin ‘alā al-’aqalli yawmiyyan li-al-qirā’a al-ḥurra.",
+                "translation": "Il est préférable de consacrer au moins une demi-heure par jour à la lecture libre."
+            },
+            {
+                "arabic": "الشُّعُوبُ الَّتِي تَقْرَأُ هِيَ الشُّعُوبُ الَّتِي تَقُودُ التَّطَوُّرَ وَالِابْتِكَارَ.",
+                "romanization": "Ash-shu‘ūb allatī taqra’ hiya ash-shu‘ūb allatī taqūdu at-taṭawwur wa-al-ibtikār.",
+                "translation": "Les peuples qui lisent sont ceux qui mènent le développement et l'innovation."
+            }
+        ]
+    },
+    {
+        "id": "s12",
+        "title": "المكتبة القديمة في المدينة - L'ancienne bibliothèque de la ville",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "يُوجَدُ فِي وَسَطِ مَدِينَتِنَا مَكْتَبَةٌ قَدِيمَةٌ مَبْنِيَّةٌ مِنَ الْحَجَرِ الْأَبْيَضِ.",
+                "romanization": "Yūjadu fī wasaṭi madīnatinā maktabatun qadīmatun mabniyyatun min al-ḥajar al-’abyaḍ.",
+                "translation": "Au centre de notre ville se trouve une ancienne bibliothèque construite en pierre blanche."
+            },
+            {
+                "arabic": "تَأَسَّسَتْ هَذِهِ الْمَكْتَبَةُ قَبْلَ أَكْثَرَ مِنْ مِائَةِ عَامٍ، وَتَحْتَوِي عَلَى مَخْطُوطَاتٍ نَادِرَةٍ.",
+                "romanization": "Ta’assasat hādhihi al-maktaba qabla ’akthara min mi’ati ‘ām, wa-taḥtawī ‘alā makhṭūṭāt nādira.",
+                "translation": "Cette bibliothèque a été fondée il y a plus de cent ans et contient des manuscrits rares."
+            },
+            {
+                "arabic": "رَائِحَةُ الْوَرَقِ الْقَدِيمِ وَالْهُدُوءُ التَّامُّ يَجْعَلَانِ الْمَكَانَ سَاحِرًا لِلِاسْتِكْشَافِ.",
+                "romanization": "Rā’iḥat al-waraq al-qadīm wa-al-hudū’ at-tāmm yaj‘alāni al-makān sāḥiran li-l-istikshāf.",
+                "translation": "L'odeur du vieux papier et le calme absolu rendent l'endroit magique à explorer."
+            },
+            {
+                "arabic": "يَأْتِي الْبَاحِثُونَ وَالطُّلَّابُ مِنْ كُلِّ مَكَانٍ لِلْبَحْثِ فِي أَدْرَاجِهَا الْخَشَبِيَّةِ الْعَتِيقَةِ.",
+                "romanization": "Ya’tī al-bāḥithūn wa-aṭ-ṭullāb min kulli makān li-al-baḥth fī ’adrājihā al-khashabiyya al-‘atīqa.",
+                "translation": "Des chercheurs et des étudiants viennent de partout pour fouiller dans ses tiroirs en bois antiques."
+            }
+        ]
+    },
+    {
+        "id": "s13",
+        "title": "الرياضة والصحة - Le sport et la santé",
+        "difficulty": "Débutant",
+        "segments": [
+            {
+                "arabic": "ممارسة الرياضة مفيدة جداً لصحة الجسم والعقل.",
+                "translation": "La pratique du sport est très bénéfique pour la santé du corps et de l'esprit."
+            },
+            {
+                "arabic": "ينصح الأطباء بالمشي لمدة نصف ساعة كل يوم في الهواء الطلق.",
+                "translation": "Les médecins recommandent de marcher une demi-heure chaque jour en plein air."
+            },
+            {
+                "arabic": "الرياضة تقوي القلب العضلات وتساعد على النوم المريح.",
+                "translation": "Le sport renforce le cœur, les muscles et aide à dormir confortablement."
+            },
+            {
+                "arabic": "الماء مهم جداً، ويجب شرب الكثير منه أثناء التمرين وبعده.",
+                "translation": "L'eau est très importante, et il faut en boire beaucoup pendant et après l'exercice."
+            },
+            {
+                "arabic": "العقل السليم في الجسم السليم.",
+                "translation": "Un esprit sain dans un corps sain."
+            }
+        ]
+    },
+    {
+        "id": "s14",
+        "title": "حلم بناء طائرة - Le rêve de construire un avion",
+        "difficulty": "Avancé",
+        "segments": [
+            {
+                "arabic": "كَانَ الشَّابُّ يَحْلُمُ مُنْذُ طُفُولَتِهِ بِتَصْمِيمِ طَائِرَتِهِ الْخَاصَّةِ وَالطَّيَرَانِ بِهَا.",
+                "romanization": "Kāna ash-shābb yaḥlumu mundhu ṭufūlatihi bi-taṣmīm ṭā’iratih al-khāṣṣa wa-aṭ-ṭayarān bihā.",
+                "translation": "Le jeune homme rêvait depuis son enfance de concevoir son propre avion et de le piloter."
+            },
+            {
+                "arabic": "قَضَى سَنَوَاتٍ فِي دِرَاسَةِ الدِّينَامِيكَا الْهَوَائِيَّةِ وَالْفِيزْيَاءِ لِفَهْمِ آَلِيَّاتِ الرَّفْعِ.",
+                "romanization": "Qaḍā sanawātin fī dirāsat ad-dīnāmīkā al-hawā’iyya wa-al-fīzyā’ li-fahmi ’āliyyāt ar-raf‘.",
+                "translation": "Il a passé des années à étudier l'aérodynamique et la physique pour comprendre les mécanismes de portance."
+            },
+            {
+                "arabic": "اسْتَخْدَمَ مَوَادَّ خَفِيفَةَ الْوَزْنِ مِثْلَ أَلْيَافِ الْكَرْبُونِ لِصِنَاعَةِ الْهَيْكَلِ الْخَارِجِيِّ.",
+                "romanization": "Istakhdama mawādda khafīfat al-wazn mithla ’alyāf al-karbūn li-ṣinā‘at al-haykal al-khārijiyy.",
+                "translation": "Il a utilisé des matériaux légers comme la fibre de carbone pour fabriquer l'ossature."
+            },
+            {
+                "arabic": "التَّجَارِبُ الْأُولَى كَانَتْ مُحْبِطَةً، وَشَهِدَتِ الْعَدِيدَ مِنَ الْأَعْطَالِ وَالْمَشَاكِلِ الْفَنِّيَّةِ.",
+                "romanization": "At-tajārib al-’ūlā kānat muḥbiṭa, wa-shahidati al-‘adīda min al-’a‘ṭāl wa-al-mashākil al-fanniyya.",
+                "translation": "Les premières expériences étaient frustrantes et ont connu de nombreuses pannes et problèmes techniques."
+            },
+            {
+                "arabic": "لَكِنْ بِالْإِصْرَارِ وَالْمُثَابَرَةِ، نَجَحَتِ الطَّائِرَةُ أَخِيرًا فِي التَّحْلِيقِ عَالِيًا فِي سَمَاءِ الْمَدِينَةِ.",
+                "romanization": "Lākin bi-al-’iṣrār wa-al-muthābara, najaḥati aṭ-ṭā’iratu ’akhīran fī at-taḥlīq ‘āliyan fī samā’ al-madīna.",
+                "translation": "Mais avec la persévérance et l'acharnement, l'avion a finalement réussi à s'envoler haut dans le ciel de la ville."
+            }
+        ]
+    },
+    {
+        "id": "s15",
+        "title": "اختراع الكتابة في بلاد الرافدين - L'invention de l'écriture en Mésopotamie",
+        "difficulty": "Avancé",
+        "segments": [
+            {
+                "arabic": "شَهِدَتْ بِلَادُ الرَّافِدَيْنِ قَفْزَةً حَضَارِيَّةً كُبْرَى عَبْرَ اخْتِرَاعِ الْكِتَابَةِ الْمِسْمَارِيَّةِ.",
+                "romanization": "Shahidat bilād ar-rāfidayn qafzatan ḥaḍāriyyatan kubrā ‘abra ikhtirā‘ al-kitāba al-mismāriyya.",
+                "translation": "La Mésopotamie a connu un grand bond civilisationnel grâce à l'invention de l'écriture cunéiforme."
+            },
+            {
+                "arabic": "فِي الْبِدَايَةِ، كَانَتِ الْكِتَابَةُ مُجَرَّدَ نُقُوشٍ تَصْوِيرِيَّةٍ تُسْتَخْدَمُ لِتَسْجِيلِ الْمُعَامَلَاتِ الزِّرَاعِيَّةِ وَالتِّجَارِيَّةِ.",
+                "romanization": "Fī al-bidāya, kānati al-kitāba mujarrada nuqūshin taṣwīriyyatin tustakhdamu li-tasjīl al-mu‘āmalāt az-zirā‘iyya wa-at-tijāriyya.",
+                "translation": "Au début, l'écriture n'était que des inscriptions pictographiques utilisées pour enregistrer les transactions agricoles et commerciales."
+            },
+            {
+                "arabic": "مَعَ مُرُورِ الزَّمَنِ، تَطَوَّرَتِ الرُّمُوزُ لِتُشِيرَ لِمَقَاطِعَ صَوْتِيَّةٍ مُجَرَّدَةٍ، مِمَّا أَتَاحَ تَدْوِينَ الْقَوَانِينِ وَالْقَصَائِدِ.",
+                "romanization": "Ma‘a murūri az-zaman, taṭawwarati ar-rumūzu li-tushīra li-maqāṭi‘a ṣawtiyyatin mujarradatin, mimmā ’atāḥa tadwīn al-qawānīn wa-al-qaṣā’id.",
+                "translation": "Avec le temps, les symboles ont évolué pour désigner des syllabes phonétiques abstraites, permettant de noter les lois et les poèmes."
+            },
+            {
+                "arabic": "أَشْهَرُ الْأَعْمَالِ الَّتِي وَصَلَتْنَا هِيَ مَلْحَمَةُ جِلْجَامِشَ، وَهِيَ أَوَّلُ نَصٍّ أَدَبِيٍّ مَلْحَمِيٍّ مُسَجَّلٍ فِي التَّارِيخِ.",
+                "romanization": "’Ashharu al-’a‘māl allatī waṣalatnā hiya malḥamatu jiljāmisha, wa-hiya ’awwalu naṣṣin ’adabiyyin malḥamiyyin musajjalin fī at-tārīkh.",
+                "translation": "L'une des œuvres les plus célèbres qui nous soit parvenue est l'épopée de Gilgamesh, le premier texte littéraire épique consigné dans l'histoire."
+            },
+            {
+                "arabic": "بِفَضْلِ هَذِهِ الْأَلْوَاحِ الطِّينِيَّةِ الْمُجَفَّفَةِ، اسْتَطَعْنَا فَكَّ شَفَرَاتِ الْحَضَارَاتِ الْقَدِيمَةِ وَفَهْمَ كَيْفِيَّةِ عَيْشِهِمْ.",
+                "romanization": "Bi-faḍli hādhihi al-’alwāḥ aṭ-ṭīniyya al-mujaffafa, istaṭa‘nā fakka shafarāt al-ḥaḍārāt al-qadīma wa-fahma kayfiyyati ‘ayshihim.",
+                "translation": "Grâce à ces tablettes d'argile séchées, nous avons pu décrypter les civilisations antiques et comprendre comment elles vivaient."
+            }
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "syn1",
+    "theme": "Dire bonjour",
+    "words": ["مَرْحَبًا", "أَهْلًا وَسَهْلًا", "السَّلَامُ عَلَيْكُمْ"],
+    "transliterations": ["Marhaban", "Ahlan wa-sahlan", "As-salāmu 'alaykum"],
+    "translations": ["Bonjour (informel)", "Bienvenue / Bonjour (chaud)", "Paix sur vous (formule islamique)"]
+  },
+  {
+    "id": "syn2",
+    "theme": "Grand / Immense",
+    "words": ["كَبِير", "ضَخْم", "عَظِيم", "هَائِل"],
+    "transliterations": ["Kabīr", "Ḍakhm", "'Aẓīm", "Hā'il"],
+    "translations": ["Grand (général)", "Massif, imposant", "Grandiose, majestueux", "Formidable, impressionnant"]
+  },
+  {
+    "id": "syn3",
+    "theme": "Parler / Dire",
+    "words": ["قَالَ", "تَكَلَّمَ", "حَدَّثَ", "أَخْبَرَ"],
+    "transliterations": ["Qāla", "Takallama", "Ḥaddatha", "Akhbara"],
+    "translations": ["Dit (verbe simple)", "Parler (convers.)", "Raconter, narrer", "Informer, rapporter"]
+  },
+  {
+    "id": "syn4",
+    "theme": "Beau / Joli",
+    "words": ["جَمِيل", "حَسَن", "رَائِع", "بَدِيع"],
+    "transliterations": ["Jamīl", "Ḥasan", "Rā'i'", "Badī'"],
+    "translations": ["Beau, joli", "Bien, bon", "Magnifique, superbe", "Splendide, admirable"]
+  },
+  {
+    "id": "syn5",
+    "theme": "Triste / Malheureux",
+    "words": ["حَزِين", "كَئِيب", "مُكْتَئِب", "مُحَطَّم"],
+    "transliterations": ["Ḥazīn", "Ka'īb", "Mukta'ib", "Muḥaṭṭam"],
+    "translations": ["Triste (général)", "Mélancolique, abattu", "Déprimé", "Brisé, anéanti"]
+  },
+  {
+    "id": "syn6",
+    "theme": "Rapide / Vite",
+    "words": ["سَرِيع", "عَاجِل", "خَاطِف", "مُتَسَارِع"],
+    "transliterations": ["Sarī'", "'Ājil", "Khāṭif", "Mutasāri'"],
+    "translations": ["Rapide (général)", "Urgent, pressé", "Fulgurant, éclair", "Accéléré, croissant"]
+  },
+  {
+    "id": "syn7",
+    "theme": "Chercher / Rechercher",
+    "words": ["بَحَثَ", "فَتَّشَ", "نَقَّبَ", "تَقَصَّى"],
+    "transliterations": ["Baḥatha", "Fattasha", "Naqqaba", "Taqaṣṣā"],
+    "translations": ["Chercher (général)", "Fouiller, perquisitionner", "Explorer, sonder", "Enquêter, investiguer"]
+  },
+  {
+    "id": "syn8",
+    "theme": "Lumière / Clarté",
+    "words": ["نُور", "ضِيَاء", "سَنَا", "بَرِيق"],
+    "transliterations": ["Nūr", "Ḍiyā'", "Sanā", "Barīq"],
+    "translations": ["Lumière (général)", "Éclat, rayonnement", "Lueur, éclat divin", "Brillance, scintillement"]
+  },
+  {
+    "id": "syn9",
+    "theme": "Espoir / Attente",
+    "words": ["أَمَل", "رَجَاء", "تَفَاؤُل", "طُمُوح"],
+    "transliterations": ["Amal", "Rajā'", "Tafā'ul", "Ṭumūḥ"],
+    "translations": ["Espoir (général)", "Espoir, sollicitation", "Optimisme", "Ambition, aspiration"]
+  },
+  {
+    "id": "syn10",
+    "theme": "Chemin / Route",
+    "words": ["طَرِيق", "دَرْب", "مَسَار", "سَبِيل"],
+    "transliterations": ["Ṭarīq", "Darb", "Masār", "Sabīl"],
+    "translations": ["Route, chemin (général)", "Sentier, piste étroite", "Parcours, trajectoire", "Voie (souvent figurée)"]
+  }
+]
