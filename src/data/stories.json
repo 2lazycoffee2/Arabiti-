@@ -478,5 +478,140 @@
                 "translation": "Grâce à ces tablettes d'argile séchées, nous avons pu décrypter les civilisations antiques et comprendre comment elles vivaient."
             }
         ]
+    },
+    {
+        "id": "s16",
+        "title": "يَوْمٌ عَلَى الشَّاطِئِ - Une journée à la plage",
+        "difficulty": "Débutant",
+        "segments": [
+            {
+                "arabic": "الْيَوْمُ الْجَوُّ مِثَالِيٌّ لِلذَّهَابِ إِلَى الشَّاطِئِ.",
+                "romanization": "Al-yawmu al-jawwu mithāliyyun li-adh-dhahābi 'ilā ash-shāṭi’.",
+                "translation": "Aujourd'hui, le temps est idéal pour aller à la plage."
+            },
+            {
+                "arabic": "الشَّمْسُ مُشْرِقَةٌ وَالْبَحْرُ هَادِئٌ وَأَزْرَقُ.",
+                "romanization": "Ash-shamsu mushriqatun wa-al-baḥru hādi’un wa-’azraqu.",
+                "translation": "Le soleil brille et la mer est calme et bleue."
+            },
+            {
+                "arabic": "أَحْمَدُ يَلْعَبُ بِالرَّمْلِ وَيَبْنِي قَلْعَةً كَبِيرَةً.",
+                "romanization": "’Aḥmadu yal‘abu bi-ar-ramli wa-yabnī qal‘atan kabīratan.",
+                "translation": "Ahmed joue avec le sable et construit un grand château."
+            },
+            {
+                "arabic": "نَحْنُ نَسْبَحُ فِي الْمَاءِ الْبَارِدِ وَنَشْعُرُ بِالسَّعَادَةِ.",
+                "romanization": "Naḥnu nasbaḥu fī al-mā’i al-bāridi wa-nash‘uru bi-as-sa‘āda.",
+                "translation": "Nous nageons dans l'eau fraîche et nous nous sentons heureux."
+            }
+        ]
+    },
+    {
+        "id": "s17",
+        "title": "رِحْلَةٌ إِلَى الْمَتْحَفِ - Voyage au musée",
+        "difficulty": "Débutant",
+        "segments": [
+            {
+                "arabic": "أَيْنَ يَقَعُ الْمَتْحَفُ الْوَطَنِيُّ مِنْ فَضْلِكَ؟",
+                "romanization": "’Ayna yaqa‘u al-matḥafu al-waṭaniyyu min faḍlik?",
+                "translation": "Où se trouve le musée national s'il vous plaît ?"
+            },
+            {
+                "arabic": "إِنَّهُ قَرِيبٌ جِدًّا، اِذْهَبْ عَلَى طُولِ ثُمَّ خُذْ أَوَّلَ شَارِعٍ يَمِينًا.",
+                "romanization": "’Innahu qarībun jiddan, idhhab ‘alā ṭūlin thumma khudh ’awwala shāri‘in yamīnan.",
+                "translation": "C'est tout près, allez tout droit puis prenez la première rue à droite."
+            },
+            {
+                "arabic": "هَلِ الْمَتْحَفُ مَفْتُوحٌ الْيَوْمَ؟",
+                "romanization": "Hal al-matḥafu maftūḥun al-yawm?",
+                "translation": "Le musée est-il ouvert aujourd'hui ?"
+            },
+            {
+                "arabic": "نَعَمْ، هُوَ مَفْتُوحٌ مِنْ تَمَامِ السَّاعَةِ التَّاسِعَةِ صَبَاحًا.",
+                "romanization": "Na‘am, huwa maftūḥun min tamāmi as-sā‘at at-tāsi‘a ṣabāḥan.",
+                "translation": "Oui, il est ouvert à partir de neuf heures pile du matin."
+            }
+        ]
+    },
+    {
+        "id": "s18",
+        "title": "الْفُطُورُ الْعَرَبِيُّ - Le petit-déjeuner arabe",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "يُعْتَبَرُ الْفُطُورُ أَهَمَّ وَجْبَةٍ فِي الْيَوْمِ لَدَى الْعَرَبِ.",
+                "romanization": "Yu‘tabaru al-fuṭūru ’ahamma wajbatin fī al-yawmi ladā al-‘Arab.",
+                "translation": "Le petit-déjeuner est considéré comme le repas le plus important de la journée chez les Arabes."
+            },
+            {
+                "arabic": "تَجْتَمِعُ الْعَائِلَةُ حَوْلَ مَائِدَةٍ مَلِيئَةٍ بِالْأَطْبَاقِ الشَّهِيَّةِ.",
+                "romanization": "Tajtami‘u al-‘ā’ilatu ḥawla mā’idatin malī’atin bi-al-’aṭbāqi ash-shahiyya.",
+                "translation": "La famille se réunit autour d'une table remplie de plats délicieux."
+            },
+            {
+                "arabic": "نَأْكُلُ الزَّيْتُونَ، وَالزَّعْتَرَ مَعَ زَيْتِ الزَّيْتُونِ، وَالْأَجْبَانَ الْمُخْتَلِفَةَ.",
+                "romanization": "Na’kulu az-zaytūna, wa-az-za‘tara ma‘a zayti az-zaytūni, wa-al-’ajbāna al-mukhtalifa.",
+                "translation": "Nous mangeons des olives, du thym (zaatar) avec de l'huile d'olive, et différents fromages."
+            },
+            {
+                "arabic": "لَا نَنْسَى طَبَقَ الْفُولِ الْمُدَمَّسِ وَالْخُبْزَ السَّاخِنَ وَالشَّايَ بِالنَّعْنَاعِ.",
+                "romanization": "Lā nansā ṭabaqa al-fūli al-mudammasi wa-al-khubza as-sākhina wa-ash-shāya bi-an-na‘nā‘.",
+                "translation": "Nous n'oublions pas le plat de fèves (foul mudammas), le pain chaud et le thé à la menthe."
+            }
+        ]
+    },
+    {
+        "id": "s19",
+        "title": "لِقَاءٌ بَعْدَ غِيَابٍ - Une rencontre après une absence",
+        "difficulty": "Intermédiaire",
+        "segments": [
+            {
+                "arabic": "تَقَابَلَ الصَّدِيقَانِ فِي الْمَطَارِ بَعْدَ سَنَوَاتٍ طَوِيلَةٍ مِنَ الْغِيَابِ.",
+                "romanization": "Taqābala aṣ-ṣadīqāni fī al-maṭāri ba‘da sanawātin ṭawīlatin min al-ghiyāb.",
+                "translation": "Les deux amis se sont rencontrés à l'aéroport après de longues années d'absence."
+            },
+            {
+                "arabic": "كَمْ تَغَيَّرْتَ يَا خَالِدُ ! لَمْ أَرَكَ مُنْذُ أَيَّامِ الدِّرَاسَةِ.",
+                "romanization": "Kam taghayyarta yā Khālidu ! Lam ’araka mundhu ’ayyāmi ad-dirāsa.",
+                "translation": "Comme tu as changé Khaled ! Je ne t'ai pas vu depuis l'époque des études."
+            },
+            {
+                "arabic": "أَنَا سَعِيدٌ جِدًّا بِرُؤْيَتِكَ، هَلْ سَتَبْقَى هُنَا طَوِيلًا؟",
+                "romanization": "’Anā sa‘īdun jiddan bi-ru’yatik, hal satabqā hunā ṭawīlan?",
+                "translation": "Je suis très heureux de te voir, vas-tu rester ici longtemps ?"
+            },
+            {
+                "arabic": "نَعَمْ، جِئْتُ لِزِيَارَةِ أَهْلِي وَسَأَقْضِي شَهْرًا كَامِلًا.",
+                "romanization": "Na‘am, ji’tu li-ziyārati ’ahlī wa-sa-’aqḍī shahran kāmilan.",
+                "translation": "Oui, je suis venu rendre visite à ma famille et je passerai un mois entier."
+            }
+        ]
+    },
+    {
+        "id": "s20",
+        "title": "كَرَمُ الضِّيَافَةِ الْعَرَبِيَّةِ - L'hospitalité arabe",
+        "difficulty": "Avancé",
+        "segments": [
+            {
+                "arabic": "يُعَدُّ الْكَرَمُ رُكْنًا أَسَاسِيًّا فِي الثَّقَافَةِ وَالتَّقَالِيدِ الْعَرَبِيَّةِ الْأَصِيلَةِ.",
+                "romanization": "Yu‘addu al-karamu ruknan ’asāsiyyan fī ath-thaqāfati wa-at-taqālīdi al-‘arabiyyati al-’aṣīla.",
+                "translation": "La générosité est considérée comme un pilier fondamental de la culture et des traditions arabes authentiques."
+            },
+            {
+                "arabic": "عِنْدَمَا يَصِلُ الضَّيْفُ، يُسْتَقْبَلُ بِأَحْسَنِ الْكَلَامِ وَيُقَدَّمُ لَهُ الْبُخُورُ وَالْقَهْوَةُ وَالتَّمْرُ.",
+                "romanization": "‘Indamā yaṣilu aḍ-ḍayfu, yustaqbalu bi-’aḥsani al-kalāmi wa-yuqaddamu lahu al-bukhūru wa-al-qahwatu wa-at-tamru.",
+                "translation": "Quand l'invité arrive, il est accueilli avec les meilleures paroles et on lui offre de l'encens, du café et des dattes."
+            },
+            {
+                "arabic": "لَا يَسْأَلُ الْمُضِيفُ ضَيْفَهُ عَنْ حَاجَتِهِ أَوْ مُدَّةِ إِقَامَتِهِ إِلَّا بَعْدَ ثَلَاثَةِ أَيَّامٍ.",
+                "romanization": "Lā yas’alu al-muḍīfu ḍayfahu ‘an ḥājatih ’aw muddati ’iqāmatih ’illā ba‘da thalāthati ’ayyām.",
+                "translation": "L'hôte ne demande pas à son invité son besoin ou la durée de son séjour avant trois jours."
+            },
+            {
+                "arabic": "هَذَا الْكَرَمُ لَيْسَ مُجَرَّدَ تَوْفِيرِ الطَّعَامِ، بَلْ هُوَ تَعْبِيرٌ عَنِ الِاحْتِرَامِ وَالْمَحَبَّةِ.",
+                "romanization": "Hādha al-karamu laysa mujarrada tawfīri aṭ-ṭa‘ām, bal huwa ta‘bīrun ‘an al-iḥtirāmi wa-al-maḥabba.",
+                "translation": "Cette générosité n'est pas seulement le fait de fournir de la nourriture, mais c'est une expression de respect et d'affection."
+            }
+        ]
     }
 ]

@@ -178,7 +178,19 @@ const CategoriesTab = () => {
                         <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>{word.translation}</div>
                       </div>
                     ))}
-                  </div>   TAB 2 — GuessKalimat
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════════
+   TAB 2 — GuessKalimat 🎯
 ══════════════════════════════════════════════════════════════════════════ */
 const GuessTab = () => {
   const { showTashkeel, showRomanization } = useAppContext();
@@ -433,42 +445,6 @@ const Vocabulary = () => {
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
         <TabBtn active={tab === 'categories'} onClick={() => setTab('categories')} icon={<BookOpen size={16} />} label="Par Catégorie" />
         <TabBtn active={tab === 'guess'} onClick={() => setTab('guess')} icon={<MessageSquare size={16} />} label="GuessKalimat 🎯" />
-        <TabBtn active={tab === 'expand'} onClick={() => setTab('expand'} icon={<Layers size={16} />} label="Expand" />
-        <TabBtn active={tab === 'expressions'} onClick={() => setTab('expressions')} icon={<MessageSquare size={16} />} label="Expressions" />
-      </div>
-
-      {/* Tab content */}
-      <div style={{ minHeight: '500px' }}>
-        {tab === 'categories' && <CategoriesTab />}
-        {tab === 'guess' && <GuessTab />}
-        {tab === 'expand' && <ExpandTab />}
-        {tab === 'expressions' && <ExpressionsTab />}
-      </div>
-    </div>
-  );
-};22} /></button>
-      </div>
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════
-   MAIN VOCABULARY PAGE
-══════════════════════════════════════════════════════════════════════════ */
-const Vocabulary = () => {
-  const [tab, setTab] = useState<Tab>('categories');
-
-  return (
-    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-      <div>
-        <h1 className="text-gradient">Vocabulaire</h1>
-        <p style={{ color: 'var(--pk-text-secondary)', fontSize: '1.1rem' }}>Quatre manières d'enrichir votre vocabulaire arabe.</p>
-      </div>
-
-      {/* Tab bar */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
-        <TabBtn active={tab === 'categories'} onClick={() => setTab('categories')} icon={<BookOpen size={16} />} label="Par Catégorie" />
-        <TabBtn active={tab === 'guess'} onClick={() => setTab('guess')} icon={<MessageSquare size={16} />} label="GuessHoufouf 🎯" />
         <TabBtn active={tab === 'expand'} onClick={() => setTab('expand')} icon={<Layers size={16} />} label="Expand" />
         <TabBtn active={tab === 'expressions'} onClick={() => setTab('expressions')} icon={<MessageSquare size={16} />} label="Expressions" />
       </div>
