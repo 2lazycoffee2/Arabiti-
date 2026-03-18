@@ -1,0 +1,247 @@
+[
+  {
+    "id": "verb1",
+    "arabic": "كَتَبَ",
+    "root": "ك-ت-ب",
+    "translation": "écrire",
+    "type": "sound",
+    "conjugations": {
+      "past": {
+        "singular": {
+          "1st": "كَتَبْتُ - j'ai écrit",
+          "2nd_m": "كَتَبْتَ - tu as écrit (m)",
+          "2nd_f": "كَتَبْتِ - tu as écrit (f)",
+          "3rd_m": "كَتَبَ - il a écrit",
+          "3rd_f": "كَتَبَتْ - elle a écrit"
+        },
+        "dual": {
+          "2nd": "كَتَبْتُمَا - vous avez écrit (2)",
+          "3rd": "كَتَبَا - ils/elles ont écrit (2)"
+        },
+        "plural": {
+          "1st": "كَتَبْنَا - nous avons écrit",
+          "2nd_m": "كَتَبْتُمْ - vous avez écrit (m)",
+          "2nd_f": "كَتَبْتُنَّ - vous avez écrit (f)",
+          "3rd_m": "كَتَبُوا - ils ont écrit",
+          "3rd_f": "كَتَبْنَ - elles ont écrit"
+        }
+      },
+      "present": {
+        "singular": {
+          "1st": "أَكْتُبُ - j'écris",
+          "2nd_m": "تَكْتُبُ - tu écris (m)",
+          "2nd_f": "تَكْتُبِينَ - tu écris (f)",
+          "3rd_m": "يَكْتُبُ - il écrit",
+          "3rd_f": "تَكْتُبُ - elle écrit"
+        },
+        "dual": {
+          "2nd": "تَكْتُبَانِ - vous écrivez (2)",
+          "3rd": "يَكْتُبَانِ - ils/elles écrivent (2)"
+        },
+        "plural": {
+          "1st": "نَكْتُبُ - nous écrivons",
+          "2nd_m": "تَكْتُبُونَ - vous écrivez (m)",
+          "2nd_f": "تَكْتُبْنَ - vous écrivez (f)",
+          "3rd_m": "يَكْتُبُونَ - ils écrivent",
+          "3rd_f": "يَكْتُبْنَ - elles écrivent"
+        }
+      }
+    }
+  },
+  {
+    "id": "verb2",
+    "arabic": "ذَهَبَ",
+    "root": "ذ-ه-ب",
+    "translation": "aller",
+    "type": "hollow",
+    "conjugations": {
+      "past": {
+        "singular": {
+          "1st": "ذَهَبْتُ - je suis allé",
+          "2nd_m": "ذَهَبْتَ - tu es allé (m)",
+          "2nd_f": "ذَهَبْتِ - tu es allée (f)",
+          "3rd_m": "ذَهَبَ - il est allé",
+          "3rd_f": "ذَهَبَتْ - elle est allée"
+        },
+        "dual": {
+          "2nd": "ذَهَبْتُمَا - vous êtes allés (2)",
+          "3rd": "ذَهَبَا - ils/elles sont allés (2)"
+        },
+        "plural": {
+          "1st": "ذَهَبْنَا - nous sommes allés",
+          "2nd_m": "ذَهَبْتُمْ - vous êtes allés (m)",
+          "2nd_f": "ذَهَبْتُنَّ - vous êtes allées (f)",
+          "3rd_m": "ذَهَبُوا - ils sont allés",
+          "3rd_f": "ذَهَبْنَ - elles sont allées"
+        }
+      },
+      "present": {
+        "singular": {
+          "1st": "أَذْهَبُ - je vais",
+          "2nd_m": "تَذْهَبُ - tu vas (m)",
+          "2nd_f": "تَذْهَبِينَ - tu vas (f)",
+          "3rd_m": "يَذْهَبُ - il va",
+          "3rd_f": "تَذْهَبُ - elle va"
+        },
+        "dual": {
+          "2nd": "تَذْهَبَانِ - vous allez (2)",
+          "3rd": "يَذْهَبَانِ - ils/elles vont (2)"
+        },
+        "plural": {
+          "1st": "نَذْهَبُ - nous allons",
+          "2nd_m": "تَذْهَبُونَ - vous allez (m)",
+          "2nd_f": "تَذْهَبْنَ - vous allez (f)",
+          "3rd_m": "يَذْهَبُونَ - ils vont",
+          "3rd_f": "يَذْهَبْنَ - elles vont"
+        }
+      }
+    }
+  },
+  {
+    "id": "verb3",
+    "arabic": "سَمِعَ",
+    "root": "س-م-ع",
+    "translation": "entendre",
+    "type": "sound",
+    "conjugations": {
+      "past": {
+        "singular": {
+          "1st": "سَمِعْتُ - j'ai entendu",
+          "2nd_m": "سَمِعْتَ - tu as entendu (m)",
+          "2nd_f": "سَمِعْتِ - tu as entendu (f)",
+          "3rd_m": "سَمِعَ - il a entendu",
+          "3rd_f": "سَمِعَتْ - elle a entendu"
+        },
+        "dual": {
+          "2nd": "سَمِعْتُمَا - vous avez entendu (2)",
+          "3rd": "سَمِعَا - ils/elles ont entendu (2)"
+        },
+        "plural": {
+          "1st": "سَمِعْنَا - nous avons entendu",
+          "2nd_m": "سَمِعْتُمْ - vous avez entendu (m)",
+          "2nd_f": "سَمِعْتُنَّ - vous avez entendu (f)",
+          "3rd_m": "سَمِعُوا - ils ont entendu",
+          "3rd_f": "سَمِعْنَ - elles ont entendu"
+        }
+      },
+      "present": {
+        "singular": {
+          "1st": "أَسْمَعُ - j'entends",
+          "2nd_m": "تَسْمَعُ - tu entends (m)",
+          "2nd_f": "تَسْمَعِينَ - tu entends (f)",
+          "3rd_m": "يَسْمَعُ - il entend",
+          "3rd_f": "تَسْمَعُ - elle entend"
+        },
+        "dual": {
+          "2nd": "تَسْمَعَانِ - vous entendez (2)",
+          "3rd": "يَسْمَعَانِ - ils/elles entendent (2)"
+        },
+        "plural": {
+          "1st": "نَسْمَعُ - nous entendons",
+          "2nd_m": "تَسْمَعُونَ - vous entendez (m)",
+          "2nd_f": "تَسْمَعْنَ - vous entendez (f)",
+          "3rd_m": "يَسْمَعُونَ - ils entendent",
+          "3rd_f": "يَسْمَعْنَ - elles entendent"
+        }
+      }
+    }
+  },
+  {
+    "id": "verb4",
+    "arabic": "فَتَحَ",
+    "root": "ف-ت-ح",
+    "translation": "ouvrir",
+    "type": "sound",
+    "conjugations": {
+      "past": {
+        "singular": {
+          "1st": "فَتَحْتُ - j'ai ouvert",
+          "2nd_m": "فَتَحْتَ - tu as ouvert (m)",
+          "2nd_f": "فَتَحْتِ - tu as ouvert (f)",
+          "3rd_m": "فَتَحَ - il a ouvert",
+          "3rd_f": "فَتَحَتْ - elle a ouvert"
+        },
+        "dual": {
+          "2nd": "فَتَحْتُمَا - vous avez ouvert (2)",
+          "3rd": "فَتَحَا - ils/elles ont ouvert (2)"
+        },
+        "plural": {
+          "1st": "فَتَحْنَا - nous avons ouvert",
+          "2nd_m": "فَتَحْتُمْ - vous avez ouvert (m)",
+          "2nd_f": "فَتَحْتُنَّ - vous avez ouvert (f)",
+          "3rd_m": "فَتَحُوا - ils ont ouvert",
+          "3rd_f": "فَتَحْنَ - elles ont ouvert"
+        }
+      },
+      "present": {
+        "singular": {
+          "1st": "أَفْتَحُ - j'ouvre",
+          "2nd_m": "تَفْتَحُ - tu ouvres (m)",
+          "2nd_f": "تَفْتَحِينَ - tu ouvres (f)",
+          "3rd_m": "يَفْتَحُ - il ouvre",
+          "3rd_f": "تَفْتَحُ - elle ouvre"
+        },
+        "dual": {
+          "2nd": "تَفْتَحَانِ - vous ouvrez (2)",
+          "3rd": "يَفْتَحَانِ - ils/elles ouvrent (2)"
+        },
+        "plural": {
+          "1st": "نَفْتَحُ - nous ouvrons",
+          "2nd_m": "تَفْتَحُونَ - vous ouvrez (m)",
+          "2nd_f": "تَفْتَحْنَ - vous ouvrez (f)",
+          "3rd_m": "يَفْتَحُونَ - ils ouvrent",
+          "3rd_f": "يَفْتَحْنَ - elles ouvrent"
+        }
+      }
+    }
+  },
+  {
+    "id": "verb5",
+    "arabic": "قَالَ",
+    "root": "ق-و-ل",
+    "translation": "dire",
+    "type": "defective",
+    "conjugations": {
+      "past": {
+        "singular": {
+          "1st": "قُلْتُ - j'ai dit",
+          "2nd_m": "قُلْتَ - tu as dit (m)",
+          "2nd_f": "قُلْتِ - tu as dit (f)",
+          "3rd_m": "قَالَ - il a dit",
+          "3rd_f": "قَالَتْ - elle a dit"
+        },
+        "dual": {
+          "2nd": "قُلْتُمَا - vous avez dit (2)",
+          "3rd": "قَالَا - ils/elles ont dit (2)"
+        },
+        "plural": {
+          "1st": "قُلْنَا - nous avons dit",
+          "2nd_m": "قُلْتُمْ - vous avez dit (m)",
+          "2nd_f": "قُلْتُنَّ - vous avez dit (f)",
+          "3rd_m": "قَالُوا - ils ont dit",
+          "3rd_f": "قُلْنَ - elles ont dit"
+        }
+      },
+      "present": {
+        "singular": {
+          "1st": "أَقُولُ - je dis",
+          "2nd_m": "تَقُولُ - tu dis (m)",
+          "2nd_f": "تَقُولِينَ - tu dis (f)",
+          "3rd_m": "يَقُولُ - il dit",
+          "3rd_f": "تَقُولُ - elle dit"
+        },
+        "dual": {
+          "2nd": "تَقُولَانِ - vous dites (2)",
+          "3rd": "يَقُولَانِ - ils/elles disent (2)"
+        },
+        "plural": {
+          "1st": "نَقُولُ - nous disons",
+          "2nd_m": "تَقُولُونَ - vous dites (m)",
+          "2nd_f": "تَقُلْنَ - vous dites (f)",
+          "3rd_m": "يَقُولُونَ - ils disent",
+          "3rd_f": "يَقُلْنَ - elles disent"
+        }
+      }
+    }
+  }
+]

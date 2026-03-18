@@ -3,7 +3,8 @@ import { useAppContext } from '../context/AppContext';
 import lessonsData from '../data/lessons.json';
 import _storiesData from '../data/stories.json';
 import vocabData from '../data/vocabulary.json';
-import { Award, CheckCircle, TrendingUp, Settings, Sun, Type, Globe, AlertTriangle, Trash2, X } from 'lucide-react';
+import conjugationsData from '../data/conjugations.json';
+import { Award, CheckCircle, TrendingUp, Settings, Sun, Type, Globe, AlertTriangle, Trash2, X, Calendar, Clock, Target, Languages } from 'lucide-react';
 
 const Profile = () => {
   const { 
@@ -18,14 +19,66 @@ const Profile = () => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   
   const acquiredWordsCount = JSON.parse(localStorage.getItem('parallel-arabic-acquired') || '[]').length;
+  
+  // Get detailed statistics
+  const getDetailedStats = () => {
+    const startDate = localStorage.getItem('pa-start-date') || new Date().toISOString();
+    const start = new Date(startDate);
+    const today = new Date();
+    const daysLearning = Math.ceil((today.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+    
+    // Calculate streak (consecutive days with activity)
+    const lastActivity = localStorage.getItem('pa-last-activity');
+    const streak = lastActivity ? calculateStreak(lastActivity) : 0;
+    
+    // Get vocabulary mastery levels
+    const vocabMastery = calculateVocabMastery();
+    
+    return {
+      daysLearning,
+      streak,
+      vocabMastery,
+      totalStudyTime: parseInt(localStorage.getItem('pa-study-time') || '0'),
+      averageSessionTime: daysLearning > 0 ? Math.round((parseInt(localStorage.getItem('pa-study-time') || '0') / daysLearning) / 60) : 0
+    };
+  };
+  
+  const calculateStreak = (lastActivity: string) => {
+    const last = new Date(lastActivity);
+    const today = new Date();
+    const diffDays = Math.ceil((today.getTime() - last.getTime()) / (1000 * 60 * 60 * 24));
+    return diffDays <= 1 ? parseInt(localStorage.getItem('pa-streak') || '1') : 0;
+  };
+  
+  const calculateVocabMastery = () => {
+    const acquired = JSON.parse(localStorage.getItem('parallel-arabic-acquired') || '[]');
+    const total = vocabData.length;
+    const beginner = acquired.filter((word: any) => {
+      const wordData = vocabData.find((v: any) => v.id === word);
+      return wordData && ['Salutations', 'Bases'].includes(wordData.category);
+    }).length;
+    const intermediate = acquired.filter((word: any) => {
+      const wordData = vocabData.find((v: any) => v.id === word);
+      return wordData && ['Présentation', 'Lieux'].includes(wordData.category);
+    }).length;
+    const advanced = acquired.filter((word: any) => {
+      const wordData = vocabData.find((v: any) => v.id === word);
+      return wordData && !['Salutations', 'Bases', 'Présentation', 'Lieux'].includes(wordData.category);
+    }).length;
+    
+    return { beginner, intermediate, advanced, total };
+  };
 
   const totalLessons = lessonsData.length;
   const totalStories = (_storiesData as any[]).length;
   const totalVocab = vocabData.length;
+  const totalConjugations = conjugationsData.length;
 
   const lessonPercent = Math.round((completedLessons.length / totalLessons) * 100) || 0;
   const storyPercent = Math.round((completedStories.length / totalStories) * 100) || 0;
   const vocabPercent = Math.round((acquiredWordsCount / totalVocab) * 100) || 0;
+  
+  const stats = getDetailedStats();
 
   return (
     <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', maxWidth: '1000px', margin: '0 auto', paddingBottom: '4rem' }}>
@@ -166,6 +219,57 @@ const Profile = () => {
               </div>
               <div style={{ width: '100%', height: '8px', background: 'var(--pk-surface-solid)', borderRadius: '10px', overflow: 'hidden' }}>
                 <div style={{ width: `${vocabPercent}%`, height: '100%', background: 'var(--pk-accent)', transition: 'width 1s ease' }} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Detailed Statistics */}
+        <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <h3 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+            <Target size={22} color="var(--pk-primary)" /> Statistiques Détaillées
+          </h3>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem' }}>
+            <div style={{ textAlign: 'center', padding: '1rem', background: 'var(--pk-surface-solid)', borderRadius: '12px' }}>
+              <Calendar size={24} style={{ margin: '0 auto 0.5rem', color: 'var(--pk-primary)' }} />
+              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--pk-text-primary)' }}>{stats.daysLearning}</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>Jours d'apprentissage</div>
+            </div>
+            
+            <div style={{ textAlign: 'center', padding: '1rem', background: 'var(--pk-surface-solid)', borderRadius: '12px' }}>
+              <Clock size={24} style={{ margin: '0 auto 0.5rem', color: 'var(--pk-secondary)' }} />
+              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--pk-text-primary)' }}>{stats.averageSessionTime}</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>Minutes/session</div>
+            </div>
+            
+            <div style={{ textAlign: 'center', padding: '1rem', background: 'var(--pk-surface-solid)', borderRadius: '12px' }}>
+              <Award size={24} style={{ margin: '0 auto 0.5rem', color: 'var(--pk-accent)' }} />
+              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--pk-text-primary)' }}>{stats.streak}</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>Jours consécutifs</div>
+            </div>
+            
+            <div style={{ textAlign: 'center', padding: '1rem', background: 'var(--pk-surface-solid)', borderRadius: '12px' }}>
+              <Languages size={24} style={{ margin: '0 auto 0.5rem', color: '#ec4899' }} />
+              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--pk-text-primary)' }}>{totalConjugations}</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>Verbes à conjuguer</div>
+            </div>
+          </div>
+          
+          <div style={{ marginTop: '1rem' }}>
+            <h4 style={{ margin: '0 0 1rem 0', color: 'var(--pk-text-primary)', fontSize: '1rem' }}>Maîtrise du Vocabulaire</h4>
+            <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
+              <div style={{ flex: 1, textAlign: 'center', padding: '0.8rem', background: 'rgba(34, 197, 94, 0.1)', borderRadius: '8px', border: '1px solid rgba(34, 197, 94, 0.2)' }}>
+                <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#22c55e' }}>{stats.vocabMastery.beginner}</div>
+                <div style={{ fontSize: '0.7rem', color: 'var(--pk-text-secondary)' }}>Débutant</div>
+              </div>
+              <div style={{ flex: 1, textAlign: 'center', padding: '0.8rem', background: 'rgba(251, 191, 36, 0.1)', borderRadius: '8px', border: '1px solid rgba(251, 191, 36, 0.2)' }}>
+                <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#fbbf24' }}>{stats.vocabMastery.intermediate}</div>
+                <div style={{ fontSize: '0.7rem', color: 'var(--pk-text-secondary)' }}>Intermédiaire</div>
+              </div>
+              <div style={{ flex: 1, textAlign: 'center', padding: '0.8rem', background: 'rgba(239, 68, 68, 0.1)', borderRadius: '8px', border: '1px solid rgba(239, 68, 68, 0.2)' }}>
+                <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#ef4444' }}>{stats.vocabMastery.advanced}</div>
+                <div style={{ fontSize: '0.7rem', color: 'var(--pk-text-secondary)' }}>Avancé</div>
               </div>
             </div>
           </div>

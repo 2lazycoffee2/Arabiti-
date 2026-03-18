@@ -8,6 +8,7 @@ import LessonDetail from './pages/LessonDetail';
 import Vocabulary from './pages/Vocabulary';
 import Stories from './pages/Stories';
 import Profile from './pages/Profile';
+import Conjugaison from './pages/Conjugaison';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/lessons/:lessonId" element={<LessonDetail />} />
               <Route path="/vocabulary" element={<Vocabulary />} />
               <Route path="/stories" element={<Stories />} />
+              <Route path="/conjugaison" element={<Conjugaison />} />
               <Route path="/profile" element={<Profile />} />
             </Routes>
           </main>

@@ -1,9 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import vocabData from '../data/vocabulary.json';
-import synonymsData from '../data/synonyms.json';
-import expressionsData from '../data/expressions.json';
 import { useAppContext } from '../context/AppContext';
-import { Check, X, Filter, BarChart, BookOpen, Layers, MessageSquare, ChevronLeft, ChevronRight, RotateCcw, Send } from 'lucide-react';
+import { Check, X, Filter, BarChart, Send, RotateCcw, ChevronLeft, ChevronRight } from 'lucide-react';
+import expressionsData from '../data/expressions.json';
 
 type Tab = 'categories' | 'guess' | 'expand' | 'expressions';
 
@@ -12,10 +11,6 @@ const allCategories = ['Tous', ...Array.from(new Set(vocabData.map(w => w.catego
 /* ─── helpers ─────────────────────────────────────────────────────────── */
 function removeTashkeel(text: string, show: boolean) {
   return show ? text : text.replace(/[\u0617-\u061A\u064B-\u0652]/g, '');
-}
-
-function shuffleArray<T>(arr: T[]): T[] {
-  return [...arr].sort(() => Math.random() - 0.5);
 }
 
 /* ─── FlipCard base component ─────────────────────────────────────────── */
@@ -81,7 +76,6 @@ const CategoriesTab = () => {
 
   const rt = (t: string) => removeTashkeel(t, showTashkeel);
   const masteredWords = vocabData.filter(w => acquiredWords.has(w.id));
-  const toReviewWords = vocabData.filter(w => !acquiredWords.has(w.id));
   const progressPercent = Math.round((acquiredWords.size / vocabData.length) * 100) || 0;
 
   return (
@@ -148,282 +142,26 @@ const CategoriesTab = () => {
             </div>
             <p style={{ color: 'var(--pk-text-secondary)' }}>Vous avez maîtrisé <strong>{masteredWords.length}</strong> mots sur {vocabData.length}.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
-            <div>
-              <h3 style={{ borderLeft: '5px solid #10b981', paddingLeft: '1.2rem', color: '#10b981', fontSize: '1.4rem', marginBottom: '1.5rem' }}>Maîtrisés</h3>
-              {masteredWords.length === 0 ? <p style={{ opacity: 0.5, fontStyle: 'italic' }}>Continuez à réviser !</p> :
-                Array.from(new Set(masteredWords.map(w => w.category))).sort().map(cat => (
-                  <div key={cat} style={{ marginBottom: '1.5rem' }}>
-                    <h4 style={{ color: 'var(--pk-text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.8rem' }}>{cat}</h4>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))', gap: '0.6rem' }}>
-                      {masteredWords.filter(w => w.category === cat).map(word => (
-                        <div key={word.id} className="glass-panel" style={{ padding: '0.7rem', border: '1px solid rgba(16,185,129,0.2)', background: 'rgba(16,185,129,0.05)' }}>
-                          <div className="arabic-text" style={{ fontSize: '1.1rem', color: '#10b981' }}>{rt(word.arabic)}</div>
-                          <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-primary)' }}>{word.translation}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-            </div>
-            <div>
-              <h3 style={{ borderLeft: '5px solid #6366f1', paddingLeft: '1.2rem', color: '#6366f1', fontSize: '1.4rem', marginBottom: '1.5rem' }}>À Apprendre</h3>
-              {Array.from(new Set(toReviewWords.map(w => w.category))).sort().map(cat => (
-                <div key={cat} style={{ marginBottom: '1.5rem' }}>
-                  <h4 style={{ color: 'var(--pk-text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.8rem' }}>{cat}</h4>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))', gap: '0.6rem' }}>
-                    {toReviewWords.filter(w => w.category === cat).map(word => (
-                      <div key={word.id} className="glass-panel" style={{ padding: '0.7rem', opacity: 0.8 }}>
-                        <div className="arabic-text" style={{ fontSize: '1.1rem', color: 'var(--pk-primary)' }}>{rt(word.arabic)}</div>
-                        <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>{word.translation}</div>
-                      </div>
-                    ))}
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            {allCategories.filter(cat => cat !== 'Tous').map(cat => {
+              const catWords = vocabData.filter(w => w.category === cat);
+              const catMastered = catWords.filter(w => acquiredWords.has(w.id));
+              const catProgress = catWords.length > 0 ? Math.round((catMastered.length / catWords.length) * 100) : 0;
+              return (
+                <div key={cat} className="glass-panel" style={{ padding: '1.5rem', textAlign: 'center' }}>
+                  <h3 style={{ color: 'var(--pk-primary)', marginBottom: '1rem' }}>{cat}</h3>
+                  <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--pk-accent)', marginBottom: '0.5rem' }}>{catProgress}%</div>
+                  <p style={{ color: 'var(--pk-text-secondary)', fontSize: '0.9rem' }}>{catMastered.length} / {catWords.length} mots</p>
+                  <div style={{ width: '100%', height: '8px', background: 'var(--pk-surface-solid)', borderRadius: '4px', overflow: 'hidden', marginTop: '0.8rem' }}>
+                    <div style={{ width: `${catProgress}%`, height: '100%', background: 'linear-gradient(90deg,var(--pk-primary),var(--pk-secondary))', transition: 'width 0.8s ease-out' }} />
                   </div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
         </div>
       )}
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════
-   TAB 2 — GuessKalimat 🎯
-══════════════════════════════════════════════════════════════════════════ */
-const GuessTab = () => {
-  const { showTashkeel, showRomanization } = useAppContext();
-  const [deck, setDeck] = useState(() => shuffleArray(vocabData));
-  const [idx, setIdx] = useState(0);
-  const [input, setInput] = useState('');
-  const [status, setStatus] = useState<'idle' | 'correct' | 'wrong'>('idle');
-  const [score, setScore] = useState({ correct: 0, wrong: 0 });
-  const [showAnswer, setShowAnswer] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  const current = deck[idx % deck.length];
-  const rt = (t: string) => removeTashkeel(t, showTashkeel);
-
-  const check = () => {
-    const ans = input.trim().toLowerCase();
-    const expected = current.translation.toLowerCase();
-    if (ans === expected || expected.includes(ans) && ans.length >= 3) {
-      setStatus('correct');
-      setScore(s => ({ ...s, correct: s.correct + 1 }));
-    } else {
-      setStatus('wrong');
-      setScore(s => ({ ...s, wrong: s.wrong + 1 }));
-    }
-  };
-
-  const goNext = () => {
-    setIdx(i => i + 1);
-    setInput('');
-    setStatus('idle');
-    setShowAnswer(false);
-    setTimeout(() => inputRef.current?.focus(), 100);
-  };
-
-  const restart = () => {
-    setDeck(shuffleArray(vocabData));
-    setIdx(0); setInput(''); setStatus('idle'); setShowAnswer(false);
-    setScore({ correct: 0, wrong: 0 });
-  };
-
-  const handleKey = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && status === 'idle') check();
-    if (e.key === 'Enter' && status !== 'idle') goNext();
-  };
-
-  const cardNum = (idx % deck.length) + 1;
-  const total = deck.length;
-
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
-      {/* Header & score */}
-      <div style={{ textAlign: 'center' }}>
-        <h2 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '0.3rem' }}>GuessKalimat 🎯</h2>
-        <p style={{ color: 'var(--pk-text-secondary)', fontSize: '1rem' }}>Devinez la traduction du mot arabe affiché.</p>
-      </div>
-      <div style={{ display: 'flex', gap: '2rem', fontSize: '1rem' }}>
-        <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓ {score.correct}</span>
-        <span style={{ color: 'var(--pk-text-secondary)' }}>{cardNum} / {total}</span>
-        <span style={{ color: '#ef4444', fontWeight: 'bold' }}>✗ {score.wrong}</span>
-      </div>
-
-      {/* Card face (always front — word in arabic) */}
-      <div className="glass-panel" style={{ width: '100%', maxWidth: '480px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem', padding: '2rem', border: status === 'correct' ? '2px solid #10b981' : status === 'wrong' ? '2px solid #ef4444' : '1px solid var(--pk-border)', transition: 'border 0.3s' }}>
-        <span style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)', alignSelf: 'flex-end' }}>{current.category}</span>
-        <span className="arabic-text" style={{ fontSize: '4.5rem', color: 'var(--pk-primary)', lineHeight: 1.2 }}>{rt(current.arabic)}</span>
-        {showRomanization && <span style={{ fontSize: '1.1rem', color: 'var(--pk-text-secondary)', fontStyle: 'italic' }}>{current.transliteration}</span>}
-        {showAnswer && <div style={{ textAlign: 'center', marginTop: '0.5rem', padding: '0.5rem 1.5rem', borderRadius: '8px', background: 'var(--pk-surface-solid)', color: 'var(--pk-text-primary)', fontSize: '1.2rem', border: '1px solid var(--pk-border)' }}>➜ {current.translation}</div>}
-      </div>
-
-      {/* Input & actions */}
-      {status === 'idle' ? (
-        <div style={{ display: 'flex', gap: '0.8rem', width: '100%', maxWidth: '480px' }}>
-          <input
-            ref={inputRef}
-            value={input}
-            onChange={e => setInput(e.target.value)}
-            onKeyDown={handleKey}
-            placeholder="Tapez la traduction en français..."
-            autoFocus
-            style={{ flex: 1, padding: '0.85rem 1.2rem', borderRadius: '10px', background: 'var(--pk-surface-solid)', border: '1px solid var(--pk-border)', color: 'var(--pk-text-primary)', fontSize: '1rem', outline: 'none' }}
-          />
-          <button onClick={check} className="glass-panel bg-gradient-primary" style={{ padding: '0.85rem 1.4rem', borderRadius: '10px', color: 'white', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <Send size={18} />
-          </button>
-        </div>
-      ) : (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', width: '100%', maxWidth: '480px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1.1rem', fontWeight: 'bold', color: status === 'correct' ? '#10b981' : '#ef4444' }}>
-            {status === 'correct' ? <><Check size={22} /> Bravo ! C'est correct !</> : <><X size={22} /> "{input}" — Réponse : <em>{current.translation}</em></>}
-          </div>
-          <div style={{ display: 'flex', gap: '1rem' }}>
-            <button onClick={goNext} className="glass-panel bg-gradient-primary" style={{ padding: '0.8rem 2rem', borderRadius: '10px', fontWeight: 'bold', color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <ChevronRight size={20} /> Carte suivante
-            </button>
-            <button onClick={restart} className="glass-panel" style={{ padding: '0.8rem 1.5rem', borderRadius: '10px', color: 'var(--pk-text-secondary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              <RotateCcw size={16} /> Recommencer
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Skip & reveal */}
-      <div style={{ display: 'flex', gap: '1.5rem' }}>
-        {status === 'idle' && !showAnswer && (
-          <button onClick={() => setShowAnswer(true)} style={{ background: 'none', border: 'none', color: 'var(--pk-text-secondary)', cursor: 'pointer', fontSize: '0.9rem', textDecoration: 'underline' }}>
-            Voir la réponse
-          </button>
-        )}
-        {status === 'idle' && (
-          <button onClick={goNext} style={{ background: 'none', border: 'none', color: 'var(--pk-text-secondary)', cursor: 'pointer', fontSize: '0.9rem', textDecoration: 'underline', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-            <ChevronRight size={14} /> Passer
-          </button>
-        )}
-      </div>
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════
-   TAB 3 — Expand (synonymes)
-══════════════════════════════════════════════════════════════════════════ */
-const ExpandTab = () => {
-  const { showTashkeel, showRomanization } = useAppContext();
-  const [idx, setIdx] = useState(0);
-  const [flipped, setFlipped] = useState(false);
-  const rt = (t: string) => removeTashkeel(t, showTashkeel);
-  const card = synonymsData[idx];
-
-  const go = (dir: number) => {
-    setFlipped(false);
-    setTimeout(() => setIdx(i => (i + dir + synonymsData.length) % synonymsData.length), 180);
-  };
-
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
-      <div style={{ textAlign: 'center' }}>
-        <h2 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '0.3rem' }}>Expand — Synonymes 📚</h2>
-        <p style={{ color: 'var(--pk-text-secondary)' }}>Découvrez les nuances entre mots de même sens.</p>
-      </div>
-
-      <FlipCard
-        flipped={flipped}
-        onClick={() => setFlipped(!flipped)}
-        height={300}
-        front={
-          <div style={{ textAlign: 'center', width: '100%' }}>
-            <p style={{ color: 'var(--pk-text-secondary)', fontSize: '0.8rem', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{card.theme}</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
-              {card.words.map((w, i) => (
-                <div key={i} style={{ textAlign: 'center' }}>
-                  <span className="arabic-text" style={{ fontSize: '2.2rem', color: 'var(--pk-primary)', display: 'block' }}>{rt(w)}</span>
-                  {showRomanization && <span style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)', fontStyle: 'italic' }}>{card.transliterations[i]}</span>}
-                </div>
-              ))}
-            </div>
-            <p style={{ color: 'var(--pk-text-secondary)', fontSize: '0.75rem', marginTop: '1.5rem' }}>Cliquez pour les traductions & nuances</p>
-          </div>
-        }
-        back={
-          <div style={{ width: '100%' }}>
-            <p style={{ color: 'var(--pk-primary)', fontWeight: 'bold', marginBottom: '1rem', textAlign: 'center', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.85rem' }}>{card.theme}</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-              {card.words.map((w, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.5rem 0.8rem', borderRadius: '8px', background: 'var(--pk-surface)' }}>
-                  <span className="arabic-text" style={{ fontSize: '1.4rem', color: 'var(--pk-primary)', minWidth: '3rem', textAlign: 'right' }}>{rt(w)}</span>
-                  <span style={{ fontSize: '0.95rem', color: 'var(--pk-text-primary)' }}>— {card.translations[i]}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        }
-      />
-
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-        <button onClick={() => go(-1)} className="glass-panel" style={{ padding: '0.7rem', borderRadius: '50%', display: 'flex' }}><ChevronLeft size={22} /></button>
-        <span style={{ color: 'var(--pk-text-secondary)', fontSize: '0.9rem' }}>{idx + 1} / {synonymsData.length}</span>
-        <button onClick={() => go(1)} className="glass-panel" style={{ padding: '0.7rem', borderRadius: '50%', display: 'flex' }}><ChevronRight size={22} /></button>
-      </div>
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════
-   TAB 4 — Expressions
-══════════════════════════════════════════════════════════════════════════ */
-const ExpressionsTab = () => {
-  const { showTashkeel, showRomanization } = useAppContext();
-  const [idx, setIdx] = useState(0);
-  const [flipped, setFlipped] = useState(false);
-  const rt = (t: string) => removeTashkeel(t, showTashkeel);
-  const card = expressionsData[idx];
-
-  const go = (dir: number) => {
-    setFlipped(false);
-    setTimeout(() => setIdx(i => (i + dir + expressionsData.length) % expressionsData.length), 180);
-  };
-
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
-      <div style={{ textAlign: 'center' }}>
-        <h2 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '0.3rem' }}>Expressions Arabes 💬</h2>
-        <p style={{ color: 'var(--pk-text-secondary)' }}>Des expressions du quotidien, authentiques et variées.</p>
-      </div>
-
-      <FlipCard
-        flipped={flipped}
-        onClick={() => setFlipped(!flipped)}
-        height={320}
-        front={
-          <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.2rem' }}>
-            <span className="arabic-text" style={{ fontSize: '3rem', color: 'var(--pk-primary)', lineHeight: 1.3 }}>{rt(card.arabic)}</span>
-            {showRomanization && <span style={{ fontSize: '1rem', color: 'var(--pk-text-secondary)', fontStyle: 'italic' }}>{card.transliteration}</span>}
-            <p style={{ color: 'var(--pk-text-secondary)', fontSize: '0.75rem', marginTop: '0.5rem' }}>Cliquez pour la signification</p>
-          </div>
-        }
-        back={
-          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', textAlign: 'center', color: 'var(--pk-text-primary)' }}>{card.translation}</h3>
-            <div style={{ padding: '0.8rem 1rem', borderRadius: '8px', background: 'var(--pk-surface)', borderLeft: '3px solid var(--pk-primary)' }}>
-              <p style={{ fontSize: '0.9rem', color: 'var(--pk-text-secondary)', lineHeight: 1.6 }}>{card.context}</p>
-            </div>
-            {card.example && (
-              <p style={{ fontSize: '0.85rem', color: 'var(--pk-text-secondary)', fontStyle: 'italic', textAlign: 'center' }}>Ex. : {card.example}</p>
-            )}
-          </div>
-        }
-      />
-
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-        <button onClick={() => go(-1)} className="glass-panel" style={{ padding: '0.7rem', borderRadius: '50%', display: 'flex' }}><ChevronLeft size={22} /></button>
-        <span style={{ color: 'var(--pk-text-secondary)', fontSize: '0.9rem' }}>{idx + 1} / {expressionsData.length}</span>
-        <button onClick={() => go(1)} className="glass-panel" style={{ padding: '0.7rem', borderRadius: '50%', display: 'flex' }}><ChevronRight size={22} /></button>
-      </div>
     </div>
   );
 };
@@ -443,10 +181,10 @@ const Vocabulary = () => {
 
       {/* Tab bar */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
-        <TabBtn active={tab === 'categories'} onClick={() => setTab('categories')} icon={<BookOpen size={16} />} label="Par Catégorie" />
-        <TabBtn active={tab === 'guess'} onClick={() => setTab('guess')} icon={<MessageSquare size={16} />} label="GuessKalimat 🎯" />
-        <TabBtn active={tab === 'expand'} onClick={() => setTab('expand')} icon={<Layers size={16} />} label="Expand" />
-        <TabBtn active={tab === 'expressions'} onClick={() => setTab('expressions')} icon={<MessageSquare size={16} />} label="Expressions" />
+        <TabBtn active={tab === 'categories'} onClick={() => setTab('categories')} icon={<BarChart size={16} />} label="Par Catégorie" />
+        <TabBtn active={tab === 'guess'} onClick={() => setTab('guess')} icon={<Filter size={16} />} label="GuessKalimat 🎯" />
+        <TabBtn active={tab === 'expand'} onClick={() => setTab('expand')} icon={<BarChart size={16} />} label="Expand" />
+        <TabBtn active={tab === 'expressions'} onClick={() => setTab('expressions')} icon={<Filter size={16} />} label="Expressions" />
       </div>
 
       {/* Tab content */}
@@ -455,6 +193,495 @@ const Vocabulary = () => {
         {tab === 'guess' && <GuessTab />}
         {tab === 'expand' && <ExpandTab />}
         {tab === 'expressions' && <ExpressionsTab />}
+      </div>
+    </div>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════════
+   TAB 2 — GuessKalimat (Deviner le mot)
+══════════════════════════════════════════════════════════════════════════ */
+const GuessTab = () => {
+  const { showTashkeel, showRomanization } = useAppContext();
+  const [currentWord, setCurrentWord] = useState(vocabData[0]);
+  const [userInput, setUserInput] = useState('');
+  const [showResult, setShowResult] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [score, setScore] = useState(0);
+  const [attempts, setAttempts] = useState(0);
+
+  const getRandomWord = () => {
+    const randomIndex = Math.floor(Math.random() * vocabData.length);
+    setCurrentWord(vocabData[randomIndex]);
+    setUserInput('');
+    setShowResult(false);
+    setIsCorrect(false);
+  };
+
+  const checkAnswer = () => {
+    const correct = userInput.toLowerCase().trim() === currentWord.translation.toLowerCase();
+    setIsCorrect(correct);
+    setShowResult(true);
+    setAttempts(attempts + 1);
+    if (correct) {
+      setScore(score + 1);
+    }
+  };
+
+  const rt = (t: string) => removeTashkeel(t, showTashkeel);
+
+  return (
+    <div className="glass-panel" style={{ padding: '2rem' }}>
+      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <h2 style={{ color: 'var(--pk-primary)', marginBottom: '1rem' }}>GuessKalimat 🎯</h2>
+        <p style={{ color: 'var(--pk-text-secondary)' }}>Devine le mot français correspondant à l'arabe</p>
+        
+        <div style={{ background: 'var(--pk-surface-solid)', padding: '2rem', borderRadius: '12px', marginBottom: '2rem' }}>
+          <div className="arabic-text" style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem' }}>
+            {rt(currentWord.arabic)}
+          </div>
+          {showRomanization && (
+            <div style={{ fontSize: '1.2rem', color: 'var(--pk-text-secondary)', marginBottom: '0.5rem' }}>
+              {currentWord.transliteration}
+            </div>
+          )}
+          <div style={{ fontSize: '1.3rem', color: 'var(--pk-text-primary)', fontWeight: 'bold' }}>
+            Catégorie: {currentWord.category}
+          </div>
+        </div>
+
+        {!showResult ? (
+          <div>
+            <input
+              type="text"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              placeholder="Écris ta réponse en français..."
+              style={{ 
+                width: '100%', 
+                padding: '1rem', 
+                fontSize: '1.1rem', 
+                borderRadius: '8px', 
+                border: '1px solid var(--pk-border)',
+                background: 'var(--pk-surface-solid)',
+                marginBottom: '1rem',
+                color: 'var(--pk-text-primary)'
+              }}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter') {
+                  checkAnswer();
+                }
+              }}
+            />
+            <button 
+              onClick={checkAnswer}
+              className="bg-gradient-primary"
+              style={{ 
+                padding: '1rem 2rem', 
+                borderRadius: '12px', 
+                color: 'white', 
+                fontWeight: 'bold', 
+                fontSize: '1.1rem',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem'
+              }}
+            >
+              <Send size={20} />
+              Vérifier
+            </button>
+          </div>
+        ) : (
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ 
+              fontSize: '1.5rem', 
+              fontWeight: 'bold', 
+              marginBottom: '1rem',
+              color: isCorrect ? '#10b981' : '#ef4444'
+            }}>
+              {isCorrect ? '✅ Correct !' : '❌ Incorrect !'}
+            </div>
+            
+            <div style={{ marginBottom: '1.5rem' }}>
+              <div style={{ marginBottom: '0.5rem' }}>
+                <span style={{ color: 'var(--pk-text-secondary)' }}>Ta réponse:</span>
+                <div style={{ 
+                  padding: '0.8rem', 
+                  background: isCorrect ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)', 
+                  borderRadius: '8px',
+                  color: isCorrect ? '#10b981' : '#ef4444'
+                }}>
+                  {userInput}
+                </div>
+              </div>
+              
+              <div>
+                <span style={{ color: 'var(--pk-text-secondary)' }}>Bonne réponse:</span>
+                <div style={{ 
+                  padding: '0.8rem', 
+                  background: 'rgba(16, 185, 129, 0.1)', 
+                  borderRadius: '8px',
+                  color: '#10b981'
+                }}>
+                  {currentWord.translation}
+                </div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1.5rem' }}>
+              <button 
+                onClick={getRandomWord}
+                className="action-btn"
+                style={{ padding: '1rem 2rem', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+              >
+                <RotateCcw size={20} />
+                Mot suivant
+              </button>
+            </div>
+
+            <div style={{ textAlign: 'center', color: 'var(--pk-text-secondary)' }}>
+              Score: {score}/{attempts} {attempts > 0 && `(${Math.round((score/attempts) * 100)}%)`}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════════
+   TAB 3 — Expand (Explorer par catégories)
+══════════════════════════════════════════════════════════════════════════ */
+const ExpandTab = () => {
+  const { showTashkeel, showRomanization } = useAppContext();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
+
+  const currentWord = vocabData[currentIndex];
+  const allCategories = Array.from(new Set(vocabData.map(w => w.category)));
+  const wordsByCategory = allCategories.reduce((acc, cat) => {
+    acc[cat] = vocabData.filter(w => w.category === cat);
+    return acc;
+  }, {} as Record<string, typeof vocabData>);
+
+  const rt = (t: string) => removeTashkeel(t, showTashkeel);
+
+  const toggleCardExpansion = (index: number) => {
+    setExpandedCards(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
+
+  const nextWord = () => {
+    setCurrentIndex((prev) => (prev + 1) % vocabData.length);
+  };
+
+  const prevWord = () => {
+    setCurrentIndex((prev) => (prev - 1 + vocabData.length) % vocabData.length);
+  };
+
+  return (
+    <div className="glass-panel" style={{ padding: '2rem' }}>
+      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <h2 style={{ color: 'var(--pk-primary)', marginBottom: '1rem' }}>Expand 📚</h2>
+        <p style={{ color: 'var(--pk-text-secondary)' }}>Explorez le vocabulaire par catégories avec cartes extensibles</p>
+      </div>
+
+      <div style={{ marginBottom: '2rem' }}>
+        <div style={{ 
+          display: 'flex', 
+          alignItems: 'center', 
+          justifyContent: 'space-between', 
+          marginBottom: '1rem',
+          padding: '1rem',
+          background: 'var(--pk-surface-solid)',
+          borderRadius: '12px'
+        }}>
+          <button 
+            onClick={prevWord}
+            className="glass-panel"
+            style={{ padding: '0.5rem', borderRadius: '8px' }}
+          >
+            ← Précédent
+          </button>
+          
+          <span style={{ fontSize: '1.1rem', color: 'var(--pk-text-primary)' }}>
+            Mot {currentIndex + 1} / {vocabData.length}
+          </span>
+          
+          <button 
+            onClick={nextWord}
+            className="glass-panel"
+            style={{ padding: '0.5rem', borderRadius: '8px' }}
+          >
+            Suivant →
+          </button>
+        </div>
+
+        <div className="glass-panel" style={{ padding: '2rem', borderRadius: '12px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+            <span className="arabic-text" style={{ fontSize: '3.5rem', fontWeight: 'bold', color: 'var(--pk-primary)' }}>
+              {rt(currentWord.arabic)}
+            </span>
+            {showRomanization && (
+              <div style={{ fontSize: '1.2rem', color: 'var(--pk-text-secondary)', marginTop: '0.5rem' }}>
+                {currentWord.transliteration}
+              </div>
+            )}
+            <div style={{ 
+              fontSize: '1.4rem', 
+              color: 'var(--pk-text-primary)', 
+              fontWeight: 'bold',
+              marginTop: '1rem'
+            }}>
+              {currentWord.translation}
+            </div>
+            <div style={{ 
+              fontSize: '0.9rem', 
+              color: 'var(--pk-text-secondary)', 
+              marginTop: '0.5rem',
+              background: 'var(--pk-surface)',
+              padding: '0.5rem 1rem',
+              borderRadius: '8px',
+              display: 'inline-block'
+            }}>
+              {currentWord.category}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
+        {Object.entries(wordsByCategory).map(([category, words]) => (
+          <div key={category} className="glass-panel" style={{ padding: '1.5rem' }}>
+            <h3 style={{ 
+              color: 'var(--pk-primary)', 
+              marginBottom: '1rem',
+              textAlign: 'center'
+            }}>
+              {category}
+            </h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              {words.slice(0, 3).map((word, idx) => (
+                <div 
+                  key={word.id}
+                  className="glass-panel"
+                  style={{ 
+                    padding: '1rem', 
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                    border: expandedCards.has(idx) ? '2px solid var(--pk-primary)' : '1px solid var(--pk-border)'
+                  }}
+                  onClick={() => toggleCardExpansion(idx)}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <span className="arabic-text" style={{ fontSize: '1.5rem', color: 'var(--pk-text-primary)' }}>
+                        {rt(word.arabic)}
+                      </span>
+                      <span style={{ fontSize: '0.9rem', color: 'var(--pk-text-secondary)', marginLeft: '0.5rem' }}>
+                        {word.translation}
+                      </span>
+                    </div>
+                    <Check 
+                      size={16} 
+                      color={expandedCards.has(idx) ? 'var(--pk-primary)' : 'var(--pk-text-secondary)'} 
+                    />
+                  </div>
+                  
+                  {expandedCards.has(idx) && (
+                    <div style={{ 
+                      marginTop: '0.8rem', 
+                      paddingTop: '0.8rem', 
+                      borderTop: '1px solid var(--pk-border)',
+                      fontSize: '0.85rem',
+                      color: 'var(--pk-text-secondary)'
+                    }}>
+                      {showRomanization && (
+                        <div style={{ marginBottom: '0.3rem', fontStyle: 'italic' }}>
+                          {word.transliteration}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
+              {words.length > 3 && (
+                <div style={{ 
+                  textAlign: 'center', 
+                  padding: '0.5rem', 
+                  color: 'var(--pk-text-secondary)',
+                  fontSize: '0.8rem'
+                }}>
+                  ... et {words.length - 3} autres mots
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════════
+   TAB 4 — Expressions (Expressions courantes)
+══════════════════════════════════════════════════════════════════════════ */
+const ExpressionsTab = () => {
+  const { showTashkeel, showRomanization } = useAppContext();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const currentExpression = expressionsData[currentIndex];
+
+  const rt = (t: string) => removeTashkeel(t, showTashkeel);
+
+  const nextExpression = () => {
+    setCurrentIndex((prev) => (prev + 1) % expressionsData.length);
+  };
+
+  const prevExpression = () => {
+    setCurrentIndex((prev) => (prev - 1 + expressionsData.length) % expressionsData.length);
+  };
+
+  const shuffleExpressions = () => {
+    setCurrentIndex(Math.floor(Math.random() * expressionsData.length));
+  };
+
+  return (
+    <div className="glass-panel" style={{ padding: '2rem' }}>
+      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <h2 style={{ color: 'var(--pk-primary)', marginBottom: '1rem' }}>Expressions 💬</h2>
+        <p style={{ color: 'var(--pk-text-secondary)' }}>Apprenez les expressions courantes en arabe</p>
+      </div>
+
+      <div style={{ 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'space-between', 
+        marginBottom: '2rem',
+        padding: '1rem',
+        background: 'var(--pk-surface-solid)',
+        borderRadius: '12px'
+      }}>
+        <button 
+          onClick={prevExpression}
+          className="glass-panel"
+          style={{ padding: '0.5rem', borderRadius: '8px' }}
+        >
+          <ChevronLeft size={20} />
+        </button>
+        
+        <span style={{ fontSize: '1.1rem', color: 'var(--pk-text-primary)' }}>
+          Expression {currentIndex + 1} / {expressionsData.length}
+        </span>
+        
+        <button 
+          onClick={nextExpression}
+          className="glass-panel"
+          style={{ padding: '0.5rem', borderRadius: '8px' }}
+        >
+          <ChevronRight size={20} />
+        </button>
+      </div>
+
+      <div className="glass-panel" style={{ padding: '2rem', borderRadius: '12px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div className="arabic-text" style={{ 
+            fontSize: '3rem', 
+            fontWeight: 'bold', 
+            color: 'var(--pk-primary)', 
+            marginBottom: '1.5rem',
+            lineHeight: 1.3 
+          }}>
+            {rt(currentExpression.arabic)}
+          </div>
+          
+          {showRomanization && (
+            <div style={{ 
+              fontSize: '1.2rem', 
+              color: 'var(--pk-text-secondary)', 
+              marginBottom: '1rem',
+              fontStyle: 'italic'
+            }}>
+              {currentExpression.transliteration}
+            </div>
+          )}
+          
+          <div style={{ 
+            fontSize: '1.6rem', 
+            color: 'var(--pk-text-primary)', 
+            fontWeight: 'bold',
+            marginBottom: '1rem'
+          }}>
+            {currentExpression.translation}
+          </div>
+          
+          <div style={{ 
+            fontSize: '1rem', 
+            color: 'var(--pk-text-secondary)', 
+            marginBottom: '1rem',
+            background: 'var(--pk-surface)',
+            padding: '0.5rem 1rem',
+            borderRadius: '8px',
+            display: 'inline-block'
+          }}>
+            {currentExpression.context}
+          </div>
+          
+          {currentExpression.example && (
+            <div style={{ 
+              textAlign: 'left',
+              background: 'var(--pk-surface-solid)',
+              padding: '1.5rem',
+              borderRadius: '12px',
+              border: '1px solid var(--pk-border)',
+              marginTop: '1rem'
+            }}>
+              <div style={{ fontSize: '0.9rem', color: 'var(--pk-text-secondary)', marginBottom: '0.5rem' }}>
+                <strong>Exemple :</strong>
+              </div>
+              <div className="arabic-text" style={{ fontSize: '1.3rem', color: 'var(--pk-primary)', marginBottom: '0.5rem' }}>
+                {rt(currentExpression.example)}
+              </div>
+              {showRomanization && (
+                <div style={{ fontSize: '0.9rem', color: 'var(--pk-text-secondary)', fontStyle: 'italic', marginBottom: '0.5rem' }}>
+                  {currentExpression.transliteration}
+                </div>
+              )}
+              <div style={{ fontSize: '1rem', color: 'var(--pk-text-primary)' }}>
+                {currentExpression.example}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+        <button 
+          onClick={shuffleExpressions}
+          className="bg-gradient-primary"
+          style={{ 
+            padding: '1rem 2rem', 
+            borderRadius: '12px', 
+            color: 'white', 
+            fontWeight: 'bold',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem'
+          }}
+        >
+          <RotateCcw size={20} />
+          Expression aléatoire
+        </button>
       </div>
     </div>
   );

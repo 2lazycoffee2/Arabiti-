@@ -395,22 +395,27 @@
         "segments": [
             {
                 "arabic": "ممارسة الرياضة مفيدة جداً لصحة الجسم والعقل.",
+                "romanization": "Mumārasat ar-riyāḍa mufīdatun jiddan li-ṣiḥḥat al-jism wa-al-‘aql.",
                 "translation": "La pratique du sport est très bénéfique pour la santé du corps et de l'esprit."
             },
             {
                 "arabic": "ينصح الأطباء بالمشي لمدة نصف ساعة كل يوم في الهواء الطلق.",
+                "romanization": "Yanṣaḥu al-aṭibbā’ bi-al-mashī li-muddat niṣf sā‘a kulla yawm fī al-hawā’ aṭ-ṭalaq.",
                 "translation": "Les médecins recommandent de marcher une demi-heure chaque jour en plein air."
             },
             {
                 "arabic": "الرياضة تقوي القلب العضلات وتساعد على النوم المريح.",
+                "romanization": "Ar-riyāḍa tuqawwī al-qalb wa-al-‘aḍalāt wa-tusā‘idu ‘alā an-nawm al-murīḥ.",
                 "translation": "Le sport renforce le cœur, les muscles et aide à dormir confortablement."
             },
             {
                 "arabic": "الماء مهم جداً، ويجب شرب الكثير منه أثناء التمرين وبعده.",
+                "romanization": "Al-mā’ muhimmun jiddan, wa-yajibu shurb al-kathīr minhu athnā’ at-tamrīn wa-ba‘dahu.",
                 "translation": "L'eau est très importante, et il faut en boire beaucoup pendant et après l'exercice."
             },
             {
                 "arabic": "العقل السليم في الجسم السليم.",
+                "romanization": "Al-‘aql as-salīm fī al-jism as-salīm.",
                 "translation": "Un esprit sain dans un corps sain."
             }
         ]

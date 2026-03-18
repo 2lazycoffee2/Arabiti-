@@ -1,7 +1,7 @@
 [
   {
     "id": "v1",
-    "arabic": "مرحبا",
+    "arabic": "مَرْحَبًا",
     "transliteration": "Marhaba",
     "translation": "Bonjour",
     "category": "Salutations",
@@ -9,7 +9,7 @@
   },
   {
     "id": "v2",
-    "arabic": "شكرا",
+    "arabic": "شُكْرًا",
     "transliteration": "Shukran",
     "translation": "Merci",
     "category": "Salutations",
@@ -17,7 +17,7 @@
   },
   {
     "id": "v3",
-    "arabic": "نعم",
+    "arabic": "نَعَمْ",
     "transliteration": "Na'am",
     "translation": "Oui",
     "category": "Bases",
@@ -33,15 +33,15 @@
   },
   {
     "id": "v5",
-    "arabic": "اسمي",
-    "transliteration": "Ismee...",
-    "translation": "Je m'appelle...",
+    "arabic": "ٱسْمِي",
+    "transliteration": "Ismi",
+    "translation": "Mon nom",
     "category": "Présentation",
     "mastery": 0
   },
   {
     "id": "v6",
-    "arabic": "مدينة",
+    "arabic": "مَدِينَة",
     "transliteration": "Madina",
     "translation": "Ville",
     "category": "Lieux",
@@ -49,7 +49,7 @@
   },
   {
     "id": "v7",
-    "arabic": "صباح الخير",
+    "arabic": "صَبَاحُ ٱلْخَيْرِ",
     "transliteration": "Sabaah al-khayr",
     "translation": "Bonjour (Matin)",
     "category": "Salutations",
@@ -57,7 +57,7 @@
   },
   {
     "id": "v8",
-    "arabic": "كيف حالك؟",
+    "arabic": "كَيْفَ حَالُكَ؟",
     "transliteration": "Kayf haaluk?",
     "translation": "Comment ça va ?",
     "category": "Salutations",
@@ -65,7 +65,7 @@
   },
   {
     "id": "v9",
-    "arabic": "بخير",
+    "arabic": "بِخَيْرٍ",
     "transliteration": "Bikhayr",
     "translation": "Bien (réponse à comment ça va)",
     "category": "Salutations",
@@ -73,7 +73,7 @@
   },
   {
     "id": "v10",
-    "arabic": "من فضلك",
+    "arabic": "مِنْ فَضْلِكَ",
     "transliteration": "Min fadlik",
     "translation": "S'il te plaît",
     "category": "Bases",
@@ -81,7 +81,7 @@
   },
   {
     "id": "v11",
-    "arabic": "عفوا",
+    "arabic": "عَفْوًا",
     "transliteration": "Afwan",
     "translation": "De rien / Pardon",
     "category": "Bases",
@@ -89,7 +89,7 @@
   },
   {
     "id": "v12",
-    "arabic": "مع السلامة",
+    "arabic": "مَعَ ٱلسَّلَامَةِ",
     "transliteration": "Ma'a as-salaama",
     "translation": "Au revoir",
     "category": "Salutations",
@@ -97,7 +97,7 @@
   },
   {
     "id": "v13",
-    "arabic": "اليوم",
+    "arabic": "ٱلْيَوْمِ",
     "transliteration": "Al-yawm",
     "translation": "Aujourd'hui",
     "category": "Temps",
@@ -105,7 +105,7 @@
   },
   {
     "id": "v14",
-    "arabic": "غدا",
+    "arabic": "غَدًا",
     "transliteration": "Ghadan",
     "translation": "Demain",
     "category": "Temps",
@@ -113,7 +113,7 @@
   },
   {
     "id": "v15",
-    "arabic": "أمس",
+    "arabic": "أَمْسِ",
     "transliteration": "Ams",
     "translation": "Hier",
     "category": "Temps",
@@ -121,7 +121,7 @@
   },
   {
     "id": "v16",
-    "arabic": "ماء",
+    "arabic": "مَاءٌ",
     "transliteration": "Maa'",
     "translation": "Eau",
     "category": "Nourriture",
@@ -129,7 +129,7 @@
   },
   {
     "id": "v17",
-    "arabic": "خبز",
+    "arabic": "خُبْزٌ",
     "transliteration": "Khubz",
     "translation": "Pain",
     "category": "Nourriture",
@@ -137,7 +137,7 @@
   },
   {
     "id": "v18",
-    "arabic": "قهوة",
+    "arabic": "قَهْوَةٌ",
     "transliteration": "Qahwa",
     "translation": "Café",
     "category": "Boissons",
@@ -145,7 +145,7 @@
   },
   {
     "id": "v19",
-    "arabic": "شاي",
+    "arabic": "شَايٌ",
     "transliteration": "Shaay",
     "translation": "Thé",
     "category": "Boissons",
@@ -153,7 +153,7 @@
   },
   {
     "id": "v20",
-    "arabic": "كتاب",
+    "arabic": "كِتَابٌ",
     "transliteration": "Kitaab",
     "translation": "Livre",
     "category": "Objets",
@@ -161,7 +161,7 @@
   },
   {
     "id": "v21",
-    "arabic": "قلم",
+    "arabic": "قَلَمٌ",
     "transliteration": "Qalam",
     "translation": "Stylo",
     "category": "Objets",
@@ -169,7 +169,7 @@
   },
   {
     "id": "v22",
-    "arabic": "سيارة",
+    "arabic": "سَيَّارَةٌ",
     "transliteration": "Sayyaara",
     "translation": "Voiture",
     "category": "Transports",
@@ -177,7 +177,7 @@
   },
   {
     "id": "v23",
-    "arabic": "قطار",
+    "arabic": "قِطَارٌ",
     "transliteration": "Qitaar",
     "translation": "Train",
     "category": "Transports",
@@ -185,7 +185,7 @@
   },
   {
     "id": "v24",
-    "arabic": "طائرة",
+    "arabic": "طَائِرَةٌ",
     "transliteration": "Taa'ira",
     "translation": "Avion",
     "category": "Transports",
@@ -193,7 +193,7 @@
   },
   {
     "id": "v25",
-    "arabic": "مطار",
+    "arabic": "مَطَارٌ",
     "transliteration": "Mataar",
     "translation": "Aéroport",
     "category": "Lieux",
@@ -201,7 +201,7 @@
   },
   {
     "id": "v26",
-    "arabic": "فندق",
+    "arabic": "فُنْدُقٌ",
     "transliteration": "Funduq",
     "translation": "Hôtel",
     "category": "Lieux",
@@ -209,7 +209,7 @@
   },
   {
     "id": "v27",
-    "arabic": "مستشفى",
+    "arabic": "مُسْتَشْفًى",
     "transliteration": "Mustashfa",
     "translation": "Hôpital",
     "category": "Lieux",
@@ -217,7 +217,7 @@
   },
   {
     "id": "v28",
-    "arabic": "كبير",
+    "arabic": "كَبِيرٌ",
     "transliteration": "Kabeer",
     "translation": "Grand",
     "category": "Adjectifs",
@@ -225,7 +225,7 @@
   },
   {
     "id": "v29",
-    "arabic": "صغير",
+    "arabic": "صَغِيرٌ",
     "transliteration": "Sagheer",
     "translation": "Petit",
     "category": "Adjectifs",
@@ -233,7 +233,7 @@
   },
   {
     "id": "v30",
-    "arabic": "جميل",
+    "arabic": "جَمِيلٌ",
     "transliteration": "Jameel",
     "translation": "Beau / Magnifique",
     "category": "Adjectifs",
@@ -241,7 +241,7 @@
   },
   {
     "id": "v31",
-    "arabic": "جيد",
+    "arabic": "جَيِّدٌ",
     "transliteration": "Jayyid",
     "translation": "Bon",
     "category": "Adjectifs",
@@ -249,7 +249,7 @@
   },
   {
     "id": "v32",
-    "arabic": "سيء",
+    "arabic": "سَيِّئٌ",
     "transliteration": "Sayyi'",
     "translation": "Mauvais",
     "category": "Adjectifs",
@@ -257,7 +257,7 @@
   },
   {
     "id": "v33",
-    "arabic": "سعيد",
+    "arabic": "سَعِيدٌ",
     "transliteration": "Sa'eed",
     "translation": "Heureux",
     "category": "Émotions",
@@ -265,7 +265,7 @@
   },
   {
     "id": "v34",
-    "arabic": "حزين",
+    "arabic": "حَزِينٌ",
     "transliteration": "Hazeen",
     "translation": "Triste",
     "category": "Émotions",
@@ -273,7 +273,7 @@
   },
   {
     "id": "v35",
-    "arabic": "رجل",
+    "arabic": "رَجُلٌ",
     "transliteration": "Rajul",
     "translation": "Homme",
     "category": "Personnes",
@@ -281,7 +281,7 @@
   },
   {
     "id": "v36",
-    "arabic": "امرأة",
+    "arabic": "ٱمْرَأَةٌ",
     "transliteration": "Imra'a",
     "translation": "Femme",
     "category": "Personnes",
@@ -289,7 +289,7 @@
   },
   {
     "id": "v37",
-    "arabic": "ولد",
+    "arabic": "وَلَدٌ",
     "transliteration": "Walad",
     "translation": "Garçon",
     "category": "Personnes",
@@ -297,7 +297,7 @@
   },
   {
     "id": "v38",
-    "arabic": "بنت",
+    "arabic": "بِنْتٌ",
     "transliteration": "Bint",
     "translation": "Fille",
     "category": "Personnes",
@@ -305,7 +305,7 @@
   },
   {
     "id": "v39",
-    "arabic": "أب",
+    "arabic": "أَبٌ",
     "transliteration": "Ab",
     "translation": "Père",
     "category": "Famille",
@@ -313,7 +313,7 @@
   },
   {
     "id": "v40",
-    "arabic": "أم",
+    "arabic": "أُمٌّ",
     "transliteration": "Umm",
     "translation": "Mère",
     "category": "Famille",
@@ -321,7 +321,7 @@
   },
   {
     "id": "v41",
-    "arabic": "واحد",
+    "arabic": "وَاحِدٌ",
     "transliteration": "Waahid",
     "translation": "Un",
     "category": "Nombres",
@@ -329,7 +329,7 @@
   },
   {
     "id": "v42",
-    "arabic": "اثنان",
+    "arabic": "ٱثْنَانِ",
     "transliteration": "Ithnaan",
     "translation": "Deux",
     "category": "Nombres",
@@ -337,7 +337,7 @@
   },
   {
     "id": "v43",
-    "arabic": "ثلاثة",
+    "arabic": "ثَلَاثَةٌ",
     "transliteration": "Thalaatha",
     "translation": "Trois",
     "category": "Nombres",
@@ -345,7 +345,7 @@
   },
   {
     "id": "v44",
-    "arabic": "أكل",
+    "arabic": "أَكَلَ",
     "transliteration": "Akala",
     "translation": "Manger (Verbe)",
     "category": "Verbes",
@@ -353,7 +353,7 @@
   },
   {
     "id": "v45",
-    "arabic": "شرب",
+    "arabic": "شَرِبَ",
     "transliteration": "Shariba",
     "translation": "Boire (Verbe)",
     "category": "Verbes",
@@ -361,7 +361,7 @@
   },
   {
     "id": "v46",
-    "arabic": "ذهب",
+    "arabic": "ذَهَبَ",
     "transliteration": "Thahaba",
     "translation": "Aller (Verbe)",
     "category": "Verbes",
@@ -369,7 +369,7 @@
   },
   {
     "id": "v47",
-    "arabic": "قرأ",
+    "arabic": "قَرَأَ",
     "transliteration": "Qara'a",
     "translation": "Lire (Verbe)",
     "category": "Verbes",
@@ -377,7 +377,7 @@
   },
   {
     "id": "v48",
-    "arabic": "كتب",
+    "arabic": "كَتَبَ",
     "transliteration": "Kataba",
     "translation": "Écrire (Verbe)",
     "category": "Verbes",
@@ -385,15 +385,23 @@
   },
   {
     "id": "v49",
-    "arabic": "أين",
+    "arabic": "أَيْنَ",
     "transliteration": "Ayna",
     "translation": "Où",
     "category": "Questions",
     "mastery": 0
   },
   {
+    "id": "v50",
+    "arabic": "مَتَى",
+    "transliteration": "Matā",
+    "translation": "Quand",
+    "category": "Questions",
+    "mastery": 0
+  },
+  {
     "id": "v51",
-    "arabic": "حَلِيب",
+    "arabic": "حَلِيبٌ",
     "transliteration": "Ḥalīb",
     "translation": "Lait",
     "category": "Boissons",
@@ -401,7 +409,7 @@
   },
   {
     "id": "v52",
-    "arabic": "فَاكِهَة",
+    "arabic": "فَاكِهَةٌ",
     "transliteration": "Fākiha",
     "translation": "Fruit",
     "category": "Nourriture",
@@ -409,7 +417,7 @@
   },
   {
     "id": "v53",
-    "arabic": "خُضَار",
+    "arabic": "خُضَارٌ",
     "transliteration": "Khuḍār",
     "translation": "Légumes",
     "category": "Nourriture",
@@ -417,7 +425,7 @@
   },
   {
     "id": "v54",
-    "arabic": "دَجَاج",
+    "arabic": "دَجَاجٌ",
     "transliteration": "Dajāj",
     "translation": "Poulet",
     "category": "Nourriture",
@@ -425,7 +433,7 @@
   },
   {
     "id": "v55",
-    "arabic": "سَمَك",
+    "arabic": "سَمَكٌ",
     "transliteration": "Samak",
     "translation": "Poisson",
     "category": "Nourriture",
@@ -433,7 +441,7 @@
   },
   {
     "id": "v56",
-    "arabic": "قَمِيص",
+    "arabic": "قَمِيصٌ",
     "transliteration": "Qamīṣ",
     "translation": "Chemise",
     "category": "Vêtements",
@@ -441,7 +449,7 @@
   },
   {
     "id": "v57",
-    "arabic": "سِرْوَال",
+    "arabic": "سِرْوَالٌ",
     "transliteration": "Sirwāl",
     "translation": "Pantalon",
     "category": "Vêtements",
@@ -449,7 +457,7 @@
   },
   {
     "id": "v58",
-    "arabic": "فُسْتَان",
+    "arabic": "فُسْتَانٌ",
     "transliteration": "Fustān",
     "translation": "Robe",
     "category": "Vêtements",
@@ -457,7 +465,7 @@
   },
   {
     "id": "v59",
-    "arabic": "حِذَاء",
+    "arabic": "حِذَاءٌ",
     "transliteration": "Ḥidhā'",
     "translation": "Chaussures",
     "category": "Vêtements",
@@ -465,7 +473,7 @@
   },
   {
     "id": "v60",
-    "arabic": "مَعْطَف",
+    "arabic": "مَعْطَفٌ",
     "transliteration": "Ma'ṭaf",
     "translation": "Manteau",
     "category": "Vêtements",
@@ -473,7 +481,7 @@
   },
   {
     "id": "v61",
-    "arabic": "بَحْر",
+    "arabic": "بَحْرٌ",
     "transliteration": "Baḥr",
     "translation": "Mer",
     "category": "Nature",
@@ -481,7 +489,7 @@
   },
   {
     "id": "v62",
-    "arabic": "جَبَل",
+    "arabic": "جَبَلٌ",
     "transliteration": "Jabal",
     "translation": "Montagne",
     "category": "Nature",
@@ -489,7 +497,7 @@
   },
   {
     "id": "v63",
-    "arabic": "شَمْس",
+    "arabic": "شَمْسٌ",
     "transliteration": "Shams",
     "translation": "Soleil",
     "category": "Nature",
@@ -497,7 +505,7 @@
   },
   {
     "id": "v64",
-    "arabic": "قَمَر",
+    "arabic": "قَمَرٌ",
     "transliteration": "Qamar",
     "translation": "Lune",
     "category": "Nature",
@@ -505,7 +513,7 @@
   },
   {
     "id": "v65",
-    "arabic": "مَدْرَسَة",
+    "arabic": "مَدْرَسَةٌ",
     "transliteration": "Madrasa",
     "translation": "École",
     "category": "Lieux",
@@ -548,6 +556,126 @@
     "arabic": "دَرَسَ",
     "transliteration": "Darasa",
     "translation": "Étudier (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v71",
+    "arabic": "أَكَلَ",
+    "transliteration": "Akala",
+    "translation": "Manger (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v72",
+    "arabic": "شَرِبَ",
+    "transliteration": "Shariba",
+    "translation": "Boire (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v73",
+    "arabic": "كَلَّمَ",
+    "transliteration": "Kallama",
+    "translation": "Parler (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v74",
+    "arabic": "سَمِعَ",
+    "transliteration": "Sami'a",
+    "translation": "Entendre (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v75",
+    "arabic": "رَأَى",
+    "transliteration": "Ra'a",
+    "translation": "Voir (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v76",
+    "arabic": "عَمِلَ",
+    "transliteration": "Amila",
+    "translation": "Travailler (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v77",
+    "arabic": "لَعِبَ",
+    "transliteration": "La'iba",
+    "translation": "Jouer (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v78",
+    "arabic": "قَرَأَ",
+    "transliteration": "Qara'a",
+    "translation": "Lire (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v79",
+    "arabic": "كَتَبَ",
+    "transliteration": "Kataba",
+    "translation": "Écrire (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v80",
+    "arabic": "فَهِمَ",
+    "transliteration": "Fahima",
+    "translation": "Comprendre (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v81",
+    "arabic": "ذَهَبَ",
+    "transliteration": "Dhahaba",
+    "translation": "Aller (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v82",
+    "arabic": "جَاءَ",
+    "transliteration": "Ja'a",
+    "translation": "Venir (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v83",
+    "arabic": "طَلَبَ",
+    "transliteration": "Talaba",
+    "translation": "Demander (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v84",
+    "arabic": "وَجَدَ",
+    "transliteration": "Wajada",
+    "translation": "Trouver (Verbe)",
+    "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v85",
+    "arabic": "بَحَثَ",
+    "transliteration": "Bahatha",
+    "translation": "Chercher (Verbe)",
     "category": "Verbes",
     "mastery": 0
   }

@@ -149,7 +149,7 @@
     "transliteration": "Mabrūk",
     "translation": "Félicitations !",
     "context": "Utilisée pour féliciter quelqu'un pour un mariage, une naissance, une promotion ou toute réussite.",
-    "example": "— J'ai réussi mon examen ! — مَبْرُوك !"
+    "example": "— نَجَحْتُ فِي الاِمْتِحَانِ — مَبْرُوك !"
   },
   {
     "id": "exp20",
@@ -157,7 +157,7 @@
     "transliteration": "Lā ba's",
     "translation": "Pas de mal / Ce n'est rien",
     "context": "Pour rassurer quelqu'un ou dire que tout va bien après un petit incident ou une maladie.",
-    "example": "— Je suis désolé d'être en retard. — لَا بَأْس."
+    "example": "— عُذْرًا عَلَى التَّأْخِيرِ — لَا بَأْس."
   },
   {
     "id": "exp21",
@@ -165,7 +165,7 @@
     "transliteration": "Fī amāni Allāh",
     "translation": "Sous la protection de Dieu / Au revoir",
     "context": "Une manière pieuse et chaleureuse de dire au revoir à quelqu'un qui part.",
-    "example": "— Je m'en vais maintenant. — فِي أَمَانِ اللَّه !"
+    "example": "— أَنَا ذَاهِبٌ الآنَ — فِي أَمَانِ اللَّه !"
   },
   {
     "id": "exp22",
@@ -173,7 +173,7 @@
     "transliteration": "Tasharrafnā",
     "translation": "Enchanté(e) / Nous sommes honorés",
     "context": "Expression de politesse utilisée lors des présentations initiales.",
-    "example": "— Je m'appelle Ahmed. — تَشَرَّفْنَا ya Ahmed."
+    "example": "— أَنَا أَحْمَدُ — تَشَرَّفْنَا يَا أَحْمَدُ."
   },
   {
     "id": "exp23",
@@ -181,7 +181,7 @@
     "transliteration": "Bi-ṣ-ṣiḥḥati wal-'āfiyya",
     "translation": "Bon appétit / À votre santé",
     "context": "Souhaité avant un repas ou lorsqu'on voit quelqu'un manger ou boire.",
-    "example": "بِالصِّحَّةِ وَالعَافِيَة pour ce repas !"
+    "example": "— هَذَا الطَّعَامُ لَذِيذٌ — بِالصِّحَّةِ وَالعَافِيَة !"
   },
   {
     "id": "exp24",
@@ -189,7 +189,7 @@
     "transliteration": "Samāḥan",
     "translation": "Pardon / Excusez-moi",
     "context": "Pour demander pardon poliment ou attirer l'attention de quelqu'un.",
-    "example": "سَمَاحًا، أَيْنَ المَحَطَّة؟ = Pardon, où est la gare ?"
+    "example": "سَمَاحًا، أَيْنَ المَحَطَّة؟ = Excusez-moi, où est la gare ?"
   },
   {
     "id": "exp25",
@@ -197,7 +197,7 @@
     "transliteration": "Ma'a as-salāma",
     "translation": "Au revoir / Allez avec la paix",
     "context": "La formule de départ la plus standard et polyvalente en arabe.",
-    "example": "— Bonne journée ! — مَعَ السَّلَامَة."
+    "example": "— يَوْمٌ سَعِيدٌ — مَعَ السَّلَامَة."
   },
   {
     "id": "exp26",
@@ -205,7 +205,7 @@
     "transliteration": "Hanī'an laka",
     "translation": "Profites-en bien / Bon appétit",
     "context": "Utilisé pour féliciter quelqu'un qui profite de quelque chose de plaisant (repas, repos, etc.).",
-    "example": "هَنِيئًا لَكَ cet excellent café !"
+    "example": "— هَذَا قَهْوَةٌ مُمْتَازَةٌ — هَنِيئًا لَكَ !"
   },
   {
     "id": "exp27",
@@ -213,7 +213,7 @@
     "transliteration": "Ahlan wa sahlan",
     "translation": "Bienvenue !",
     "context": "La formule d'accueil par excellence pour souhaiter la bienvenue à un invité.",
-    "example": "أَهْلًا وَسَهْلًا فِي مَنْزِلِي ! = Bienvenue chez moi !"
+    "example": "أَهْلًا وَسَهْلًا يَا ضَيْفِي !"
   },
   {
     "id": "exp28",
@@ -221,6 +221,6 @@
     "transliteration": "Shukran jazīlan",
     "translation": "Merci beaucoup !",
     "context": "Pour exprimer une gratitude plus profonde que le simple 'Shukran'.",
-    "example": "شُكْرًا جَزِيلًا عَلَى مُسَاعَدَتِكَ. = Merci beaucoup pour ton aide."
+    "example": "شُكْرًا جَزِيلًا عَلَى مُسَاعَدَتِكَ."
   }
 ]

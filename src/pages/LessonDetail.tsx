@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 const LessonDetail = () => {
   const { lessonId } = useParams();
   const [activeTab, setActiveTab] = useState<'content' | 'exercises'>('content');
+  const [activeSublesson, setActiveSublesson] = useState<string>('main');
   const [score, setScore] = useState<number | null>(null);
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [showReview, setShowReview] = useState(false);
@@ -21,9 +22,21 @@ const LessonDetail = () => {
   const nextLesson = currentIndex < lessonsData.length - 1 ? lessonsData[currentIndex + 1] : null;
 
   const isCompleted = lessonId ? completedLessons.includes(lessonId) : false;
+  
+  // Get current content based on active sublesson
+  const getCurrentContent = () => {
+    if (activeSublesson === 'main') {
+      return lesson;
+    }
+    const sublesson = lesson?.sublessons?.find(sl => sl.id === activeSublesson);
+    return sublesson || lesson;
+  };
+  
+  const currentContent = getCurrentContent()!;
 
   useEffect(() => {
     setActiveTab('content');
+    setActiveSublesson('main');
     setScore(null);
     setUserAnswers({});
     setShowReview(false);
@@ -45,7 +58,7 @@ const LessonDetail = () => {
     let correctCount = 0;
     const answers: Record<number, string> = {};
 
-    lesson.exercises?.forEach((ex: any, idx: number) => {
+    currentContent.exercises?.forEach((ex: any, idx: number) => {
       const selected = formData.get(`question-${idx}`) as string;
       answers[idx] = selected;
       if (selected === ex.answer) {
@@ -56,7 +69,7 @@ const LessonDetail = () => {
     setUserAnswers(answers);
     setScore(correctCount);
     
-    if (correctCount === lesson.exercises?.length && lessonId) {
+    if (correctCount === currentContent.exercises?.length && lessonId) {
       completeLesson(lessonId);
     }
   };
@@ -107,6 +120,43 @@ const LessonDetail = () => {
         )}
       </div>
 
+      {/* Sublesson tabs */}
+      {lesson.sublessons && lesson.sublessons.length > 0 && (
+        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+          <button 
+            onClick={() => setActiveSublesson('main')}
+            style={{ 
+              padding: '0.5rem 1rem', 
+              background: activeSublesson === 'main' ? 'var(--pk-primary)' : 'var(--pk-surface-solid)',
+              color: activeSublesson === 'main' ? 'white' : 'var(--pk-text-secondary)',
+              border: '1px solid var(--pk-border)',
+              borderRadius: '20px',
+              fontSize: '0.85rem',
+              fontWeight: activeSublesson === 'main' ? 'bold' : 'normal'
+            }}
+          >
+            Principal
+          </button>
+          {lesson.sublessons.map((sublesson) => (
+            <button 
+              key={sublesson.id}
+              onClick={() => setActiveSublesson(sublesson.id)}
+              style={{ 
+                padding: '0.5rem 1rem', 
+                background: activeSublesson === sublesson.id ? 'var(--pk-primary)' : 'var(--pk-surface-solid)',
+                color: activeSublesson === sublesson.id ? 'white' : 'var(--pk-text-secondary)',
+                border: '1px solid var(--pk-border)',
+                borderRadius: '20px',
+                fontSize: '0.85rem',
+                fontWeight: activeSublesson === sublesson.id ? 'bold' : 'normal'
+              }}
+            >
+              {sublesson.title.replace(/.*:\s*/, '')}
+            </button>
+          ))}
+        </div>
+      )}
+
       <div style={{ display: 'flex', gap: '1rem', borderBottom: '1px solid var(--pk-border)' }}>
         <button 
           onClick={() => setActiveTab('content')}
@@ -119,7 +169,7 @@ const LessonDetail = () => {
         >
           Apprentissage
         </button>
-        {lesson.exercises && lesson.exercises.length > 0 && (
+        {currentContent.exercises && currentContent.exercises.length > 0 && (
           <button 
             onClick={() => setActiveTab('exercises')}
             style={{ 
@@ -182,7 +232,7 @@ const LessonDetail = () => {
                 ),
               }}
             >
-              {lesson.content}
+              {currentContent.content}
             </ReactMarkdown>
           </div>
         ) : (
@@ -200,8 +250,8 @@ const LessonDetail = () => {
                       width: '120px',
                       height: '120px',
                       borderRadius: '50%',
-                      background: score / (lesson.exercises?.length || 1) <= 0.6 ? '#ef4444' : 
-                                 score === lesson.exercises?.length ? '#10b981' : '#f59e0b',
+                      background: score / (currentContent.exercises?.length || 1) <= 0.6 ? '#ef4444' : 
+                                 score === currentContent.exercises?.length ? '#10b981' : '#f59e0b',
                       boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)',
                       border: '4px solid rgba(255, 255, 255, 0.2)'
                     }}>
@@ -218,7 +268,7 @@ const LessonDetail = () => {
                           lineHeight: '1',
                           textShadow: '0 2px 4px rgba(0,0,0,0.2)'
                         }}>
-                          {Math.round((score / (lesson.exercises?.length || 1)) * 100)}%
+                          {Math.round((score / (currentContent.exercises?.length || 1)) * 100)}%
                         </span>
                         <div style={{ 
                           fontSize: '0.8rem', 
@@ -244,10 +294,10 @@ const LessonDetail = () => {
                         alignItems: 'center',
                         justifyContent: 'center',
                         boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-                        color: score / (lesson.exercises?.length || 1) <= 0.6 ? '#ef4444' : 
-                               score === lesson.exercises?.length ? '#10b981' : '#f59e0b'
+                        color: score / (currentContent.exercises?.length || 1) <= 0.6 ? '#ef4444' : 
+                               score === currentContent.exercises?.length ? '#10b981' : '#f59e0b'
                       }}>
-                        {score / (lesson.exercises?.length || 1) <= 0.6 ? (
+                        {score / (currentContent.exercises?.length || 1) <= 0.6 ? (
                           <span style={{ fontWeight: '900', fontSize: '1.2rem' }}>✕</span>
                         ) : (
                           <CheckCircle size={20} />
@@ -256,15 +306,15 @@ const LessonDetail = () => {
                     </div>
                     
                     <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem', color: 'var(--pk-text-primary)' }}>
-                      {score === lesson.exercises?.length ? 'Parfait ! 🎉' : 
-                       score / (lesson.exercises?.length || 1) <= 0.6 ? 'Réessaie encore !' : 'Bien tenté !'}
+                      {score === currentContent.exercises?.length ? 'Parfait ! 🎉' : 
+                       score / (currentContent.exercises?.length || 1) <= 0.6 ? 'Réessaie encore !' : 'Bien tenté !'}
                     </h2>
                     <h3 style={{ color: 'var(--pk-text-secondary)', marginBottom: '2rem' }}>
-                      Tu as obtenu {score} / {lesson.exercises?.length} bonnes réponses.
+                      Tu as obtenu {score} / {currentContent.exercises?.length} bonnes réponses.
                     </h3>
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1rem', maxWidth: '300px', margin: '0 auto' }}>
-                      {score < (lesson.exercises?.length || 0) && (
+                      {score < (currentContent.exercises?.length || 0) && (
                         <button 
                           onClick={() => setShowReview(true)}
                           className="action-btn"
@@ -274,7 +324,7 @@ const LessonDetail = () => {
                         </button>
                       )}
                       
-                      {score === lesson.exercises?.length && nextLesson && (
+                      {score === currentContent.exercises?.length && nextLesson && (
                         <Link 
                           to={`/lessons/${nextLesson.id}`}
                           className="bg-gradient-primary"
@@ -313,7 +363,7 @@ const LessonDetail = () => {
                       <h2 style={{ margin: 0 }}>Révision des erreurs</h2>
                     </div>
 
-                    {lesson.exercises?.map((ex: any, idx: number) => {
+                    {currentContent.exercises?.map((ex: any, idx: number) => {
                       const isCorrect = userAnswers[idx] === ex.answer;
                       return (
                         <div key={idx} style={{ 
@@ -374,7 +424,7 @@ const LessonDetail = () => {
               </>
             ) : (
               <form onSubmit={handleQuizSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                {lesson.exercises?.map((ex: any, idx: number) => (
+                {currentContent.exercises?.map((ex: any, idx: number) => (
                   <div key={idx} style={{ background: 'var(--pk-surface)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--pk-border)' }}>
                     <h3 style={{ marginBottom: '1rem', color: 'var(--pk-text-primary)' }}>{idx + 1}. {ex.question}</h3>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>

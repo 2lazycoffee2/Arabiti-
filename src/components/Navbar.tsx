@@ -8,12 +8,15 @@ import {
   Type, 
   Sun, 
   Moon, 
-  User
+  User,
+  Eye,
+  EyeOff,
+  Edit3
 } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { theme, setTheme, userName } = useAppContext();
+  const { theme, setTheme, userName, showTashkeel, setShowTashkeel, showRomanization, setShowRomanization } = useAppContext();
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path ? 'active' : '';
@@ -22,6 +25,7 @@ const Navbar = () => {
     { path: '/lessons', icon: Book, label: 'Cours' },
     { path: '/stories', icon: BookOpen, label: 'Histoires' },
     { path: '/vocabulary', icon: Brain, label: 'Vocab' },
+    { path: '/conjugaison', icon: Edit3, label: 'Conjugaison' },
     { path: '/alphabet', icon: Type, label: 'Alphabet' },
   ];
 
@@ -61,6 +65,24 @@ const Navbar = () => {
           </div>
 
           <div className="nav-actions desktop-only">
+            <button 
+              className="action-btn" 
+              onClick={() => setShowTashkeel(!showTashkeel)}
+              title={showTashkeel ? "Masquer les tachkils" : "Afficher les tachkils"}
+            >
+              {showTashkeel ? <Eye size={20} /> : <EyeOff size={20} />}
+              <span>Tachkils</span>
+            </button>
+            <button 
+              className={`action-btn romanization-btn ${showRomanization ? 'active' : 'romanization-off'}`}
+              onClick={() => setShowRomanization(!showRomanization)}
+              title={showRomanization ? "Masquer la romanisation" : "Afficher la romanisation"}
+            >
+              <span className="icon-slash-wrapper">
+                <Type size={20} />
+              </span>
+              <span>Romanisation</span>
+            </button>
             <button 
               className="action-btn" 
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

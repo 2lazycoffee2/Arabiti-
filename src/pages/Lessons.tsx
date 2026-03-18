@@ -62,125 +62,81 @@ const Lessons = () => {
 
               {isExpanded && (
                 <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1rem', padding: '2rem' }}>
-                  {Object.values(
-                    filteredLessons.reduce((acc, lesson) => {
-                      const match = lesson.id.match(/^(l\\d+)/);
-                      const groupKey = match ? match[1] : lesson.id;
+                  {filteredLessons
+                    .slice()
+                    .sort((a, b) => {
+                      // Extraire le numéro de leçon pour le tri
+                      const matchA = a.id.match(/-l(\d+)$/);
+                      const matchB = b.id.match(/-l(\d+)$/);
+                      const numA = matchA ? parseInt(matchA[1]) : 0;
+                      const numB = matchB ? parseInt(matchB[1]) : 0;
+                      return numA - numB;
+                    })
+                    .map((lesson) => {
+                      const isCompleted = completedLessons.includes(lesson.id);
 
-                      if (!acc[groupKey]) {
-                        acc[groupKey] = { parent: lesson, children: [] as typeof filteredLessons };
-                      }
-
-                      if (groupKey === lesson.id) {
-                        acc[groupKey].parent = lesson;
-                      } else {
-                        acc[groupKey].children.push(lesson);
-                      }
-
-                      return acc;
-                    }, {} as Record<string, { parent: (typeof filteredLessons)[number]; children: (typeof filteredLessons) }>)
-                  ).map(({ parent, children }) => {
-                    const allLessons = [parent, ...children].filter(Boolean);
-                    const allCompleted = allLessons.every(l => completedLessons.includes(l.id));
-                    const parentCompleted = completedLessons.includes(parent.id);
-
-                    return (
-                      <div
-                        key={parent.id}
-                        className={`lesson-card ${allCompleted ? 'completed' : ''}`}
-                        style={{
-                          display: 'flex',
-                          flexDirection: 'column',
-                          justifyContent: 'space-between',
-                          padding: '1.5rem',
-                          borderRadius: '12px',
-                          background: allCompleted ? 'rgba(16, 185, 129, 0.05)' : 'rgba(0,0,0,0.2)',
-                          border: allCompleted ? '1px solid rgba(16, 185, 129, 0.2)' : '1px solid rgba(255,255,255,0.05)'
-                        }}
-                      >
-                        <Link
-                          to={`/lessons/${parent.id}`}
-                          className="lesson-main-link"
-                          style={{ 
+                      return (
+                        <div
+                          key={lesson.id}
+                          className={`lesson-card ${isCompleted ? 'completed' : ''}`}
+                          style={{
                             display: 'flex',
                             flexDirection: 'column',
-                            textDecoration: 'none',
-                            gap: '0.5rem'
+                            justifyContent: 'space-between',
+                            padding: '1.5rem',
+                            borderRadius: '12px',
+                            background: isCompleted ? 'rgba(16, 185, 129, 0.05)' : 'rgba(0,0,0,0.2)',
+                            border: isCompleted ? '1px solid rgba(16, 185, 129, 0.2)' : '1px solid rgba(255,255,255,0.05)'
                           }}
                         >
-                          <h3
-                            style={{
+                          <Link
+                            to={`/lessons/${lesson.id}`}
+                            className="lesson-main-link"
+                            style={{ 
                               display: 'flex',
-                              alignItems: 'center',
-                              gap: '0.8rem',
-                              color: parentCompleted ? '#10b981' : 'var(--pk-text-primary)',
-                              margin: 0
+                              flexDirection: 'column',
+                              textDecoration: 'none',
+                              gap: '0.5rem'
                             }}
                           >
-                            <PlayCircle size={20} color={parentCompleted ? '#10b981' : 'var(--pk-primary)'} />
-                            {parent.title}
-                            {parentCompleted && <CheckCircle size={16} color="#10b981" style={{ marginLeft: 'auto' }} />}
-                          </h3>
-                          <p
+                            <h3
+                              style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '0.8rem',
+                                color: isCompleted ? '#10b981' : 'var(--pk-text-primary)',
+                                margin: 0
+                              }}
+                            >
+                              <PlayCircle size={20} color={isCompleted ? '#10b981' : 'var(--pk-primary)'} />
+                              {lesson.title}
+                              {isCompleted && <CheckCircle size={16} color="#10b981" style={{ marginLeft: 'auto' }} />}
+                            </h3>
+                            <p
+                              style={{
+                                color: 'var(--pk-text-secondary)',
+                                fontSize: '0.85rem',
+                                lineHeight: '1.5',
+                                margin: 0
+                              }}
+                            >
+                              {lesson.description}
+                            </p>
+                          </Link>
+
+                          <div
                             style={{
-                              color: 'var(--pk-text-secondary)',
-                              fontSize: '0.85rem',
-                              lineHeight: '1.5',
-                              margin: 0
+                              marginTop: '1.2rem',
+                              fontSize: '0.8rem',
+                              color: isCompleted ? '#10b981' : 'var(--pk-primary)',
+                              fontWeight: 'bold'
                             }}
                           >
-                            {parent.description}
-                          </p>
-                        </Link>
-
-                        {children.length > 0 && (
-                          <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            {children
-                              .slice()
-                              .sort((a, b) => a.id.localeCompare(b.id))
-                              .map((child) => {
-                                const isChildCompleted = completedLessons.includes(child.id);
-                                return (
-                                  <Link
-                                    key={child.id}
-                                    to={`/lessons/${child.id}`}
-                                    style={{
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                      justifyContent: 'space-between',
-                                      gap: '0.5rem',
-                                      fontSize: '0.8rem',
-                                      padding: '0.4rem 0.6rem',
-                                      borderRadius: '8px',
-                                      textDecoration: 'none',
-                                      background: 'rgba(0,0,0,0.25)',
-                                      color: isChildCompleted ? '#10b981' : 'var(--pk-text-secondary)'
-                                    }}
-                                  >
-                                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                                      <PlayCircle size={14} color={isChildCompleted ? '#10b981' : 'var(--pk-primary)'} />
-                                      {child.title}
-                                    </span>
-                                    {isChildCompleted && <CheckCircle size={14} color="#10b981" />}
-                                  </Link>
-                                );
-                              })}
+                            {isCompleted ? 'Leçon terminée' : 'Commencer cette leçon →'}
                           </div>
-                        )}
-
-                        <div
-                          style={{
-                            marginTop: '1.2rem',
-                            fontSize: '0.8rem',
-                            color: allCompleted ? '#10b981' : 'var(--pk-primary)',
-                            fontWeight: 'bold'
-                          }}
-                        >
-                          {allCompleted ? 'Bloc de leçons terminé' : 'Commencer ou continuer ce bloc →'}
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
                 </div>
               )}
             </section>
