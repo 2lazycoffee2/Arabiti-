@@ -16,7 +16,7 @@ function App() {
       <Router>
         <div className="app-container" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
           <Navbar />
-          <main style={{ flex: 1, padding: '2rem', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+          <main style={{ flex: 1, padding: 'clamp(1rem, 4vw, 2rem)', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/alphabet" element={<Alphabet />} />

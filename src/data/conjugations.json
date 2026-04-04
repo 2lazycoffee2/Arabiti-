@@ -45,6 +45,26 @@
           "3rd_m": "يَكْتُبُونَ - ils écrivent",
           "3rd_f": "يَكْتُبْنَ - elles écrivent"
         }
+      },
+      "future": {
+        "singular": {
+          "1st": "سَأَكْتُبُ - je vais écrire",
+          "2nd_m": "سَتَكْتُبُ - tu vas écrire (m)",
+          "2nd_f": "سَتَكْتُبِينَ - tu vas écrire (f)",
+          "3rd_m": "سَيَكْتُبُ - il va écrit",
+          "3rd_f": "سَتَكْتُبُ - elle va écrit"
+        },
+        "dual": {
+          "2nd": "سَتَكْتُبَانِ - vous allez écrire (2)",
+          "3rd": "سَيَكْتُبَانِ - ils/elles vont écrire (2)"
+        },
+        "plural": {
+          "1st": "سَنَكْتُبُ - nous allons écrire",
+          "2nd_m": "سَتَكْتُبُونَ - vous allez écrire (m)",
+          "2nd_f": "سَتَكْتُبْنَ - vous allez écrire (f)",
+          "3rd_m": "سَيَكْتُبُونَ - ils vont écrire",
+          "3rd_f": "سَيَكْتُبْنَ - elles vont écrire"
+        }
       }
     }
   },
@@ -53,7 +73,7 @@
     "arabic": "ذَهَبَ",
     "root": "ذ-ه-ب",
     "translation": "aller",
-    "type": "hollow",
+    "type": "sound",
     "conjugations": {
       "past": {
         "singular": {
@@ -93,6 +113,26 @@
           "2nd_f": "تَذْهَبْنَ - vous allez (f)",
           "3rd_m": "يَذْهَبُونَ - ils vont",
           "3rd_f": "يَذْهَبْنَ - elles vont"
+        }
+      },
+      "future": {
+        "singular": {
+          "1st": "سَأَذْهَبُ - je vais",
+          "2nd_m": "سَتَذْهَبُ - tu vas vas (m)",
+          "2nd_f": "سَتَذْهَبِينَ - tu vas vas (f)",
+          "3rd_m": "سَيَذْهَبُ - il va va",
+          "3rd_f": "سَتَذْهَبُ - elle va va"
+        },
+        "dual": {
+          "2nd": "سَتَذْهَبَانِ - vous allez allez (2)",
+          "3rd": "سَيَذْهَبَانِ - ils/elles vont vont (2)"
+        },
+        "plural": {
+          "1st": "سَنَذْهَبُ - nous allons allons",
+          "2nd_m": "سَتَذْهَبُونَ - vous allez allez (m)",
+          "2nd_f": "سَتَذْهَبْنَ - vous allez allez (f)",
+          "3rd_m": "سَيَذْهَبُونَ - ils vont vont",
+          "3rd_f": "سَيَذْهَبْنَ - elles vont vont"
         }
       }
     }
@@ -143,6 +183,26 @@
           "3rd_m": "يَسْمَعُونَ - ils entendent",
           "3rd_f": "يَسْمَعْنَ - elles entendent"
         }
+      },
+      "future": {
+        "singular": {
+          "1st": "سَأَسْمَعُ - je vais entendrere",
+          "2nd_m": "سَتَسْمَعُ - tu vas entendrere (m)",
+          "2nd_f": "سَتَسْمَعِينَ - tu vas entendrere (f)",
+          "3rd_m": "سَيَسْمَعُ - il va entendre",
+          "3rd_f": "سَتَسْمَعُ - elle va entendre"
+        },
+        "dual": {
+          "2nd": "سَتَسْمَعَانِ - vous allez entendreez (2)",
+          "3rd": "سَيَسْمَعَانِ - ils/elles vont entendreent (2)"
+        },
+        "plural": {
+          "1st": "سَنَسْمَعُ - nous allons entendreons",
+          "2nd_m": "سَتَسْمَعُونَ - vous allez entendreez (m)",
+          "2nd_f": "سَتَسْمَعْنَ - vous allez entendreez (f)",
+          "3rd_m": "سَيَسْمَعُونَ - ils vont entendreent",
+          "3rd_f": "سَيَسْمَعْنَ - elles vont entendreent"
+        }
       }
     }
   },
@@ -192,6 +252,26 @@
           "3rd_m": "يَفْتَحُونَ - ils ouvrent",
           "3rd_f": "يَفْتَحْنَ - elles ouvrent"
         }
+      },
+      "future": {
+        "singular": {
+          "1st": "سَأَفْتَحُ - je vais ouvrir",
+          "2nd_m": "سَتَفْتَحُ - tu vas ouvrir (m)",
+          "2nd_f": "سَتَفْتَحِينَ - tu vas ouvrir (f)",
+          "3rd_m": "سَيَفْتَحُ - il va ouvrir",
+          "3rd_f": "سَتَفْتَحُ - elle va ouvrir"
+        },
+        "dual": {
+          "2nd": "سَتَفْتَحَانِ - vous allez ouvrirz (2)",
+          "3rd": "سَيَفْتَحَانِ - ils/elles vont ouvrirnt (2)"
+        },
+        "plural": {
+          "1st": "سَنَفْتَحُ - nous allons ouvrir",
+          "2nd_m": "سَتَفْتَحُونَ - vous allez ouvrirz (m)",
+          "2nd_f": "سَتَفْتَحْنَ - vous allez ouvrirz (f)",
+          "3rd_m": "سَيَفْتَحُونَ - ils vont ouvrirnt",
+          "3rd_f": "سَيَفْتَحْنَ - elles vont ouvrirnt"
+        }
       }
     }
   },
@@ -240,6 +320,26 @@
           "2nd_f": "تَقُلْنَ - vous dites (f)",
           "3rd_m": "يَقُولُونَ - ils disent",
           "3rd_f": "يَقُلْنَ - elles disent"
+        }
+      },
+      "future": {
+        "singular": {
+          "1st": "سَأَقُولُ - je dire",
+          "2nd_m": "سَتَقُولُ - tu vas dire (m)",
+          "2nd_f": "سَتَقُولِينَ - tu vas dire (f)",
+          "3rd_m": "سَيَقُولُ - il va dire",
+          "3rd_f": "سَتَقُولُ - elle va dire"
+        },
+        "dual": {
+          "2nd": "سَتَقُولَانِ - vous allez direes (2)",
+          "3rd": "سَيَقُولَانِ - ils/elles vont direent (2)"
+        },
+        "plural": {
+          "1st": "سَنَقُولُ - nous allons direons",
+          "2nd_m": "سَتَقُولُونَ - vous allez direes (m)",
+          "2nd_f": "سَتَقُلْنَ - vous allez direes (f)",
+          "3rd_m": "سَيَقُولُونَ - ils vont direent",
+          "3rd_f": "سَيَقُلْنَ - elles vont direent"
         }
       }
     }

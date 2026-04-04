@@ -6,6 +6,11 @@ import vocabData from '../data/vocabulary.json';
 import conjugationsData from '../data/conjugations.json';
 import { Award, CheckCircle, TrendingUp, Settings, Sun, Type, Globe, AlertTriangle, Trash2, X, Calendar, Clock, Target, Languages } from 'lucide-react';
 
+interface VocabItem {
+  id: string;
+  category: string;
+}
+
 const Profile = () => {
   const { 
     completedLessons, 
@@ -19,6 +24,7 @@ const Profile = () => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   
   const acquiredWordsCount = JSON.parse(localStorage.getItem('parallel-arabic-acquired') || '[]').length;
+  const acquiredVerbsCount = JSON.parse(localStorage.getItem('parallel-arabic-verbs') || '[]').length;
   
   // Get detailed statistics
   const getDetailedStats = () => {
@@ -51,19 +57,26 @@ const Profile = () => {
   };
   
   const calculateVocabMastery = () => {
-    const acquired = JSON.parse(localStorage.getItem('parallel-arabic-acquired') || '[]');
+    const acquired: string[] = JSON.parse(localStorage.getItem('parallel-arabic-acquired') || '[]');
     const total = vocabData.length;
-    const beginner = acquired.filter((word: any) => {
-      const wordData = vocabData.find((v: any) => v.id === word);
-      return wordData && ['Salutations', 'Bases'].includes(wordData.category);
+    
+    // Catégorisation pédagogique pour les niveaux de vocabulaire
+    const beginnerCategories = ['Salutations', 'Bases', 'Nombres', 'Couleurs', 'Temps'];
+    const intermediateCategories = ['Présentation', 'Lieux', 'Nourriture', 'Boissons', 'Famille', 'Adjectifs', 'Nature', 'Transports'];
+    
+    const beginner = acquired.filter((wordId: string) => {
+      const wordData = (vocabData as VocabItem[]).find(v => v.id === wordId);
+      return wordData && beginnerCategories.includes(wordData.category);
     }).length;
-    const intermediate = acquired.filter((word: any) => {
-      const wordData = vocabData.find((v: any) => v.id === word);
-      return wordData && ['Présentation', 'Lieux'].includes(wordData.category);
+    
+    const intermediate = acquired.filter((wordId: string) => {
+      const wordData = (vocabData as VocabItem[]).find(v => v.id === wordId);
+      return wordData && intermediateCategories.includes(wordData.category);
     }).length;
-    const advanced = acquired.filter((word: any) => {
-      const wordData = vocabData.find((v: any) => v.id === word);
-      return wordData && !['Salutations', 'Bases', 'Présentation', 'Lieux'].includes(wordData.category);
+    
+    const advanced = acquired.filter((wordId: string) => {
+      const wordData = (vocabData as VocabItem[]).find(v => v.id === wordId);
+      return wordData && !beginnerCategories.includes(wordData.category) && !intermediateCategories.includes(wordData.category);
     }).length;
     
     return { beginner, intermediate, advanced, total };
@@ -176,6 +189,30 @@ const Profile = () => {
                 >
                   🌸 Pink Sombre
                 </button>
+                <button 
+                  onClick={() => setTheme('green-light')}
+                  className="glass-panel"
+                  style={{ 
+                    flex: '1 1 45%', padding: '0.6rem', fontSize: '0.8rem', borderRadius: '10px',
+                    background: theme === 'green-light' ? '#10b981' : 'var(--pk-surface-solid)',
+                    color: theme === 'green-light' ? 'white' : 'var(--pk-text-primary)',
+                     border: theme === 'green-light' ? 'none' : '1px solid rgba(16, 185, 129, 0.2)'
+                  }}
+                >
+                  🌿 Green Clair
+                </button>
+                <button 
+                  onClick={() => setTheme('green-dark')}
+                  className="glass-panel"
+                  style={{ 
+                    flex: '1 1 45%', padding: '0.6rem', fontSize: '0.8rem', borderRadius: '10px',
+                    background: theme === 'green-dark' ? '#059669' : 'var(--pk-surface-solid)',
+                    color: theme === 'green-dark' ? 'white' : 'var(--pk-text-primary)',
+                    border: theme === 'green-dark' ? 'none' : '1px solid rgba(16, 185, 129, 0.2)'
+                  }}
+                >
+                  🌿 Green Sombre
+                </button>
               </div>
             </div>
           </div>
@@ -221,6 +258,16 @@ const Profile = () => {
                 <div style={{ width: `${vocabPercent}%`, height: '100%', background: 'var(--pk-accent)', transition: 'width 1s ease' }} />
               </div>
             </div>
+
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
+                <span>Conjugaison</span>
+                <span style={{ fontWeight: 'bold' }}>{Math.round((acquiredVerbsCount / totalConjugations) * 100) || 0}%</span>
+              </div>
+              <div style={{ width: '100%', height: '8px', background: 'var(--pk-surface-solid)', borderRadius: '10px', overflow: 'hidden' }}>
+                <div style={{ width: `${Math.round((acquiredVerbsCount / totalConjugations) * 100) || 0}%`, height: '100%', background: '#ec4899', transition: 'width 1s ease' }} />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -251,8 +298,8 @@ const Profile = () => {
             
             <div style={{ textAlign: 'center', padding: '1rem', background: 'var(--pk-surface-solid)', borderRadius: '12px' }}>
               <Languages size={24} style={{ margin: '0 auto 0.5rem', color: '#ec4899' }} />
-              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--pk-text-primary)' }}>{totalConjugations}</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>Verbes à conjuguer</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--pk-text-primary)' }}>{acquiredVerbsCount}/{totalConjugations}</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)' }}>Verbes acquis</div>
             </div>
           </div>
           

@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 
-type Theme = 'light' | 'dark' | 'pink' | 'pink-light';
+type Theme = 'light' | 'dark' | 'pink' | 'pink-light' | 'green-light' | 'green-dark';
 
 interface AppContextType {
   showTashkeel: boolean;
@@ -35,9 +35,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
 
   // Theme
   const [theme, setTheme] = useState<Theme>(() => {
-    const saved = localStorage.getItem('pa-theme') as Theme;
-    if (saved) return saved;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return (localStorage.getItem('pa-theme') as Theme) || 'dark';
   });
 
   // Progress

@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import { useAppContext } from '../context/AppContext';
 import conjugationsData from '../data/conjugations.json';
 import { 
@@ -13,6 +13,7 @@ import {
   RotateCcw
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { transliterateArabic } from '../utils/arabic';
 
 interface Conjugation {
   id: string;
@@ -42,9 +43,9 @@ interface Conjugation {
 
 // Constantes pour les niveaux
 const LEVELS = {
-  easy: { id: 'easy', label: 'Facile', description: 'Verbes de 3 lettres', color: '#10b981', questions: 10 },
-  medium: { id: 'medium', label: 'Intermédiaire', description: 'Verbes de 4 lettres', color: '#f59e0b', questions: 15 },
-  hard: { id: 'hard', label: 'Difficile', description: 'Verbes de 5+ lettres', color: '#ef4444', questions: 20 }
+  easy: { id: 'easy', label: 'Facile', description: 'Verbes réguliers (passé/présent)', color: '#10b981', questions: 10 },
+  medium: { id: 'medium', label: 'Intermédiaire', description: 'Verbes creux (passé/présent)', color: '#f59e0b', questions: 15 },
+  hard: { id: 'hard', label: 'Difficile', description: 'Verbes complexes & Futur', color: '#ef4444', questions: 20 }
 };
 
 // Constantes pour les temps
@@ -56,11 +57,21 @@ const TENSES = {
 
 // Pronoms arabes avec leur phonétique
 const PERSONS = {
+  // Singular
   '1st': { label: '1ère personne', pronoun: 'أنا', phonetic: 'anā', translation: 'je' },
   '2nd_m': { label: '2ème personne (m)', pronoun: 'أنتَ', phonetic: 'anta', translation: 'tu (m)' },
   '2nd_f': { label: '2ème personne (f)', pronoun: 'أنتِ', phonetic: 'anti', translation: 'tu (f)' },
   '3rd_m': { label: '3ème personne (m)', pronoun: 'هو', phonetic: 'huwa', translation: 'il' },
-  '3rd_f': { label: '3ème personne (f)', pronoun: 'هي', phonetic: 'hiya', translation: 'elle' }
+  '3rd_f': { label: '3ème personne (f)', pronoun: 'هي', phonetic: 'hiya', translation: 'elle' },
+  // Dual
+  '2nd_dual': { label: '2ème pers. (d)', pronoun: 'أنتما', phonetic: 'antumā', translation: 'vous (2)' },
+  '3rd_dual': { label: '3ème pers. (d)', pronoun: 'هما', phonetic: 'humā', translation: 'ils/elles (2)' },
+  // Plural
+  '1st_pl': { label: '1ère pers. (pl)', pronoun: 'نحن', phonetic: 'naḥnu', translation: 'nous' },
+  '2nd_m_pl': { label: '2ème pers. (m, pl)', pronoun: 'أنتم', phonetic: 'antum', translation: 'vous (m, pl)' },
+  '2nd_f_pl': { label: '2ème pers. (f, pl)', pronoun: 'أنتن', phonetic: 'antunna', translation: 'vous (f, pl)' },
+  '3rd_m_pl': { label: '3ème pers. (m, pl)', pronoun: 'هم', phonetic: 'hum', translation: 'ils (m, pl)' },
+  '3rd_f_pl': { label: '3ème pers. (f, pl)', pronoun: 'هن', phonetic: 'hunna', translation: 'elles (f, pl)' }
 };
 
 type GameMode = 'menu' | 'flashcard' | 'quiz';
@@ -78,61 +89,6 @@ const removeTashkeel = (text: string): string => {
   return text.replace(/[\u0617-\u061A\u064B-\u0652]/g, '');
 };
 
-// Fonction pour transliterator l'arabe en phonétique avec voyelles
-const transliterateArabic = (text: string): string => {
-  if (!text) return '';
-  
-  // Mapping des lettres arabes
-  const arabicToLatin: Record<string, string> = {
-    'ا': 'ā', 'أ': 'a', 'إ': 'i', 'آ': 'ā', 'ء': "'",
-    'ب': 'b', 'ت': 't', 'ث': 'th', 'ج': 'j', 'ح': 'ḥ',
-    'خ': 'kh', 'د': 'd', 'ذ': 'dh', 'ر': 'r', 'ز': 'z',
-    'س': 's', 'ش': 'sh', 'ص': 'ṣ', 'ض': 'ḍ', 'ط': 'ṭ',
-    'ظ': 'ẓ', 'ع': "'", 'غ': 'gh', 'ف': 'f', 'ق': 'q',
-    'ك': 'k', 'ل': 'l', 'م': 'm', 'ن': 'n', 'ه': 'h',
-    'و': 'w', 'ي': 'y', 'ى': 'ā', 'ة': 'h', 'ئ': "'",
-    'ؤ': "'", 'ٱ': 'a', 'ٳ': 'ī'
-  };
-  
-  // Mapping des voyelles courtes (tashkeel)
-  const vowelMap: Record<string, string> = {
-    'َ': 'a',  // fatha
-    'ِ': 'i',  // kasra
-    'ُ': 'u',  // damma
-    'ْ': '',   // sukun (pas de voyelle)
-    'ّ': '',   // shadda (doubler la consonne - géré séparément)
-    'ً': 'an', // fathatan
-    'ٍ': 'in', // kasratan
-    'ٌ': 'un'  // dammatan
-  };
-  
-  let result = '';
-  const chars = text.split('');
-  
-  for (let i = 0; i < chars.length; i++) {
-    const char = chars[i];
-    
-    // Si c'est une voyelle courte, l'ajouter
-    if (vowelMap[char] !== undefined) {
-      result += vowelMap[char];
-      continue;
-    }
-    
-    // Si c'est une lettre arabe, la translittérer
-    if (arabicToLatin[char]) {
-      // Vérifier si la lettre suivante est un shadda (doubler)
-      if (chars[i + 1] === 'ّ') {
-        result += arabicToLatin[char] + arabicToLatin[char];
-        i++; // sauter le shadda
-      } else {
-        result += arabicToLatin[char];
-      }
-    }
-  }
-  
-  return result;
-};
-
 const Conjugaison = () => {
   const { showTashkeel, showRomanization } = useAppContext();
   
@@ -145,8 +101,10 @@ const Conjugaison = () => {
   const [currentVerbDisplay, setCurrentVerbDisplay] = useState<Conjugation | null>(null);
   const currentTenseRef = useRef<'past' | 'present' | 'future'>('past');
   const [currentTenseDisplay, setCurrentTenseDisplay] = useState<'past' | 'present' | 'future'>('past');
-  const currentPersonRef = useRef<string>('1st');
-  const [currentPersonDisplay, setCurrentPersonDisplay] = useState<string>('1st');
+  
+  type PersonRef = { num: 'singular'|'dual'|'plural', person: string, mapKey: string };
+  const currentPersonRef = useRef<PersonRef | null>(null);
+  const [currentPersonDisplay, setCurrentPersonDisplay] = useState<PersonRef | null>(null);
   
   // États pour le quiz
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
@@ -176,14 +134,11 @@ const Conjugaison = () => {
     return (conjugationsData as Conjugation[]).filter(verb => {
       switch (level) {
         case 'easy':
-          // Verbes sonores (réguliers) = faciles
-          return verb.type === 'sound';
+          return verb.type === 'sound'; // faciles
         case 'medium':
-          // Verbes creux (hollow) = intermédiaires
-          return verb.type === 'hollow';
+          return verb.type !== 'sound'; // (creux, failes) = intermédiaires
         case 'hard':
-          // Verbes faibles (defective) ou avec futur = difficiles
-          return verb.type === 'defective' || verb.type === 'weak' || !!verb.conjugations.future;
+          return true; // Tous les verbes pour le niveau Difficile qui active le futur
         default:
           return true;
       }
@@ -208,19 +163,29 @@ const Conjugaison = () => {
     }
 
     const tense = availableTenses[Math.floor(Math.random() * availableTenses.length)];
-    const persons = Object.keys(PERSONS);
-    const person = persons[Math.floor(Math.random() * persons.length)];
+    
+    const availablePaths = (['singular', 'dual', 'plural'] as const).flatMap(num => {
+      const forms = verb.conjugations[tense]?.[num];
+      if (!forms) return [];
+      return Object.keys(forms).map(p => ({ num, person: p }));
+    });
+    
+    const randomPath = availablePaths[Math.floor(Math.random() * availablePaths.length)];
+    if (!randomPath) return; // Fallback
+    
+    const mapKey = randomPath.num === 'singular' ? randomPath.person : randomPath.num === 'dual' ? `${randomPath.person}_dual` : `${randomPath.person}_pl`;
+    const personObj: PersonRef = { num: randomPath.num, person: randomPath.person, mapKey };
 
     // Mettre à jour les refs
     currentVerbRef.current = verb;
     currentTenseRef.current = tense;
-    currentPersonRef.current = person;
+    currentPersonRef.current = personObj;
     
     // Mettre à jour l'affichage
     updateDisplayFromRefs();
     
     // Générer les options
-    const options = generateQuizOptions(verb, tense, person);
+    const options = generateQuizOptions(verb, tense, personObj);
     setQuizOptions(options);
     
     setSelectedAnswer('');
@@ -254,49 +219,42 @@ const Conjugaison = () => {
   // Obtenir la réponse correcte
   const getCurrentAnswer = useCallback((): string => {
     const verb = currentVerbRef.current;
-    if (!verb) return '';
+    const p = currentPersonRef.current;
+    if (!verb || !p) return '';
     const conjugation = verb.conjugations[currentTenseRef.current];
-    return conjugation?.singular?.[currentPersonRef.current] || '';
+    return conjugation?.[p.num]?.[p.person] || '';
   }, []);
 
-  // Générer les options du quiz - mauvaises réponses du même temps seulement
-  const generateQuizOptions = (verb: Conjugation, tense: 'past' | 'present' | 'future', person: string): string[] => {
+  // Générer les options du quiz - même verbe, même temps, pronoms différents
+  const generateQuizOptions = (verb: Conjugation, tense: 'past' | 'present' | 'future', pObj: PersonRef): string[] => {
     if (!verb) return [];
     
     const conjugation = verb.conjugations[tense];
-    const correctAnswer = conjugation?.singular?.[person] || '';
+    const correctAnswer = conjugation?.[pObj.num]?.[pObj.person] || '';
     if (!correctAnswer) return [];
     
     const options = [correctAnswer];
     const wrongOptions: string[] = [];
     
-    // Récupérer uniquement les conjugaisons du même temps (pour plus de cohérence)
-    (conjugationsData as Conjugation[]).forEach((v) => {
-      const conj = v.conjugations[tense];
-      if (conj?.singular) {
-        Object.values(conj.singular).forEach((val) => {
-          if (val && val !== correctAnswer) {
-            wrongOptions.push(val as string);
-          }
-        });
-      }
-      // Ajouter aussi les formes plurielles du même temps pour plus de variété
-      if (conj?.plural) {
-        Object.values(conj.plural).forEach((val) => {
-          if (val && val !== correctAnswer) {
+    // Ajouter les autres personnes de ce même verbe et temps, en parcourant numéros applicables
+    (['singular', 'dual', 'plural'] as const).forEach(numStr => {
+      const numForms = conjugation?.[numStr];
+      if (numForms) {
+        Object.entries(numForms).forEach(([p, val]) => {
+          if ((numStr !== pObj.num || p !== pObj.person) && val) {
             wrongOptions.push(val as string);
           }
         });
       }
     });
     
-    // Ajouter 2 mauvaises réponses aléatoires
+    // Prendre 2 mauvaises réponses aléatoires parmi ce même verbe/temps
     const shuffled = wrongOptions.sort(() => Math.random() - 0.5);
     for (let i = 0; i < 2 && i < shuffled.length; i++) {
       options.push(shuffled[i]);
     }
     
-    return options.filter(opt => opt && opt.trim() !== '').sort(() => Math.random() - 0.5);
+    return Array.from(new Set(options.filter(opt => opt && opt.trim() !== ''))).sort(() => Math.random() - 0.5);
   };
 
   // Gestion de la réponse
@@ -350,6 +308,14 @@ const Conjugaison = () => {
     });
   }, []);
 
+  // Charger les verbes maîtrisés depuis le localStorage
+  useEffect(() => {
+    try {
+      const stored = JSON.parse(localStorage.getItem('parallel-arabic-verbs') || '[]');
+      setMasteredVerbs(new Set(stored));
+    } catch(e) {}
+  }, []);
+
   // Marquer comme maîtrisé
   const toggleMastered = useCallback((verbId: string) => {
     setMasteredVerbs(prev => {
@@ -359,6 +325,7 @@ const Conjugaison = () => {
       } else {
         newSet.add(verbId);
       }
+      localStorage.setItem('parallel-arabic-verbs', JSON.stringify(Array.from(newSet)));
       return newSet;
     });
   }, []);
@@ -535,98 +502,56 @@ const Conjugaison = () => {
               Racine: {verb.root}
             </span>
             <span style={{ background: 'var(--pk-surface-solid)', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.85rem' }}>
-              {getRootLength(verb)} lettres
+              {verb.root.split('-').length} lettres
             </span>
           </div>
         </div>
 
-        {/* Flash Cards des conjugaisons */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem' }}>
-          {Object.entries(verb.conjugations.past.singular).map(([person, conjugation]) => {
-            const personInfo = PERSONS[person as keyof typeof PERSONS];
-            const isFlipped = flippedCards.has(`past-${person}`);
-            const arabicConj = extractArabicOnly(conjugation);
+        {/* Sélecteur de temps pour le mode Flashcard */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '2rem' }}>
+          {(['past', 'present', 'future'] as const).map(t => {
+            // Vérifier si le futur existe pour ce verbe avant de l'afficher
+            if (t === 'future' && !verb.conjugations.future) return null;
             
             return (
-              <div 
-                key={`past-${person}`}
-                onClick={() => toggleFlip(`past-${person}`)}
-                style={{ 
-                  perspective: '1000px',
+              <button
+                key={t}
+                onClick={() => setCurrentTenseDisplay(t)}
+                style={{
+                  padding: '0.6rem 1.2rem',
+                  borderRadius: '20px',
+                  fontWeight: 'bold',
+                  background: currentTenseDisplay === t ? 'var(--pk-primary)' : 'var(--pk-surface)',
+                  color: currentTenseDisplay === t ? 'white' : 'var(--pk-text-secondary)',
+                  border: currentTenseDisplay === t ? 'none' : '1px solid var(--pk-border)',
                   cursor: 'pointer',
-                  height: '160px'
+                  transition: 'all 0.2s'
                 }}
               >
-                <div style={{
-                  width: '100%',
-                  height: '100%',
-                  position: 'relative',
-                  transformStyle: 'preserve-3d',
-                  transition: 'transform 0.6s',
-                  transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
-                }}>
-                  {/* Recto */}
-                  <div className="glass-panel" style={{
-                    position: 'absolute',
-                    width: '100%',
-                    height: '100%',
-                    backfaceVisibility: 'hidden',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    padding: '1rem',
-                    border: '2px solid var(--pk-primary)',
-                    borderRadius: '12px'
-                  }}>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--pk-text-secondary)', marginBottom: '0.3rem' }}>
-                      Passé
-                    </span>
-                    <span className="arabic-text" style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--pk-primary)' }}>
-                      {personInfo?.pronoun}
-                    </span>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)', marginTop: '0.3rem' }}>
-                      {personInfo?.phonetic}
-                    </span>
-                  </div>
-                  
-                  {/* Verso */}
-                  <div className="glass-panel" style={{
-                    position: 'absolute',
-                    width: '100%',
-                    height: '100%',
-                    backfaceVisibility: 'hidden',
-                    transform: 'rotateY(180deg)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    padding: '1rem',
-                    background: 'var(--pk-surface-solid)',
-                    border: '2px solid #10b981',
-                    borderRadius: '12px'
-                  }}>
-                    <span className="arabic-text" style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#10b981' }}>
-                      {showTashkeel ? arabicConj : removeTashkeel(arabicConj)}
-                    </span>
-                    <span style={{ fontSize: '0.7rem', color: 'var(--pk-text-secondary)', marginTop: '0.5rem' }}>
-                      {personInfo?.translation}
-                    </span>
-                  </div>
-                </div>
-              </div>
+                {TENSES[t].emoji} {TENSES[t].label}
+              </button>
             );
           })}
-          
-          {Object.entries(verb.conjugations.present.singular).map(([person, conjugation]) => {
-            const personInfo = PERSONS[person as keyof typeof PERSONS];
-            const isFlipped = flippedCards.has(`present-${person}`);
+        </div>
+
+        {/* Flash Cards des conjugaisons pour le temps sélectionné */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem' }}>
+          {verb.conjugations[currentTenseDisplay] && 
+            (['singular', 'dual', 'plural'] as const).flatMap((num) => {
+              const forms = verb.conjugations[currentTenseDisplay]![num] || {};
+              return Object.entries(forms).map(([personKey, conjugation]) => {
+                const mapKey = num === 'singular' ? personKey : num === 'dual' ? `${personKey}_dual` : `${personKey}_pl`;
+                return { num, personKey, mapKey, conjugation };
+              });
+            }).map(({ num, personKey, mapKey, conjugation }) => {
+            const personInfo = PERSONS[mapKey as keyof typeof PERSONS];
+            const isFlipped = flippedCards.has(`${currentTenseDisplay}-${num}-${personKey}`);
             const arabicConj = extractArabicOnly(conjugation);
             
             return (
               <div 
-                key={`present-${person}`}
-                onClick={() => toggleFlip(`present-${person}`)}
+                key={`${currentTenseDisplay}-${num}-${personKey}`}
+                onClick={() => toggleFlip(`${currentTenseDisplay}-${num}-${personKey}`)}
                 style={{ 
                   perspective: '1000px',
                   cursor: 'pointer',
@@ -652,17 +577,17 @@ const Conjugaison = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     padding: '1rem',
-                    border: '2px solid var(--pk-secondary)',
+                    border: `2px solid var(--pk-primary)`,
                     borderRadius: '12px'
                   }}>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--pk-text-secondary)', marginBottom: '0.3rem' }}>
-                      Présent
+                    <span style={{ fontSize: '0.75rem', color: 'var(--pk-text-secondary)', marginBottom: '0.3rem', textAlign: 'center' }}>
+                      {num === 'singular' ? 'Singulier' : num === 'dual' ? 'Duel' : 'Pluriel'}
                     </span>
-                    <span className="arabic-text" style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--pk-secondary)' }}>
-                      {personInfo?.pronoun}
+                    <span className="arabic-text" style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--pk-primary)' }}>
+                      {personInfo?.pronoun || '?'}
                     </span>
                     <span style={{ fontSize: '0.8rem', color: 'var(--pk-text-secondary)', marginTop: '0.3rem' }}>
-                      {personInfo?.phonetic}
+                      {personInfo?.phonetic || ''}
                     </span>
                   </div>
                   
@@ -685,8 +610,8 @@ const Conjugaison = () => {
                     <span className="arabic-text" style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#10b981' }}>
                       {showTashkeel ? arabicConj : removeTashkeel(arabicConj)}
                     </span>
-                    <span style={{ fontSize: '0.7rem', color: 'var(--pk-text-secondary)', marginTop: '0.5rem' }}>
-                      {personInfo?.translation}
+                    <span style={{ fontSize: '0.7rem', color: 'var(--pk-text-secondary)', marginTop: '0.5rem', textAlign: 'center' }}>
+                      {personInfo?.translation || ''}
                     </span>
                   </div>
                 </div>
@@ -700,11 +625,11 @@ const Conjugaison = () => {
           <button onClick={prevFlashcard} className="action-btn" style={{ padding: '1rem 2rem', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <ChevronLeft size={20} /> Précédent
           </button>
-          <button onClick={() => setFlippedCards(new Set())} className="action-btn" style={{ padding: '1rem', borderRadius: '8px' }}>
+          <button onClick={() => setFlippedCards(new Set())} className="action-btn" style={{ padding: '1rem', borderRadius: '8px', color: 'var(--pk-text-secondary)' }} title="Réinitialiser les cartes">
             <RotateCcw size={20} />
           </button>
-          <button onClick={nextFlashcard} className="bg-gradient-primary" style={{ padding: '1rem 2rem', borderRadius: '8px', color: 'white', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            Suivant <ChevronRight size={20} />
+          <button onClick={nextFlashcard} className="bg-gradient-primary" style={{ padding: '1rem 1.5rem', borderRadius: '8px', color: 'white', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+            <span>{flashcardIndex + 1}/{filteredVerbs.length} Suivant</span> <ChevronRight size={20} />
           </button>
         </div>
       </div>
@@ -712,9 +637,9 @@ const Conjugaison = () => {
   }
 
   // ===== MODE QUIZ =====
-  if (gameMode === 'quiz' && currentVerbDisplay) {
+  if (gameMode === 'quiz' && currentVerbDisplay && currentPersonDisplay) {
     const verb = currentVerbDisplay;
-    const personInfo = PERSONS[currentPersonDisplay as keyof typeof PERSONS];
+    const personInfo = PERSONS[currentPersonDisplay.mapKey as keyof typeof PERSONS];
     const tenseInfo = TENSES[currentTenseDisplay];
     
     return (

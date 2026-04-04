@@ -2,7 +2,7 @@
   {
     "id": "v1",
     "arabic": "مَرْحَبًا",
-    "transliteration": "Marhaba",
+    "transliteration": "Marḥaba",
     "translation": "Bonjour",
     "category": "Salutations",
     "mastery": 0
@@ -18,7 +18,7 @@
   {
     "id": "v3",
     "arabic": "نَعَمْ",
-    "transliteration": "Na'am",
+    "transliteration": "Na‘am",
     "translation": "Oui",
     "category": "Bases",
     "mastery": 0
@@ -50,7 +50,7 @@
   {
     "id": "v7",
     "arabic": "صَبَاحُ ٱلْخَيْرِ",
-    "transliteration": "Sabaah al-khayr",
+    "transliteration": "Ṣabāḥ al-khayr",
     "translation": "Bonjour (Matin)",
     "category": "Salutations",
     "mastery": 0
@@ -58,7 +58,7 @@
   {
     "id": "v8",
     "arabic": "كَيْفَ حَالُكَ؟",
-    "transliteration": "Kayf haaluk?",
+    "transliteration": "Kayf ḥāluk?",
     "translation": "Comment ça va ?",
     "category": "Salutations",
     "mastery": 0
@@ -82,7 +82,7 @@
   {
     "id": "v11",
     "arabic": "عَفْوًا",
-    "transliteration": "Afwan",
+    "transliteration": "‘Afwan",
     "translation": "De rien / Pardon",
     "category": "Bases",
     "mastery": 0
@@ -90,7 +90,7 @@
   {
     "id": "v12",
     "arabic": "مَعَ ٱلسَّلَامَةِ",
-    "transliteration": "Ma'a as-salaama",
+    "transliteration": "Ma‘a as-salāma",
     "translation": "Au revoir",
     "category": "Salutations",
     "mastery": 0
@@ -178,7 +178,7 @@
   {
     "id": "v23",
     "arabic": "قِطَارٌ",
-    "transliteration": "Qitaar",
+    "transliteration": "Qiṭār",
     "translation": "Train",
     "category": "Transports",
     "mastery": 0
@@ -186,7 +186,7 @@
   {
     "id": "v24",
     "arabic": "طَائِرَةٌ",
-    "transliteration": "Taa'ira",
+    "transliteration": "Ṭā'ira",
     "translation": "Avion",
     "category": "Transports",
     "mastery": 0
@@ -194,7 +194,7 @@
   {
     "id": "v25",
     "arabic": "مَطَارٌ",
-    "transliteration": "Mataar",
+    "transliteration": "Maṭār",
     "translation": "Aéroport",
     "category": "Lieux",
     "mastery": 0
@@ -218,7 +218,7 @@
   {
     "id": "v28",
     "arabic": "كَبِيرٌ",
-    "transliteration": "Kabeer",
+    "transliteration": "Kabīr",
     "translation": "Grand",
     "category": "Adjectifs",
     "mastery": 0
@@ -226,7 +226,7 @@
   {
     "id": "v29",
     "arabic": "صَغِيرٌ",
-    "transliteration": "Sagheer",
+    "transliteration": "Ṣaghīr",
     "translation": "Petit",
     "category": "Adjectifs",
     "mastery": 0
@@ -234,7 +234,7 @@
   {
     "id": "v30",
     "arabic": "جَمِيلٌ",
-    "transliteration": "Jameel",
+    "transliteration": "Jamīl",
     "translation": "Beau / Magnifique",
     "category": "Adjectifs",
     "mastery": 0
@@ -258,7 +258,7 @@
   {
     "id": "v33",
     "arabic": "سَعِيدٌ",
-    "transliteration": "Sa'eed",
+    "transliteration": "Sa‘īd",
     "translation": "Heureux",
     "category": "Émotions",
     "mastery": 0
@@ -266,7 +266,7 @@
   {
     "id": "v34",
     "arabic": "حَزِينٌ",
-    "transliteration": "Hazeen",
+    "transliteration": "Ḥazīn",
     "translation": "Triste",
     "category": "Émotions",
     "mastery": 0
@@ -362,7 +362,7 @@
   {
     "id": "v46",
     "arabic": "ذَهَبَ",
-    "transliteration": "Thahaba",
+    "transliteration": "Dhahaba",
     "translation": "Aller (Verbe)",
     "category": "Verbes",
     "mastery": 0
@@ -371,7 +371,7 @@
     "id": "v47",
     "arabic": "قَرَأَ",
     "transliteration": "Qara'a",
-    "translation": "Lire (Verbe)",
+    "translation": "Lire ",
     "category": "Verbes",
     "mastery": 0
   },
@@ -379,7 +379,7 @@
     "id": "v48",
     "arabic": "كَتَبَ",
     "transliteration": "Kataba",
-    "translation": "Écrire (Verbe)",
+    "translation": "Écrire ",
     "category": "Verbes",
     "mastery": 0
   },
@@ -675,8 +675,48 @@
     "id": "v85",
     "arabic": "بَحَثَ",
     "transliteration": "Bahatha",
-    "translation": "Chercher (Verbe)",
+    "translation": "Chercher",
     "category": "Verbes",
+    "mastery": 0
+  },
+  {
+    "id": "v86",
+    "arabic": "طَاجِين",
+    "transliteration": "Tajin",
+    "translation": "Tajine",
+    "category": "Nourriture",
+    "mastery": 0
+  },
+  {
+    "id": "v87",
+    "arabic": "كُسْكُس",
+    "transliteration": "Kuskus",
+    "translation": "Couscous",
+    "category": "Nourriture",
+    "mastery": 0
+  },
+  {
+    "id": "v88",
+    "arabic": "دَرَّاجَة",
+    "transliteration": "Darraja",
+    "translation": "Vélo",
+    "category": "Transports",
+    "mastery": 0
+  },
+  {
+    "id": "v89",
+    "arabic": "حَافِلَة",
+    "transliteration": "Hafila",
+    "translation": "Bus",
+    "category": "Transports",
+    "mastery": 0
+  },
+  {
+    "id": "v90",
+    "arabic": "سَفِينَة",
+    "transliteration": "Safina",
+    "translation": "Bateau",
+    "category": "Transports",
     "mastery": 0
   }
 ]

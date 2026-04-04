@@ -55,7 +55,7 @@
     "initial": "ثـ",
     "medial": "ـثـ",
     "final": "ـث",
-    "pronunciation": "th (think)",
+    "pronunciation": "th (comme 'think')",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -79,7 +79,7 @@
     "initial": "حـ",
     "medial": "ـحـ",
     "final": "ـح",
-    "pronunciation": "H (forte)",
+    "pronunciation": "ḥ (très expiré/fort)",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -115,7 +115,7 @@
     "initial": "ذ",
     "medial": "ـذ",
     "final": "ـذ",
-    "pronunciation": "dh (this)",
+    "pronunciation": "dh (comme 'this')",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -175,7 +175,7 @@
     "initial": "صـ",
     "medial": "ـصـ",
     "final": "ـص",
-    "pronunciation": "S (emphatique)",
+    "pronunciation": "ṣ (S emph. / lourd)",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -187,7 +187,7 @@
     "initial": "ضـ",
     "medial": "ـضـ",
     "final": "ـض",
-    "pronunciation": "D (emphatique)",
+    "pronunciation": "ḍ (D emph. / lourd)",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -199,7 +199,7 @@
     "initial": "طـ",
     "medial": "ـطـ",
     "final": "ـط",
-    "pronunciation": "T (emphatique)",
+    "pronunciation": "ṭ (T emph. / lourd)",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -211,7 +211,7 @@
     "initial": "ظـ",
     "medial": "ـظـ",
     "final": "ـظ",
-    "pronunciation": "DH (emphatique)",
+    "pronunciation": "ẓ (Z emph. / lourd)",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -223,7 +223,7 @@
     "initial": "عـ",
     "medial": "ـعـ",
     "final": "ـع",
-    "pronunciation": "ayn (gutturale)",
+    "pronunciation": "‘ (Ayn guttural)",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -235,7 +235,7 @@
     "initial": "غـ",
     "medial": "ـغـ",
     "final": "ـغ",
-    "pronunciation": "gh (r parisien)",
+    "pronunciation": "gh (R parisien)",
     "type": "consonant",
     "category": "Lettres"
   },
@@ -319,7 +319,7 @@
     "initial": "هـ",
     "medial": "ـهـ",
     "final": "ـه",
-    "pronunciation": "h (soupir)",
+    "pronunciation": "h (léger/soupir)",
     "type": "consonant",
     "category": "Lettres"
   },

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Sparkles, ArrowRight, Brain, Gamepad, User, Check } from 'lucide-react';
+import { Sparkles, ArrowRight, Brain, Gamepad, User, Check, Info } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 
 const Home = () => {
@@ -28,10 +28,10 @@ const Home = () => {
     <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '3rem', marginTop: '4rem' }}>
 
       <div style={{ maxWidth: '800px' }}>
-        <h1 style={{ fontSize: '4rem', marginBottom: '1rem', color: 'var(--pk-text-primary)' }}>
+        <h1 style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '1rem', color: 'var(--pk-text-primary)' }}>
           Apprenez l'Arabe de manière <span className="text-gradient">Interactive</span>
         </h1>
-        <p style={{ fontSize: '1.25rem', color: 'var(--pk-text-secondary)', marginBottom: '2rem' }}>
+        <p style={{ fontSize: 'clamp(1rem, 4vw, 1.25rem)', color: 'var(--pk-text-secondary)', marginBottom: '2rem' }}>
           Maîtrisez l'alphabet, le vocabulaire et lisez des histoires bilingues.
         </p>
 
@@ -61,6 +61,15 @@ const Home = () => {
           <h3 style={{ color: 'var(--pk-text-primary)' }}>Apprentissage Ludique</h3>
           <p style={{ color: 'var(--pk-text-secondary)' }}>Des jeux interactifs pour tester vos connaissances.</p>
         </div>
+      </div>
+
+      <div style={{ marginTop: '2rem', maxWidth: '700px', background: 'rgba(245, 158, 11, 0.1)', border: '1px solid rgba(245, 158, 11, 0.3)', padding: '1.5rem', borderRadius: '12px', display: 'flex', gap: '1rem', alignItems: 'flex-start', textAlign: 'left' }}>
+        <div style={{ color: '#f59e0b', marginTop: '0.2rem', flexShrink: 0 }}>
+          <Info size={24} />
+        </div>
+        <p style={{ color: 'var(--pk-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, margin: 0 }}>
+          <strong style={{ color: 'var(--pk-text-primary)' }}>Avertissement :</strong> Ce site web a été créé dans l'esprit de consolider vos bases de l'arabe et de permettre à son créateur de faire de même et de découvrir le vibe coding. Des petites erreurs peuvent être à prévoir, n'hésitez pas à les faire remonter.
+        </p>
       </div>
 
       {/* Welcome Modal */}

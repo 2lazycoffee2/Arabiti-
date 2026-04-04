@@ -6,15 +6,15 @@ import lessonsData from '../data/lessons.json';
 import { useAppContext } from '../context/AppContext';
 import { ArrowLeft, CheckCircle, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useEffect } from 'react';
+import { transliterateArabic } from '../utils/arabic';
 
 const LessonDetail = () => {
   const { lessonId } = useParams();
   const [activeTab, setActiveTab] = useState<'content' | 'exercises'>('content');
-  const [activeSublesson, setActiveSublesson] = useState<string>('main');
   const [score, setScore] = useState<number | null>(null);
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [showReview, setShowReview] = useState(false);
-  const { showTashkeel, completeLesson, completedLessons } = useAppContext();
+  const { showTashkeel, showRomanization, completeLesson, completedLessons } = useAppContext();
 
   const lesson = lessonsData.find(l => l.id === lessonId);
   const currentIndex = lessonsData.findIndex(l => l.id === lessonId);
@@ -25,18 +25,14 @@ const LessonDetail = () => {
   
   // Get current content based on active sublesson
   const getCurrentContent = () => {
-    if (activeSublesson === 'main') {
-      return lesson;
-    }
-    const sublesson = lesson?.sublessons?.find(sl => sl.id === activeSublesson);
-    return sublesson || lesson;
+    // Les leçons n'ont plus de sous-leçons, retourner toujours la leçon principale
+    return lesson;
   };
   
   const currentContent = getCurrentContent()!;
 
   useEffect(() => {
     setActiveTab('content');
-    setActiveSublesson('main');
     setScore(null);
     setUserAnswers({});
     setShowReview(false);
@@ -81,8 +77,15 @@ const LessonDetail = () => {
       return parts.map((part, i) => {
         if (arabicRegex.test(part)) {
           return (
-            <span key={i} className="arabic-text" style={{ fontSize: '1.3rem', lineHeight: '1.8' }}>
-              {removeTashkeel(part)}
+            <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', verticalAlign: 'middle', flexWrap: 'wrap' }}>
+              <span className="arabic-text" style={{ fontSize: '1.3rem', lineHeight: '1.8' }}>
+                {removeTashkeel(part)}
+              </span>
+              {showRomanization && (
+                <span style={{ fontSize: '0.9rem', color: 'var(--pk-primary)', fontStyle: 'italic', fontWeight: 500, direction: 'ltr' }}>
+                  [{transliterateArabic(part)}]
+                </span>
+              )}
             </span>
           );
         }
@@ -119,43 +122,6 @@ const LessonDetail = () => {
           </div>
         )}
       </div>
-
-      {/* Sublesson tabs */}
-      {lesson.sublessons && lesson.sublessons.length > 0 && (
-        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
-          <button 
-            onClick={() => setActiveSublesson('main')}
-            style={{ 
-              padding: '0.5rem 1rem', 
-              background: activeSublesson === 'main' ? 'var(--pk-primary)' : 'var(--pk-surface-solid)',
-              color: activeSublesson === 'main' ? 'white' : 'var(--pk-text-secondary)',
-              border: '1px solid var(--pk-border)',
-              borderRadius: '20px',
-              fontSize: '0.85rem',
-              fontWeight: activeSublesson === 'main' ? 'bold' : 'normal'
-            }}
-          >
-            Principal
-          </button>
-          {lesson.sublessons.map((sublesson) => (
-            <button 
-              key={sublesson.id}
-              onClick={() => setActiveSublesson(sublesson.id)}
-              style={{ 
-                padding: '0.5rem 1rem', 
-                background: activeSublesson === sublesson.id ? 'var(--pk-primary)' : 'var(--pk-surface-solid)',
-                color: activeSublesson === sublesson.id ? 'white' : 'var(--pk-text-secondary)',
-                border: '1px solid var(--pk-border)',
-                borderRadius: '20px',
-                fontSize: '0.85rem',
-                fontWeight: activeSublesson === sublesson.id ? 'bold' : 'normal'
-              }}
-            >
-              {sublesson.title.replace(/.*:\s*/, '')}
-            </button>
-          ))}
-        </div>
-      )}
 
       <div style={{ display: 'flex', gap: '1rem', borderBottom: '1px solid var(--pk-border)' }}>
         <button 
@@ -206,7 +172,18 @@ const LessonDetail = () => {
                   const content = String(props.children);
                   const isArabic = /[\u0600-\u06FF]/.test(content);
                   if (isArabic) {
-                    return <strong className="arabic-text" style={{ fontSize: '1.4rem', fontWeight: 'bold', lineHeight: '2' }}>{removeTashkeel(content)}</strong>;
+                    return (
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', verticalAlign: 'middle', flexWrap: 'wrap' }}>
+                        <strong className="arabic-text" style={{ fontSize: '1.4rem', fontWeight: 'bold', lineHeight: '2' }}>
+                          {removeTashkeel(content)}
+                        </strong>
+                        {showRomanization && (
+                          <span style={{ fontSize: '0.9rem', color: 'var(--pk-primary)', fontStyle: 'italic', fontWeight: 500, direction: 'ltr' }}>
+                            [{transliterateArabic(content)}]
+                          </span>
+                        )}
+                      </span>
+                    );
                   }
                   return <strong style={{ color: 'var(--pk-text-primary)' }} {...props} />;
                 },
